@@ -107,7 +107,7 @@ function NextPanel({ step }: { step: LearnStep }) {
         <p className="next-meta">{meta}</p>
       </div>
       <div className="panel-foot">
-        <span className="mono">{code}</span>
+        <span className="mono-meta">{code}</span>
         <span className="next-progress" aria-hidden="true"><span /></span>
       </div>
     </aside>

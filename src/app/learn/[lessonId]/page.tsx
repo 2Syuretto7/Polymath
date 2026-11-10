@@ -58,7 +58,7 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
               {missing.map((m) => (
                 <li key={m.id}>
                   {LESSON_BY_ID.has(m.id) ? <Link href={`/learn/${m.id}`} className="text-link">{m.title}</Link> : <span>{m.title}</span>}
-                  <span className="mono">{m.course}</span>
+                  <span className="mono-meta">{m.course}</span>
                 </li>
               ))}
             </ul>

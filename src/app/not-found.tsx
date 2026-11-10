@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <AuthFrame>
       <div className="card">
-        <p className="eyebrow"><span className="mono">404</span></p>
+        <p className="eyebrow"><span className="mono-meta">404</span></p>
         <h1>This page is not on the map</h1>
         <p className="lede">The link may be old, or the lesson may not be written yet.</p>
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>

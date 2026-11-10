@@ -29,7 +29,7 @@ export default async function CoursePage({ params }: { params: Promise<{ course:
   const writtenHere = ids.filter((id) => LESSON_BY_ID.has(id)).length;
   const courseLink = (c: string) => {
     const other = COURSE_BY_CODE.get(c)!;
-    return <Link key={c} href={`/map/${c.toLowerCase()}`} className="chip"><span className="mono">{c}</span>{other.title}</Link>;
+    return <Link key={c} href={`/map/${c.toLowerCase()}`} className="chip"><span className="mono-meta">{c}</span>{other.title}</Link>;
   };
 
   return (
@@ -53,7 +53,7 @@ export default async function CoursePage({ params }: { params: Promise<{ course:
         )}
         {course.chapters.map((ch) => (
           <section key={ch.n} className="chapter">
-            <h2><span className="mono">Chapter {ch.n}</span>{ch.title}</h2>
+            <h2><span className="mono-meta">Chapter {ch.n}</span>{ch.title}</h2>
             <ol className="lesson-list">
               {ch.lessons.map((l) => {
                 const s = status.get(l.id);
@@ -63,7 +63,7 @@ export default async function CoursePage({ params }: { params: Promise<{ course:
                 const [label, tone, icon] = STATE[state];
                 return (
                   <li key={l.id} className={`lesson-row is-${state}`}>
-                    <span className="mono">{l.id}</span>
+                    <span className="mono-meta">{l.id}</span>
                     {open ? <Link href={`/learn/${l.id}`}>{l.title}</Link> : <span>{l.title}</span>}
                     <Pill tone={tone} icon={icon}>{label}</Pill>
                   </li>

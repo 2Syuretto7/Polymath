@@ -40,7 +40,7 @@ export function LessonRail({ sections }: { sections: { id: string; label: string
 
   const links = (cls?: string) => sections.map((s, i) => (
     <a key={s.id} href={`#${s.id}`} className={active === s.id ? "is-on" : cls} aria-current={active === s.id ? "location" : undefined}>
-      <span className="mono">{String(i + 1).padStart(2, "0")}</span>{s.label}
+      <span className="mono-meta">{String(i + 1).padStart(2, "0")}</span>{s.label}
     </a>
   ));
 
