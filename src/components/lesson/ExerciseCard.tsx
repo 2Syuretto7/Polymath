@@ -12,11 +12,28 @@ export type ExerciseView = {
   variables?: string[];
   solved: boolean;
   response: string | null;
+  verdict: "accepted" | "revise" | "pending" | null;
+  feedbackHtml: string | null;
 };
 
 const RUNG: Record<ExerciseView["rung"], string> = { check: "Check", apply: "Apply", prove: "Prove or argue", stretch: "Stretch" };
 
 type Status = { tone: "right" | "wrong" | "info"; text: string } | null;
+
+const WRITTEN_STATUS: Record<NonNullable<ExerciseView["verdict"]>, Status> = {
+  accepted: { tone: "right", text: "Accepted by Parton." },
+  revise: { tone: "wrong", text: "Not yet accepted. Parton's comments are below; revise and submit again." },
+  pending: { tone: "info", text: "Submitted. Parton marks written work once connected; until then it counts as submitted." },
+};
+
+function initialStatus(view: ExerciseView): Status {
+  if (view.kind === "written" && view.verdict) return WRITTEN_STATUS[view.verdict];
+  return view.solved ? { tone: "right", text: "Solved." } : null;
+}
+
+export function askParton(exerciseId: string, label: string) {
+  window.dispatchEvent(new CustomEvent("polymath:ask", { detail: { exerciseId, label } }));
+}
 
 export function ExerciseCard({ view, context, children, index }: {
   view: ExerciseView;
@@ -28,9 +45,10 @@ export function ExerciseCard({ view, context, children, index }: {
   const [value, setValue] = useState(fresh ? "" : view.kind === "choice" ? view.response ?? "" : view.response ?? "");
   const [solved, setSolved] = useState(fresh ? false : view.solved);
   const [tries, setTries] = useState(0);
-  const [status, setStatus] = useState<Status>(
-    !fresh && view.solved ? { tone: view.kind === "written" ? "info" : "right", text: view.kind === "written" ? "Submitted." : "Solved." } : null,
-  );
+  const [status, setStatus] = useState<Status>(fresh ? null : initialStatus(view));
+  const [feedback, setFeedback] = useState<string | null>(fresh ? null : view.feedbackHtml);
+  const label = `Practice question ${index}`;
+  const askable = context === "lesson" && index !== undefined;
   const [pending, start] = useTransition();
   const picked = value.split(",").filter(Boolean).map(Number);
 
@@ -40,17 +58,18 @@ export function ExerciseCard({ view, context, children, index }: {
       const res = await checkExerciseAction(view.id, value, context, attempt);
       if (res.message && !res.correct) { setStatus({ tone: "info", text: res.message }); return; }
       setTries(attempt);
-      if (res.pending) {
-        setSolved(true);
-        setStatus({ tone: "info", text: "Submitted. From Phase 3, Parton reads written work and responds with questions, never answers." });
+      if (res.verdict) {
+        setSolved((s) => s || res.correct);
+        setStatus(WRITTEN_STATUS[res.verdict]);
+        setFeedback(res.feedbackHtml ?? null);
       } else if (res.correct) {
         setSolved(true);
         setStatus({ tone: "right", text: attempt === 1 ? "Correct." : "Correct, after another look. That counts." });
       } else {
         setStatus({
           tone: "wrong",
-          text: attempt >= 3
-            ? "Not yet. Go back to the theory above and look for the step that applies, then try again. Parton will give graded hints here from Phase 3."
+          text: attempt >= 2 && askable
+            ? "Not yet. Reread the theory for the step that applies, or ask Parton for a hint."
             : "Not yet. Try again.",
         });
       }
@@ -99,12 +118,21 @@ export function ExerciseCard({ view, context, children, index }: {
         {!locked && (
           <div className="exercise-actions">
             <button type="submit" className="btn btn-primary" disabled={pending || !value.trim()}>
-              {pending ? "Checking…" : view.kind === "written" ? (solved ? "Submit revision" : "Submit") : "Check"}
+              {pending ? (view.kind === "written" ? "Parton is reading…" : "Checking…") : view.kind === "written" ? (solved ? "Submit revision" : "Submit") : "Check"}
             </button>
+            {askable && !(solved && view.kind !== "written") && (
+              <button type="button" className="btn btn-ghost" onClick={() => askParton(view.id, label)}>Ask Parton</button>
+            )}
           </div>
         )}
       </form>
       {status && <p className={`feedback feedback-${status.tone}`} role="status">{status.text}</p>}
+      {feedback && (
+        <div className="parton-feedback">
+          <p className="parton-feedback-head"><span className="parton-mark" aria-hidden="true">P</span>Parton</p>
+          <div className="parton-prose" dangerouslySetInnerHTML={{ __html: feedback }} />
+        </div>
+      )}
     </div>
   );
 }
