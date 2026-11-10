@@ -253,7 +253,7 @@ export async function reviewTeachBack(lessonId: string, body: string): Promise<T
     maxTokens: 8000,
     messages: [{ role: "user", content: `The teach-back prompt was: ${lesson.teachBack}\n\nThe learner's explanation:\n<<<\n${body}\n>>>` }],
   });
-  const review = { strength: out.strength.trim(), questions: out.questions.map((q) => q.trim()).filter(Boolean).slice(0, 2) };
+  const review = { strength: out.strength.trim(), questions: out.questions.map((q) => q.trim()).filter(Boolean).slice(0, 1) };
   await note(lessonId, null, "teachback", JSON.stringify(review));
   await note(lessonId, null, "misconception", out.misconception);
   return review;

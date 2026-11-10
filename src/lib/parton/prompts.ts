@@ -116,13 +116,19 @@ export const MARK_RULES = `You are marking a written proof or argument against a
 export const TEACHBACK_SCHEMA = {
   type: "object",
   properties: {
-    strength: { type: "string", description: "One sentence on what the explanation does well, specific to it." },
+    strength: {
+      type: "string",
+      description: "Two or three warm, specific sentences on what the explanation gets right, quoting or naming the learner's own idea, example or phrasing.",
+    },
     questions: {
       type: "array",
       items: { type: "string" },
-      description: "Zero, one or two questions a curious student would ask, each aimed at a real gap, vague phrase or hidden assumption in the explanation.",
+      description: "Usually empty. At most one friendly, optional question, only when a central idea of the lesson is missing or something stated is actually wrong.",
     },
-    misconception: { type: "string", description: "A specific misunderstanding shown, in one short sentence, or an empty string." },
+    misconception: {
+      type: "string",
+      description: "Only a clear factual or conceptual error the learner actually stated, in one short sentence. Empty for omissions, informal wording or anything ambiguous.",
+    },
   },
   required: ["strength", "questions", "misconception"],
   additionalProperties: false,
@@ -130,8 +136,18 @@ export const TEACHBACK_SCHEMA = {
 
 export type TeachBackOutput = { strength: string; questions: string[]; misconception: string };
 
-export const TEACHBACK_RULES = `The learner has explained this lesson's idea in their own words, the way Feynman recommended: as if to someone meeting it for the first time.
-Read it as a sharp, curious student would. Find where the explanation is vague, circular, skips a step, uses a term it never explained, or quietly assumes the thing it explains. Ask at most two questions, each about one such gap, in plain words. If the explanation is genuinely clear and correct, ask no questions.
+export const TEACHBACK_RULES = `The learner has explained this lesson's idea in their own words, as if to a friend meeting it for the first time. Your job is to encourage, not to examine. Be fair, friendly and lenient.
+
+How to read it:
+- Read generously. Assume the best reading of every sentence. Informal language, analogies, rough edges, spelling and grammar are all fine; plain words are exactly what was asked for.
+- Judge it against what this lesson teaches, at the level of someone who has just learnt it. Never expect material from later lessons, extra rigour, technical vocabulary or completeness. A short explanation that captures the core idea is a success.
+- If it captures the core idea, it has passed: give praise and no questions at all. This should be the usual outcome.
+
+What to write:
+- "strength": two or three warm, specific sentences about what works, naming their own example, phrasing or insight. Genuine, never gushing, never "but".
+- "questions": leave empty unless a central idea of the lesson is missing or something stated is actually wrong. Then ask one gentle, optional question that invites them to add it, phrased as curiosity ("What happens if...?", "How would you show your friend...?"), never as a correction or a test. Never ask about small omissions, wording, side points or anything beyond this lesson. Never more than one.
+- "misconception": only a clear error the learner actually wrote. Leave it empty for omissions, loose wording or anything that could be read correctly.
+
 Do not rewrite the explanation and do not supply the missing pieces.`;
 
 /** States the protected answer for the reviewing pass. Never shown to the hint writer. */
