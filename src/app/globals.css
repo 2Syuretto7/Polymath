@@ -433,3 +433,21 @@ label { font-size: 13px; font-weight: 500; }
   .parton-launcher { right: 16px; bottom: 16px; }
   .lesson { padding-bottom: 88px; }
 }
+
+/* Shared viz pieces for steppers and cells */
+.viz-cell { fill: var(--surface); stroke: var(--border-strong); stroke-width: 1; transition: fill var(--medium) var(--ease); }
+.viz-cell.is-on { fill: color-mix(in srgb, var(--accent) 28%, transparent); stroke: var(--accent); }
+.viz-frame { fill: none; stroke: var(--text-faint); stroke-width: 1.5; }
+.viz-stepper { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-muted); }
+.viz-stepper .btn { width: 32px; height: 32px; padding: 0; justify-content: center; }
+.viz-stepper-value { min-width: 22px; text-align: center; color: var(--text); font-weight: 600; }
+.viz-sep { width: 1px; align-self: stretch; background: var(--border); margin: 0 6px; }
+.viz-region { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }
+.viz-range { accent-color: var(--accent); width: 100%; }
+.viz-remainders { display: flex; flex-wrap: wrap; gap: 6px; min-height: 28px; }
+.viz-chip { display: inline-flex; align-items: center; height: 26px; padding: 0 9px; border: 1px solid var(--border); border-radius: 999px; font-size: 12.5px; color: var(--text-muted); background: var(--bg-subtle); }
+.viz-chip.is-on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.viz-verdict { font-size: 13.5px; }
+.viz-verdict-right { color: var(--text-muted); }
+.viz-verdict-wrong { color: var(--danger); font-weight: 500; }
+.viz-verdict-info { color: var(--accent); }
