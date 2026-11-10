@@ -2,10 +2,18 @@
 
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { askPartonAction } from "@/app/actions";
+import { Pill } from "@/components/ui/Pill";
+import { Close, Send } from "@/components/ui/Icons";
 
 export type PanelMessage = { id: number | string; role: "user" | "parton"; html: string; rung: number | null; exerciseLabel: string | null };
 
 type Focus = { exerciseId: string; label: string } | null;
+
+const STARTERS = [
+  "Explain the main idea of this lesson in plain words.",
+  "Why does this idea matter?",
+  "Give me a simpler example to start with.",
+];
 
 const RUNG_NAMES = ["", "A question back", "A pointer", "A nudge", "A skeleton", "A parallel example"];
 
@@ -39,6 +47,20 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
     };
     window.addEventListener("polymath:ask", onAsk);
     return () => window.removeEventListener("polymath:ask", onAsk);
+  }, []);
+
+  // "/" opens Parton from anywhere on the page, unless the learner is typing.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+      const t = e.target as HTMLElement | null;
+      if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+      e.preventDefault();
+      setOpen(true);
+      setTimeout(() => inputRef.current?.focus(), 50);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
   }, []);
 
   useEffect(() => {
@@ -85,18 +107,20 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
         onClick={() => { setOpen(true); setTimeout(() => inputRef.current?.focus(), 50); }} aria-haspopup="dialog">
         <span className="parton-mark" aria-hidden="true">P</span>
         Ask Parton
+        <kbd aria-hidden="true">/</kbd>
       </button>
 
       <aside className={`parton-panel ${open ? "is-open" : ""}`} role="dialog" aria-modal="false" aria-label="Parton, your tutor" aria-hidden={!open}>
         <header className="parton-head">
-          <div>
-            <p className="parton-title"><span className="parton-mark" aria-hidden="true">P</span>Parton</p>
-            <p className="parton-sub">Hints, never answers · {lessonTitle}</p>
-          </div>
+          <p className="parton-title">
+            <span className="parton-mark" aria-hidden="true">P</span>Parton
+            {connected ? <Pill tone="success" icon="dot">Online</Pill> : <Pill tone="muted" icon="dot">Offline</Pill>}
+          </p>
           <button type="button" className="btn btn-ghost parton-close" onClick={close} aria-label="Close Parton" tabIndex={open ? 0 : -1}>
-            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
+            <Close />
           </button>
         </header>
+        <p className="parton-sub"><span className="mono-tag">Hints, never answers</span><span>{lessonTitle}</span></p>
 
         <div className="parton-list" ref={listRef}>
           {!connected && (
@@ -109,6 +133,14 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
             <div className="parton-empty">
               <p>Ask about anything in this lesson. I&rsquo;ll explain ideas as plainly as I can, but on practice questions I give hints, one step at a time, never the answer.</p>
               <p className="muted">The more of your own working you show me, the better my hint.</p>
+              <div className="parton-starters">
+                {STARTERS.map((t) => (
+                  <button key={t} type="button" tabIndex={open ? 0 : -1}
+                    onClick={() => { setDraft(t); inputRef.current?.focus(); }}>
+                    {t}<span aria-hidden="true">›</span>
+                  </button>
+                ))}
+              </div>
             </div>
           )}
           {messages.map((m) => (
@@ -140,14 +172,14 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
           )}
           {error && <p className="feedback feedback-wrong parton-error">{error}</p>}
           <div className="parton-input-row">
-            <textarea ref={inputRef} className="input parton-input" rows={3} value={draft} disabled={!connected}
+            <textarea ref={inputRef} className="input parton-input" rows={2} value={draft} disabled={!connected}
               placeholder={connected ? (focus ? starter || "What have you tried?" : "Ask about this lesson…") : "Parton is not connected yet"}
               onChange={(e) => setDraft(e.target.value)} tabIndex={open ? 0 : -1}
               onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); send(); } }}
               aria-label="Your message to Parton" />
-            <button type="submit" className="btn btn-primary" disabled={!connected || pending || !draft.trim()} tabIndex={open ? 0 : -1}>Send</button>
+            <button type="submit" className="btn btn-primary parton-send" aria-label="Send" disabled={!connected || pending || !draft.trim()} tabIndex={open ? 0 : -1}><Send /></button>
           </div>
-          <p className="hint parton-keys">Enter to send, Shift and Enter for a new line. Maths in TeX, like $x^2$.</p>
+          <p className="hint parton-keys"><kbd>Enter</kbd> to send, <kbd>Shift</kbd> <kbd>Enter</kbd> for a new line. Maths in TeX, like $x^2$.</p>
         </form>
       </aside>
     </>

@@ -5,8 +5,10 @@ import { dueReviews } from "@/lib/learning";
 import { toView } from "@/lib/views";
 import { TopBar } from "@/components/TopBar";
 import { ExerciseCard } from "@/components/lesson/ExerciseCard";
+import { ArrowLeft, Check } from "@/components/ui/Icons";
 
 export const dynamic = "force-dynamic";
+export const metadata = { title: "Review" };
 
 export default async function Review() {
   await requireOwner();
@@ -14,11 +16,16 @@ export default async function Review() {
   return (
     <div className="shell">
       <TopBar />
-      <main className="page">
-        <Link href="/" className="back">← Home</Link>
+      <main id="main" className="page">
+        <Link href="/" className="back"><ArrowLeft size={14} /> Home</Link>
+        <p className="eyebrow">Spaced review</p>
         <h1>Review</h1>
         {due.length === 0 ? (
-          <p className="lede">Nothing is due. Each idea will come back just before you would forget it.</p>
+          <div className="empty">
+            <p><span className="pill pill-success"><Check size={12} />All caught up</span></p>
+            <p>Nothing is due. Each idea will come back just before you would forget it.</p>
+            <Link href="/map" className="btn">Browse the map</Link>
+          </div>
         ) : (
           <>
             <p className="lede">
@@ -35,7 +42,7 @@ export default async function Review() {
               );
             })}
             <div className="review-done">
-              <Link href="/" className="btn">Done for now</Link>
+              <Link href="/" className="btn btn-primary">Done for now</Link>
             </div>
           </>
         )}

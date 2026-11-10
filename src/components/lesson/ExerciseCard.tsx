@@ -2,6 +2,8 @@
 
 import { useState, useTransition, type ReactNode } from "react";
 import { checkExerciseAction } from "@/app/actions";
+import { Pill } from "@/components/ui/Pill";
+import { Check, Close, Spark } from "@/components/ui/Icons";
 
 export type ExerciseView = {
   id: string;
@@ -87,9 +89,13 @@ export function ExerciseCard({ view, context, children, index }: {
   return (
     <div className={`exercise ${solved ? "is-solved" : ""}`}>
       <p className="exercise-meta">
-        {index !== undefined && <span>{index}. </span>}
+        {index !== undefined && <span className="exercise-index">{String(index).padStart(2, "0")}</span>}
         <span className={`rung rung-${view.rung}`}>{RUNG[view.rung]}</span>
+        {view.rung === "stretch" && <span>Optional</span>}
+        {solved && status?.tone === "right" && <Pill tone="success" icon="check">{view.kind === "written" ? "Accepted" : "Solved"}</Pill>}
+        {pending && <Pill tone="accent" icon="spin">{view.kind === "written" ? "Reading" : "Checking"}</Pill>}
       </p>
+      <div className="exercise-body">
       <div className="exercise-prompt">{children}</div>
 
       <form className="exercise-form" onSubmit={(e) => { e.preventDefault(); if (!pending && value.trim()) submit(); }}>
@@ -121,18 +127,24 @@ export function ExerciseCard({ view, context, children, index }: {
               {pending ? (view.kind === "written" ? "Parton is reading…" : "Checking…") : view.kind === "written" ? (solved ? "Submit revision" : "Submit") : "Check"}
             </button>
             {askable && !(solved && view.kind !== "written") && (
-              <button type="button" className="btn btn-ghost" onClick={() => askParton(view.id, label)}>Ask Parton</button>
+              <button type="button" className="btn" onClick={() => askParton(view.id, label)}><span className="parton-mark" aria-hidden="true">P</span>Ask Parton</button>
             )}
           </div>
         )}
       </form>
-      {status && <p className={`feedback feedback-${status.tone}`} role="status">{status.text}</p>}
+      {status && (
+        <p className={`feedback feedback-${status.tone}`} role="status">
+          {status.tone === "right" ? <Check /> : status.tone === "wrong" ? <Close /> : <Spark />}
+          <span>{status.text}</span>
+        </p>
+      )}
       {feedback && (
         <div className="parton-feedback">
           <p className="parton-feedback-head"><span className="parton-mark" aria-hidden="true">P</span>Parton</p>
           <div className="parton-prose" dangerouslySetInnerHTML={{ __html: feedback }} />
         </div>
       )}
+      </div>
     </div>
   );
 }

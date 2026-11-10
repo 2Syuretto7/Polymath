@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { learnAction } from "@/app/actions";
+import { Pill } from "@/components/ui/Pill";
+import { ChevronRight } from "@/components/ui/Icons";
 
 export function MasteryBanner({ initiallyMastered }: { initiallyMastered: boolean }) {
   const [mastered, setMastered] = useState(initiallyMastered);
@@ -16,11 +18,11 @@ export function MasteryBanner({ initiallyMastered }: { initiallyMastered: boolea
   return (
     <div className={justNow ? "mastered is-floating" : "mastered"} role="status">
       <div>
-        <p className="mastered-title">Lesson mastered</p>
+        <p className="mastered-title"><Pill tone="success" icon="check">Mastered</Pill>This lesson is yours</p>
         <p className="mastered-text">Its questions will return for review just before you would forget them.</p>
       </div>
       <form action={learnAction}>
-        <button type="submit" className="btn btn-primary">Learn <span aria-hidden="true">→</span></button>
+        <button type="submit" className="btn btn-primary">Learn next <span className="chev"><ChevronRight /></span></button>
       </form>
     </div>
   );
