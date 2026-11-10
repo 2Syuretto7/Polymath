@@ -41,7 +41,7 @@ export function TeachBack({ lessonId, prompt, initial, initialReview, connected 
       </div>
       {error && <p className="feedback feedback-wrong">{error}</p>}
       {saved && !error && !connected && (
-        <p className="hint">Saved. Once Parton is connected, it reads your explanation like a curious student and asks about any gaps.</p>
+        <p className="hint">Saved. Once Parton is connected, it reads your explanation and tells you what works.</p>
       )}
       {review && (
         <div className="parton-feedback" aria-live="polite">
@@ -49,14 +49,14 @@ export function TeachBack({ lessonId, prompt, initial, initialReview, connected 
           <div className="parton-prose" dangerouslySetInnerHTML={{ __html: review.strength }} />
           {review.questions.length > 0 ? (
             <>
-              <p className="parton-feedback-sub">A curious student would ask:</p>
+              <p className="parton-feedback-sub">Something you could add, if you like:</p>
               <ol className="parton-questions">
                 {review.questions.map((q, i) => <li key={i} className="parton-prose" dangerouslySetInnerHTML={{ __html: q }} />)}
               </ol>
-              <p className="hint">Answer these by improving your explanation above, then save it again.</p>
+              <p className="hint">Your explanation is saved and counts already. Revising it is optional.</p>
             </>
           ) : (
-            <p className="hint">No gaps found. That is the test passed.</p>
+            <p className="hint">Well explained. Your explanation is saved and counts towards mastering this lesson.</p>
           )}
         </div>
       )}
