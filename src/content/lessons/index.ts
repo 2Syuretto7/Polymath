@@ -62,6 +62,13 @@ import { lesson as m1_5_1 } from "./m1.5.1";
 import { lesson as m1_5_2 } from "./m1.5.2";
 import { lesson as m1_5_3 } from "./m1.5.3";
 import { lesson as m1_5_4 } from "./m1.5.4";
+import { lesson as m1_6_1 } from "./m1.6.1";
+import { lesson as m1_6_2 } from "./m1.6.2";
+import { lesson as m1_6_3 } from "./m1.6.3";
+import { lesson as m1_7_1 } from "./m1.7.1";
+import { lesson as m1_7_2 } from "./m1.7.2";
+import { lesson as m1_7_3 } from "./m1.7.3";
+import { lesson as m1_7_4 } from "./m1.7.4";
 import { lesson as p0_1_1 } from "./p0.1.1";
 import { lesson as p0_1_2 } from "./p0.1.2";
 import { lesson as p0_1_3 } from "./p0.1.3";
@@ -113,6 +120,8 @@ export const LESSONS: readonly LessonContent[] = [
   m1_3_1, m1_3_2, m1_3_3, m1_3_4, m1_3_5, m1_3_6,
   m1_4_1, m1_4_2, m1_4_3, m1_4_4, m1_4_5,
   m1_5_1, m1_5_2, m1_5_3, m1_5_4,
+  m1_6_1, m1_6_2, m1_6_3,
+  m1_7_1, m1_7_2, m1_7_3, m1_7_4,
   p0_1_1, p0_1_2, p0_1_3, p0_1_4,
   p0_2_1, p0_2_2, p0_2_3, p0_2_4,
   p0_3_1, p0_3_2, p0_3_3, p0_3_4,
