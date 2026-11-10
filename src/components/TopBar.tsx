@@ -1,27 +1,23 @@
 import Link from "next/link";
-import { signOutAction } from "@/app/actions";
+import { LogoMark } from "@/components/ui/Logo";
+import { NavLinks } from "@/components/NavLinks";
+import { UserMenu } from "@/components/UserMenu";
 
-export function TopBar({ showWordmark = true }: { showWordmark?: boolean }) {
+export function TopBar() {
   return (
     <header className="topbar">
-      {showWordmark ? <Link href="/" className="wordmark-small">Polymath</Link> : <span />}
-      <details className="menu">
-        <summary className="btn btn-ghost" aria-label="Menu">
-          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-            <path d="M2 4.5h12M2 8h12M2 11.5h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
-        </summary>
-        <nav className="menu-panel">
-          <Link href="/" className="menu-item">Home</Link>
-          <Link href="/map" className="menu-item">Map</Link>
-          <Link href="/review" className="menu-item">Review</Link>
-          <Link href="/settings" className="menu-item">Settings</Link>
-          <div className="menu-sep" />
-          <form action={signOutAction}>
-            <button type="submit" className="menu-item">Sign out</button>
-          </form>
+      <div className="topbar-inner">
+        <Link href="/" className="brand" aria-label="Polymath home">
+          <LogoMark />
+          <span className="brand-name">Polymath</span>
+        </Link>
+        <nav className="topnav" aria-label="Primary">
+          <NavLinks />
         </nav>
-      </details>
+        <div className="topbar-end">
+          <UserMenu />
+        </div>
+      </div>
     </header>
   );
 }

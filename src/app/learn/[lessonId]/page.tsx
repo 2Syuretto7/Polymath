@@ -10,9 +10,17 @@ import { ExerciseCard } from "@/components/lesson/ExerciseCard";
 import { TeachBack } from "@/components/lesson/TeachBack";
 import { MasteryBanner } from "@/components/lesson/MasteryBanner";
 import { PartonPanel } from "@/components/parton/PartonPanel";
+import { LessonRail } from "@/components/lesson/LessonRail";
+import { Pill } from "@/components/ui/Pill";
+import { ArrowLeft, Lock } from "@/components/ui/Icons";
 import { conversation, latestTeachBackReview, partonConnected, renderReview } from "@/lib/parton";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({ params }: { params: Promise<{ lessonId: string }> }) {
+  const { lessonId } = await params;
+  return { title: GRAPH.nodes.get(lessonId)?.title ?? "Lesson" };
+}
 // Parton marks written work with careful thought; give those requests room.
 export const maxDuration = 300;
 
@@ -39,12 +47,22 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
     return (
       <div className="shell">
         <TopBar />
-        <main className="page">
-          <Link href="/map" className="back">← Map</Link>
-          <p className="eyebrow">{node.course} · {node.chapterTitle}</p>
+        <main id="main" className="page">
+          <Link href={`/map/${node.course.toLowerCase()}`} className="back"><ArrowLeft size={14} /> {node.courseTitle}</Link>
+          <p className="eyebrow">{node.course} · Chapter {node.chapter}, {node.chapterTitle}</p>
           <h1 className="lesson-title">{node.title}</h1>
-          <p className="lede">This lesson opens once you have mastered:</p>
-          <ul className="plain-list">{missing.map((m) => <li key={m.id}>{m.title} <span className="muted">({m.courseTitle})</span></li>)}</ul>
+          <p className="lede">This lesson opens once you have mastered the ideas it rests on.</p>
+          <div className="locked-panel">
+            <div className="panel-bar"><span className="mono-tag">Requires</span><Pill tone="muted" icon="lock">Locked</Pill></div>
+            <ul>
+              {missing.map((m) => (
+                <li key={m.id}>
+                  {LESSON_BY_ID.has(m.id) ? <Link href={`/learn/${m.id}`} className="text-link">{m.title}</Link> : <span>{m.title}</span>}
+                  <span className="mono-meta">{m.course}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </main>
       </div>
     );
@@ -72,20 +90,26 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
   return (
     <div className="shell">
       <TopBar />
+      <div className="reading-progress" aria-hidden="true"><span /></div>
       <div className="lesson-layout">
-        <nav className="rail" aria-label="Lesson sections">
-          <ol>
-            {sections.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}
-          </ol>
-        </nav>
-        <main className="lesson">
-          <p className="eyebrow">{node.course} {node.courseTitle} · Chapter {node.chapter}, {node.chapterTitle}</p>
-          <h1 className="lesson-title">{node.title}</h1>
-          <p className="lesson-meta">About {lesson.minutes} minutes</p>
+        <LessonRail sections={sections.map(([id, label]) => ({ id, label }))} />
+        <main id="main" className="lesson">
+          <header className="lesson-head">
+            <Link href={`/map/${node.course.toLowerCase()}`} className="back"><ArrowLeft size={14} /> {node.course} {node.courseTitle}</Link>
+            <p className="eyebrow">Chapter {node.chapter} · {node.chapterTitle}</p>
+            <h1 className="lesson-title">{node.title}</h1>
+            <p className="lesson-meta">
+              {report.mastered || mastered.has(lessonId)
+                ? <Pill tone="success" icon="check">Mastered</Pill>
+                : <Pill tone="accent" icon="dot">In progress</Pill>}
+              <span>About {lesson.minutes} minutes</span>
+              <span>{lesson.practice.length} practice questions</span>
+            </p>
+          </header>
 
           {recall.length > 0 && (
             <section id="recall" className="lesson-section">
-              <h2>Recall</h2>
+              <h2><StepChip id="recall" sections={sections} />Recall</h2>
               <p className="section-lede">Before the new idea, bring back the old ones it rests on.</p>
               {recall.map((r) => (
                 <ExerciseCard key={r.id} view={toView(r, states.get(r.id))} context="recall">{r.exercise.prompt}</ExerciseCard>
@@ -94,22 +118,22 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
           )}
 
           <section id="puzzle" className="lesson-section">
-            <h2>Puzzle</h2>
+            <h2><StepChip id="puzzle" sections={sections} />Puzzle</h2>
             <div className="prose">{lesson.puzzle}</div>
           </section>
 
           <section id="intuition" className="lesson-section">
-            <h2>Intuition</h2>
+            <h2><StepChip id="intuition" sections={sections} />Intuition</h2>
             <div className="prose">{lesson.intuition}</div>
           </section>
 
           <section id="theory" className="lesson-section">
-            <h2>Theory</h2>
+            <h2><StepChip id="theory" sections={sections} />Theory</h2>
             <div className="prose">{lesson.theory}</div>
           </section>
 
           <section id="practice" className="lesson-section">
-            <h2>Practice</h2>
+            <h2><StepChip id="practice" sections={sections} />Practice</h2>
             <p className="section-lede">
               Mastery needs at least 80 percent of the check, apply and prove questions, every written proof or argument accepted by Parton,
               and your teach-back. Stretch questions are optional. So far: {Math.round(report.score * 100)} percent solved
@@ -126,14 +150,14 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
           </section>
 
           <section id="teach" className="lesson-section">
-            <h2>Teach it back</h2>
+            <h2><StepChip id="teach" sections={sections} />Teach it back</h2>
             <p className="section-lede">If you can explain it simply, you understand it. If you can&rsquo;t, you&rsquo;ve found what to study next.</p>
             <TeachBack lessonId={lessonId} prompt={lesson.teachBack} initial={teach} connected={connected}
               initialReview={teachReview ? renderReview(teachReview) : null} />
           </section>
 
           <section id="connections" className="lesson-section">
-            <h2>Connections</h2>
+            <h2><StepChip id="connections" sections={sections} />Connections</h2>
             <div className="prose">{lesson.glimpse}</div>
             <div className="connections">
               {links.from.length > 0 && <div><h3>Builds on</h3><ul className="plain-list">{links.from.map(linkItem)}</ul></div>}
@@ -148,4 +172,9 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
       </div>
     </div>
   );
+}
+
+function StepChip({ id, sections }: { id: string; sections: readonly (readonly [string, string])[] }) {
+  const n = sections.findIndex(([s]) => s === id) + 1;
+  return <span className="step-chip" aria-hidden="true">{String(n).padStart(2, "0")}</span>;
 }

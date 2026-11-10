@@ -5,14 +5,17 @@ import { LESSON_BY_ID } from "@/lib/curriculum";
 import { masteredSet } from "@/lib/learning";
 import { TopBar } from "@/components/TopBar";
 import type { Track } from "@/lib/types";
+import { ChevronRight } from "@/components/ui/Icons";
 
 export const dynamic = "force-dynamic";
+export const metadata = { title: "Map" };
 
 const TIERS = ["Bridge from zero", "First-year university", "Core undergraduate", "Advanced undergraduate", "Graduate core", "Graduate specialisation"];
 
 export default async function MapPage() {
   await requireOwner();
   const mastered = await masteredSet();
+  const total = COURSES.reduce((n, c) => n + c.chapters.reduce((m, ch) => m + ch.lessons.length, 0), 0);
   const column = (track: Track, tier: number) =>
     COURSES.filter((c) => c.track === track && c.tier === tier).map((c) => {
       const ids = c.chapters.flatMap((ch) => ch.lessons.map((l) => l.id));
@@ -22,8 +25,12 @@ export default async function MapPage() {
         <Link key={c.code} href={`/map/${c.code.toLowerCase()}`} className="course-card">
           <span className="course-code">{c.code}</span>
           <span className="course-title">{c.title}</span>
+          <span className="chev"><ChevronRight size={14} /></span>
           <span className="meter" aria-hidden="true"><span style={{ width: `${(done / ids.length) * 100}%` }} /></span>
-          <span className="course-stat">{done} of {ids.length} mastered{ready > 0 ? ` · ${ready} ready` : ""}</span>
+          <span className="course-stat">
+            <span>{done} of {ids.length} mastered</span>
+            {ready > 0 && <span className="ready">{ready} ready</span>}
+          </span>
         </Link>
       );
     });
@@ -31,16 +38,24 @@ export default async function MapPage() {
   return (
     <div className="shell">
       <TopBar />
-      <main className="page page-wide">
-        <h1>Map</h1>
-        <p className="lede">Two tracks that grow side by side, from school mathematics and first questions to graduate seminars.</p>
-        <div className="map-head"><span>Mathematics</span><span>Philosophy</span></div>
+      <main id="main" className="page page-wide">
+        <header className="page-head">
+          <p className="eyebrow">The curriculum</p>
+          <h1>Map</h1>
+          <p className="lede">Two tracks that grow side by side, from school mathematics and first questions to graduate seminars.</p>
+        </header>
+        <div className="map-summary">
+          <div><p className="eyebrow">Courses</p><p>{COURSES.length}</p></div>
+          <div><p className="eyebrow">Lessons</p><p>{total.toLocaleString("en-IN")}</p></div>
+          <div><p className="eyebrow">Mastered</p><p>{mastered.size.toLocaleString("en-IN")}</p></div>
+        </div>
+        <div className="map-head"><span>Tier</span><span>Mathematics</span><span>Philosophy</span></div>
         {TIERS.map((name, tier) => (
           <section key={name} className="tier">
-            <h2 className="tier-name"><span>Tier {tier}</span> {name}</h2>
+            <h2 className="tier-name"><span className="mono-tag">Tier {tier}</span>{name}</h2>
             <div className="tier-grid">
-              <div className="course-col">{column("mathematics", tier)}</div>
-              <div className="course-col">{column("philosophy", tier)}</div>
+              <div className="track"><p className="eyebrow track-label">Mathematics</p><div className="course-col">{column("mathematics", tier)}</div></div>
+              <div className="track"><p className="eyebrow track-label">Philosophy</p><div className="course-col">{column("philosophy", tier)}</div></div>
             </div>
           </section>
         ))}
