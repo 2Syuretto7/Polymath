@@ -21,6 +21,31 @@ const SCHEMA = [
      mastery REAL NOT NULL DEFAULT 0,
      updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
    )`,
+  `ALTER TABLE progress ADD COLUMN IF NOT EXISTS started_at TIMESTAMPTZ NOT NULL DEFAULT now()`,
+  `CREATE TABLE IF NOT EXISTS exercise_state (
+     exercise_id TEXT PRIMARY KEY,
+     lesson_id TEXT NOT NULL,
+     attempts INTEGER NOT NULL DEFAULT 0,
+     solved BOOLEAN NOT NULL DEFAULT false,
+     first_try BOOLEAN NOT NULL DEFAULT false,
+     response TEXT,
+     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+   )`,
+  `CREATE TABLE IF NOT EXISTS review_cards (
+     exercise_id TEXT PRIMARY KEY,
+     lesson_id TEXT NOT NULL,
+     card JSONB NOT NULL,
+     due TIMESTAMPTZ NOT NULL
+   )`,
+  `CREATE INDEX IF NOT EXISTS review_cards_due ON review_cards (due)`,
+  `CREATE TABLE IF NOT EXISTS writings (
+     id SERIAL PRIMARY KEY,
+     lesson_id TEXT NOT NULL,
+     kind TEXT NOT NULL,
+     exercise_id TEXT,
+     body TEXT NOT NULL,
+     at TIMESTAMPTZ NOT NULL DEFAULT now()
+   )`,
   `CREATE TABLE IF NOT EXISTS settings (
      key TEXT PRIMARY KEY,
      value JSONB NOT NULL

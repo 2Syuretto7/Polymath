@@ -33,3 +33,11 @@ npm run dev        # http://localhost:3000, uses ./.pglite as its database
 npm test           # unit tests
 npm run typecheck
 ```
+
+## How the curriculum is stored
+
+- `src/content/outline.json` is the whole curriculum: 76 courses in six tiers, with chapters and lesson titles, course prerequisites and parallels.
+- Each written lesson is a file in `src/content/lessons/<id>.tsx`, listed in `src/content/lessons/index.ts`. A lesson provides its puzzle, intuition, theory, practice ladder, teach-back prompt, forward glimpse and any extra links (`parallels`, `foreshadows`, `revisits`, `applies`, `requires`).
+- `src/lib/graph.ts` builds the lesson graph. Each lesson requires the one before it; a course's first lesson requires the last lesson of every course it depends on. The build fails if a link points nowhere or prerequisites form a cycle.
+- Answers never reach the browser: exercises are checked on the server (`src/lib/check.ts`).
+- Mastered lessons become spaced-review cards scheduled with FSRS (`src/lib/learning.ts`).

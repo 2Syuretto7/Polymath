@@ -13,6 +13,8 @@ export function TopBar({ showWordmark = true }: { showWordmark?: boolean }) {
         </summary>
         <nav className="menu-panel">
           <Link href="/" className="menu-item">Home</Link>
+          <Link href="/map" className="menu-item">Map</Link>
+          <Link href="/review" className="menu-item">Review</Link>
           <Link href="/settings" className="menu-item">Settings</Link>
           <div className="menu-sep" />
           <form action={signOutAction}>
