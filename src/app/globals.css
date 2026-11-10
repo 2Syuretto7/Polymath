@@ -463,3 +463,16 @@ label { font-size: 13px; font-weight: 500; }
 .standard-form li { margin-bottom: 4px; }
 .standard-form-conclusion { margin: 4px 0 12px; padding: 6px 0 0 28px; border-top: 1px solid var(--border-strong); max-width: 36em; }
 .viz .tagger { padding-left: 0; margin-left: 0; }
+.plot { width: 100%; height: auto; display: block; }
+.plot-grid { stroke: var(--border); stroke-width: 1; }
+.plot-tick { font-size: 10.5px; fill: var(--text-faint); font-family: var(--font-sans); }
+.plot-curve { fill: none; stroke: var(--accent); stroke-width: 2.25; }
+.plot-curve-2 { fill: none; stroke: var(--text-muted); stroke-width: 2; stroke-dasharray: 6 5; }
+.plot-ghost { fill: none; stroke: var(--text-faint); stroke-width: 1.5; stroke-dasharray: 4 4; }
+.plot-point { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.plot-hot { fill: var(--danger); stroke: var(--surface); stroke-width: 2; }
+.plot-line { stroke: var(--danger); stroke-width: 1.5; }
+.plot-mirror { stroke: var(--text-faint); stroke-width: 1.25; stroke-dasharray: 2 4; }
+.viz-sliders { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px 16px; margin-top: 12px; }
+.viz-sliders label { display: grid; gap: 4px; font-size: 13px; color: var(--text-muted); }
+.viz-sliders input[type="range"] { width: 100%; accent-color: var(--accent); }
