@@ -131,8 +131,7 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
           )}
           {connected && messages.length === 0 && (
             <div className="parton-empty">
-              <p>Ask about anything in this lesson. I&rsquo;ll explain ideas as plainly as I can, but on practice questions I give hints, one step at a time, never the answer.</p>
-              <p className="muted">The more of your own working you show me, the better my hint.</p>
+              <p>Ask anything about this lesson. For practice questions, I give hints, not answers. Show your working for better hints.</p>
               <div className="parton-starters">
                 {STARTERS.map((t) => (
                   <button key={t} type="button" tabIndex={open ? 0 : -1}
