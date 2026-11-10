@@ -451,3 +451,15 @@ label { font-size: 13px; font-weight: 500; }
 .viz-verdict-right { color: var(--text-muted); }
 .viz-verdict-wrong { color: var(--danger); font-weight: 500; }
 .viz-verdict-info { color: var(--accent); }
+.tagger { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.tagger-row { border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 12px; transition: border-color var(--fast) var(--ease); }
+.tagger-row.is-right { border-color: var(--accent); }
+.tagger-row.is-wrong { border-color: var(--danger); }
+.tagger-text { margin: 0 0 8px; font-family: var(--font-serif); font-size: 15.5px; }
+.tagger-roles { display: flex; gap: 6px; flex-wrap: wrap; }
+.tagger-roles .viz-chip { cursor: pointer; font-family: var(--font-sans); }
+.tagger-why { margin: 8px 0 0; font-size: 13.5px; color: var(--text-muted); }
+.standard-form { margin: 8px 0 0; padding-left: 28px; }
+.standard-form li { margin-bottom: 4px; }
+.standard-form-conclusion { margin: 4px 0 12px; padding: 6px 0 0 28px; border-top: 1px solid var(--border-strong); max-width: 36em; }
+.viz .tagger { padding-left: 0; margin-left: 0; }
