@@ -63,3 +63,18 @@ export function Axes({ v, children, label }: { v: View; children?: ReactNode; la
     </svg>
   );
 }
+
+/** An arrow in screen coordinates, from (x1, y1) to (x2, y2), with a filled head. */
+export function Arrow({ x1, y1, x2, y2, className = "plot-arrow", head = 9 }: { x1: number; y1: number; x2: number; y2: number; className?: string; head?: number }) {
+  const len = Math.hypot(x2 - x1, y2 - y1);
+  if (len < 1) return null;
+  const ux = (x2 - x1) / len, uy = (y2 - y1) / len;
+  const bx = x2 - ux * head, by = y2 - uy * head;
+  const w = head * 0.45;
+  return (
+    <g className={className}>
+      <line x1={x1} y1={y1} x2={bx} y2={by} />
+      <path d={`M${x2} ${y2} L${bx - uy * w} ${by + ux * w} L${bx + uy * w} ${by - ux * w} Z`} style={{ fill: "currentColor", stroke: "none" }} />
+    </g>
+  );
+}

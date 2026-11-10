@@ -830,6 +830,9 @@ label { font-size: 13px; font-weight: 500; color: var(--text); }
 .plot-hot { fill: var(--danger); stroke: var(--surface); stroke-width: 2; }
 .plot-line { stroke: var(--danger); stroke-width: 1.5; }
 .plot-mirror { stroke: var(--text-faint); stroke-width: 1.25; stroke-dasharray: 2 4; }
+.plot-arrow { fill: none; stroke: var(--accent); color: var(--accent); stroke-width: 2.5; }
+.plot-arrow.is-hot { stroke: var(--danger); color: var(--danger); }
+.plot-arrow.is-muted { stroke: var(--text-muted); color: var(--text-muted); }
 .viz-sliders { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px 16px; margin-top: 12px; }
 .viz-sliders label { display: grid; gap: 4px; font-size: 13px; color: var(--text-muted); }
 .viz-sliders input[type="range"] { width: 100%; accent-color: var(--accent); }
