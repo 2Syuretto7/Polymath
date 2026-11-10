@@ -62,7 +62,13 @@ export async function learnAction() {
   redirect("/");
 }
 
-export type CheckResponse = { correct: boolean; message?: string; lessonMastered?: boolean; pending?: boolean };
+export type CheckResponse = {
+  correct: boolean;
+  message?: string;
+  lessonMastered?: boolean;
+  verdict?: "accepted" | "revise" | "pending";
+  feedbackHtml?: string;
+};
 
 export async function checkExerciseAction(
   exerciseId: string,
@@ -75,14 +81,40 @@ export async function checkExerciseAction(
   return attempt(exerciseId, String(input).slice(0, 20000), context, Math.max(1, Math.floor(attemptInSession)));
 }
 
-export async function teachBackAction(lessonId: string, body: string): Promise<{ ok: boolean; lessonMastered?: boolean; error?: string }> {
+export type TeachBackResponse = {
+  ok: boolean;
+  lessonMastered?: boolean;
+  error?: string;
+  review?: { strength: string; questions: string[] };
+  reviewError?: string;
+};
+
+export async function teachBackAction(lessonId: string, body: string): Promise<TeachBackResponse> {
   await requireOwner();
   const { LESSON_BY_ID } = await import("@/lib/curriculum");
   if (!LESSON_BY_ID.has(lessonId)) return { ok: false, error: "Unknown lesson." };
   const text = String(body).trim().slice(0, 20000);
   if (text.split(/\s+/).length < 25) return { ok: false, error: "Write at least a few sentences, about 25 words or more." };
   const { saveTeachBack } = await import("@/lib/learning");
-  return { ok: true, lessonMastered: await saveTeachBack(lessonId, text) };
+  const lessonMastered = await saveTeachBack(lessonId, text);
+  const { PartonError, partonConnected, renderReview, reviewTeachBack } = await import("@/lib/parton");
+  if (!partonConnected()) return { ok: true, lessonMastered };
+  try {
+    return { ok: true, lessonMastered, review: renderReview(await reviewTeachBack(lessonId, text)) };
+  } catch (error) {
+    if (error instanceof PartonError) return { ok: true, lessonMastered, reviewError: error.message };
+    throw error;
+  }
+}
+
+export async function askPartonAction(lessonId: string, exerciseId: string | null, message: string) {
+  await requireOwner();
+  const { LESSON_BY_ID } = await import("@/lib/curriculum");
+  const text = String(message ?? "").trim().slice(0, 4000);
+  if (!LESSON_BY_ID.has(lessonId)) return { ok: false as const, error: "Unknown lesson." };
+  if (!text) return { ok: false as const, error: "Write a question first." };
+  const { askParton } = await import("@/lib/parton");
+  return askParton(lessonId, exerciseId ? String(exerciseId) : null, text);
 }
 
 export async function setPaceAction(form: FormData) {

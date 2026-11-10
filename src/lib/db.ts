@@ -50,6 +50,35 @@ const SCHEMA = [
      key TEXT PRIMARY KEY,
      value JSONB NOT NULL
    )`,
+  `ALTER TABLE exercise_state ADD COLUMN IF NOT EXISTS verdict TEXT`,
+  `ALTER TABLE exercise_state ADD COLUMN IF NOT EXISTS feedback TEXT`,
+  `CREATE TABLE IF NOT EXISTS attempt_log (
+     id SERIAL PRIMARY KEY,
+     exercise_id TEXT NOT NULL,
+     response TEXT NOT NULL,
+     correct BOOLEAN NOT NULL,
+     context TEXT NOT NULL,
+     at TIMESTAMPTZ NOT NULL DEFAULT now()
+   )`,
+  `CREATE INDEX IF NOT EXISTS attempt_log_exercise ON attempt_log (exercise_id, at)`,
+  `CREATE TABLE IF NOT EXISTS parton_messages (
+     id SERIAL PRIMARY KEY,
+     lesson_id TEXT NOT NULL,
+     exercise_id TEXT,
+     role TEXT NOT NULL,
+     body TEXT NOT NULL,
+     rung INTEGER,
+     at TIMESTAMPTZ NOT NULL DEFAULT now()
+   )`,
+  `CREATE INDEX IF NOT EXISTS parton_messages_lesson ON parton_messages (lesson_id, at)`,
+  `CREATE TABLE IF NOT EXISTS parton_notes (
+     id SERIAL PRIMARY KEY,
+     lesson_id TEXT NOT NULL,
+     exercise_id TEXT,
+     kind TEXT NOT NULL,
+     body TEXT NOT NULL,
+     at TIMESTAMPTZ NOT NULL DEFAULT now()
+   )`,
 ];
 
 async function createRunner(): Promise<Runner> {

@@ -9,8 +9,12 @@ import { TopBar } from "@/components/TopBar";
 import { ExerciseCard } from "@/components/lesson/ExerciseCard";
 import { TeachBack } from "@/components/lesson/TeachBack";
 import { MasteryBanner } from "@/components/lesson/MasteryBanner";
+import { PartonPanel } from "@/components/parton/PartonPanel";
+import { conversation, latestTeachBackReview, partonConnected, renderReview } from "@/lib/parton";
 
 export const dynamic = "force-dynamic";
+// Parton marks written work with careful thought; give those requests room.
+export const maxDuration = 300;
 
 const SECTIONS = [
   ["recall", "Recall"],
@@ -49,7 +53,13 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
   await startLesson(lessonId);
   const recall = await recallFor(lessonId, mastered);
   const states = await exerciseStates([lessonId, ...new Set(recall.map((r) => r.lessonId))]);
-  const [teach, report] = await Promise.all([latestTeachBack(lessonId), masteryReport(lessonId)]);
+  const [teach, report, chat, teachReview] = await Promise.all([
+    latestTeachBack(lessonId),
+    masteryReport(lessonId),
+    conversation(lessonId),
+    latestTeachBackReview(lessonId),
+  ]);
+  const connected = partonConnected();
   const links = connections(GRAPH, lessonId);
   const sections = SECTIONS.filter(([id]) => id !== "recall" || recall.length > 0);
   const linkItem = (id: string) => {
@@ -101,9 +111,9 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
           <section id="practice" className="lesson-section">
             <h2>Practice</h2>
             <p className="section-lede">
-              Mastery needs at least 80 percent of the check, apply and prove questions, every written proof or argument,
+              Mastery needs at least 80 percent of the check, apply and prove questions, every written proof or argument accepted by Parton,
               and your teach-back. Stretch questions are optional. So far: {Math.round(report.score * 100)} percent solved
-              {required.some((e) => e.answer.kind === "written") && <>, written work {report.writtenDone ? "submitted" : "not yet submitted"}</>}.
+              {required.some((e) => e.answer.kind === "written") && <>, written work {report.writtenDone ? "accepted" : "not yet accepted"}</>}.
             </p>
             {lesson.practice.map((e, i) => {
               const ref = EXERCISES.get(exerciseId(lessonId, e.key))!;
@@ -118,7 +128,8 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
           <section id="teach" className="lesson-section">
             <h2>Teach it back</h2>
             <p className="section-lede">If you can explain it simply, you understand it. If you can&rsquo;t, you&rsquo;ve found what to study next.</p>
-            <TeachBack lessonId={lessonId} prompt={lesson.teachBack} initial={teach} />
+            <TeachBack lessonId={lessonId} prompt={lesson.teachBack} initial={teach} connected={connected}
+              initialReview={teachReview ? renderReview(teachReview) : null} />
           </section>
 
           <section id="connections" className="lesson-section">
@@ -133,6 +144,7 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
 
           <MasteryBanner initiallyMastered={report.mastered || mastered.has(lessonId)} />
         </main>
+        <PartonPanel lessonId={lessonId} lessonTitle={node.title} initial={chat} connected={connected} />
       </div>
     </div>
   );

@@ -6,6 +6,8 @@ import { checkAnswer, type CheckResult } from "./check";
 import { frontier } from "./graph";
 import { chooseNextStep, type LearnStep } from "./scheduler";
 import type { Track } from "./types";
+import { PartonError, markWritten, partonConnected } from "./parton";
+import { renderParton } from "./parton/render";
 
 const scheduler = fsrs({ enable_fuzz: true, request_retention: 0.9 });
 const TZ = "Asia/Kolkata";
@@ -74,12 +76,20 @@ export async function startLesson(lessonId: string) {
   );
 }
 
-export type ExerciseStateRow = { exercise_id: string; attempts: number; solved: boolean; response: string | null };
+export type Verdict = "accepted" | "revise" | "pending";
+export type ExerciseStateRow = {
+  exercise_id: string;
+  attempts: number;
+  solved: boolean;
+  response: string | null;
+  verdict: Verdict | null;
+  feedback: string | null;
+};
 
 export async function exerciseStates(lessonIds: string[]): Promise<Map<string, ExerciseStateRow>> {
   if (lessonIds.length === 0) return new Map();
   const rows = await query<ExerciseStateRow>(
-    "SELECT exercise_id, attempts, solved, response FROM exercise_state WHERE lesson_id = ANY($1)",
+    "SELECT exercise_id, attempts, solved, response, verdict, feedback FROM exercise_state WHERE lesson_id = ANY($1)",
     [lessonIds],
   );
   return new Map(rows.map((r) => [r.exercise_id, r]));
@@ -87,40 +97,71 @@ export async function exerciseStates(lessonIds: string[]): Promise<Map<string, E
 
 export type Context = "lesson" | "recall" | "review";
 
-export type AttemptResult = CheckResult & { lessonMastered?: boolean; pending?: boolean };
+export type AttemptResult = CheckResult & { lessonMastered?: boolean; verdict?: Verdict; feedbackHtml?: string };
 
 /**
  * Checks an answer, records it, and updates mastery and the review schedule.
  * In recall and review, the first attempt of the session decides the review rating.
+ * Written proofs and arguments are marked by Parton against the rubric when Parton is connected;
+ * until then they are provisionally accepted on submission.
  */
 export async function attempt(id: string, input: string, context: Context, attemptInSession: number): Promise<AttemptResult> {
   const ref = EXERCISES.get(id);
   if (!ref) return { correct: false, message: "Unknown exercise." };
-  const result = checkAnswer(ref.exercise.answer, input);
-  if (result.message && !result.correct && ref.exercise.answer.kind !== "written") return result;
-  if (ref.exercise.answer.kind === "written" && !result.correct) return result;
-
   const written = ref.exercise.answer.kind === "written";
+  if (written && context !== "lesson") return { correct: false, message: "Written work is marked inside its lesson." };
+  const result = checkAnswer(ref.exercise.answer, input);
+  if (result.message && !result.correct) return result;
+
+  let correct = result.correct;
+  let verdict: Verdict | null = null;
+  let feedback: string | null = null;
+  if (written) {
+    if (partonConnected()) {
+      try {
+        const marking = await markWritten(ref, input);
+        correct = marking.accepted;
+        verdict = marking.accepted ? "accepted" : "revise";
+        feedback = marking.feedback;
+      } catch (error) {
+        if (error instanceof PartonError) return { correct: false, message: `${error.message} Your answer is still in the box.` };
+        throw error;
+      }
+    } else {
+      correct = true;
+      verdict = "pending";
+    }
+  }
+
   await query(
-    `INSERT INTO exercise_state (exercise_id, lesson_id, attempts, solved, first_try, response)
-     VALUES ($1, $2, 1, $3, $3, $4)
+    `INSERT INTO exercise_state (exercise_id, lesson_id, attempts, solved, first_try, response, verdict, feedback)
+     VALUES ($1, $2, 1, $3, $3, $4, $5, $6)
      ON CONFLICT (exercise_id) DO UPDATE SET
        attempts = exercise_state.attempts + 1,
        solved = exercise_state.solved OR EXCLUDED.solved,
        response = EXCLUDED.response,
+       verdict = CASE WHEN exercise_state.verdict = 'accepted' AND EXCLUDED.verdict = 'revise' THEN 'accepted' ELSE EXCLUDED.verdict END,
+       feedback = EXCLUDED.feedback,
        updated_at = now()`,
-    [id, ref.lessonId, result.correct, input],
+    [id, ref.lessonId, correct, input, verdict, feedback],
   );
+  await query("INSERT INTO attempt_log (exercise_id, response, correct, context) VALUES ($1, $2, $3, $4)", [id, input.slice(0, 4000), correct, context]);
   if (written) {
     await query("INSERT INTO writings (lesson_id, kind, exercise_id, body) VALUES ($1, 'answer', $2, $3)", [ref.lessonId, id, input]);
   }
 
   if (context !== "lesson" && attemptInSession === 1) {
-    await rateCard(id, result.correct ? Rating.Good : Rating.Again);
+    await rateCard(id, correct ? Rating.Good : Rating.Again);
   }
 
   const lessonMastered = context === "lesson" ? await evaluateMastery(ref.lessonId) : undefined;
-  return { correct: result.correct, message: result.message, lessonMastered, pending: written || undefined };
+  return {
+    correct,
+    message: result.message,
+    lessonMastered,
+    verdict: verdict ?? undefined,
+    feedbackHtml: feedback ? renderParton(feedback) : undefined,
+  };
 }
 
 async function rateCard(id: string, rating: Rating.Again | Rating.Good) {
@@ -162,8 +203,8 @@ export async function masteryReport(lessonId: string): Promise<MasteryReport> {
 
 /**
  * A lesson is mastered when at least 80% of its check, apply and prove exercises are solved,
- * every written proof or argument has been submitted, and the teach-back is written.
- * (From Phase 3, Parton must also accept the written work.)
+ * every written proof or argument has been accepted by Parton (or provisionally accepted while
+ * Parton is not connected), and the teach-back is written.
  */
 export async function evaluateMastery(lessonId: string): Promise<boolean> {
   const report = await masteryReport(lessonId);
@@ -175,17 +216,31 @@ export async function evaluateMastery(lessonId: string): Promise<boolean> {
   );
   if (changed.length > 0) {
     const now = new Date();
+    const struggled = await struggledWith(lessonId);
     for (const e of reviewable(LESSON_BY_ID.get(lessonId)!)) {
       // Practice counts as the first successful review; the first spaced review comes a day later.
-      const card = scheduler.next(createEmptyCard(now), now, Rating.Good).card;
-      card.due = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+      // Repair: a question missed three or more times comes back sooner, after twelve hours.
+      const id = exerciseId(lessonId, e.key);
+      const hard = struggled.has(id);
+      const card = scheduler.next(createEmptyCard(now), now, hard ? Rating.Hard : Rating.Good).card;
+      card.due = new Date(now.getTime() + (hard ? 12 : 24) * 60 * 60 * 1000);
       await query(
         "INSERT INTO review_cards (exercise_id, lesson_id, card, due) VALUES ($1, $2, $3, $4) ON CONFLICT DO NOTHING",
-        [exerciseId(lessonId, e.key), lessonId, JSON.stringify(card), card.due.toISOString()],
+        [id, lessonId, JSON.stringify(card), card.due.toISOString()],
       );
     }
   }
   return true;
+}
+
+/** Exercises in these lessons that the learner has missed at least `misses` times. */
+async function struggledWith(lessonId: string, misses = 3): Promise<Set<string>> {
+  const rows = await query<{ exercise_id: string }>(
+    `SELECT exercise_id FROM attempt_log WHERE exercise_id LIKE $1 AND NOT correct
+     GROUP BY exercise_id HAVING count(*) >= $2`,
+    [`${lessonId}:%`, misses],
+  );
+  return new Set(rows.map((r) => r.exercise_id));
 }
 
 /** Due review questions, mixed across lessons so related ideas interleave. */
@@ -199,14 +254,20 @@ export async function dueReviews(limit = REVIEW_SESSION_SIZE) {
   return refs.sort((a, b) => hash(a.id) - hash(b.id));
 }
 
-/** Two or three recall questions from the lessons this one requires or revisits, if they have been mastered. */
+/**
+ * Two or three recall questions from the lessons this one requires or revisits, if they have been mastered.
+ * Repair comes first: questions the learner once struggled with are chosen before the rest.
+ */
 export async function recallFor(lessonId: string, mastered: Set<string>) {
   const sources = GRAPH.edges
     .filter((e) => e.to === lessonId && (e.kind === "requires" || e.kind === "revisits" || e.kind === "applies"))
     .map((e) => e.from)
     .filter((id) => mastered.has(id) && LESSON_BY_ID.has(id));
   const pool = sources.flatMap((id) => reviewable(LESSON_BY_ID.get(id)!).map((e) => EXERCISES.get(exerciseId(id, e.key))!));
-  return pool.sort((a, b) => hash(a.id + lessonId) - hash(b.id + lessonId)).slice(0, 3);
+  const struggled = new Set<string>();
+  for (const id of sources) for (const x of await struggledWith(id, 2)) struggled.add(x);
+  const rank = (r: { id: string }) => (struggled.has(r.id) ? 0 : 1);
+  return pool.sort((a, b) => rank(a) - rank(b) || hash(a.id + lessonId) - hash(b.id + lessonId)).slice(0, 3);
 }
 
 function hash(s: string) {
