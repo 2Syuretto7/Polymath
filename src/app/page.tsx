@@ -1,7 +1,7 @@
 import { requireOwner } from "@/lib/auth";
-import { describeStep, TOTAL_LESSONS } from "@/lib/curriculum";
-import { loadProgress } from "@/lib/progress";
-import { chooseNextStep } from "@/lib/curriculum";
+import { GRAPH } from "@/lib/curriculum";
+import { nextStep, overallStats } from "@/lib/learning";
+import { describeStep } from "@/lib/scheduler";
 import { learnAction } from "./actions";
 import { TopBar } from "@/components/TopBar";
 
@@ -9,13 +9,12 @@ export const dynamic = "force-dynamic";
 
 export default async function Home() {
   await requireOwner();
-  const progress = await loadProgress();
-  const step = chooseNextStep(progress);
-  const mastered = progress.filter((p) => p.status === "mastered").length;
+  const [step, stats] = await Promise.all([nextStep(), overallStats()]);
+  const total = GRAPH.order.length.toLocaleString("en-IN");
   const arc =
-    mastered === 0
-      ? `A long arc of about ${TOTAL_LESSONS.toLocaleString("en-IN")} lessons begins here.`
-      : `${mastered.toLocaleString("en-IN")} of about ${TOTAL_LESSONS.toLocaleString("en-IN")} lessons mastered.`;
+    stats.mastered === 0
+      ? `A long arc of ${total} lessons begins here.`
+      : `${stats.mastered.toLocaleString("en-IN")} of ${total} lessons mastered.`;
 
   return (
     <div className="shell">
@@ -25,7 +24,7 @@ export default async function Home() {
           <h1 className="wordmark">Polymath</h1>
           <p className="arc">{arc}</p>
           <form action={learnAction}>
-            <button type="submit" className="btn btn-primary learn" disabled={step.kind === "caught-up"}>
+            <button type="submit" className="btn btn-primary learn" disabled={step.kind === "rest"}>
               Learn <span className="arrow" aria-hidden="true">→</span>
             </button>
           </form>

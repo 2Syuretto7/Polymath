@@ -9,8 +9,6 @@ import {
   signOut,
   signOutEverywhere,
 } from "@/lib/auth";
-import { query } from "@/lib/db";
-import { OPENING_LESSONS } from "@/lib/curriculum";
 import { normalisePassphrase } from "@/lib/passphrase";
 
 export type FormState = { error?: string; done?: string } | undefined;
@@ -51,24 +49,48 @@ export async function changePassphraseAction(_: FormState, form: FormData): Prom
   return { done: "Passphrase changed. Other devices have been signed out." };
 }
 
-/** Marks a lesson as opened, so the Learn button resumes it on any device. */
-export async function startLessonAction(lessonId: string) {
-  await requireOwner();
-  if (!OPENING_LESSONS.some((l) => l.id === lessonId)) return;
-  await query(
-    `INSERT INTO progress (lesson_id, status) VALUES ($1, 'in_progress')
-     ON CONFLICT (lesson_id) DO UPDATE SET updated_at = now()
-     WHERE progress.status <> 'mastered'`,
-    [lessonId],
-  );
-}
-
-/** The Learn button: decide the single best next step, record it, and go there. */
 export async function learnAction() {
   await requireOwner();
-  const { nextStep } = await import("@/lib/progress");
+  const { nextStep, startLesson } = await import("@/lib/learning");
   const step = await nextStep();
-  if (step.kind === "caught-up") redirect("/");
-  await startLessonAction(step.lesson.id);
-  redirect(`/learn/${step.lesson.id}`);
+  if (step.kind === "continue") redirect(`/learn/${step.lesson.id}`);
+  if (step.kind === "review") redirect("/review");
+  if (step.kind === "begin") {
+    await startLesson(step.lesson.id);
+    redirect(`/learn/${step.lesson.id}`);
+  }
+  redirect("/");
+}
+
+export type CheckResponse = { correct: boolean; message?: string; lessonMastered?: boolean; pending?: boolean };
+
+export async function checkExerciseAction(
+  exerciseId: string,
+  input: string,
+  context: "lesson" | "recall" | "review",
+  attemptInSession: number,
+): Promise<CheckResponse> {
+  await requireOwner();
+  const { attempt } = await import("@/lib/learning");
+  return attempt(exerciseId, String(input).slice(0, 20000), context, Math.max(1, Math.floor(attemptInSession)));
+}
+
+export async function teachBackAction(lessonId: string, body: string): Promise<{ ok: boolean; lessonMastered?: boolean; error?: string }> {
+  await requireOwner();
+  const { LESSON_BY_ID } = await import("@/lib/curriculum");
+  if (!LESSON_BY_ID.has(lessonId)) return { ok: false, error: "Unknown lesson." };
+  const text = String(body).trim().slice(0, 20000);
+  if (text.split(/\s+/).length < 25) return { ok: false, error: "Write at least a few sentences, about 25 words or more." };
+  const { saveTeachBack } = await import("@/lib/learning");
+  return { ok: true, lessonMastered: await saveTeachBack(lessonId, text) };
+}
+
+export async function setPaceAction(form: FormData) {
+  await requireOwner();
+  const pace = Number(form.get("pace"));
+  if ([1, 2, 3].includes(pace)) {
+    const { setPace } = await import("@/lib/learning");
+    await setPace(pace);
+  }
+  redirect("/settings");
 }

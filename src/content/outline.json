@@ -1,0 +1,9544 @@
+{
+ "courses": [
+  {
+   "code": "M0",
+   "title": "Foundations of School Mathematics",
+   "track": "mathematics",
+   "tier": 0,
+   "requires": [],
+   "parallels": [
+    "P0"
+   ],
+   "source": "Depth of Gelfand, Algebra and Functions and Graphs; Lang, Basic Mathematics.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Numbers",
+     "lessons": [
+      {
+       "id": "m0.1.1",
+       "title": "Counting and the natural numbers"
+      },
+      {
+       "id": "m0.1.2",
+       "title": "Integers and signed arithmetic"
+      },
+      {
+       "id": "m0.1.3",
+       "title": "Fractions and ratios"
+      },
+      {
+       "id": "m0.1.4",
+       "title": "Decimals and irrational numbers"
+      },
+      {
+       "id": "m0.1.5",
+       "title": "The real number line"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Algebra",
+     "lessons": [
+      {
+       "id": "m0.2.1",
+       "title": "Expressions and variables"
+      },
+      {
+       "id": "m0.2.2",
+       "title": "Linear equations"
+      },
+      {
+       "id": "m0.2.3",
+       "title": "Inequalities"
+      },
+      {
+       "id": "m0.2.4",
+       "title": "Exponents and roots"
+      },
+      {
+       "id": "m0.2.5",
+       "title": "Polynomials and factoring"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Functions",
+     "lessons": [
+      {
+       "id": "m0.3.1",
+       "title": "What a function is"
+      },
+      {
+       "id": "m0.3.2",
+       "title": "Graphs"
+      },
+      {
+       "id": "m0.3.3",
+       "title": "Linear and quadratic functions"
+      },
+      {
+       "id": "m0.3.4",
+       "title": "Composition and inverses"
+      },
+      {
+       "id": "m0.3.5",
+       "title": "Transforming graphs"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Exponentials and logarithms",
+     "lessons": [
+      {
+       "id": "m0.4.1",
+       "title": "Growth and decay"
+      },
+      {
+       "id": "m0.4.2",
+       "title": "Exponential functions"
+      },
+      {
+       "id": "m0.4.3",
+       "title": "Logarithms as inverses"
+      },
+      {
+       "id": "m0.4.4",
+       "title": "Laws of logarithms"
+      },
+      {
+       "id": "m0.4.5",
+       "title": "E and continuous growth"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Geometry",
+     "lessons": [
+      {
+       "id": "m0.5.1",
+       "title": "Euclid's axioms and the idea of proof"
+      },
+      {
+       "id": "m0.5.2",
+       "title": "Triangles and congruence"
+      },
+      {
+       "id": "m0.5.3",
+       "title": "Similarity"
+      },
+      {
+       "id": "m0.5.4",
+       "title": "Circles"
+      },
+      {
+       "id": "m0.5.5",
+       "title": "Area and volume"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Trigonometry",
+     "lessons": [
+      {
+       "id": "m0.6.1",
+       "title": "Angles and radians"
+      },
+      {
+       "id": "m0.6.2",
+       "title": "Sine and cosine on the unit circle"
+      },
+      {
+       "id": "m0.6.3",
+       "title": "Identities"
+      },
+      {
+       "id": "m0.6.4",
+       "title": "Inverse trigonometric functions"
+      },
+      {
+       "id": "m0.6.5",
+       "title": "Laws of sines and cosines"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Coordinates and vectors",
+     "lessons": [
+      {
+       "id": "m0.7.1",
+       "title": "The Cartesian plane"
+      },
+      {
+       "id": "m0.7.2",
+       "title": "Lines and conic sections"
+      },
+      {
+       "id": "m0.7.3",
+       "title": "Vectors in the plane"
+      },
+      {
+       "id": "m0.7.4",
+       "title": "Complex numbers as points"
+      },
+      {
+       "id": "m0.7.5",
+       "title": "Polar form"
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "title": "Sequences and counting",
+     "lessons": [
+      {
+       "id": "m0.8.1",
+       "title": "Arithmetic and geometric sequences"
+      },
+      {
+       "id": "m0.8.2",
+       "title": "Sigma notation"
+      },
+      {
+       "id": "m0.8.3",
+       "title": "Induction, a first look"
+      },
+      {
+       "id": "m0.8.4",
+       "title": "Counting principles"
+      },
+      {
+       "id": "m0.8.5",
+       "title": "The binomial theorem"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M1",
+   "title": "Proof and Logic",
+   "track": "mathematics",
+   "tier": 1,
+   "requires": [
+    "M0"
+   ],
+   "parallels": [
+    "P2"
+   ],
+   "source": "Depth of Velleman, How to Prove It; Hammack, Book of Proof.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Propositional logic",
+     "lessons": [
+      {
+       "id": "m1.1.1",
+       "title": "Statements and connectives"
+      },
+      {
+       "id": "m1.1.2",
+       "title": "Truth tables"
+      },
+      {
+       "id": "m1.1.3",
+       "title": "Logical equivalence"
+      },
+      {
+       "id": "m1.1.4",
+       "title": "Conditionals, converses and contrapositives"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Quantifiers",
+     "lessons": [
+      {
+       "id": "m1.2.1",
+       "title": "Predicates"
+      },
+      {
+       "id": "m1.2.2",
+       "title": "Universal and existential quantifiers"
+      },
+      {
+       "id": "m1.2.3",
+       "title": "Negating quantified statements"
+      },
+      {
+       "id": "m1.2.4",
+       "title": "Nested quantifiers"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Proof techniques",
+     "lessons": [
+      {
+       "id": "m1.3.1",
+       "title": "Direct proof"
+      },
+      {
+       "id": "m1.3.2",
+       "title": "Proof by contrapositive"
+      },
+      {
+       "id": "m1.3.3",
+       "title": "Proof by contradiction"
+      },
+      {
+       "id": "m1.3.4",
+       "title": "Proof by cases"
+      },
+      {
+       "id": "m1.3.5",
+       "title": "Existence and uniqueness proofs"
+      },
+      {
+       "id": "m1.3.6",
+       "title": "Writing proofs well"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sets",
+     "lessons": [
+      {
+       "id": "m1.4.1",
+       "title": "Sets and membership"
+      },
+      {
+       "id": "m1.4.2",
+       "title": "Subsets and equality"
+      },
+      {
+       "id": "m1.4.3",
+       "title": "Operations on sets"
+      },
+      {
+       "id": "m1.4.4",
+       "title": "Indexed families"
+      },
+      {
+       "id": "m1.4.5",
+       "title": "Power sets and Cartesian products"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Induction",
+     "lessons": [
+      {
+       "id": "m1.5.1",
+       "title": "Mathematical induction"
+      },
+      {
+       "id": "m1.5.2",
+       "title": "Strong induction"
+      },
+      {
+       "id": "m1.5.3",
+       "title": "The well-ordering principle"
+      },
+      {
+       "id": "m1.5.4",
+       "title": "Recursive definitions"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Relations",
+     "lessons": [
+      {
+       "id": "m1.6.1",
+       "title": "Relations and their properties"
+      },
+      {
+       "id": "m1.6.2",
+       "title": "Equivalence relations and partitions"
+      },
+      {
+       "id": "m1.6.3",
+       "title": "Partial and total orders"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Functions",
+     "lessons": [
+      {
+       "id": "m1.7.1",
+       "title": "Functions as relations"
+      },
+      {
+       "id": "m1.7.2",
+       "title": "Injections, surjections and bijections"
+      },
+      {
+       "id": "m1.7.3",
+       "title": "Composition and inverses"
+      },
+      {
+       "id": "m1.7.4",
+       "title": "Images and preimages"
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "title": "Cardinality",
+     "lessons": [
+      {
+       "id": "m1.8.1",
+       "title": "Finite sets"
+      },
+      {
+       "id": "m1.8.2",
+       "title": "Countable sets"
+      },
+      {
+       "id": "m1.8.3",
+       "title": "Cantor's diagonal argument"
+      },
+      {
+       "id": "m1.8.4",
+       "title": "The Schröder-Bernstein theorem"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M2",
+   "title": "Calculus",
+   "track": "mathematics",
+   "tier": 1,
+   "requires": [
+    "M0",
+    "M1"
+   ],
+   "parallels": [
+    "P4"
+   ],
+   "source": "Depth of Spivak, Calculus; Apostol, Calculus Vol. 1.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "The real numbers",
+     "lessons": [
+      {
+       "id": "m2.1.1",
+       "title": "Field axioms"
+      },
+      {
+       "id": "m2.1.2",
+       "title": "Order axioms"
+      },
+      {
+       "id": "m2.1.3",
+       "title": "Completeness and suprema"
+      },
+      {
+       "id": "m2.1.4",
+       "title": "Absolute value and inequalities"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Limits",
+     "lessons": [
+      {
+       "id": "m2.2.1",
+       "title": "Limits intuitively"
+      },
+      {
+       "id": "m2.2.2",
+       "title": "The epsilon-delta definition"
+      },
+      {
+       "id": "m2.2.3",
+       "title": "Limit laws"
+      },
+      {
+       "id": "m2.2.4",
+       "title": "One-sided and infinite limits"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Continuity",
+     "lessons": [
+      {
+       "id": "m2.3.1",
+       "title": "Continuous functions"
+      },
+      {
+       "id": "m2.3.2",
+       "title": "The intermediate value theorem"
+      },
+      {
+       "id": "m2.3.3",
+       "title": "The extreme value theorem"
+      },
+      {
+       "id": "m2.3.4",
+       "title": "Uniform continuity, a first look"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Derivatives",
+     "lessons": [
+      {
+       "id": "m2.4.1",
+       "title": "The derivative as rate and slope"
+      },
+      {
+       "id": "m2.4.2",
+       "title": "Differentiation rules"
+      },
+      {
+       "id": "m2.4.3",
+       "title": "The chain rule"
+      },
+      {
+       "id": "m2.4.4",
+       "title": "Implicit differentiation"
+      },
+      {
+       "id": "m2.4.5",
+       "title": "Derivatives of inverse functions"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Using derivatives",
+     "lessons": [
+      {
+       "id": "m2.5.1",
+       "title": "The mean value theorem"
+      },
+      {
+       "id": "m2.5.2",
+       "title": "Monotonicity and convexity"
+      },
+      {
+       "id": "m2.5.3",
+       "title": "Optimisation"
+      },
+      {
+       "id": "m2.5.4",
+       "title": "Related rates"
+      },
+      {
+       "id": "m2.5.5",
+       "title": "L'Hôpital's rule"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Integrals",
+     "lessons": [
+      {
+       "id": "m2.6.1",
+       "title": "Area and Riemann sums"
+      },
+      {
+       "id": "m2.6.2",
+       "title": "The definite integral"
+      },
+      {
+       "id": "m2.6.3",
+       "title": "The fundamental theorem of calculus"
+      },
+      {
+       "id": "m2.6.4",
+       "title": "Substitution"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Techniques of integration",
+     "lessons": [
+      {
+       "id": "m2.7.1",
+       "title": "Integration by parts"
+      },
+      {
+       "id": "m2.7.2",
+       "title": "Trigonometric integrals"
+      },
+      {
+       "id": "m2.7.3",
+       "title": "Partial fractions"
+      },
+      {
+       "id": "m2.7.4",
+       "title": "Improper integrals"
+      },
+      {
+       "id": "m2.7.5",
+       "title": "Numerical integration"
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "title": "Transcendental functions done properly",
+     "lessons": [
+      {
+       "id": "m2.8.1",
+       "title": "The logarithm as an integral"
+      },
+      {
+       "id": "m2.8.2",
+       "title": "The exponential function"
+      },
+      {
+       "id": "m2.8.3",
+       "title": "Trigonometric functions from series"
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "title": "Sequences and series",
+     "lessons": [
+      {
+       "id": "m2.9.1",
+       "title": "Convergence of sequences"
+      },
+      {
+       "id": "m2.9.2",
+       "title": "Series and convergence tests"
+      },
+      {
+       "id": "m2.9.3",
+       "title": "Absolute and conditional convergence"
+      },
+      {
+       "id": "m2.9.4",
+       "title": "Power series"
+      },
+      {
+       "id": "m2.9.5",
+       "title": "Taylor series and the remainder"
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "title": "Applications of integration",
+     "lessons": [
+      {
+       "id": "m2.10.1",
+       "title": "Volumes"
+      },
+      {
+       "id": "m2.10.2",
+       "title": "Arc length"
+      },
+      {
+       "id": "m2.10.3",
+       "title": "Work and physical applications"
+      },
+      {
+       "id": "m2.10.4",
+       "title": "Probability densities, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M3",
+   "title": "Linear Algebra I",
+   "track": "mathematics",
+   "tier": 1,
+   "requires": [
+    "M0"
+   ],
+   "parallels": [],
+   "source": "Depth of Strang, Introduction to Linear Algebra; Lay, Linear Algebra and Its Applications.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Vectors",
+     "lessons": [
+      {
+       "id": "m3.1.1",
+       "title": "Vectors and linear combinations"
+      },
+      {
+       "id": "m3.1.2",
+       "title": "Dot product and length"
+      },
+      {
+       "id": "m3.1.3",
+       "title": "Lines and planes"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Linear systems",
+     "lessons": [
+      {
+       "id": "m3.2.1",
+       "title": "Gaussian elimination"
+      },
+      {
+       "id": "m3.2.2",
+       "title": "Row reduction and echelon forms"
+      },
+      {
+       "id": "m3.2.3",
+       "title": "Existence and uniqueness of solutions"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Matrices",
+     "lessons": [
+      {
+       "id": "m3.3.1",
+       "title": "Matrix operations"
+      },
+      {
+       "id": "m3.3.2",
+       "title": "Inverses"
+      },
+      {
+       "id": "m3.3.3",
+       "title": "LU factorisation"
+      },
+      {
+       "id": "m3.3.4",
+       "title": "Transposes and permutations"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vector spaces",
+     "lessons": [
+      {
+       "id": "m3.4.1",
+       "title": "Spaces and subspaces"
+      },
+      {
+       "id": "m3.4.2",
+       "title": "Null space and column space"
+      },
+      {
+       "id": "m3.4.3",
+       "title": "Linear independence"
+      },
+      {
+       "id": "m3.4.4",
+       "title": "Basis and dimension"
+      },
+      {
+       "id": "m3.4.5",
+       "title": "The four fundamental subspaces"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Orthogonality",
+     "lessons": [
+      {
+       "id": "m3.5.1",
+       "title": "Orthogonal vectors and subspaces"
+      },
+      {
+       "id": "m3.5.2",
+       "title": "Projections"
+      },
+      {
+       "id": "m3.5.3",
+       "title": "Least squares"
+      },
+      {
+       "id": "m3.5.4",
+       "title": "Gram-Schmidt and QR"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Determinants",
+     "lessons": [
+      {
+       "id": "m3.6.1",
+       "title": "Properties of determinants"
+      },
+      {
+       "id": "m3.6.2",
+       "title": "Cofactors and formulas"
+      },
+      {
+       "id": "m3.6.3",
+       "title": "Determinants as volume"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Eigenvalues",
+     "lessons": [
+      {
+       "id": "m3.7.1",
+       "title": "Eigenvalues and eigenvectors"
+      },
+      {
+       "id": "m3.7.2",
+       "title": "Diagonalisation"
+      },
+      {
+       "id": "m3.7.3",
+       "title": "Symmetric matrices"
+      },
+      {
+       "id": "m3.7.4",
+       "title": "Positive definite matrices"
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "title": "Linear transformations",
+     "lessons": [
+      {
+       "id": "m3.8.1",
+       "title": "Transformations as matrices"
+      },
+      {
+       "id": "m3.8.2",
+       "title": "Change of basis"
+      },
+      {
+       "id": "m3.8.3",
+       "title": "The singular value decomposition"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M4",
+   "title": "Discrete Mathematics",
+   "track": "mathematics",
+   "tier": 1,
+   "requires": [
+    "M1"
+   ],
+   "parallels": [
+    "P3"
+   ],
+   "source": "Depth of Rosen, Discrete Mathematics; Bóna, A Walk Through Combinatorics.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Counting",
+     "lessons": [
+      {
+       "id": "m4.1.1",
+       "title": "Sum and product rules"
+      },
+      {
+       "id": "m4.1.2",
+       "title": "Permutations and combinations"
+      },
+      {
+       "id": "m4.1.3",
+       "title": "Binomial identities"
+      },
+      {
+       "id": "m4.1.4",
+       "title": "The pigeonhole principle"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Advanced counting",
+     "lessons": [
+      {
+       "id": "m4.2.1",
+       "title": "Inclusion-exclusion"
+      },
+      {
+       "id": "m4.2.2",
+       "title": "Recurrence relations"
+      },
+      {
+       "id": "m4.2.3",
+       "title": "Generating functions"
+      },
+      {
+       "id": "m4.2.4",
+       "title": "Catalan numbers"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Graphs",
+     "lessons": [
+      {
+       "id": "m4.3.1",
+       "title": "Graphs and terminology"
+      },
+      {
+       "id": "m4.3.2",
+       "title": "Paths and connectivity"
+      },
+      {
+       "id": "m4.3.3",
+       "title": "Euler and Hamilton paths"
+      },
+      {
+       "id": "m4.3.4",
+       "title": "Trees"
+      },
+      {
+       "id": "m4.3.5",
+       "title": "Planarity and colouring"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Number theory, first pass",
+     "lessons": [
+      {
+       "id": "m4.4.1",
+       "title": "Divisibility"
+      },
+      {
+       "id": "m4.4.2",
+       "title": "Primes"
+      },
+      {
+       "id": "m4.4.3",
+       "title": "Gcd and Euclid's algorithm"
+      },
+      {
+       "id": "m4.4.4",
+       "title": "Modular arithmetic"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Algorithms",
+     "lessons": [
+      {
+       "id": "m4.5.1",
+       "title": "What an algorithm is"
+      },
+      {
+       "id": "m4.5.2",
+       "title": "Big-O notation"
+      },
+      {
+       "id": "m4.5.3",
+       "title": "Recursion"
+      },
+      {
+       "id": "m4.5.4",
+       "title": "P and NP, a first look"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Discrete probability",
+     "lessons": [
+      {
+       "id": "m4.6.1",
+       "title": "Sample spaces"
+      },
+      {
+       "id": "m4.6.2",
+       "title": "Conditional probability"
+      },
+      {
+       "id": "m4.6.3",
+       "title": "Expectation"
+      },
+      {
+       "id": "m4.6.4",
+       "title": "The probabilistic method"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M5",
+   "title": "Multivariable Calculus and Vector Analysis",
+   "track": "mathematics",
+   "tier": 2,
+   "requires": [
+    "M2",
+    "M3"
+   ],
+   "parallels": [],
+   "source": "Depth of Hubbard and Hubbard, Vector Calculus, Linear Algebra, and Differential Forms; Marsden and Tromba, Vector Calculus.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Space and vectors",
+     "lessons": [
+      {
+       "id": "m5.1.1",
+       "title": "Euclidean space Rⁿ"
+      },
+      {
+       "id": "m5.1.2",
+       "title": "The cross product"
+      },
+      {
+       "id": "m5.1.3",
+       "title": "Curves and parametrisation"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Differentiation",
+     "lessons": [
+      {
+       "id": "m5.2.1",
+       "title": "Partial derivatives"
+      },
+      {
+       "id": "m5.2.2",
+       "title": "The derivative as a linear map"
+      },
+      {
+       "id": "m5.2.3",
+       "title": "The chain rule"
+      },
+      {
+       "id": "m5.2.4",
+       "title": "Gradients and directional derivatives"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Higher derivatives",
+     "lessons": [
+      {
+       "id": "m5.3.1",
+       "title": "Taylor's theorem in several variables"
+      },
+      {
+       "id": "m5.3.2",
+       "title": "Critical points and the Hessian"
+      },
+      {
+       "id": "m5.3.3",
+       "title": "Lagrange multipliers"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Inverse and implicit functions",
+     "lessons": [
+      {
+       "id": "m5.4.1",
+       "title": "The inverse function theorem"
+      },
+      {
+       "id": "m5.4.2",
+       "title": "The implicit function theorem"
+      },
+      {
+       "id": "m5.4.3",
+       "title": "Manifolds, a first look"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Multiple integrals",
+     "lessons": [
+      {
+       "id": "m5.5.1",
+       "title": "Double and triple integrals"
+      },
+      {
+       "id": "m5.5.2",
+       "title": "Fubini's theorem"
+      },
+      {
+       "id": "m5.5.3",
+       "title": "Change of variables"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Vector fields",
+     "lessons": [
+      {
+       "id": "m5.6.1",
+       "title": "Line integrals"
+      },
+      {
+       "id": "m5.6.2",
+       "title": "Conservative fields"
+      },
+      {
+       "id": "m5.6.3",
+       "title": "Surface integrals"
+      },
+      {
+       "id": "m5.6.4",
+       "title": "Flux"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "The great theorems",
+     "lessons": [
+      {
+       "id": "m5.7.1",
+       "title": "Green's theorem"
+      },
+      {
+       "id": "m5.7.2",
+       "title": "Stokes' theorem"
+      },
+      {
+       "id": "m5.7.3",
+       "title": "The divergence theorem"
+      },
+      {
+       "id": "m5.7.4",
+       "title": "Differential forms, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M6",
+   "title": "Real Analysis I",
+   "track": "mathematics",
+   "tier": 2,
+   "requires": [
+    "M1",
+    "M2"
+   ],
+   "parallels": [
+    "P22"
+   ],
+   "source": "Depth of Abbott, Understanding Analysis; Rudin, Principles of Mathematical Analysis, chapters 1 to 7.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "The reals revisited",
+     "lessons": [
+      {
+       "id": "m6.1.1",
+       "title": "Constructing the reals"
+      },
+      {
+       "id": "m6.1.2",
+       "title": "Equivalent forms of completeness"
+      },
+      {
+       "id": "m6.1.3",
+       "title": "Countability and uncountability"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sequences",
+     "lessons": [
+      {
+       "id": "m6.2.1",
+       "title": "Limit theorems"
+      },
+      {
+       "id": "m6.2.2",
+       "title": "Monotone convergence"
+      },
+      {
+       "id": "m6.2.3",
+       "title": "Bolzano-Weierstrass"
+      },
+      {
+       "id": "m6.2.4",
+       "title": "Cauchy sequences"
+      },
+      {
+       "id": "m6.2.5",
+       "title": "Limsup and liminf"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Series",
+     "lessons": [
+      {
+       "id": "m6.3.1",
+       "title": "Convergence tests proved"
+      },
+      {
+       "id": "m6.3.2",
+       "title": "Rearrangements"
+      },
+      {
+       "id": "m6.3.3",
+       "title": "The Cauchy product"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Topology of the line",
+     "lessons": [
+      {
+       "id": "m6.4.1",
+       "title": "Open and closed sets"
+      },
+      {
+       "id": "m6.4.2",
+       "title": "Compactness and Heine-Borel"
+      },
+      {
+       "id": "m6.4.3",
+       "title": "Perfect and connected sets"
+      },
+      {
+       "id": "m6.4.4",
+       "title": "The Cantor set"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Continuity",
+     "lessons": [
+      {
+       "id": "m6.5.1",
+       "title": "Functional limits"
+      },
+      {
+       "id": "m6.5.2",
+       "title": "Continuity and compactness"
+      },
+      {
+       "id": "m6.5.3",
+       "title": "Uniform continuity"
+      },
+      {
+       "id": "m6.5.4",
+       "title": "Discontinuities of monotone functions"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Differentiation",
+     "lessons": [
+      {
+       "id": "m6.6.1",
+       "title": "The derivative"
+      },
+      {
+       "id": "m6.6.2",
+       "title": "Mean value theorems"
+      },
+      {
+       "id": "m6.6.3",
+       "title": "Taylor's theorem with remainder"
+      },
+      {
+       "id": "m6.6.4",
+       "title": "A continuous nowhere-differentiable function"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "The Riemann integral",
+     "lessons": [
+      {
+       "id": "m6.7.1",
+       "title": "Darboux sums"
+      },
+      {
+       "id": "m6.7.2",
+       "title": "Integrability criteria"
+      },
+      {
+       "id": "m6.7.3",
+       "title": "The fundamental theorem proved"
+      },
+      {
+       "id": "m6.7.4",
+       "title": "Lebesgue's criterion"
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "title": "Sequences of functions",
+     "lessons": [
+      {
+       "id": "m6.8.1",
+       "title": "Pointwise and uniform convergence"
+      },
+      {
+       "id": "m6.8.2",
+       "title": "Uniform limits and continuity, derivatives and integrals"
+      },
+      {
+       "id": "m6.8.3",
+       "title": "Power series"
+      },
+      {
+       "id": "m6.8.4",
+       "title": "The Weierstrass approximation theorem"
+      },
+      {
+       "id": "m6.8.5",
+       "title": "Arzelà-Ascoli"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M7",
+   "title": "Abstract Algebra I",
+   "track": "mathematics",
+   "tier": 2,
+   "requires": [
+    "M1",
+    "M3"
+   ],
+   "parallels": [],
+   "source": "Depth of Dummit and Foote, Abstract Algebra, parts I and II; Artin, Algebra.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Groups",
+     "lessons": [
+      {
+       "id": "m7.1.1",
+       "title": "Definition and examples"
+      },
+      {
+       "id": "m7.1.2",
+       "title": "Symmetry groups"
+      },
+      {
+       "id": "m7.1.3",
+       "title": "Subgroups"
+      },
+      {
+       "id": "m7.1.4",
+       "title": "Cyclic groups"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structure of groups",
+     "lessons": [
+      {
+       "id": "m7.2.1",
+       "title": "Cosets and Lagrange's theorem"
+      },
+      {
+       "id": "m7.2.2",
+       "title": "Normal subgroups"
+      },
+      {
+       "id": "m7.2.3",
+       "title": "Quotient groups"
+      },
+      {
+       "id": "m7.2.4",
+       "title": "Homomorphisms"
+      },
+      {
+       "id": "m7.2.5",
+       "title": "The isomorphism theorems"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Permutations",
+     "lessons": [
+      {
+       "id": "m7.3.1",
+       "title": "The symmetric group"
+      },
+      {
+       "id": "m7.3.2",
+       "title": "Cycle decomposition"
+      },
+      {
+       "id": "m7.3.3",
+       "title": "The alternating group"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Group actions",
+     "lessons": [
+      {
+       "id": "m7.4.1",
+       "title": "Actions and orbits"
+      },
+      {
+       "id": "m7.4.2",
+       "title": "The orbit-stabiliser theorem"
+      },
+      {
+       "id": "m7.4.3",
+       "title": "Burnside's lemma"
+      },
+      {
+       "id": "m7.4.4",
+       "title": "The class equation"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Sylow theory",
+     "lessons": [
+      {
+       "id": "m7.5.1",
+       "title": "The Sylow theorems"
+      },
+      {
+       "id": "m7.5.2",
+       "title": "Applications"
+      },
+      {
+       "id": "m7.5.3",
+       "title": "Finitely generated abelian groups"
+      },
+      {
+       "id": "m7.5.4",
+       "title": "Simple groups, a first look"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Rings",
+     "lessons": [
+      {
+       "id": "m7.6.1",
+       "title": "Rings and examples"
+      },
+      {
+       "id": "m7.6.2",
+       "title": "Ideals and quotient rings"
+      },
+      {
+       "id": "m7.6.3",
+       "title": "Ring homomorphisms"
+      },
+      {
+       "id": "m7.6.4",
+       "title": "Integral domains and fields"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Factorisation",
+     "lessons": [
+      {
+       "id": "m7.7.1",
+       "title": "Euclidean domains"
+      },
+      {
+       "id": "m7.7.2",
+       "title": "Principal ideal domains"
+      },
+      {
+       "id": "m7.7.3",
+       "title": "Unique factorisation domains"
+      },
+      {
+       "id": "m7.7.4",
+       "title": "Polynomial rings"
+      },
+      {
+       "id": "m7.7.5",
+       "title": "Irreducibility criteria"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M8",
+   "title": "Linear Algebra II",
+   "track": "mathematics",
+   "tier": 2,
+   "requires": [
+    "M3",
+    "M7"
+   ],
+   "parallels": [],
+   "source": "Depth of Axler, Linear Algebra Done Right; Hoffman and Kunze, Linear Algebra.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Abstract vector spaces",
+     "lessons": [
+      {
+       "id": "m8.1.1",
+       "title": "Spaces over any field"
+      },
+      {
+       "id": "m8.1.2",
+       "title": "Linear maps"
+      },
+      {
+       "id": "m8.1.3",
+       "title": "Null spaces and ranges"
+      },
+      {
+       "id": "m8.1.4",
+       "title": "Quotient spaces"
+      },
+      {
+       "id": "m8.1.5",
+       "title": "Duality"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Eigenvalues abstractly",
+     "lessons": [
+      {
+       "id": "m8.2.1",
+       "title": "Polynomials over C and R"
+      },
+      {
+       "id": "m8.2.2",
+       "title": "Invariant subspaces"
+      },
+      {
+       "id": "m8.2.3",
+       "title": "Upper-triangular matrices"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Inner product spaces",
+     "lessons": [
+      {
+       "id": "m8.3.1",
+       "title": "Inner products and norms"
+      },
+      {
+       "id": "m8.3.2",
+       "title": "Orthonormal bases"
+      },
+      {
+       "id": "m8.3.3",
+       "title": "Orthogonal complements"
+      },
+      {
+       "id": "m8.3.4",
+       "title": "Minimisation problems"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Operators on inner product spaces",
+     "lessons": [
+      {
+       "id": "m8.4.1",
+       "title": "Adjoints"
+      },
+      {
+       "id": "m8.4.2",
+       "title": "The spectral theorem"
+      },
+      {
+       "id": "m8.4.3",
+       "title": "Positive operators"
+      },
+      {
+       "id": "m8.4.4",
+       "title": "Isometries"
+      },
+      {
+       "id": "m8.4.5",
+       "title": "Polar and singular value decompositions"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Canonical forms",
+     "lessons": [
+      {
+       "id": "m8.5.1",
+       "title": "Generalised eigenvectors"
+      },
+      {
+       "id": "m8.5.2",
+       "title": "Nilpotent operators"
+      },
+      {
+       "id": "m8.5.3",
+       "title": "Jordan form"
+      },
+      {
+       "id": "m8.5.4",
+       "title": "Rational canonical form"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Trace and determinant",
+     "lessons": [
+      {
+       "id": "m8.6.1",
+       "title": "Trace"
+      },
+      {
+       "id": "m8.6.2",
+       "title": "The determinant abstractly"
+      },
+      {
+       "id": "m8.6.3",
+       "title": "Determinant and volume"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Multilinear algebra",
+     "lessons": [
+      {
+       "id": "m8.7.1",
+       "title": "Bilinear and quadratic forms"
+      },
+      {
+       "id": "m8.7.2",
+       "title": "Tensor products"
+      },
+      {
+       "id": "m8.7.3",
+       "title": "Exterior powers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M9",
+   "title": "Probability",
+   "track": "mathematics",
+   "tier": 2,
+   "requires": [
+    "M2",
+    "M4"
+   ],
+   "parallels": [
+    "P10",
+    "P16"
+   ],
+   "source": "Depth of Blitzstein and Hwang, Introduction to Probability; Ross, A First Course in Probability.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Foundations",
+     "lessons": [
+      {
+       "id": "m9.1.1",
+       "title": "The axioms"
+      },
+      {
+       "id": "m9.1.2",
+       "title": "Naive probability and counting"
+      },
+      {
+       "id": "m9.1.3",
+       "title": "Conditional probability"
+      },
+      {
+       "id": "m9.1.4",
+       "title": "Bayes' rule"
+      },
+      {
+       "id": "m9.1.5",
+       "title": "Independence"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Discrete random variables",
+     "lessons": [
+      {
+       "id": "m9.2.1",
+       "title": "Distributions"
+      },
+      {
+       "id": "m9.2.2",
+       "title": "Bernoulli, binomial, geometric and Poisson"
+      },
+      {
+       "id": "m9.2.3",
+       "title": "Expectation and linearity"
+      },
+      {
+       "id": "m9.2.4",
+       "title": "Variance"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Continuous random variables",
+     "lessons": [
+      {
+       "id": "m9.3.1",
+       "title": "Densities"
+      },
+      {
+       "id": "m9.3.2",
+       "title": "Uniform, normal and exponential"
+      },
+      {
+       "id": "m9.3.3",
+       "title": "Universality of the uniform"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Moments and inequalities",
+     "lessons": [
+      {
+       "id": "m9.4.1",
+       "title": "Moment generating functions"
+      },
+      {
+       "id": "m9.4.2",
+       "title": "Markov, Chebyshev and Jensen inequalities"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Joint distributions",
+     "lessons": [
+      {
+       "id": "m9.5.1",
+       "title": "Joint, marginal and conditional distributions"
+      },
+      {
+       "id": "m9.5.2",
+       "title": "Covariance and correlation"
+      },
+      {
+       "id": "m9.5.3",
+       "title": "Transformations"
+      },
+      {
+       "id": "m9.5.4",
+       "title": "The multivariate normal"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Conditional expectation",
+     "lessons": [
+      {
+       "id": "m9.6.1",
+       "title": "Conditional expectation"
+      },
+      {
+       "id": "m9.6.2",
+       "title": "The laws of total expectation and variance"
+      },
+      {
+       "id": "m9.6.3",
+       "title": "Prediction"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Limit theorems",
+     "lessons": [
+      {
+       "id": "m9.7.1",
+       "title": "The law of large numbers"
+      },
+      {
+       "id": "m9.7.2",
+       "title": "The central limit theorem"
+      },
+      {
+       "id": "m9.7.3",
+       "title": "Applications"
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "title": "Markov chains",
+     "lessons": [
+      {
+       "id": "m9.8.1",
+       "title": "Transition matrices"
+      },
+      {
+       "id": "m9.8.2",
+       "title": "Stationary distributions"
+      },
+      {
+       "id": "m9.8.3",
+       "title": "Convergence"
+      },
+      {
+       "id": "m9.8.4",
+       "title": "Random walks"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M10",
+   "title": "Ordinary Differential Equations",
+   "track": "mathematics",
+   "tier": 2,
+   "requires": [
+    "M2",
+    "M3"
+   ],
+   "parallels": [],
+   "source": "Depth of Boyce and DiPrima, Elementary Differential Equations; Hirsch, Smale and Devaney, Differential Equations, Dynamical Systems.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "First-order equations",
+     "lessons": [
+      {
+       "id": "m10.1.1",
+       "title": "Separable equations"
+      },
+      {
+       "id": "m10.1.2",
+       "title": "Linear equations"
+      },
+      {
+       "id": "m10.1.3",
+       "title": "Exact equations"
+      },
+      {
+       "id": "m10.1.4",
+       "title": "Modelling with ODEs"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Existence and uniqueness",
+     "lessons": [
+      {
+       "id": "m10.2.1",
+       "title": "Picard iteration"
+      },
+      {
+       "id": "m10.2.2",
+       "title": "Lipschitz conditions"
+      },
+      {
+       "id": "m10.2.3",
+       "title": "Dependence on initial data"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Second-order linear equations",
+     "lessons": [
+      {
+       "id": "m10.3.1",
+       "title": "Constant coefficients"
+      },
+      {
+       "id": "m10.3.2",
+       "title": "Undetermined coefficients"
+      },
+      {
+       "id": "m10.3.3",
+       "title": "Variation of parameters"
+      },
+      {
+       "id": "m10.3.4",
+       "title": "Oscillations and resonance"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Linear systems",
+     "lessons": [
+      {
+       "id": "m10.4.1",
+       "title": "Systems as matrices"
+      },
+      {
+       "id": "m10.4.2",
+       "title": "The matrix exponential"
+      },
+      {
+       "id": "m10.4.3",
+       "title": "Phase portraits in the plane"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Nonlinear systems",
+     "lessons": [
+      {
+       "id": "m10.5.1",
+       "title": "Equilibria and linearisation"
+      },
+      {
+       "id": "m10.5.2",
+       "title": "Stability and Lyapunov functions"
+      },
+      {
+       "id": "m10.5.3",
+       "title": "Limit cycles"
+      },
+      {
+       "id": "m10.5.4",
+       "title": "The Poincaré-Bendixson theorem"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Series and transforms",
+     "lessons": [
+      {
+       "id": "m10.6.1",
+       "title": "Power series solutions"
+      },
+      {
+       "id": "m10.6.2",
+       "title": "The Laplace transform"
+      },
+      {
+       "id": "m10.6.3",
+       "title": "Sturm-Liouville problems, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M11",
+   "title": "Elementary Number Theory",
+   "track": "mathematics",
+   "tier": 2,
+   "requires": [
+    "M1",
+    "M4"
+   ],
+   "parallels": [],
+   "source": "Depth of Niven, Zuckerman and Montgomery, An Introduction to the Theory of Numbers; Ireland and Rosen, chapters 1 to 5.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Divisibility and primes",
+     "lessons": [
+      {
+       "id": "m11.1.1",
+       "title": "The fundamental theorem of arithmetic"
+      },
+      {
+       "id": "m11.1.2",
+       "title": "Infinitude of primes"
+      },
+      {
+       "id": "m11.1.3",
+       "title": "The distribution of primes, a first look"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Congruences",
+     "lessons": [
+      {
+       "id": "m11.2.1",
+       "title": "Modular arithmetic"
+      },
+      {
+       "id": "m11.2.2",
+       "title": "The Chinese remainder theorem"
+      },
+      {
+       "id": "m11.2.3",
+       "title": "Fermat's and Euler's theorems"
+      },
+      {
+       "id": "m11.2.4",
+       "title": "Wilson's theorem"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Arithmetic functions",
+     "lessons": [
+      {
+       "id": "m11.3.1",
+       "title": "Multiplicative functions"
+      },
+      {
+       "id": "m11.3.2",
+       "title": "Möbius inversion"
+      },
+      {
+       "id": "m11.3.3",
+       "title": "Perfect numbers"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Primitive roots",
+     "lessons": [
+      {
+       "id": "m11.4.1",
+       "title": "Orders"
+      },
+      {
+       "id": "m11.4.2",
+       "title": "Primitive roots"
+      },
+      {
+       "id": "m11.4.3",
+       "title": "Discrete logarithms"
+      },
+      {
+       "id": "m11.4.4",
+       "title": "RSA cryptography"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Quadratic reciprocity",
+     "lessons": [
+      {
+       "id": "m11.5.1",
+       "title": "Quadratic residues"
+      },
+      {
+       "id": "m11.5.2",
+       "title": "The Legendre symbol"
+      },
+      {
+       "id": "m11.5.3",
+       "title": "Gauss's lemma"
+      },
+      {
+       "id": "m11.5.4",
+       "title": "Proofs of quadratic reciprocity"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Diophantine equations",
+     "lessons": [
+      {
+       "id": "m11.6.1",
+       "title": "Linear Diophantine equations"
+      },
+      {
+       "id": "m11.6.2",
+       "title": "Pythagorean triples"
+      },
+      {
+       "id": "m11.6.3",
+       "title": "Pell's equation"
+      },
+      {
+       "id": "m11.6.4",
+       "title": "Sums of squares"
+      },
+      {
+       "id": "m11.6.5",
+       "title": "Continued fractions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M12",
+   "title": "Real Analysis II: Metric Spaces and Analysis in Rⁿ",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M5",
+    "M6",
+    "M8"
+   ],
+   "parallels": [],
+   "source": "Depth of Pugh, Real Mathematical Analysis; Rudin, Principles, chapters 2, 9 and 10.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Metric spaces",
+     "lessons": [
+      {
+       "id": "m12.1.1",
+       "title": "Metrics and examples"
+      },
+      {
+       "id": "m12.1.2",
+       "title": "Open and closed sets"
+      },
+      {
+       "id": "m12.1.3",
+       "title": "Convergence and completeness"
+      },
+      {
+       "id": "m12.1.4",
+       "title": "Compactness"
+      },
+      {
+       "id": "m12.1.5",
+       "title": "Connectedness"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Continuous maps",
+     "lessons": [
+      {
+       "id": "m12.2.1",
+       "title": "Continuity in metric spaces"
+      },
+      {
+       "id": "m12.2.2",
+       "title": "Uniform continuity"
+      },
+      {
+       "id": "m12.2.3",
+       "title": "The contraction mapping theorem"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Function spaces",
+     "lessons": [
+      {
+       "id": "m12.3.1",
+       "title": "C(X) and the sup norm"
+      },
+      {
+       "id": "m12.3.2",
+       "title": "The Stone-Weierstrass theorem"
+      },
+      {
+       "id": "m12.3.3",
+       "title": "The Baire category theorem"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Differentiation in Rⁿ rigorously",
+     "lessons": [
+      {
+       "id": "m12.4.1",
+       "title": "The total derivative"
+      },
+      {
+       "id": "m12.4.2",
+       "title": "Inverse and implicit function theorems proved"
+      },
+      {
+       "id": "m12.4.3",
+       "title": "The rank theorem"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Integration in Rⁿ",
+     "lessons": [
+      {
+       "id": "m12.5.1",
+       "title": "The Riemann integral in Rⁿ"
+      },
+      {
+       "id": "m12.5.2",
+       "title": "Change of variables proved"
+      },
+      {
+       "id": "m12.5.3",
+       "title": "Partitions of unity"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Differential forms",
+     "lessons": [
+      {
+       "id": "m12.6.1",
+       "title": "Forms and the exterior derivative"
+      },
+      {
+       "id": "m12.6.2",
+       "title": "Integration on chains"
+      },
+      {
+       "id": "m12.6.3",
+       "title": "The general Stokes theorem"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M13",
+   "title": "Complex Analysis",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M6",
+    "M5"
+   ],
+   "parallels": [],
+   "source": "Depth of Stein and Shakarchi, Complex Analysis; Ahlfors, Complex Analysis.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Holomorphic functions",
+     "lessons": [
+      {
+       "id": "m13.1.1",
+       "title": "The complex plane"
+      },
+      {
+       "id": "m13.1.2",
+       "title": "Holomorphic functions"
+      },
+      {
+       "id": "m13.1.3",
+       "title": "Cauchy-Riemann equations"
+      },
+      {
+       "id": "m13.1.4",
+       "title": "Power series"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Contour integration",
+     "lessons": [
+      {
+       "id": "m13.2.1",
+       "title": "Integrals along curves"
+      },
+      {
+       "id": "m13.2.2",
+       "title": "Goursat's and Cauchy's theorems"
+      },
+      {
+       "id": "m13.2.3",
+       "title": "The Cauchy integral formula"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Consequences",
+     "lessons": [
+      {
+       "id": "m13.3.1",
+       "title": "Liouville's theorem"
+      },
+      {
+       "id": "m13.3.2",
+       "title": "The fundamental theorem of algebra"
+      },
+      {
+       "id": "m13.3.3",
+       "title": "Maximum modulus"
+      },
+      {
+       "id": "m13.3.4",
+       "title": "Morera's theorem"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Singularities",
+     "lessons": [
+      {
+       "id": "m13.4.1",
+       "title": "Laurent series"
+      },
+      {
+       "id": "m13.4.2",
+       "title": "Classifying singularities"
+      },
+      {
+       "id": "m13.4.3",
+       "title": "The residue theorem"
+      },
+      {
+       "id": "m13.4.4",
+       "title": "Evaluating real integrals"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Global theory",
+     "lessons": [
+      {
+       "id": "m13.5.1",
+       "title": "The argument principle"
+      },
+      {
+       "id": "m13.5.2",
+       "title": "Rouché's theorem"
+      },
+      {
+       "id": "m13.5.3",
+       "title": "The open mapping theorem"
+      },
+      {
+       "id": "m13.5.4",
+       "title": "Logarithms and branches"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Conformal mapping",
+     "lessons": [
+      {
+       "id": "m13.6.1",
+       "title": "Conformal maps"
+      },
+      {
+       "id": "m13.6.2",
+       "title": "Möbius transformations"
+      },
+      {
+       "id": "m13.6.3",
+       "title": "The Schwarz lemma"
+      },
+      {
+       "id": "m13.6.4",
+       "title": "The Riemann mapping theorem"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Special functions",
+     "lessons": [
+      {
+       "id": "m13.7.1",
+       "title": "The Gamma function"
+      },
+      {
+       "id": "m13.7.2",
+       "title": "The zeta function"
+      },
+      {
+       "id": "m13.7.3",
+       "title": "An outline of the prime number theorem"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M14",
+   "title": "Abstract Algebra II",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M7",
+    "M8"
+   ],
+   "parallels": [],
+   "source": "Depth of Dummit and Foote, parts III and IV; Lang, Undergraduate Algebra.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Field extensions",
+     "lessons": [
+      {
+       "id": "m14.1.1",
+       "title": "Degree"
+      },
+      {
+       "id": "m14.1.2",
+       "title": "Algebraic extensions"
+      },
+      {
+       "id": "m14.1.3",
+       "title": "Splitting fields"
+      },
+      {
+       "id": "m14.1.4",
+       "title": "Ruler-and-compass constructions"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Finite fields",
+     "lessons": [
+      {
+       "id": "m14.2.1",
+       "title": "Existence and uniqueness"
+      },
+      {
+       "id": "m14.2.2",
+       "title": "Structure"
+      },
+      {
+       "id": "m14.2.3",
+       "title": "Applications to coding"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Galois theory",
+     "lessons": [
+      {
+       "id": "m14.3.1",
+       "title": "Separability"
+      },
+      {
+       "id": "m14.3.2",
+       "title": "Normal extensions"
+      },
+      {
+       "id": "m14.3.3",
+       "title": "The Galois correspondence"
+      },
+      {
+       "id": "m14.3.4",
+       "title": "The fundamental theorem"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Applications of Galois theory",
+     "lessons": [
+      {
+       "id": "m14.4.1",
+       "title": "Cyclotomic extensions"
+      },
+      {
+       "id": "m14.4.2",
+       "title": "Solvable groups"
+      },
+      {
+       "id": "m14.4.3",
+       "title": "Insolvability of the quintic"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Modules",
+     "lessons": [
+      {
+       "id": "m14.5.1",
+       "title": "Modules and homomorphisms"
+      },
+      {
+       "id": "m14.5.2",
+       "title": "Free modules"
+      },
+      {
+       "id": "m14.5.3",
+       "title": "Modules over a PID"
+      },
+      {
+       "id": "m14.5.4",
+       "title": "Canonical forms revisited"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Representations, first look",
+     "lessons": [
+      {
+       "id": "m14.6.1",
+       "title": "Representations"
+      },
+      {
+       "id": "m14.6.2",
+       "title": "Maschke's theorem"
+      },
+      {
+       "id": "m14.6.3",
+       "title": "Characters"
+      },
+      {
+       "id": "m14.6.4",
+       "title": "Character tables"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M15",
+   "title": "Topology",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M6",
+    "M1"
+   ],
+   "parallels": [],
+   "source": "Depth of Munkres, Topology.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Topological spaces",
+     "lessons": [
+      {
+       "id": "m15.1.1",
+       "title": "Topologies and bases"
+      },
+      {
+       "id": "m15.1.2",
+       "title": "Subspace, product and quotient topologies"
+      },
+      {
+       "id": "m15.1.3",
+       "title": "Closed sets and limit points"
+      },
+      {
+       "id": "m15.1.4",
+       "title": "Continuity and homeomorphisms"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Connectedness and compactness",
+     "lessons": [
+      {
+       "id": "m15.2.1",
+       "title": "Connected and path-connected spaces"
+      },
+      {
+       "id": "m15.2.2",
+       "title": "Compactness"
+      },
+      {
+       "id": "m15.2.3",
+       "title": "The Tychonoff theorem"
+      },
+      {
+       "id": "m15.2.4",
+       "title": "Local compactness and compactification"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Countability and separation",
+     "lessons": [
+      {
+       "id": "m15.3.1",
+       "title": "Countability axioms"
+      },
+      {
+       "id": "m15.3.2",
+       "title": "Separation axioms"
+      },
+      {
+       "id": "m15.3.3",
+       "title": "The Urysohn lemma"
+      },
+      {
+       "id": "m15.3.4",
+       "title": "Urysohn metrisation"
+      },
+      {
+       "id": "m15.3.5",
+       "title": "Tietze extension"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "The fundamental group",
+     "lessons": [
+      {
+       "id": "m15.4.1",
+       "title": "Homotopy"
+      },
+      {
+       "id": "m15.4.2",
+       "title": "The fundamental group"
+      },
+      {
+       "id": "m15.4.3",
+       "title": "Covering spaces"
+      },
+      {
+       "id": "m15.4.4",
+       "title": "The fundamental group of the circle"
+      },
+      {
+       "id": "m15.4.5",
+       "title": "Brouwer's fixed point theorem in the plane"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Surfaces",
+     "lessons": [
+      {
+       "id": "m15.5.1",
+       "title": "The Seifert-van Kampen theorem"
+      },
+      {
+       "id": "m15.5.2",
+       "title": "Classification of surfaces"
+      },
+      {
+       "id": "m15.5.3",
+       "title": "Euler characteristic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M16",
+   "title": "Differential Geometry of Curves and Surfaces",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M5",
+    "M8"
+   ],
+   "parallels": [],
+   "source": "Depth of do Carmo, Differential Geometry of Curves and Surfaces.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Curves",
+     "lessons": [
+      {
+       "id": "m16.1.1",
+       "title": "Parametrised curves"
+      },
+      {
+       "id": "m16.1.2",
+       "title": "Arc length"
+      },
+      {
+       "id": "m16.1.3",
+       "title": "Curvature and torsion"
+      },
+      {
+       "id": "m16.1.4",
+       "title": "The Frenet frame"
+      },
+      {
+       "id": "m16.1.5",
+       "title": "Global theorems for curves"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Regular surfaces",
+     "lessons": [
+      {
+       "id": "m16.2.1",
+       "title": "Surfaces in R³"
+      },
+      {
+       "id": "m16.2.2",
+       "title": "Tangent planes"
+      },
+      {
+       "id": "m16.2.3",
+       "title": "The first fundamental form"
+      },
+      {
+       "id": "m16.2.4",
+       "title": "Orientation"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "The Gauss map",
+     "lessons": [
+      {
+       "id": "m16.3.1",
+       "title": "The second fundamental form"
+      },
+      {
+       "id": "m16.3.2",
+       "title": "Principal, Gaussian and mean curvature"
+      },
+      {
+       "id": "m16.3.3",
+       "title": "Minimal surfaces"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Intrinsic geometry",
+     "lessons": [
+      {
+       "id": "m16.4.1",
+       "title": "Isometries"
+      },
+      {
+       "id": "m16.4.2",
+       "title": "The Theorema Egregium"
+      },
+      {
+       "id": "m16.4.3",
+       "title": "Geodesics"
+      },
+      {
+       "id": "m16.4.4",
+       "title": "The covariant derivative"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Global theory",
+     "lessons": [
+      {
+       "id": "m16.5.1",
+       "title": "The Gauss-Bonnet theorem"
+      },
+      {
+       "id": "m16.5.2",
+       "title": "Applications of Gauss-Bonnet"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M17",
+   "title": "Partial Differential Equations",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M5",
+    "M10"
+   ],
+   "parallels": [],
+   "source": "Depth of Strauss, Partial Differential Equations: An Introduction.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Origins",
+     "lessons": [
+      {
+       "id": "m17.1.1",
+       "title": "What PDEs model"
+      },
+      {
+       "id": "m17.1.2",
+       "title": "Classification"
+      },
+      {
+       "id": "m17.1.3",
+       "title": "Well-posedness"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Waves",
+     "lessons": [
+      {
+       "id": "m17.2.1",
+       "title": "The wave equation"
+      },
+      {
+       "id": "m17.2.2",
+       "title": "D'Alembert's formula"
+      },
+      {
+       "id": "m17.2.3",
+       "title": "Energy methods"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Diffusion",
+     "lessons": [
+      {
+       "id": "m17.3.1",
+       "title": "The heat equation"
+      },
+      {
+       "id": "m17.3.2",
+       "title": "The maximum principle"
+      },
+      {
+       "id": "m17.3.3",
+       "title": "The fundamental solution"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fourier methods",
+     "lessons": [
+      {
+       "id": "m17.4.1",
+       "title": "Fourier series"
+      },
+      {
+       "id": "m17.4.2",
+       "title": "Convergence of Fourier series"
+      },
+      {
+       "id": "m17.4.3",
+       "title": "Separation of variables"
+      },
+      {
+       "id": "m17.4.4",
+       "title": "Boundary value problems"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Laplace's equation",
+     "lessons": [
+      {
+       "id": "m17.5.1",
+       "title": "Harmonic functions"
+      },
+      {
+       "id": "m17.5.2",
+       "title": "The mean value property"
+      },
+      {
+       "id": "m17.5.3",
+       "title": "Green's functions"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Transforms",
+     "lessons": [
+      {
+       "id": "m17.6.1",
+       "title": "The Fourier transform"
+      },
+      {
+       "id": "m17.6.2",
+       "title": "Transform methods for PDEs"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M18",
+   "title": "Mathematical Statistics",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M9",
+    "M5"
+   ],
+   "parallels": [
+    "P10",
+    "P16"
+   ],
+   "source": "Depth of Casella and Berger, Statistical Inference; Wasserman, All of Statistics.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Sampling",
+     "lessons": [
+      {
+       "id": "m18.1.1",
+       "title": "Random samples"
+      },
+      {
+       "id": "m18.1.2",
+       "title": "Sampling distributions"
+      },
+      {
+       "id": "m18.1.3",
+       "title": "Order statistics"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Estimation",
+     "lessons": [
+      {
+       "id": "m18.2.1",
+       "title": "Method of moments"
+      },
+      {
+       "id": "m18.2.2",
+       "title": "Maximum likelihood"
+      },
+      {
+       "id": "m18.2.3",
+       "title": "Bayesian estimators"
+      },
+      {
+       "id": "m18.2.4",
+       "title": "Bias, variance and mean squared error"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Efficiency",
+     "lessons": [
+      {
+       "id": "m18.3.1",
+       "title": "Sufficiency"
+      },
+      {
+       "id": "m18.3.2",
+       "title": "The Rao-Blackwell theorem"
+      },
+      {
+       "id": "m18.3.3",
+       "title": "The Cramér-Rao bound"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Testing",
+     "lessons": [
+      {
+       "id": "m18.4.1",
+       "title": "Hypothesis tests"
+      },
+      {
+       "id": "m18.4.2",
+       "title": "The Neyman-Pearson lemma"
+      },
+      {
+       "id": "m18.4.3",
+       "title": "Likelihood ratio tests"
+      },
+      {
+       "id": "m18.4.4",
+       "title": "P-values and their misuse"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Intervals",
+     "lessons": [
+      {
+       "id": "m18.5.1",
+       "title": "Confidence intervals"
+      },
+      {
+       "id": "m18.5.2",
+       "title": "The bootstrap"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Linear models",
+     "lessons": [
+      {
+       "id": "m18.6.1",
+       "title": "Regression"
+      },
+      {
+       "id": "m18.6.2",
+       "title": "Least squares as projection"
+      },
+      {
+       "id": "m18.6.3",
+       "title": "Inference for regression"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M19",
+   "title": "Numerical Analysis",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M6",
+    "M8"
+   ],
+   "parallels": [],
+   "source": "Depth of Trefethen and Bau, Numerical Linear Algebra; Burden and Faires, Numerical Analysis.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Error",
+     "lessons": [
+      {
+       "id": "m19.1.1",
+       "title": "Floating point arithmetic"
+      },
+      {
+       "id": "m19.1.2",
+       "title": "Conditioning and stability"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Root finding",
+     "lessons": [
+      {
+       "id": "m19.2.1",
+       "title": "Bisection"
+      },
+      {
+       "id": "m19.2.2",
+       "title": "Newton's method"
+      },
+      {
+       "id": "m19.2.3",
+       "title": "Orders of convergence"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Approximation",
+     "lessons": [
+      {
+       "id": "m19.3.1",
+       "title": "Polynomial interpolation"
+      },
+      {
+       "id": "m19.3.2",
+       "title": "Splines"
+      },
+      {
+       "id": "m19.3.3",
+       "title": "Chebyshev approximation"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Numerical calculus",
+     "lessons": [
+      {
+       "id": "m19.4.1",
+       "title": "Numerical differentiation"
+      },
+      {
+       "id": "m19.4.2",
+       "title": "Quadrature"
+      },
+      {
+       "id": "m19.4.3",
+       "title": "Gaussian quadrature"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Numerical linear algebra",
+     "lessons": [
+      {
+       "id": "m19.5.1",
+       "title": "LU with pivoting"
+      },
+      {
+       "id": "m19.5.2",
+       "title": "QR"
+      },
+      {
+       "id": "m19.5.3",
+       "title": "Eigenvalue algorithms"
+      },
+      {
+       "id": "m19.5.4",
+       "title": "Iterative methods"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Numerical ODEs",
+     "lessons": [
+      {
+       "id": "m19.6.1",
+       "title": "Euler and Runge-Kutta methods"
+      },
+      {
+       "id": "m19.6.2",
+       "title": "Stiffness"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M20",
+   "title": "Mathematical Logic and Set Theory",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M1",
+    "M7"
+   ],
+   "parallels": [
+    "P17",
+    "P22"
+   ],
+   "source": "Depth of Enderton, A Mathematical Introduction to Logic and Elements of Set Theory.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Sentential logic formally",
+     "lessons": [
+      {
+       "id": "m20.1.1",
+       "title": "Syntax"
+      },
+      {
+       "id": "m20.1.2",
+       "title": "Semantics"
+      },
+      {
+       "id": "m20.1.3",
+       "title": "Compactness"
+      },
+      {
+       "id": "m20.1.4",
+       "title": "Completeness for sentential logic"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "First-order logic",
+     "lessons": [
+      {
+       "id": "m20.2.1",
+       "title": "Languages and structures"
+      },
+      {
+       "id": "m20.2.2",
+       "title": "Truth and models"
+      },
+      {
+       "id": "m20.2.3",
+       "title": "Deduction"
+      },
+      {
+       "id": "m20.2.4",
+       "title": "Soundness"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Completeness",
+     "lessons": [
+      {
+       "id": "m20.3.1",
+       "title": "The Henkin construction"
+      },
+      {
+       "id": "m20.3.2",
+       "title": "The completeness theorem"
+      },
+      {
+       "id": "m20.3.3",
+       "title": "The compactness theorem"
+      },
+      {
+       "id": "m20.3.4",
+       "title": "Löwenheim-Skolem theorems"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Incompleteness",
+     "lessons": [
+      {
+       "id": "m20.4.1",
+       "title": "Arithmetisation of syntax"
+      },
+      {
+       "id": "m20.4.2",
+       "title": "Representability"
+      },
+      {
+       "id": "m20.4.3",
+       "title": "Gödel's incompleteness theorems"
+      },
+      {
+       "id": "m20.4.4",
+       "title": "Tarski's undefinability of truth"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Computability",
+     "lessons": [
+      {
+       "id": "m20.5.1",
+       "title": "Turing machines"
+      },
+      {
+       "id": "m20.5.2",
+       "title": "Recursive functions"
+      },
+      {
+       "id": "m20.5.3",
+       "title": "The halting problem"
+      },
+      {
+       "id": "m20.5.4",
+       "title": "The Church-Turing thesis"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Axiomatic set theory",
+     "lessons": [
+      {
+       "id": "m20.6.1",
+       "title": "The ZFC axioms"
+      },
+      {
+       "id": "m20.6.2",
+       "title": "Ordinals"
+      },
+      {
+       "id": "m20.6.3",
+       "title": "Cardinals"
+      },
+      {
+       "id": "m20.6.4",
+       "title": "Transfinite induction"
+      },
+      {
+       "id": "m20.6.5",
+       "title": "The axiom of choice and Zorn's lemma"
+      },
+      {
+       "id": "m20.6.6",
+       "title": "The continuum hypothesis, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M21",
+   "title": "Combinatorics and Graph Theory",
+   "track": "mathematics",
+   "tier": 3,
+   "requires": [
+    "M4",
+    "M7"
+   ],
+   "parallels": [],
+   "source": "Depth of Diestel, Graph Theory; Stanley, Enumerative Combinatorics Vol. 1, early chapters.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Matchings",
+     "lessons": [
+      {
+       "id": "m21.1.1",
+       "title": "Hall's theorem"
+      },
+      {
+       "id": "m21.1.2",
+       "title": "König's theorem"
+      },
+      {
+       "id": "m21.1.3",
+       "title": "Tutte's theorem"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Connectivity and flows",
+     "lessons": [
+      {
+       "id": "m21.2.1",
+       "title": "Menger's theorem"
+      },
+      {
+       "id": "m21.2.2",
+       "title": "Max-flow min-cut"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Colouring",
+     "lessons": [
+      {
+       "id": "m21.3.1",
+       "title": "Brooks' theorem"
+      },
+      {
+       "id": "m21.3.2",
+       "title": "The four colour theorem in outline"
+      },
+      {
+       "id": "m21.3.3",
+       "title": "Chromatic polynomials"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Extremal and Ramsey theory",
+     "lessons": [
+      {
+       "id": "m21.4.1",
+       "title": "Turán's theorem"
+      },
+      {
+       "id": "m21.4.2",
+       "title": "Ramsey's theorem"
+      },
+      {
+       "id": "m21.4.3",
+       "title": "Probabilistic lower bounds"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enumeration",
+     "lessons": [
+      {
+       "id": "m21.5.1",
+       "title": "Integer partitions"
+      },
+      {
+       "id": "m21.5.2",
+       "title": "Pólya counting"
+      },
+      {
+       "id": "m21.5.3",
+       "title": "Exponential generating functions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M22",
+   "title": "Measure and Integration",
+   "track": "mathematics",
+   "tier": 4,
+   "requires": [
+    "M12"
+   ],
+   "parallels": [],
+   "source": "Depth of Folland, Real Analysis, chapters 1 to 3 and 6; Stein and Shakarchi, Real Analysis.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Measures",
+     "lessons": [
+      {
+       "id": "m22.1.1",
+       "title": "Sigma-algebras"
+      },
+      {
+       "id": "m22.1.2",
+       "title": "Measures"
+      },
+      {
+       "id": "m22.1.3",
+       "title": "Outer measure and Carathéodory's theorem"
+      },
+      {
+       "id": "m22.1.4",
+       "title": "Lebesgue measure"
+      },
+      {
+       "id": "m22.1.5",
+       "title": "Non-measurable sets"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Integration",
+     "lessons": [
+      {
+       "id": "m22.2.1",
+       "title": "Measurable functions"
+      },
+      {
+       "id": "m22.2.2",
+       "title": "The Lebesgue integral"
+      },
+      {
+       "id": "m22.2.3",
+       "title": "Monotone and dominated convergence"
+      },
+      {
+       "id": "m22.2.4",
+       "title": "Fatou's lemma"
+      },
+      {
+       "id": "m22.2.5",
+       "title": "Comparison with Riemann"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Product measures",
+     "lessons": [
+      {
+       "id": "m22.3.1",
+       "title": "Product measures"
+      },
+      {
+       "id": "m22.3.2",
+       "title": "Fubini-Tonelli"
+      },
+      {
+       "id": "m22.3.3",
+       "title": "Lebesgue measure in Rⁿ"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Differentiation",
+     "lessons": [
+      {
+       "id": "m22.4.1",
+       "title": "Signed measures"
+      },
+      {
+       "id": "m22.4.2",
+       "title": "The Radon-Nikodym theorem"
+      },
+      {
+       "id": "m22.4.3",
+       "title": "The Lebesgue differentiation theorem"
+      },
+      {
+       "id": "m22.4.4",
+       "title": "Functions of bounded variation"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Lᵖ spaces",
+     "lessons": [
+      {
+       "id": "m22.5.1",
+       "title": "Hölder and Minkowski inequalities"
+      },
+      {
+       "id": "m22.5.2",
+       "title": "Completeness"
+      },
+      {
+       "id": "m22.5.3",
+       "title": "Duality"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M23",
+   "title": "Functional Analysis",
+   "track": "mathematics",
+   "tier": 4,
+   "requires": [
+    "M22",
+    "M8"
+   ],
+   "parallels": [],
+   "source": "Depth of Kreyszig, Introductory Functional Analysis; Brezis, Functional Analysis, Sobolev Spaces and PDE.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Banach spaces",
+     "lessons": [
+      {
+       "id": "m23.1.1",
+       "title": "Norms"
+      },
+      {
+       "id": "m23.1.2",
+       "title": "Bounded linear operators"
+      },
+      {
+       "id": "m23.1.3",
+       "title": "Finite versus infinite dimensions"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hilbert spaces",
+     "lessons": [
+      {
+       "id": "m23.2.1",
+       "title": "The projection theorem"
+      },
+      {
+       "id": "m23.2.2",
+       "title": "Riesz representation"
+      },
+      {
+       "id": "m23.2.3",
+       "title": "Orthonormal bases"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "The four pillars",
+     "lessons": [
+      {
+       "id": "m23.3.1",
+       "title": "Hahn-Banach"
+      },
+      {
+       "id": "m23.3.2",
+       "title": "Uniform boundedness"
+      },
+      {
+       "id": "m23.3.3",
+       "title": "The open mapping theorem"
+      },
+      {
+       "id": "m23.3.4",
+       "title": "The closed graph theorem"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Weak topologies",
+     "lessons": [
+      {
+       "id": "m23.4.1",
+       "title": "Weak and weak-star convergence"
+      },
+      {
+       "id": "m23.4.2",
+       "title": "Banach-Alaoglu"
+      },
+      {
+       "id": "m23.4.3",
+       "title": "Reflexivity"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Spectral theory",
+     "lessons": [
+      {
+       "id": "m23.5.1",
+       "title": "The spectrum"
+      },
+      {
+       "id": "m23.5.2",
+       "title": "Compact operators"
+      },
+      {
+       "id": "m23.5.3",
+       "title": "The spectral theorem for compact self-adjoint operators"
+      },
+      {
+       "id": "m23.5.4",
+       "title": "The Fredholm alternative"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Beyond bounded operators",
+     "lessons": [
+      {
+       "id": "m23.6.1",
+       "title": "Unbounded operators"
+      },
+      {
+       "id": "m23.6.2",
+       "title": "Distributions"
+      },
+      {
+       "id": "m23.6.3",
+       "title": "Sobolev spaces, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M24",
+   "title": "Graduate Algebra",
+   "track": "mathematics",
+   "tier": 4,
+   "requires": [
+    "M14"
+   ],
+   "parallels": [],
+   "source": "Depth of Aluffi, Algebra: Chapter 0; Atiyah and Macdonald, Introduction to Commutative Algebra.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Categories",
+     "lessons": [
+      {
+       "id": "m24.1.1",
+       "title": "Categories and functors"
+      },
+      {
+       "id": "m24.1.2",
+       "title": "Universal properties"
+      },
+      {
+       "id": "m24.1.3",
+       "title": "Natural transformations"
+      },
+      {
+       "id": "m24.1.4",
+       "title": "Adjunctions"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Commutative algebra",
+     "lessons": [
+      {
+       "id": "m24.2.1",
+       "title": "Prime and maximal ideals"
+      },
+      {
+       "id": "m24.2.2",
+       "title": "Localisation"
+      },
+      {
+       "id": "m24.2.3",
+       "title": "Noetherian rings and the Hilbert basis theorem"
+      },
+      {
+       "id": "m24.2.4",
+       "title": "The Nullstellensatz"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Integral extensions",
+     "lessons": [
+      {
+       "id": "m24.3.1",
+       "title": "Integral dependence"
+      },
+      {
+       "id": "m24.3.2",
+       "title": "Going up and going down"
+      },
+      {
+       "id": "m24.3.3",
+       "title": "Dedekind domains"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Homological algebra",
+     "lessons": [
+      {
+       "id": "m24.4.1",
+       "title": "Exact sequences"
+      },
+      {
+       "id": "m24.4.2",
+       "title": "Projective and injective modules"
+      },
+      {
+       "id": "m24.4.3",
+       "title": "Hom and tensor"
+      },
+      {
+       "id": "m24.4.4",
+       "title": "Ext and Tor"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Fields further",
+     "lessons": [
+      {
+       "id": "m24.5.1",
+       "title": "Transcendence degree"
+      },
+      {
+       "id": "m24.5.2",
+       "title": "Infinite Galois theory"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M25",
+   "title": "Algebraic Topology",
+   "track": "mathematics",
+   "tier": 4,
+   "requires": [
+    "M15",
+    "M14"
+   ],
+   "parallels": [],
+   "source": "Depth of Hatcher, Algebraic Topology.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Homotopy revisited",
+     "lessons": [
+      {
+       "id": "m25.1.1",
+       "title": "CW complexes"
+      },
+      {
+       "id": "m25.1.2",
+       "title": "Homotopy equivalence"
+      },
+      {
+       "id": "m25.1.3",
+       "title": "Van Kampen in full"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Covering spaces",
+     "lessons": [
+      {
+       "id": "m25.2.1",
+       "title": "Lifting criteria"
+      },
+      {
+       "id": "m25.2.2",
+       "title": "Classification of covers"
+      },
+      {
+       "id": "m25.2.3",
+       "title": "Deck transformations"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Homology",
+     "lessons": [
+      {
+       "id": "m25.3.1",
+       "title": "Simplicial and singular homology"
+      },
+      {
+       "id": "m25.3.2",
+       "title": "Exact sequences and excision"
+      },
+      {
+       "id": "m25.3.3",
+       "title": "Mayer-Vietoris"
+      },
+      {
+       "id": "m25.3.4",
+       "title": "Cellular homology"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Applications",
+     "lessons": [
+      {
+       "id": "m25.4.1",
+       "title": "Degree"
+      },
+      {
+       "id": "m25.4.2",
+       "title": "Brouwer and Borsuk-Ulam"
+      },
+      {
+       "id": "m25.4.3",
+       "title": "The Lefschetz fixed point theorem"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Cohomology",
+     "lessons": [
+      {
+       "id": "m25.5.1",
+       "title": "Cohomology groups"
+      },
+      {
+       "id": "m25.5.2",
+       "title": "Universal coefficients"
+      },
+      {
+       "id": "m25.5.3",
+       "title": "Cup product"
+      },
+      {
+       "id": "m25.5.4",
+       "title": "Poincaré duality"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Higher homotopy, first look",
+     "lessons": [
+      {
+       "id": "m25.6.1",
+       "title": "Higher homotopy groups"
+      },
+      {
+       "id": "m25.6.2",
+       "title": "Fibrations"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M26",
+   "title": "Smooth Manifolds",
+   "track": "mathematics",
+   "tier": 4,
+   "requires": [
+    "M12",
+    "M15"
+   ],
+   "parallels": [
+    "P32"
+   ],
+   "source": "Depth of Lee, Introduction to Smooth Manifolds.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Manifolds",
+     "lessons": [
+      {
+       "id": "m26.1.1",
+       "title": "Topological and smooth manifolds"
+      },
+      {
+       "id": "m26.1.2",
+       "title": "Smooth maps"
+      },
+      {
+       "id": "m26.1.3",
+       "title": "Partitions of unity"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tangent spaces",
+     "lessons": [
+      {
+       "id": "m26.2.1",
+       "title": "Tangent vectors"
+      },
+      {
+       "id": "m26.2.2",
+       "title": "Differentials"
+      },
+      {
+       "id": "m26.2.3",
+       "title": "The tangent bundle"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Submanifolds",
+     "lessons": [
+      {
+       "id": "m26.3.1",
+       "title": "Immersions and submersions"
+      },
+      {
+       "id": "m26.3.2",
+       "title": "Embedded submanifolds"
+      },
+      {
+       "id": "m26.3.3",
+       "title": "Sard's theorem"
+      },
+      {
+       "id": "m26.3.4",
+       "title": "Whitney embedding"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vector fields and flows",
+     "lessons": [
+      {
+       "id": "m26.4.1",
+       "title": "Vector fields"
+      },
+      {
+       "id": "m26.4.2",
+       "title": "Integral curves and flows"
+      },
+      {
+       "id": "m26.4.3",
+       "title": "Lie brackets"
+      },
+      {
+       "id": "m26.4.4",
+       "title": "The Frobenius theorem"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Tensors and forms",
+     "lessons": [
+      {
+       "id": "m26.5.1",
+       "title": "Tensors"
+      },
+      {
+       "id": "m26.5.2",
+       "title": "Differential forms"
+      },
+      {
+       "id": "m26.5.3",
+       "title": "The exterior derivative"
+      },
+      {
+       "id": "m26.5.4",
+       "title": "Orientation"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Integration",
+     "lessons": [
+      {
+       "id": "m26.6.1",
+       "title": "Integration on manifolds"
+      },
+      {
+       "id": "m26.6.2",
+       "title": "Stokes' theorem"
+      },
+      {
+       "id": "m26.6.3",
+       "title": "De Rham cohomology"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Lie groups",
+     "lessons": [
+      {
+       "id": "m26.7.1",
+       "title": "Lie groups"
+      },
+      {
+       "id": "m26.7.2",
+       "title": "Lie algebras"
+      },
+      {
+       "id": "m26.7.3",
+       "title": "The exponential map"
+      },
+      {
+       "id": "m26.7.4",
+       "title": "Group actions on manifolds"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M27",
+   "title": "Probability Theory",
+   "track": "mathematics",
+   "tier": 4,
+   "requires": [
+    "M22",
+    "M9"
+   ],
+   "parallels": [
+    "P28"
+   ],
+   "source": "Depth of Durrett, Probability: Theory and Examples; Williams, Probability with Martingales.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Measure-theoretic foundations",
+     "lessons": [
+      {
+       "id": "m27.1.1",
+       "title": "Probability spaces"
+      },
+      {
+       "id": "m27.1.2",
+       "title": "Random variables"
+      },
+      {
+       "id": "m27.1.3",
+       "title": "Independence"
+      },
+      {
+       "id": "m27.1.4",
+       "title": "Borel-Cantelli lemmas"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Laws of large numbers",
+     "lessons": [
+      {
+       "id": "m27.2.1",
+       "title": "Weak and strong laws"
+      },
+      {
+       "id": "m27.2.2",
+       "title": "The ergodic theorem, a first look"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Central limit theorems",
+     "lessons": [
+      {
+       "id": "m27.3.1",
+       "title": "Characteristic functions"
+      },
+      {
+       "id": "m27.3.2",
+       "title": "The Lindeberg-Feller theorem"
+      },
+      {
+       "id": "m27.3.3",
+       "title": "Poisson convergence"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Martingales",
+     "lessons": [
+      {
+       "id": "m27.4.1",
+       "title": "Conditional expectation via measure"
+      },
+      {
+       "id": "m27.4.2",
+       "title": "Martingales"
+      },
+      {
+       "id": "m27.4.3",
+       "title": "Optional stopping"
+      },
+      {
+       "id": "m27.4.4",
+       "title": "Martingale convergence"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Brownian motion",
+     "lessons": [
+      {
+       "id": "m27.5.1",
+       "title": "Construction"
+      },
+      {
+       "id": "m27.5.2",
+       "title": "Path properties"
+      },
+      {
+       "id": "m27.5.3",
+       "title": "Stochastic integration, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M28",
+   "title": "Complex Analysis II and Riemann Surfaces",
+   "track": "mathematics",
+   "tier": 4,
+   "requires": [
+    "M13",
+    "M15"
+   ],
+   "parallels": [],
+   "source": "Depth of Ahlfors, later chapters; Forster, Lectures on Riemann Surfaces.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Harmonic functions",
+     "lessons": [
+      {
+       "id": "m28.1.1",
+       "title": "The Poisson integral"
+      },
+      {
+       "id": "m28.1.2",
+       "title": "The Dirichlet problem"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Entire and meromorphic functions",
+     "lessons": [
+      {
+       "id": "m28.2.1",
+       "title": "Weierstrass products"
+      },
+      {
+       "id": "m28.2.2",
+       "title": "Mittag-Leffler"
+      },
+      {
+       "id": "m28.2.3",
+       "title": "Hadamard factorisation"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Elliptic functions",
+     "lessons": [
+      {
+       "id": "m28.3.1",
+       "title": "Lattices and periodicity"
+      },
+      {
+       "id": "m28.3.2",
+       "title": "The Weierstrass p-function"
+      },
+      {
+       "id": "m28.3.3",
+       "title": "The modular group"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Riemann surfaces",
+     "lessons": [
+      {
+       "id": "m28.4.1",
+       "title": "Definitions"
+      },
+      {
+       "id": "m28.4.2",
+       "title": "Analytic continuation"
+      },
+      {
+       "id": "m28.4.3",
+       "title": "Covering surfaces"
+      },
+      {
+       "id": "m28.4.4",
+       "title": "Compact surfaces and Riemann-Roch in outline"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M29",
+   "title": "Algebraic Number Theory",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M24",
+    "M11"
+   ],
+   "parallels": [],
+   "source": "Depth of Marcus, Number Fields; Neukirch, Algebraic Number Theory.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Number fields",
+     "lessons": [
+      {
+       "id": "m29.1.1",
+       "title": "Rings of integers"
+      },
+      {
+       "id": "m29.1.2",
+       "title": "Norm, trace and discriminant"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ideals",
+     "lessons": [
+      {
+       "id": "m29.2.1",
+       "title": "Unique factorisation of ideals"
+      },
+      {
+       "id": "m29.2.2",
+       "title": "Splitting of primes"
+      },
+      {
+       "id": "m29.2.3",
+       "title": "Ramification"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Finiteness theorems",
+     "lessons": [
+      {
+       "id": "m29.3.1",
+       "title": "Minkowski's geometry of numbers"
+      },
+      {
+       "id": "m29.3.2",
+       "title": "Finiteness of the class group"
+      },
+      {
+       "id": "m29.3.3",
+       "title": "Dirichlet's unit theorem"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Local fields",
+     "lessons": [
+      {
+       "id": "m29.4.1",
+       "title": "P-adic numbers"
+      },
+      {
+       "id": "m29.4.2",
+       "title": "Valuations and completions"
+      },
+      {
+       "id": "m29.4.3",
+       "title": "Hensel's lemma"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Towards class field theory",
+     "lessons": [
+      {
+       "id": "m29.5.1",
+       "title": "Dedekind zeta functions"
+      },
+      {
+       "id": "m29.5.2",
+       "title": "Kronecker-Weber theorem"
+      },
+      {
+       "id": "m29.5.3",
+       "title": "Class field theory in outline"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M30",
+   "title": "Algebraic Geometry",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M24",
+    "M25"
+   ],
+   "parallels": [],
+   "source": "Depth of Vakil, The Rising Sea; Hartshorne, Algebraic Geometry, chapters I and II.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Varieties",
+     "lessons": [
+      {
+       "id": "m30.1.1",
+       "title": "Affine varieties"
+      },
+      {
+       "id": "m30.1.2",
+       "title": "Projective varieties"
+      },
+      {
+       "id": "m30.1.3",
+       "title": "Morphisms"
+      },
+      {
+       "id": "m30.1.4",
+       "title": "Dimension"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Curves classically",
+     "lessons": [
+      {
+       "id": "m30.2.1",
+       "title": "Plane curves"
+      },
+      {
+       "id": "m30.2.2",
+       "title": "Bézout's theorem"
+      },
+      {
+       "id": "m30.2.3",
+       "title": "Elliptic curves and the group law"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sheaves",
+     "lessons": [
+      {
+       "id": "m30.3.1",
+       "title": "Presheaves and sheaves"
+      },
+      {
+       "id": "m30.3.2",
+       "title": "Stalks"
+      },
+      {
+       "id": "m30.3.3",
+       "title": "Sheafification"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Schemes",
+     "lessons": [
+      {
+       "id": "m30.4.1",
+       "title": "The spectrum of a ring"
+      },
+      {
+       "id": "m30.4.2",
+       "title": "Schemes"
+      },
+      {
+       "id": "m30.4.3",
+       "title": "Morphisms of schemes"
+      },
+      {
+       "id": "m30.4.4",
+       "title": "Fibre products"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Properties of schemes",
+     "lessons": [
+      {
+       "id": "m30.5.1",
+       "title": "Separated and proper morphisms"
+      },
+      {
+       "id": "m30.5.2",
+       "title": "Quasi-coherent sheaves"
+      },
+      {
+       "id": "m30.5.3",
+       "title": "Divisors and line bundles"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Cohomology",
+     "lessons": [
+      {
+       "id": "m30.6.1",
+       "title": "Sheaf cohomology"
+      },
+      {
+       "id": "m30.6.2",
+       "title": "Čech cohomology"
+      },
+      {
+       "id": "m30.6.3",
+       "title": "Riemann-Roch for curves"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M31",
+   "title": "Riemannian Geometry",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M26",
+    "M16"
+   ],
+   "parallels": [
+    "P32"
+   ],
+   "source": "Depth of do Carmo, Riemannian Geometry; Lee, Introduction to Riemannian Manifolds.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Metrics",
+     "lessons": [
+      {
+       "id": "m31.1.1",
+       "title": "Riemannian metrics"
+      },
+      {
+       "id": "m31.1.2",
+       "title": "The Levi-Civita connection"
+      },
+      {
+       "id": "m31.1.3",
+       "title": "Parallel transport"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Geodesics",
+     "lessons": [
+      {
+       "id": "m31.2.1",
+       "title": "The exponential map"
+      },
+      {
+       "id": "m31.2.2",
+       "title": "Minimising properties"
+      },
+      {
+       "id": "m31.2.3",
+       "title": "Hopf-Rinow theorem"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Curvature",
+     "lessons": [
+      {
+       "id": "m31.3.1",
+       "title": "The curvature tensor"
+      },
+      {
+       "id": "m31.3.2",
+       "title": "Sectional, Ricci and scalar curvature"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jacobi fields",
+     "lessons": [
+      {
+       "id": "m31.4.1",
+       "title": "Jacobi fields"
+      },
+      {
+       "id": "m31.4.2",
+       "title": "Conjugate points"
+      },
+      {
+       "id": "m31.4.3",
+       "title": "Second variation"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Comparison theorems",
+     "lessons": [
+      {
+       "id": "m31.5.1",
+       "title": "Rauch comparison"
+      },
+      {
+       "id": "m31.5.2",
+       "title": "Bonnet-Myers"
+      },
+      {
+       "id": "m31.5.3",
+       "title": "Cartan-Hadamard"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M32",
+   "title": "Lie Groups and Representation Theory",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M26",
+    "M14"
+   ],
+   "parallels": [],
+   "source": "Depth of Hall, Lie Groups, Lie Algebras, and Representations; Fulton and Harris, Representation Theory.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Matrix Lie groups",
+     "lessons": [
+      {
+       "id": "m32.1.1",
+       "title": "Examples"
+      },
+      {
+       "id": "m32.1.2",
+       "title": "The exponential map"
+      },
+      {
+       "id": "m32.1.3",
+       "title": "The Lie algebra of a group"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Representations of finite groups",
+     "lessons": [
+      {
+       "id": "m32.2.1",
+       "title": "Characters in depth"
+      },
+      {
+       "id": "m32.2.2",
+       "title": "Induced representations"
+      },
+      {
+       "id": "m32.2.3",
+       "title": "The symmetric group"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lie algebras",
+     "lessons": [
+      {
+       "id": "m32.3.1",
+       "title": "Solvable and nilpotent algebras"
+      },
+      {
+       "id": "m32.3.2",
+       "title": "Semisimple algebras"
+      },
+      {
+       "id": "m32.3.3",
+       "title": "The Killing form"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Structure theory",
+     "lessons": [
+      {
+       "id": "m32.4.1",
+       "title": "Cartan subalgebras"
+      },
+      {
+       "id": "m32.4.2",
+       "title": "Root systems"
+      },
+      {
+       "id": "m32.4.3",
+       "title": "Dynkin diagrams"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Representations of Lie algebras",
+     "lessons": [
+      {
+       "id": "m32.5.1",
+       "title": "Sl(2) in full"
+      },
+      {
+       "id": "m32.5.2",
+       "title": "Highest weight theory"
+      },
+      {
+       "id": "m32.5.3",
+       "title": "The Weyl character formula"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M33",
+   "title": "Graduate PDE",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M23",
+    "M17"
+   ],
+   "parallels": [],
+   "source": "Depth of Evans, Partial Differential Equations.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Classical theory revisited",
+     "lessons": [
+      {
+       "id": "m33.1.1",
+       "title": "Transport, Laplace, heat and wave equations in full"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nonlinear first order",
+     "lessons": [
+      {
+       "id": "m33.2.1",
+       "title": "Characteristics"
+      },
+      {
+       "id": "m33.2.2",
+       "title": "Hamilton-Jacobi equations"
+      },
+      {
+       "id": "m33.2.3",
+       "title": "Conservation laws"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sobolev spaces",
+     "lessons": [
+      {
+       "id": "m33.3.1",
+       "title": "Weak derivatives"
+      },
+      {
+       "id": "m33.3.2",
+       "title": "Approximation"
+      },
+      {
+       "id": "m33.3.3",
+       "title": "Extensions and traces"
+      },
+      {
+       "id": "m33.3.4",
+       "title": "Sobolev inequalities"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Elliptic equations",
+     "lessons": [
+      {
+       "id": "m33.4.1",
+       "title": "Weak solutions"
+      },
+      {
+       "id": "m33.4.2",
+       "title": "Lax-Milgram"
+      },
+      {
+       "id": "m33.4.3",
+       "title": "Regularity"
+      },
+      {
+       "id": "m33.4.4",
+       "title": "Maximum principles"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Evolution equations",
+     "lessons": [
+      {
+       "id": "m33.5.1",
+       "title": "Parabolic equations"
+      },
+      {
+       "id": "m33.5.2",
+       "title": "Hyperbolic equations"
+      },
+      {
+       "id": "m33.5.3",
+       "title": "Semigroup methods"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Calculus of variations",
+     "lessons": [
+      {
+       "id": "m33.6.1",
+       "title": "The direct method"
+      },
+      {
+       "id": "m33.6.2",
+       "title": "Euler-Lagrange equations"
+      },
+      {
+       "id": "m33.6.3",
+       "title": "Constraints"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M34",
+   "title": "Harmonic Analysis",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M22",
+    "M23"
+   ],
+   "parallels": [],
+   "source": "Depth of Stein and Shakarchi, Fourier Analysis and Functional Analysis; Grafakos, Classical Fourier Analysis.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Fourier series in depth",
+     "lessons": [
+      {
+       "id": "m34.1.1",
+       "title": "Convergence"
+      },
+      {
+       "id": "m34.1.2",
+       "title": "Summability kernels"
+      },
+      {
+       "id": "m34.1.3",
+       "title": "L² theory"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "The Fourier transform",
+     "lessons": [
+      {
+       "id": "m34.2.1",
+       "title": "Schwartz space"
+      },
+      {
+       "id": "m34.2.2",
+       "title": "Plancherel"
+      },
+      {
+       "id": "m34.2.3",
+       "title": "Tempered distributions"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Interpolation",
+     "lessons": [
+      {
+       "id": "m34.3.1",
+       "title": "Riesz-Thorin"
+      },
+      {
+       "id": "m34.3.2",
+       "title": "Marcinkiewicz"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Maximal functions and singular integrals",
+     "lessons": [
+      {
+       "id": "m34.4.1",
+       "title": "The Hardy-Littlewood maximal function"
+      },
+      {
+       "id": "m34.4.2",
+       "title": "Calderón-Zygmund theory"
+      },
+      {
+       "id": "m34.4.3",
+       "title": "The Hilbert transform"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Fourier analysis on groups",
+     "lessons": [
+      {
+       "id": "m34.5.1",
+       "title": "Finite abelian groups"
+      },
+      {
+       "id": "m34.5.2",
+       "title": "Dirichlet's theorem on primes in progressions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M35",
+   "title": "Analytic Number Theory",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M13",
+    "M11"
+   ],
+   "parallels": [],
+   "source": "Depth of Apostol, Introduction to Analytic Number Theory; Davenport, Multiplicative Number Theory.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Arithmetic functions analytically",
+     "lessons": [
+      {
+       "id": "m35.1.1",
+       "title": "Averages"
+      },
+      {
+       "id": "m35.1.2",
+       "title": "Dirichlet series"
+      },
+      {
+       "id": "m35.1.3",
+       "title": "Euler products"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Primes",
+     "lessons": [
+      {
+       "id": "m35.2.1",
+       "title": "Chebyshev's estimates"
+      },
+      {
+       "id": "m35.2.2",
+       "title": "The prime number theorem proved"
+      },
+      {
+       "id": "m35.2.3",
+       "title": "Error terms"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Characters",
+     "lessons": [
+      {
+       "id": "m35.3.1",
+       "title": "Dirichlet characters"
+      },
+      {
+       "id": "m35.3.2",
+       "title": "L-functions"
+      },
+      {
+       "id": "m35.3.3",
+       "title": "Primes in arithmetic progressions"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "The zeta function",
+     "lessons": [
+      {
+       "id": "m35.4.1",
+       "title": "Analytic continuation"
+      },
+      {
+       "id": "m35.4.2",
+       "title": "The functional equation"
+      },
+      {
+       "id": "m35.4.3",
+       "title": "Zeros and the Riemann hypothesis"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Sieves",
+     "lessons": [
+      {
+       "id": "m35.5.1",
+       "title": "The sieve of Eratosthenes-Legendre"
+      },
+      {
+       "id": "m35.5.2",
+       "title": "Brun's sieve"
+      },
+      {
+       "id": "m35.5.3",
+       "title": "The large sieve, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M36",
+   "title": "Dynamical Systems and Ergodic Theory",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M22",
+    "M10"
+   ],
+   "parallels": [],
+   "source": "Depth of Katok and Hasselblatt, Introduction to the Modern Theory of Dynamical Systems; Walters, An Introduction to Ergodic Theory.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Examples",
+     "lessons": [
+      {
+       "id": "m36.1.1",
+       "title": "Rotations"
+      },
+      {
+       "id": "m36.1.2",
+       "title": "Expanding maps"
+      },
+      {
+       "id": "m36.1.3",
+       "title": "Shifts"
+      },
+      {
+       "id": "m36.1.4",
+       "title": "The logistic family"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Topological dynamics",
+     "lessons": [
+      {
+       "id": "m36.2.1",
+       "title": "Recurrence"
+      },
+      {
+       "id": "m36.2.2",
+       "title": "Minimality"
+      },
+      {
+       "id": "m36.2.3",
+       "title": "Topological entropy"
+      },
+      {
+       "id": "m36.2.4",
+       "title": "Symbolic dynamics"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Hyperbolic dynamics",
+     "lessons": [
+      {
+       "id": "m36.3.1",
+       "title": "Hyperbolic fixed points"
+      },
+      {
+       "id": "m36.3.2",
+       "title": "Stable manifolds"
+      },
+      {
+       "id": "m36.3.3",
+       "title": "Structural stability"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ergodic theory",
+     "lessons": [
+      {
+       "id": "m36.4.1",
+       "title": "Invariant measures"
+      },
+      {
+       "id": "m36.4.2",
+       "title": "Birkhoff and von Neumann ergodic theorems"
+      },
+      {
+       "id": "m36.4.3",
+       "title": "Mixing"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entropy and chaos",
+     "lessons": [
+      {
+       "id": "m36.5.1",
+       "title": "Measure-theoretic entropy"
+      },
+      {
+       "id": "m36.5.2",
+       "title": "Lyapunov exponents"
+      },
+      {
+       "id": "m36.5.3",
+       "title": "Chaos made precise"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M37",
+   "title": "Stochastic Calculus",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M27"
+   ],
+   "parallels": [],
+   "source": "Depth of Øksendal, Stochastic Differential Equations; Karatzas and Shreve, Brownian Motion and Stochastic Calculus.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Brownian motion in depth",
+     "lessons": [
+      {
+       "id": "m37.1.1",
+       "title": "Markov property"
+      },
+      {
+       "id": "m37.1.2",
+       "title": "Reflection principle"
+      },
+      {
+       "id": "m37.1.3",
+       "title": "Quadratic variation"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "The Itô integral",
+     "lessons": [
+      {
+       "id": "m37.2.1",
+       "title": "Construction"
+      },
+      {
+       "id": "m37.2.2",
+       "title": "Itô isometry"
+      },
+      {
+       "id": "m37.2.3",
+       "title": "Itô's formula"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Stochastic differential equations",
+     "lessons": [
+      {
+       "id": "m37.3.1",
+       "title": "Existence and uniqueness"
+      },
+      {
+       "id": "m37.3.2",
+       "title": "Linear SDEs"
+      },
+      {
+       "id": "m37.3.3",
+       "title": "Diffusions"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Change of measure",
+     "lessons": [
+      {
+       "id": "m37.4.1",
+       "title": "Girsanov's theorem"
+      },
+      {
+       "id": "m37.4.2",
+       "title": "Martingale representation"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Applications",
+     "lessons": [
+      {
+       "id": "m37.5.1",
+       "title": "Feynman-Kac formula"
+      },
+      {
+       "id": "m37.5.2",
+       "title": "Optimal stopping"
+      },
+      {
+       "id": "m37.5.3",
+       "title": "Mathematical finance in outline"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M38",
+   "title": "Model Theory and Computability",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M20"
+   ],
+   "parallels": [
+    "P26",
+    "P29"
+   ],
+   "source": "Depth of Marker, Model Theory: An Introduction; Soare, Turing Computability.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Structures and theories",
+     "lessons": [
+      {
+       "id": "m38.1.1",
+       "title": "Elementary equivalence"
+      },
+      {
+       "id": "m38.1.2",
+       "title": "Elementary extensions"
+      },
+      {
+       "id": "m38.1.3",
+       "title": "Ultraproducts and Łoś's theorem"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Quantifier elimination",
+     "lessons": [
+      {
+       "id": "m38.2.1",
+       "title": "Quantifier elimination"
+      },
+      {
+       "id": "m38.2.2",
+       "title": "O-minimality, a first look"
+      },
+      {
+       "id": "m38.2.3",
+       "title": "Algebraically closed fields"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Types and saturation",
+     "lessons": [
+      {
+       "id": "m38.3.1",
+       "title": "Types"
+      },
+      {
+       "id": "m38.3.2",
+       "title": "Omitting types"
+      },
+      {
+       "id": "m38.3.3",
+       "title": "Saturated and homogeneous models"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Degrees of unsolvability",
+     "lessons": [
+      {
+       "id": "m38.4.1",
+       "title": "Turing reducibility"
+      },
+      {
+       "id": "m38.4.2",
+       "title": "The arithmetical hierarchy"
+      },
+      {
+       "id": "m38.4.3",
+       "title": "Post's problem and the priority method"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Applications",
+     "lessons": [
+      {
+       "id": "m38.5.1",
+       "title": "The Ax-Grothendieck theorem"
+      },
+      {
+       "id": "m38.5.2",
+       "title": "Non-standard analysis"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M39",
+   "title": "Category Theory",
+   "track": "mathematics",
+   "tier": 5,
+   "requires": [
+    "M24",
+    "M25"
+   ],
+   "parallels": [
+    "P22"
+   ],
+   "source": "Depth of Riehl, Category Theory in Context; Mac Lane, Categories for the Working Mathematician.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Universal properties",
+     "lessons": [
+      {
+       "id": "m39.1.1",
+       "title": "Representable functors"
+      },
+      {
+       "id": "m39.1.2",
+       "title": "The Yoneda lemma"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Limits and colimits",
+     "lessons": [
+      {
+       "id": "m39.2.1",
+       "title": "Limits"
+      },
+      {
+       "id": "m39.2.2",
+       "title": "Colimits"
+      },
+      {
+       "id": "m39.2.3",
+       "title": "Preservation and creation"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Adjunctions",
+     "lessons": [
+      {
+       "id": "m39.3.1",
+       "title": "Adjoint functors"
+      },
+      {
+       "id": "m39.3.2",
+       "title": "Adjoint functor theorems"
+      },
+      {
+       "id": "m39.3.3",
+       "title": "Monads"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Higher structure",
+     "lessons": [
+      {
+       "id": "m39.4.1",
+       "title": "Monoidal categories"
+      },
+      {
+       "id": "m39.4.2",
+       "title": "Abelian categories"
+      },
+      {
+       "id": "m39.4.3",
+       "title": "Toposes, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P0",
+   "title": "Thinking and Writing Philosophically",
+   "track": "philosophy",
+   "tier": 0,
+   "requires": [],
+   "parallels": [
+    "M0"
+   ],
+   "source": "Depth of Rosenberg, The Practice of Philosophy; Martinich, Philosophical Writing.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "What philosophy is",
+     "lessons": [
+      {
+       "id": "p0.1.1",
+       "title": "Philosophy's questions"
+      },
+      {
+       "id": "p0.1.2",
+       "title": "Philosophy and science"
+      },
+      {
+       "id": "p0.1.3",
+       "title": "Philosophy in everyday life"
+      },
+      {
+       "id": "p0.1.4",
+       "title": "Socratic questioning"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Reading philosophy",
+     "lessons": [
+      {
+       "id": "p0.2.1",
+       "title": "Reading slowly"
+      },
+      {
+       "id": "p0.2.2",
+       "title": "Finding the thesis"
+      },
+      {
+       "id": "p0.2.3",
+       "title": "Reconstructing an argument from a text"
+      },
+      {
+       "id": "p0.2.4",
+       "title": "Charitable interpretation"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Writing philosophy",
+     "lessons": [
+      {
+       "id": "p0.3.1",
+       "title": "The philosophy essay"
+      },
+      {
+       "id": "p0.3.2",
+       "title": "Clarity and definitions"
+      },
+      {
+       "id": "p0.3.3",
+       "title": "Objections and replies"
+      },
+      {
+       "id": "p0.3.4",
+       "title": "Revising"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Thinking tools",
+     "lessons": [
+      {
+       "id": "p0.4.1",
+       "title": "Thought experiments"
+      },
+      {
+       "id": "p0.4.2",
+       "title": "Counterexamples"
+      },
+      {
+       "id": "p0.4.3",
+       "title": "Drawing distinctions"
+      },
+      {
+       "id": "p0.4.4",
+       "title": "Reductio ad absurdum"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P1",
+   "title": "Introduction to Philosophy",
+   "track": "philosophy",
+   "tier": 1,
+   "requires": [
+    "P0"
+   ],
+   "parallels": [],
+   "source": "Depth of Blackburn, Think; Perry, Bratman and Fischer, Introduction to Philosophy: Classical and Contemporary Readings.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Knowledge",
+     "lessons": [
+      {
+       "id": "p1.1.1",
+       "title": "Scepticism and the dream argument"
+      },
+      {
+       "id": "p1.1.2",
+       "title": "What knowledge is"
+      },
+      {
+       "id": "p1.1.3",
+       "title": "The problem of induction"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mind",
+     "lessons": [
+      {
+       "id": "p1.2.1",
+       "title": "The mind-body problem"
+      },
+      {
+       "id": "p1.2.2",
+       "title": "Other minds"
+      },
+      {
+       "id": "p1.2.3",
+       "title": "Can machines think"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Free will",
+     "lessons": [
+      {
+       "id": "p1.3.1",
+       "title": "Determinism"
+      },
+      {
+       "id": "p1.3.2",
+       "title": "Compatibilism"
+      },
+      {
+       "id": "p1.3.3",
+       "title": "Moral responsibility"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Personal identity",
+     "lessons": [
+      {
+       "id": "p1.4.1",
+       "title": "What makes you you"
+      },
+      {
+       "id": "p1.4.2",
+       "title": "Memory and body theories"
+      },
+      {
+       "id": "p1.4.3",
+       "title": "Survival"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "God",
+     "lessons": [
+      {
+       "id": "p1.5.1",
+       "title": "The cosmological argument"
+      },
+      {
+       "id": "p1.5.2",
+       "title": "The design argument"
+      },
+      {
+       "id": "p1.5.3",
+       "title": "The problem of evil"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Value and meaning",
+     "lessons": [
+      {
+       "id": "p1.6.1",
+       "title": "Why be moral"
+      },
+      {
+       "id": "p1.6.2",
+       "title": "Right and wrong"
+      },
+      {
+       "id": "p1.6.3",
+       "title": "The meaning of life"
+      },
+      {
+       "id": "p1.6.4",
+       "title": "Death"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P2",
+   "title": "Logic I: Formal Logic",
+   "track": "philosophy",
+   "tier": 1,
+   "requires": [
+    "P0"
+   ],
+   "parallels": [
+    "M1"
+   ],
+   "source": "Depth of Bergmann, Moor and Nelson, The Logic Book; Magnus, forall x.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Arguments",
+     "lessons": [
+      {
+       "id": "p2.1.1",
+       "title": "Arguments"
+      },
+      {
+       "id": "p2.1.2",
+       "title": "Validity and soundness"
+      },
+      {
+       "id": "p2.1.3",
+       "title": "Logical form"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sentential logic",
+     "lessons": [
+      {
+       "id": "p2.2.1",
+       "title": "Symbolisation"
+      },
+      {
+       "id": "p2.2.2",
+       "title": "Truth tables"
+      },
+      {
+       "id": "p2.2.3",
+       "title": "Validity by truth tables"
+      },
+      {
+       "id": "p2.2.4",
+       "title": "Truth trees"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sentential natural deduction",
+     "lessons": [
+      {
+       "id": "p2.3.1",
+       "title": "Rules of inference"
+      },
+      {
+       "id": "p2.3.2",
+       "title": "Conditional proof"
+      },
+      {
+       "id": "p2.3.3",
+       "title": "Indirect proof"
+      },
+      {
+       "id": "p2.3.4",
+       "title": "Derived rules"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Predicate logic",
+     "lessons": [
+      {
+       "id": "p2.4.1",
+       "title": "Symbolising with quantifiers"
+      },
+      {
+       "id": "p2.4.2",
+       "title": "Multiple quantifiers"
+      },
+      {
+       "id": "p2.4.3",
+       "title": "Identity"
+      },
+      {
+       "id": "p2.4.4",
+       "title": "Definite descriptions"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Predicate semantics",
+     "lessons": [
+      {
+       "id": "p2.5.1",
+       "title": "Interpretations"
+      },
+      {
+       "id": "p2.5.2",
+       "title": "Models and counterexamples"
+      },
+      {
+       "id": "p2.5.3",
+       "title": "Truth trees for predicate logic"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Predicate natural deduction",
+     "lessons": [
+      {
+       "id": "p2.6.1",
+       "title": "Quantifier rules"
+      },
+      {
+       "id": "p2.6.2",
+       "title": "Identity rules"
+      },
+      {
+       "id": "p2.6.3",
+       "title": "Strategy for proofs"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P3",
+   "title": "Critical Reasoning and Inductive Logic",
+   "track": "philosophy",
+   "tier": 1,
+   "requires": [
+    "P0"
+   ],
+   "parallels": [
+    "M4",
+    "M9"
+   ],
+   "source": "Depth of Sinnott-Armstrong and Fogelin, Understanding Arguments; Hacking, An Introduction to Probability and Inductive Logic.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "The language of argument",
+     "lessons": [
+      {
+       "id": "p3.1.1",
+       "title": "Argument markers"
+      },
+      {
+       "id": "p3.1.2",
+       "title": "Assuring, guarding and discounting"
+      },
+      {
+       "id": "p3.1.3",
+       "title": "Definitions and ambiguity"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fallacies",
+     "lessons": [
+      {
+       "id": "p3.2.1",
+       "title": "Fallacies of relevance"
+      },
+      {
+       "id": "p3.2.2",
+       "title": "Fallacies of ambiguity"
+      },
+      {
+       "id": "p3.2.3",
+       "title": "Fallacies of presumption"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Inductive reasoning",
+     "lessons": [
+      {
+       "id": "p3.3.1",
+       "title": "Generalisation"
+      },
+      {
+       "id": "p3.3.2",
+       "title": "Analogy"
+      },
+      {
+       "id": "p3.3.3",
+       "title": "Inference to the best explanation"
+      },
+      {
+       "id": "p3.3.4",
+       "title": "Causal reasoning and Mill's methods"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Probabilistic reasoning",
+     "lessons": [
+      {
+       "id": "p3.4.1",
+       "title": "Probability for reasoners"
+      },
+      {
+       "id": "p3.4.2",
+       "title": "The base-rate fallacy"
+      },
+      {
+       "id": "p3.4.3",
+       "title": "Bayesian updating"
+      },
+      {
+       "id": "p3.4.4",
+       "title": "Decisions under uncertainty"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Reasoning in practice",
+     "lessons": [
+      {
+       "id": "p3.5.1",
+       "title": "Scientific reasoning"
+      },
+      {
+       "id": "p3.5.2",
+       "title": "Legal reasoning"
+      },
+      {
+       "id": "p3.5.3",
+       "title": "Moral reasoning"
+      },
+      {
+       "id": "p3.5.4",
+       "title": "Reading the news critically"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P4",
+   "title": "Ancient Greek Philosophy",
+   "track": "philosophy",
+   "tier": 1,
+   "requires": [
+    "P0",
+    "P1"
+   ],
+   "parallels": [
+    "M0",
+    "M2"
+   ],
+   "source": "Depth of Cohen, Curd and Reeve, Readings in Ancient Greek Philosophy; Annas, Ancient Philosophy.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "The Presocratics",
+     "lessons": [
+      {
+       "id": "p4.1.1",
+       "title": "Thales and the Milesians"
+      },
+      {
+       "id": "p4.1.2",
+       "title": "Heraclitus"
+      },
+      {
+       "id": "p4.1.3",
+       "title": "Parmenides"
+      },
+      {
+       "id": "p4.1.4",
+       "title": "Zeno's paradoxes"
+      },
+      {
+       "id": "p4.1.5",
+       "title": "The atomists"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Socrates",
+     "lessons": [
+      {
+       "id": "p4.2.1",
+       "title": "The sophists"
+      },
+      {
+       "id": "p4.2.2",
+       "title": "The Euthyphro"
+      },
+      {
+       "id": "p4.2.3",
+       "title": "The Apology and Crito"
+      },
+      {
+       "id": "p4.2.4",
+       "title": "Socratic ignorance and the elenchus"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plato's middle dialogues",
+     "lessons": [
+      {
+       "id": "p4.3.1",
+       "title": "The Meno and recollection"
+      },
+      {
+       "id": "p4.3.2",
+       "title": "The Phaedo and the soul"
+      },
+      {
+       "id": "p4.3.3",
+       "title": "The Republic on justice"
+      },
+      {
+       "id": "p4.3.4",
+       "title": "The Forms"
+      },
+      {
+       "id": "p4.3.5",
+       "title": "The sun, line and cave"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plato's late dialogues",
+     "lessons": [
+      {
+       "id": "p4.4.1",
+       "title": "The Theaetetus on knowledge"
+      },
+      {
+       "id": "p4.4.2",
+       "title": "The Parmenides' critique of Forms"
+      },
+      {
+       "id": "p4.4.3",
+       "title": "The Sophist on being"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Aristotle's logic and metaphysics",
+     "lessons": [
+      {
+       "id": "p4.5.1",
+       "title": "The Categories"
+      },
+      {
+       "id": "p4.5.2",
+       "title": "The syllogism"
+      },
+      {
+       "id": "p4.5.3",
+       "title": "Substance in Metaphysics Zeta"
+      },
+      {
+       "id": "p4.5.4",
+       "title": "The four causes"
+      },
+      {
+       "id": "p4.5.5",
+       "title": "Potentiality and actuality"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Aristotle's ethics and politics",
+     "lessons": [
+      {
+       "id": "p4.6.1",
+       "title": "Eudaimonia and function"
+      },
+      {
+       "id": "p4.6.2",
+       "title": "Virtue and the mean"
+      },
+      {
+       "id": "p4.6.3",
+       "title": "Voluntary action and akrasia"
+      },
+      {
+       "id": "p4.6.4",
+       "title": "Friendship"
+      },
+      {
+       "id": "p4.6.5",
+       "title": "The polis"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Hellenistic philosophy",
+     "lessons": [
+      {
+       "id": "p4.7.1",
+       "title": "Epicureanism"
+      },
+      {
+       "id": "p4.7.2",
+       "title": "Stoic logic and physics"
+      },
+      {
+       "id": "p4.7.3",
+       "title": "Stoic ethics"
+      },
+      {
+       "id": "p4.7.4",
+       "title": "Pyrrhonian scepticism"
+      },
+      {
+       "id": "p4.7.5",
+       "title": "Plotinus and Neoplatonism"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P5",
+   "title": "Introduction to Ethics",
+   "track": "philosophy",
+   "tier": 1,
+   "requires": [
+    "P0"
+   ],
+   "parallels": [],
+   "source": "Depth of Rachels, The Elements of Moral Philosophy; Shafer-Landau, The Fundamentals of Ethics.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Moral foundations",
+     "lessons": [
+      {
+       "id": "p5.1.1",
+       "title": "Cultural relativism"
+      },
+      {
+       "id": "p5.1.2",
+       "title": "Subjectivism"
+      },
+      {
+       "id": "p5.1.3",
+       "title": "Divine command theory"
+      },
+      {
+       "id": "p5.1.4",
+       "title": "Ethical egoism"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Consequentialism",
+     "lessons": [
+      {
+       "id": "p5.2.1",
+       "title": "The utilitarianism of Bentham and Mill"
+      },
+      {
+       "id": "p5.2.2",
+       "title": "Objections"
+      },
+      {
+       "id": "p5.2.3",
+       "title": "Rule utilitarianism"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Deontology",
+     "lessons": [
+      {
+       "id": "p5.3.1",
+       "title": "Kant's categorical imperative"
+      },
+      {
+       "id": "p5.3.2",
+       "title": "The humanity formula"
+      },
+      {
+       "id": "p5.3.3",
+       "title": "Rights"
+      },
+      {
+       "id": "p5.3.4",
+       "title": "Contractarianism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Virtue and care",
+     "lessons": [
+      {
+       "id": "p5.4.1",
+       "title": "Aristotelian virtue ethics"
+      },
+      {
+       "id": "p5.4.2",
+       "title": "The ethics of care"
+      },
+      {
+       "id": "p5.4.3",
+       "title": "Moral exemplars"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moral problems, first look",
+     "lessons": [
+      {
+       "id": "p5.5.1",
+       "title": "Abortion"
+      },
+      {
+       "id": "p5.5.2",
+       "title": "Animals"
+      },
+      {
+       "id": "p5.5.3",
+       "title": "Poverty and obligation"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P6",
+   "title": "Medieval Philosophy",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P4"
+   ],
+   "parallels": [],
+   "source": "Depth of Hyman, Walsh and Williams, Philosophy in the Middle Ages; Marenbon, Medieval Philosophy.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Late antiquity",
+     "lessons": [
+      {
+       "id": "p6.1.1",
+       "title": "Augustine on time"
+      },
+      {
+       "id": "p6.1.2",
+       "title": "Augustine on evil and free will"
+      },
+      {
+       "id": "p6.1.3",
+       "title": "Boethius on providence"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Islamic and Jewish philosophy",
+     "lessons": [
+      {
+       "id": "p6.2.1",
+       "title": "Al-Farabi"
+      },
+      {
+       "id": "p6.2.2",
+       "title": "Avicenna on essence and existence"
+      },
+      {
+       "id": "p6.2.3",
+       "title": "Al-Ghazali on causation"
+      },
+      {
+       "id": "p6.2.4",
+       "title": "Averroes"
+      },
+      {
+       "id": "p6.2.5",
+       "title": "Maimonides"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Early scholastics",
+     "lessons": [
+      {
+       "id": "p6.3.1",
+       "title": "Anselm's ontological argument"
+      },
+      {
+       "id": "p6.3.2",
+       "title": "The problem of universals"
+      },
+      {
+       "id": "p6.3.3",
+       "title": "Abelard"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Aquinas",
+     "lessons": [
+      {
+       "id": "p6.4.1",
+       "title": "Faith and reason"
+      },
+      {
+       "id": "p6.4.2",
+       "title": "The five ways"
+      },
+      {
+       "id": "p6.4.3",
+       "title": "The soul"
+      },
+      {
+       "id": "p6.4.4",
+       "title": "Natural law"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Late medieval",
+     "lessons": [
+      {
+       "id": "p6.5.1",
+       "title": "Scotus on univocity and haecceity"
+      },
+      {
+       "id": "p6.5.2",
+       "title": "Ockham's nominalism and razor"
+      },
+      {
+       "id": "p6.5.3",
+       "title": "The road to modernity"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P7",
+   "title": "Early Modern Philosophy",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P4",
+    "P2"
+   ],
+   "parallels": [],
+   "source": "Depth of Ariew and Watkins, Modern Philosophy: An Anthology; Cottingham, The Rationalists.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Descartes",
+     "lessons": [
+      {
+       "id": "p7.1.1",
+       "title": "The method of doubt"
+      },
+      {
+       "id": "p7.1.2",
+       "title": "The cogito"
+      },
+      {
+       "id": "p7.1.3",
+       "title": "God and clear and distinct ideas"
+      },
+      {
+       "id": "p7.1.4",
+       "title": "Mind-body dualism"
+      },
+      {
+       "id": "p7.1.5",
+       "title": "Elisabeth of Bohemia's objection"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Spinoza and Leibniz",
+     "lessons": [
+      {
+       "id": "p7.2.1",
+       "title": "Spinoza's substance monism"
+      },
+      {
+       "id": "p7.2.2",
+       "title": "Spinoza's ethics"
+      },
+      {
+       "id": "p7.2.3",
+       "title": "Leibniz's monads"
+      },
+      {
+       "id": "p7.2.4",
+       "title": "Pre-established harmony and the best world"
+      },
+      {
+       "id": "p7.2.5",
+       "title": "The principle of sufficient reason"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Locke",
+     "lessons": [
+      {
+       "id": "p7.3.1",
+       "title": "Against innate ideas"
+      },
+      {
+       "id": "p7.3.2",
+       "title": "Primary and secondary qualities"
+      },
+      {
+       "id": "p7.3.3",
+       "title": "Substance"
+      },
+      {
+       "id": "p7.3.4",
+       "title": "Personal identity"
+      },
+      {
+       "id": "p7.3.5",
+       "title": "Locke's political philosophy"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Berkeley",
+     "lessons": [
+      {
+       "id": "p7.4.1",
+       "title": "Against abstract ideas"
+      },
+      {
+       "id": "p7.4.2",
+       "title": "Immaterialism"
+      },
+      {
+       "id": "p7.4.3",
+       "title": "To be is to be perceived"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hume",
+     "lessons": [
+      {
+       "id": "p7.5.1",
+       "title": "Impressions and ideas"
+      },
+      {
+       "id": "p7.5.2",
+       "title": "Causation and necessary connection"
+      },
+      {
+       "id": "p7.5.3",
+       "title": "The problem of induction"
+      },
+      {
+       "id": "p7.5.4",
+       "title": "The self"
+      },
+      {
+       "id": "p7.5.5",
+       "title": "Is and ought"
+      },
+      {
+       "id": "p7.5.6",
+       "title": "The Dialogues on natural religion"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Towards Kant",
+     "lessons": [
+      {
+       "id": "p7.6.1",
+       "title": "Reid and common sense"
+      },
+      {
+       "id": "p7.6.2",
+       "title": "Newton, Leibniz and Clarke on space"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P8",
+   "title": "Kant",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P7"
+   ],
+   "parallels": [
+    "M16"
+   ],
+   "source": "Depth of Kant, Critique of Pure Reason (Guyer and Wood translation), with Gardner, Kant and the Critique of Pure Reason.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "The Copernican turn",
+     "lessons": [
+      {
+       "id": "p8.1.1",
+       "title": "The problem of metaphysics"
+      },
+      {
+       "id": "p8.1.2",
+       "title": "Synthetic a priori judgements"
+      },
+      {
+       "id": "p8.1.3",
+       "title": "Transcendental idealism"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Transcendental Aesthetic",
+     "lessons": [
+      {
+       "id": "p8.2.1",
+       "title": "Space"
+      },
+      {
+       "id": "p8.2.2",
+       "title": "Time"
+      },
+      {
+       "id": "p8.2.3",
+       "title": "Kant on mathematics"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Transcendental Analytic",
+     "lessons": [
+      {
+       "id": "p8.3.1",
+       "title": "The categories"
+      },
+      {
+       "id": "p8.3.2",
+       "title": "The transcendental deduction"
+      },
+      {
+       "id": "p8.3.3",
+       "title": "The schematism"
+      },
+      {
+       "id": "p8.3.4",
+       "title": "The analogies of experience"
+      },
+      {
+       "id": "p8.3.5",
+       "title": "The refutation of idealism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Transcendental Dialectic",
+     "lessons": [
+      {
+       "id": "p8.4.1",
+       "title": "The paralogisms"
+      },
+      {
+       "id": "p8.4.2",
+       "title": "The antinomies"
+      },
+      {
+       "id": "p8.4.3",
+       "title": "The ideal of pure reason"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Practical philosophy",
+     "lessons": [
+      {
+       "id": "p8.5.1",
+       "title": "The Groundwork"
+      },
+      {
+       "id": "p8.5.2",
+       "title": "Autonomy"
+      },
+      {
+       "id": "p8.5.3",
+       "title": "The Critique of Practical Reason"
+      },
+      {
+       "id": "p8.5.4",
+       "title": "The highest good"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "The third Critique",
+     "lessons": [
+      {
+       "id": "p8.6.1",
+       "title": "Judgements of taste"
+      },
+      {
+       "id": "p8.6.2",
+       "title": "The sublime"
+      },
+      {
+       "id": "p8.6.3",
+       "title": "Teleology"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P9",
+   "title": "Nineteenth-Century Philosophy",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P8"
+   ],
+   "parallels": [],
+   "source": "Depth of primary texts (Hegel, Marx, Mill, Kierkegaard, Nietzsche) with Beiser, Hegel, and Leiter, Nietzsche on Morality.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "German idealism",
+     "lessons": [
+      {
+       "id": "p9.1.1",
+       "title": "Fichte and Schelling"
+      },
+      {
+       "id": "p9.1.2",
+       "title": "Hegel's Phenomenology on consciousness"
+      },
+      {
+       "id": "p9.1.3",
+       "title": "Master and slave"
+      },
+      {
+       "id": "p9.1.4",
+       "title": "Hegel's dialectic and logic"
+      },
+      {
+       "id": "p9.1.5",
+       "title": "The Philosophy of Right"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Marx",
+     "lessons": [
+      {
+       "id": "p9.2.1",
+       "title": "Feuerbach and the turn to material life"
+      },
+      {
+       "id": "p9.2.2",
+       "title": "Alienation"
+      },
+      {
+       "id": "p9.2.3",
+       "title": "Historical materialism"
+      },
+      {
+       "id": "p9.2.4",
+       "title": "The critique of capital"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Schopenhauer",
+     "lessons": [
+      {
+       "id": "p9.3.1",
+       "title": "The world as will and representation"
+      },
+      {
+       "id": "p9.3.2",
+       "title": "Pessimism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Kierkegaard",
+     "lessons": [
+      {
+       "id": "p9.4.1",
+       "title": "Stages on life's way"
+      },
+      {
+       "id": "p9.4.2",
+       "title": "Faith and the absurd"
+      },
+      {
+       "id": "p9.4.3",
+       "title": "Truth as subjectivity"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Mill and Sidgwick",
+     "lessons": [
+      {
+       "id": "p9.5.1",
+       "title": "Mill's logic"
+      },
+      {
+       "id": "p9.5.2",
+       "title": "On Liberty"
+      },
+      {
+       "id": "p9.5.3",
+       "title": "Utilitarianism refined"
+      },
+      {
+       "id": "p9.5.4",
+       "title": "Sidgwick's methods of ethics"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Nietzsche",
+     "lessons": [
+      {
+       "id": "p9.6.1",
+       "title": "Perspectivism"
+      },
+      {
+       "id": "p9.6.2",
+       "title": "The genealogy of morals"
+      },
+      {
+       "id": "p9.6.3",
+       "title": "Will to power"
+      },
+      {
+       "id": "p9.6.4",
+       "title": "Eternal recurrence"
+      },
+      {
+       "id": "p9.6.5",
+       "title": "The Übermensch"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "American pragmatism",
+     "lessons": [
+      {
+       "id": "p9.7.1",
+       "title": "Peirce"
+      },
+      {
+       "id": "p9.7.2",
+       "title": "James"
+      },
+      {
+       "id": "p9.7.3",
+       "title": "Dewey"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P10",
+   "title": "Epistemology",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P1",
+    "P3",
+    "P7"
+   ],
+   "parallels": [
+    "M9"
+   ],
+   "source": "Depth of Feldman, Epistemology; Sosa et al., Epistemology: An Anthology.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "The analysis of knowledge",
+     "lessons": [
+      {
+       "id": "p10.1.1",
+       "title": "Justified true belief"
+      },
+      {
+       "id": "p10.1.2",
+       "title": "The Gettier problem"
+      },
+      {
+       "id": "p10.1.3",
+       "title": "Responses to Gettier"
+      },
+      {
+       "id": "p10.1.4",
+       "title": "Knowledge first, a first look"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structure of justification",
+     "lessons": [
+      {
+       "id": "p10.2.1",
+       "title": "The regress problem"
+      },
+      {
+       "id": "p10.2.2",
+       "title": "Foundationalism"
+      },
+      {
+       "id": "p10.2.3",
+       "title": "Coherentism"
+      },
+      {
+       "id": "p10.2.4",
+       "title": "Infinitism"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Internalism and externalism",
+     "lessons": [
+      {
+       "id": "p10.3.1",
+       "title": "Reliabilism"
+      },
+      {
+       "id": "p10.3.2",
+       "title": "Evidentialism"
+      },
+      {
+       "id": "p10.3.3",
+       "title": "The new evil demon problem"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Scepticism",
+     "lessons": [
+      {
+       "id": "p10.4.1",
+       "title": "Cartesian scepticism"
+      },
+      {
+       "id": "p10.4.2",
+       "title": "Closure"
+      },
+      {
+       "id": "p10.4.3",
+       "title": "Contextualism"
+      },
+      {
+       "id": "p10.4.4",
+       "title": "Moore and common sense"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Sources of knowledge",
+     "lessons": [
+      {
+       "id": "p10.5.1",
+       "title": "Perception"
+      },
+      {
+       "id": "p10.5.2",
+       "title": "Testimony"
+      },
+      {
+       "id": "p10.5.3",
+       "title": "Memory"
+      },
+      {
+       "id": "p10.5.4",
+       "title": "A priori knowledge"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Virtue and social epistemology",
+     "lessons": [
+      {
+       "id": "p10.6.1",
+       "title": "Virtue epistemology"
+      },
+      {
+       "id": "p10.6.2",
+       "title": "Disagreement"
+      },
+      {
+       "id": "p10.6.3",
+       "title": "Epistemic injustice"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Bayesian epistemology",
+     "lessons": [
+      {
+       "id": "p10.7.1",
+       "title": "Credences"
+      },
+      {
+       "id": "p10.7.2",
+       "title": "Conditionalisation"
+      },
+      {
+       "id": "p10.7.3",
+       "title": "Dutch book arguments"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P11",
+   "title": "Metaphysics",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P1",
+    "P2"
+   ],
+   "parallels": [],
+   "source": "Depth of Loux and Crisp, Metaphysics: A Contemporary Introduction; Kim, Korman and Sosa, Metaphysics: An Anthology.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Universals and particulars",
+     "lessons": [
+      {
+       "id": "p11.1.1",
+       "title": "Realism"
+      },
+      {
+       "id": "p11.1.2",
+       "title": "Nominalism"
+      },
+      {
+       "id": "p11.1.3",
+       "title": "Tropes"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Existence and ontology",
+     "lessons": [
+      {
+       "id": "p11.2.1",
+       "title": "Quine's criterion of commitment"
+      },
+      {
+       "id": "p11.2.2",
+       "title": "Abstract objects"
+      },
+      {
+       "id": "p11.2.3",
+       "title": "Meta-ontology, a first look"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Modality",
+     "lessons": [
+      {
+       "id": "p11.3.1",
+       "title": "Possible worlds"
+      },
+      {
+       "id": "p11.3.2",
+       "title": "Lewis's modal realism"
+      },
+      {
+       "id": "p11.3.3",
+       "title": "Actualism"
+      },
+      {
+       "id": "p11.3.4",
+       "title": "Essentialism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Causation",
+     "lessons": [
+      {
+       "id": "p11.4.1",
+       "title": "Regularity theories"
+      },
+      {
+       "id": "p11.4.2",
+       "title": "Counterfactual theories"
+      },
+      {
+       "id": "p11.4.3",
+       "title": "Process theories"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Persistence and constitution",
+     "lessons": [
+      {
+       "id": "p11.5.1",
+       "title": "Endurance and perdurance"
+      },
+      {
+       "id": "p11.5.2",
+       "title": "Material constitution"
+      },
+      {
+       "id": "p11.5.3",
+       "title": "The statue and the clay"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Time",
+     "lessons": [
+      {
+       "id": "p11.6.1",
+       "title": "McTaggart's A and B series"
+      },
+      {
+       "id": "p11.6.2",
+       "title": "Presentism and eternalism"
+      },
+      {
+       "id": "p11.6.3",
+       "title": "Time travel"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Free will",
+     "lessons": [
+      {
+       "id": "p11.7.1",
+       "title": "Incompatibilism and the consequence argument"
+      },
+      {
+       "id": "p11.7.2",
+       "title": "Frankfurt cases"
+      },
+      {
+       "id": "p11.7.3",
+       "title": "Libertarianism"
+      },
+      {
+       "id": "p11.7.4",
+       "title": "Hard incompatibilism"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P12",
+   "title": "Philosophy of Mind",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P11",
+    "P7"
+   ],
+   "parallels": [],
+   "source": "Depth of Kim, Philosophy of Mind; Chalmers (ed.), Philosophy of Mind: Classical and Contemporary Readings.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Dualism",
+     "lessons": [
+      {
+       "id": "p12.1.1",
+       "title": "Substance and property dualism"
+      },
+      {
+       "id": "p12.1.2",
+       "title": "The interaction problem"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Behaviourism and identity theory",
+     "lessons": [
+      {
+       "id": "p12.2.1",
+       "title": "Logical behaviourism"
+      },
+      {
+       "id": "p12.2.2",
+       "title": "Type identity theory"
+      },
+      {
+       "id": "p12.2.3",
+       "title": "Multiple realisability"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Functionalism and computation",
+     "lessons": [
+      {
+       "id": "p12.3.1",
+       "title": "Functionalism"
+      },
+      {
+       "id": "p12.3.2",
+       "title": "The Turing test"
+      },
+      {
+       "id": "p12.3.3",
+       "title": "The Chinese room"
+      },
+      {
+       "id": "p12.3.4",
+       "title": "The computational theory of mind"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mental causation",
+     "lessons": [
+      {
+       "id": "p12.4.1",
+       "title": "The exclusion problem"
+      },
+      {
+       "id": "p12.4.2",
+       "title": "Supervenience"
+      },
+      {
+       "id": "p12.4.3",
+       "title": "Epiphenomenalism"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Consciousness",
+     "lessons": [
+      {
+       "id": "p12.5.1",
+       "title": "What it is like"
+      },
+      {
+       "id": "p12.5.2",
+       "title": "The knowledge argument"
+      },
+      {
+       "id": "p12.5.3",
+       "title": "Zombies and the hard problem"
+      },
+      {
+       "id": "p12.5.4",
+       "title": "Higher-order theories"
+      },
+      {
+       "id": "p12.5.5",
+       "title": "Illusionism"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Intentionality",
+     "lessons": [
+      {
+       "id": "p12.6.1",
+       "title": "Mental content"
+      },
+      {
+       "id": "p12.6.2",
+       "title": "Externalism and Twin Earth"
+      },
+      {
+       "id": "p12.6.3",
+       "title": "Naturalising content"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Beyond the brain",
+     "lessons": [
+      {
+       "id": "p12.7.1",
+       "title": "The extended mind"
+      },
+      {
+       "id": "p12.7.2",
+       "title": "Enactivism"
+      },
+      {
+       "id": "p12.7.3",
+       "title": "Artificial minds today"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P13",
+   "title": "Moral Philosophy",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P5",
+    "P8"
+   ],
+   "parallels": [],
+   "source": "Depth of Kagan, Normative Ethics; Miller, Contemporary Metaethics; Shafer-Landau (ed.), Ethical Theory: An Anthology.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Normative theories in depth",
+     "lessons": [
+      {
+       "id": "p13.1.1",
+       "title": "Consequentialism refined"
+      },
+      {
+       "id": "p13.1.2",
+       "title": "Contemporary Kantian ethics"
+      },
+      {
+       "id": "p13.1.3",
+       "title": "Scanlon's contractualism"
+      },
+      {
+       "id": "p13.1.4",
+       "title": "Contemporary virtue ethics"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Well-being",
+     "lessons": [
+      {
+       "id": "p13.2.1",
+       "title": "Hedonism"
+      },
+      {
+       "id": "p13.2.2",
+       "title": "Desire satisfaction"
+      },
+      {
+       "id": "p13.2.3",
+       "title": "Objective list theories"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Metaethics",
+     "lessons": [
+      {
+       "id": "p13.3.1",
+       "title": "Moore's open question argument"
+      },
+      {
+       "id": "p13.3.2",
+       "title": "Non-cognitivism"
+      },
+      {
+       "id": "p13.3.3",
+       "title": "Error theory"
+      },
+      {
+       "id": "p13.3.4",
+       "title": "Moral realism"
+      },
+      {
+       "id": "p13.3.5",
+       "title": "Constructivism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Moral psychology",
+     "lessons": [
+      {
+       "id": "p13.4.1",
+       "title": "Internalism and externalism about reasons"
+      },
+      {
+       "id": "p13.4.2",
+       "title": "The Humean theory of motivation"
+      },
+      {
+       "id": "p13.4.3",
+       "title": "Moral luck"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hard cases",
+     "lessons": [
+      {
+       "id": "p13.5.1",
+       "title": "Doing and allowing"
+      },
+      {
+       "id": "p13.5.2",
+       "title": "Double effect"
+      },
+      {
+       "id": "p13.5.3",
+       "title": "Trolley problems"
+      },
+      {
+       "id": "p13.5.4",
+       "title": "Demandingness"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P14",
+   "title": "Political Philosophy",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P5",
+    "P7"
+   ],
+   "parallels": [],
+   "source": "Depth of Kymlicka, Contemporary Political Philosophy; Wolff, An Introduction to Political Philosophy; primary texts from Hobbes, Locke, Rousseau and Rawls.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "The social contract",
+     "lessons": [
+      {
+       "id": "p14.1.1",
+       "title": "Hobbes's state of nature"
+      },
+      {
+       "id": "p14.1.2",
+       "title": "Locke on consent and property"
+      },
+      {
+       "id": "p14.1.3",
+       "title": "Rousseau's general will"
+      },
+      {
+       "id": "p14.1.4",
+       "title": "Political obligation"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Justice",
+     "lessons": [
+      {
+       "id": "p14.2.1",
+       "title": "Rawls's original position"
+      },
+      {
+       "id": "p14.2.2",
+       "title": "The difference principle"
+      },
+      {
+       "id": "p14.2.3",
+       "title": "Nozick's entitlement theory"
+      },
+      {
+       "id": "p14.2.4",
+       "title": "Luck egalitarianism"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Liberty and its rivals",
+     "lessons": [
+      {
+       "id": "p14.3.1",
+       "title": "Two concepts of liberty"
+      },
+      {
+       "id": "p14.3.2",
+       "title": "Republicanism"
+      },
+      {
+       "id": "p14.3.3",
+       "title": "Communitarianism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Democracy",
+     "lessons": [
+      {
+       "id": "p14.4.1",
+       "title": "Justifications of democracy"
+      },
+      {
+       "id": "p14.4.2",
+       "title": "Deliberative democracy"
+      },
+      {
+       "id": "p14.4.3",
+       "title": "Epistemic democracy"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Critiques",
+     "lessons": [
+      {
+       "id": "p14.5.1",
+       "title": "Marxist critiques"
+      },
+      {
+       "id": "p14.5.2",
+       "title": "Feminist political philosophy"
+      },
+      {
+       "id": "p14.5.3",
+       "title": "Critical race theory"
+      },
+      {
+       "id": "p14.5.4",
+       "title": "Ambedkar on caste and democracy"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "The global",
+     "lessons": [
+      {
+       "id": "p14.6.1",
+       "title": "Global justice"
+      },
+      {
+       "id": "p14.6.2",
+       "title": "Nationalism"
+      },
+      {
+       "id": "p14.6.3",
+       "title": "Human rights"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P15",
+   "title": "Philosophy of Language",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P2",
+    "P11"
+   ],
+   "parallels": [],
+   "source": "Depth of Lycan, Philosophy of Language; Martinich (ed.), The Philosophy of Language.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Meaning and reference",
+     "lessons": [
+      {
+       "id": "p15.1.1",
+       "title": "Frege's sense and reference"
+      },
+      {
+       "id": "p15.1.2",
+       "title": "Russell's theory of descriptions"
+      },
+      {
+       "id": "p15.1.3",
+       "title": "Strawson's reply"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Names and kinds",
+     "lessons": [
+      {
+       "id": "p15.2.1",
+       "title": "Kripke on naming"
+      },
+      {
+       "id": "p15.2.2",
+       "title": "The causal theory of reference"
+      },
+      {
+       "id": "p15.2.3",
+       "title": "Natural kind terms"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Theories of meaning",
+     "lessons": [
+      {
+       "id": "p15.3.1",
+       "title": "Verificationism"
+      },
+      {
+       "id": "p15.3.2",
+       "title": "Davidson's truth-conditional semantics"
+      },
+      {
+       "id": "p15.3.3",
+       "title": "Use theories"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Speech acts and pragmatics",
+     "lessons": [
+      {
+       "id": "p15.4.1",
+       "title": "Austin"
+      },
+      {
+       "id": "p15.4.2",
+       "title": "Searle"
+      },
+      {
+       "id": "p15.4.3",
+       "title": "Grice's implicature"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Context",
+     "lessons": [
+      {
+       "id": "p15.5.1",
+       "title": "Indexicals and Kaplan"
+      },
+      {
+       "id": "p15.5.2",
+       "title": "Context sensitivity"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Rule-following",
+     "lessons": [
+      {
+       "id": "p15.6.1",
+       "title": "Wittgenstein on rules"
+      },
+      {
+       "id": "p15.6.2",
+       "title": "Kripke's sceptical paradox"
+      },
+      {
+       "id": "p15.6.3",
+       "title": "The private language argument"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P16",
+   "title": "Philosophy of Science",
+   "track": "philosophy",
+   "tier": 2,
+   "requires": [
+    "P3",
+    "P10"
+   ],
+   "parallels": [
+    "M18",
+    "M9"
+   ],
+   "source": "Depth of Godfrey-Smith, Theory and Reality; Curd and Cover (eds), Philosophy of Science: The Central Issues.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Logical empiricism",
+     "lessons": [
+      {
+       "id": "p16.1.1",
+       "title": "Verification"
+      },
+      {
+       "id": "p16.1.2",
+       "title": "The hypothetico-deductive method"
+      },
+      {
+       "id": "p16.1.3",
+       "title": "Demarcation"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Popper",
+     "lessons": [
+      {
+       "id": "p16.2.1",
+       "title": "Falsification"
+      },
+      {
+       "id": "p16.2.2",
+       "title": "Corroboration"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Kuhn and after",
+     "lessons": [
+      {
+       "id": "p16.3.1",
+       "title": "Paradigms and revolutions"
+      },
+      {
+       "id": "p16.3.2",
+       "title": "Lakatos's research programmes"
+      },
+      {
+       "id": "p16.3.3",
+       "title": "Feyerabend"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Confirmation",
+     "lessons": [
+      {
+       "id": "p16.4.1",
+       "title": "The raven paradox"
+      },
+      {
+       "id": "p16.4.2",
+       "title": "The grue problem"
+      },
+      {
+       "id": "p16.4.3",
+       "title": "Bayesian confirmation"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Explanation",
+     "lessons": [
+      {
+       "id": "p16.5.1",
+       "title": "The deductive-nomological model"
+      },
+      {
+       "id": "p16.5.2",
+       "title": "Causal explanation"
+      },
+      {
+       "id": "p16.5.3",
+       "title": "Unification"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Realism",
+     "lessons": [
+      {
+       "id": "p16.6.1",
+       "title": "Scientific realism and the no-miracles argument"
+      },
+      {
+       "id": "p16.6.2",
+       "title": "The pessimistic induction"
+      },
+      {
+       "id": "p16.6.3",
+       "title": "Constructive empiricism"
+      },
+      {
+       "id": "p16.6.4",
+       "title": "Structural realism"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Laws and the special sciences",
+     "lessons": [
+      {
+       "id": "p16.7.1",
+       "title": "Laws of nature"
+      },
+      {
+       "id": "p16.7.2",
+       "title": "Reduction"
+      },
+      {
+       "id": "p16.7.3",
+       "title": "Philosophy of biology, a first look"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P17",
+   "title": "Logic II: Metalogic and Beyond",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P2",
+    "M1"
+   ],
+   "parallels": [
+    "M20"
+   ],
+   "source": "Depth of Hunter, Metalogic; Boolos, Burgess and Jeffrey, Computability and Logic; Priest, An Introduction to Non-Classical Logic.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Sentential metatheory",
+     "lessons": [
+      {
+       "id": "p17.1.1",
+       "title": "Soundness"
+      },
+      {
+       "id": "p17.1.2",
+       "title": "Completeness"
+      },
+      {
+       "id": "p17.1.3",
+       "title": "Expressive adequacy"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "First-order metatheory",
+     "lessons": [
+      {
+       "id": "p17.2.1",
+       "title": "Soundness and completeness"
+      },
+      {
+       "id": "p17.2.2",
+       "title": "Compactness and its surprises"
+      },
+      {
+       "id": "p17.2.3",
+       "title": "Löwenheim-Skolem and Skolem's paradox"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Limits of formal systems",
+     "lessons": [
+      {
+       "id": "p17.3.1",
+       "title": "Gödel's theorems and what they do not show"
+      },
+      {
+       "id": "p17.3.2",
+       "title": "The Lucas-Penrose argument"
+      },
+      {
+       "id": "p17.3.3",
+       "title": "Computability and the mind"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Non-classical logics",
+     "lessons": [
+      {
+       "id": "p17.4.1",
+       "title": "Many-valued logics"
+      },
+      {
+       "id": "p17.4.2",
+       "title": "Intuitionistic logic"
+      },
+      {
+       "id": "p17.4.3",
+       "title": "Relevance logic"
+      },
+      {
+       "id": "p17.4.4",
+       "title": "Paraconsistent logic"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Truth",
+     "lessons": [
+      {
+       "id": "p17.5.1",
+       "title": "The liar paradox"
+      },
+      {
+       "id": "p17.5.2",
+       "title": "Tarski's theory of truth"
+      },
+      {
+       "id": "p17.5.3",
+       "title": "Kripke's theory of truth"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P18",
+   "title": "History of Analytic Philosophy",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P15",
+    "P17"
+   ],
+   "parallels": [],
+   "source": "Depth of Soames, Philosophical Analysis in the Twentieth Century, with primary texts.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Frege",
+     "lessons": [
+      {
+       "id": "p18.1.1",
+       "title": "Logicism"
+      },
+      {
+       "id": "p18.1.2",
+       "title": "The Begriffsschrift"
+      },
+      {
+       "id": "p18.1.3",
+       "title": "Concept and object"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Russell and Moore",
+     "lessons": [
+      {
+       "id": "p18.2.1",
+       "title": "The revolt against idealism"
+      },
+      {
+       "id": "p18.2.2",
+       "title": "Logical atomism"
+      },
+      {
+       "id": "p18.2.3",
+       "title": "The theory of types"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Early Wittgenstein",
+     "lessons": [
+      {
+       "id": "p18.3.1",
+       "title": "The Tractatus picture theory"
+      },
+      {
+       "id": "p18.3.2",
+       "title": "Saying and showing"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Logical positivism",
+     "lessons": [
+      {
+       "id": "p18.4.1",
+       "title": "The Vienna Circle"
+      },
+      {
+       "id": "p18.4.2",
+       "title": "Carnap's Aufbau"
+      },
+      {
+       "id": "p18.4.3",
+       "title": "Verificationism"
+      },
+      {
+       "id": "p18.4.4",
+       "title": "Carnap on linguistic frameworks"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Ordinary language philosophy",
+     "lessons": [
+      {
+       "id": "p18.5.1",
+       "title": "Later Wittgenstein"
+      },
+      {
+       "id": "p18.5.2",
+       "title": "Ryle"
+      },
+      {
+       "id": "p18.5.3",
+       "title": "Austin"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Quine",
+     "lessons": [
+      {
+       "id": "p18.6.1",
+       "title": "Two Dogmas of Empiricism"
+      },
+      {
+       "id": "p18.6.2",
+       "title": "Naturalised epistemology"
+      },
+      {
+       "id": "p18.6.3",
+       "title": "Indeterminacy of translation"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "The return of metaphysics",
+     "lessons": [
+      {
+       "id": "p18.7.1",
+       "title": "Strawson's descriptive metaphysics"
+      },
+      {
+       "id": "p18.7.2",
+       "title": "Kripke"
+      },
+      {
+       "id": "p18.7.3",
+       "title": "Lewis"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P19",
+   "title": "Phenomenology and Existentialism",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P9",
+    "P12"
+   ],
+   "parallels": [],
+   "source": "Depth of Moran, Introduction to Phenomenology, with Heidegger, Being and Time, and Sartre, Being and Nothingness.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Husserl",
+     "lessons": [
+      {
+       "id": "p19.1.1",
+       "title": "Intentionality"
+      },
+      {
+       "id": "p19.1.2",
+       "title": "The epoché and reduction"
+      },
+      {
+       "id": "p19.1.3",
+       "title": "The lifeworld"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Heidegger",
+     "lessons": [
+      {
+       "id": "p19.2.1",
+       "title": "Dasein"
+      },
+      {
+       "id": "p19.2.2",
+       "title": "Being-in-the-world"
+      },
+      {
+       "id": "p19.2.3",
+       "title": "Anxiety and authenticity"
+      },
+      {
+       "id": "p19.2.4",
+       "title": "Temporality"
+      },
+      {
+       "id": "p19.2.5",
+       "title": "The later Heidegger on technology"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sartre",
+     "lessons": [
+      {
+       "id": "p19.3.1",
+       "title": "Bad faith"
+      },
+      {
+       "id": "p19.3.2",
+       "title": "Radical freedom"
+      },
+      {
+       "id": "p19.3.3",
+       "title": "The look"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Beauvoir",
+     "lessons": [
+      {
+       "id": "p19.4.1",
+       "title": "The Second Sex"
+      },
+      {
+       "id": "p19.4.2",
+       "title": "The ethics of ambiguity"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Merleau-Ponty",
+     "lessons": [
+      {
+       "id": "p19.5.1",
+       "title": "Embodiment"
+      },
+      {
+       "id": "p19.5.2",
+       "title": "The primacy of perception"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Camus",
+     "lessons": [
+      {
+       "id": "p19.6.1",
+       "title": "The absurd and Sisyphus"
+      },
+      {
+       "id": "p19.6.2",
+       "title": "Revolt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P20",
+   "title": "Indian Philosophy",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P1",
+    "P2"
+   ],
+   "parallels": [
+    "P10",
+    "P11",
+    "P12"
+   ],
+   "source": "Depth of Hiriyanna, Outlines of Indian Philosophy; Radhakrishnan and Moore, A Sourcebook in Indian Philosophy; Matilal, Perception; Ganeri, Philosophy in Classical India.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Foundations",
+     "lessons": [
+      {
+       "id": "p20.1.1",
+       "title": "The Vedas and Upanishads"
+      },
+      {
+       "id": "p20.1.2",
+       "title": "Ātman and Brahman"
+      },
+      {
+       "id": "p20.1.3",
+       "title": "Karma and moksha"
+      },
+      {
+       "id": "p20.1.4",
+       "title": "The darśanas as a system of debate"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nyāya and Vaiśeṣika",
+     "lessons": [
+      {
+       "id": "p20.2.1",
+       "title": "The pramāṇas"
+      },
+      {
+       "id": "p20.2.2",
+       "title": "Nyāya inference"
+      },
+      {
+       "id": "p20.2.3",
+       "title": "The Vaiśeṣika categories"
+      },
+      {
+       "id": "p20.2.4",
+       "title": "Atomism"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sāṃkhya and Yoga",
+     "lessons": [
+      {
+       "id": "p20.3.1",
+       "title": "Puruṣa and prakṛti"
+      },
+      {
+       "id": "p20.3.2",
+       "title": "The guṇas"
+      },
+      {
+       "id": "p20.3.3",
+       "title": "Patañjali's Yoga Sūtras"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mīmāṃsā and Vedānta",
+     "lessons": [
+      {
+       "id": "p20.4.1",
+       "title": "Mīmāṃsā on language and authority"
+      },
+      {
+       "id": "p20.4.2",
+       "title": "Śaṅkara's Advaita"
+      },
+      {
+       "id": "p20.4.3",
+       "title": "Rāmānuja's Viśiṣṭādvaita"
+      },
+      {
+       "id": "p20.4.4",
+       "title": "Madhva's Dvaita"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Buddhist philosophy",
+     "lessons": [
+      {
+       "id": "p20.5.1",
+       "title": "The four noble truths"
+      },
+      {
+       "id": "p20.5.2",
+       "title": "No-self"
+      },
+      {
+       "id": "p20.5.3",
+       "title": "Dependent origination"
+      },
+      {
+       "id": "p20.5.4",
+       "title": "Abhidharma"
+      },
+      {
+       "id": "p20.5.5",
+       "title": "Nāgārjuna and emptiness"
+      },
+      {
+       "id": "p20.5.6",
+       "title": "Yogācāra"
+      },
+      {
+       "id": "p20.5.7",
+       "title": "Dignāga and Dharmakīrti on knowledge"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Jaina and Cārvāka",
+     "lessons": [
+      {
+       "id": "p20.6.1",
+       "title": "Anekāntavāda"
+      },
+      {
+       "id": "p20.6.2",
+       "title": "Syādvāda"
+      },
+      {
+       "id": "p20.6.3",
+       "title": "Cārvāka materialism"
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "title": "Navya-Nyāya and modern India",
+     "lessons": [
+      {
+       "id": "p20.7.1",
+       "title": "Gaṅgeśa's new logic"
+      },
+      {
+       "id": "p20.7.2",
+       "title": "Vivekananda"
+      },
+      {
+       "id": "p20.7.3",
+       "title": "Aurobindo"
+      },
+      {
+       "id": "p20.7.4",
+       "title": "Gandhi"
+      },
+      {
+       "id": "p20.7.5",
+       "title": "Ambedkar"
+      },
+      {
+       "id": "p20.7.6",
+       "title": "K. C. Bhattacharya"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P21",
+   "title": "Chinese Philosophy",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P5"
+   ],
+   "parallels": [],
+   "source": "Depth of Van Norden, Introduction to Classical Chinese Philosophy; Ivanhoe and Van Norden (eds), Readings in Classical Chinese Philosophy.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Confucius",
+     "lessons": [
+      {
+       "id": "p21.1.1",
+       "title": "Ren and li"
+      },
+      {
+       "id": "p21.1.2",
+       "title": "The junzi"
+      },
+      {
+       "id": "p21.1.3",
+       "title": "Rectification of names"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mohism",
+     "lessons": [
+      {
+       "id": "p21.2.1",
+       "title": "Impartial care"
+      },
+      {
+       "id": "p21.2.2",
+       "title": "Mohist logic"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Daoism",
+     "lessons": [
+      {
+       "id": "p21.3.1",
+       "title": "The Daodejing"
+      },
+      {
+       "id": "p21.3.2",
+       "title": "The Zhuangzi"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mencius and Xunzi",
+     "lessons": [
+      {
+       "id": "p21.4.1",
+       "title": "Human nature, good or bad"
+      },
+      {
+       "id": "p21.4.2",
+       "title": "Moral cultivation"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Legalism and Neo-Confucianism",
+     "lessons": [
+      {
+       "id": "p21.5.1",
+       "title": "Han Feizi"
+      },
+      {
+       "id": "p21.5.2",
+       "title": "Zhu Xi"
+      },
+      {
+       "id": "p21.5.3",
+       "title": "Wang Yangming"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P22",
+   "title": "Philosophy of Mathematics",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P17",
+    "M6",
+    "M20"
+   ],
+   "parallels": [
+    "M20",
+    "M39",
+    "M6"
+   ],
+   "source": "Depth of Shapiro, Thinking About Mathematics; Benacerraf and Putnam (eds), Philosophy of Mathematics: Selected Readings.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Classical views",
+     "lessons": [
+      {
+       "id": "p22.1.1",
+       "title": "Plato"
+      },
+      {
+       "id": "p22.1.2",
+       "title": "Aristotle"
+      },
+      {
+       "id": "p22.1.3",
+       "title": "Kant on mathematics"
+      },
+      {
+       "id": "p22.1.4",
+       "title": "Mill's empiricism"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Logicism",
+     "lessons": [
+      {
+       "id": "p22.2.1",
+       "title": "Frege"
+      },
+      {
+       "id": "p22.2.2",
+       "title": "Russell's paradox"
+      },
+      {
+       "id": "p22.2.3",
+       "title": "Neo-logicism"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Formalism",
+     "lessons": [
+      {
+       "id": "p22.3.1",
+       "title": "Hilbert's programme"
+      },
+      {
+       "id": "p22.3.2",
+       "title": "The impact of Gödel"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Intuitionism",
+     "lessons": [
+      {
+       "id": "p22.4.1",
+       "title": "Brouwer"
+      },
+      {
+       "id": "p22.4.2",
+       "title": "Heyting"
+      },
+      {
+       "id": "p22.4.3",
+       "title": "Dummett's meaning-theoretic argument"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Set theory and foundations",
+     "lessons": [
+      {
+       "id": "p22.5.1",
+       "title": "The iterative conception"
+      },
+      {
+       "id": "p22.5.2",
+       "title": "New axioms and large cardinals"
+      },
+      {
+       "id": "p22.5.3",
+       "title": "The continuum hypothesis debate"
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "title": "Contemporary debates",
+     "lessons": [
+      {
+       "id": "p22.6.1",
+       "title": "Benacerraf's dilemma"
+      },
+      {
+       "id": "p22.6.2",
+       "title": "The indispensability argument"
+      },
+      {
+       "id": "p22.6.3",
+       "title": "Fictionalism"
+      },
+      {
+       "id": "p22.6.4",
+       "title": "Structuralism"
+      },
+      {
+       "id": "p22.6.5",
+       "title": "Explanation in mathematics"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P23",
+   "title": "Philosophy of Religion",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P1",
+    "P10",
+    "P11"
+   ],
+   "parallels": [],
+   "source": "Depth of Peterson et al., Reason and Religious Belief; Mackie, The Miracle of Theism.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Concepts of God",
+     "lessons": [
+      {
+       "id": "p23.1.1",
+       "title": "Paradoxes of omnipotence"
+      },
+      {
+       "id": "p23.1.2",
+       "title": "Foreknowledge and freedom"
+      },
+      {
+       "id": "p23.1.3",
+       "title": "Eternity"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Arguments for God",
+     "lessons": [
+      {
+       "id": "p23.2.1",
+       "title": "The ontological argument in depth"
+      },
+      {
+       "id": "p23.2.2",
+       "title": "The cosmological argument in depth"
+      },
+      {
+       "id": "p23.2.3",
+       "title": "Fine-tuning"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Evil",
+     "lessons": [
+      {
+       "id": "p23.3.1",
+       "title": "The logical problem"
+      },
+      {
+       "id": "p23.3.2",
+       "title": "The evidential problem"
+      },
+      {
+       "id": "p23.3.3",
+       "title": "Theodicies"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Faith and reason",
+     "lessons": [
+      {
+       "id": "p23.4.1",
+       "title": "Pascal's wager"
+      },
+      {
+       "id": "p23.4.2",
+       "title": "Reformed epistemology"
+      },
+      {
+       "id": "p23.4.3",
+       "title": "Religious experience"
+      },
+      {
+       "id": "p23.4.4",
+       "title": "Miracles"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Religious diversity",
+     "lessons": [
+      {
+       "id": "p23.5.1",
+       "title": "Pluralism and exclusivism"
+      },
+      {
+       "id": "p23.5.2",
+       "title": "Non-theistic traditions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P24",
+   "title": "Aesthetics",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P5",
+    "P8"
+   ],
+   "parallels": [],
+   "source": "Depth of Lamarque and Olsen (eds), Aesthetics and the Philosophy of Art.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Beauty and taste",
+     "lessons": [
+      {
+       "id": "p24.1.1",
+       "title": "Plato on beauty"
+      },
+      {
+       "id": "p24.1.2",
+       "title": "Hume's standard of taste"
+      },
+      {
+       "id": "p24.1.3",
+       "title": "Kant revisited"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "What art is",
+     "lessons": [
+      {
+       "id": "p24.2.1",
+       "title": "Imitation"
+      },
+      {
+       "id": "p24.2.2",
+       "title": "Expression"
+      },
+      {
+       "id": "p24.2.3",
+       "title": "Institutional theories"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Interpretation and emotion",
+     "lessons": [
+      {
+       "id": "p24.3.1",
+       "title": "Artist's intention"
+      },
+      {
+       "id": "p24.3.2",
+       "title": "The paradox of fiction"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Values",
+     "lessons": [
+      {
+       "id": "p24.4.1",
+       "title": "Aesthetic and moral value"
+      },
+      {
+       "id": "p24.4.2",
+       "title": "Rasa theory in Indian aesthetics"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P25",
+   "title": "Applied Ethics",
+   "track": "philosophy",
+   "tier": 3,
+   "requires": [
+    "P13"
+   ],
+   "parallels": [],
+   "source": "Depth of Singer, Practical Ethics; LaFollette (ed.), Ethics in Practice.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Life and death",
+     "lessons": [
+      {
+       "id": "p25.1.1",
+       "title": "Abortion"
+      },
+      {
+       "id": "p25.1.2",
+       "title": "Euthanasia"
+      },
+      {
+       "id": "p25.1.3",
+       "title": "The badness of death"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animals and environment",
+     "lessons": [
+      {
+       "id": "p25.2.1",
+       "title": "The moral status of animals"
+      },
+      {
+       "id": "p25.2.2",
+       "title": "Environmental ethics"
+      },
+      {
+       "id": "p25.2.3",
+       "title": "Climate ethics"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "The global and the future",
+     "lessons": [
+      {
+       "id": "p25.3.1",
+       "title": "Poverty and effective altruism"
+      },
+      {
+       "id": "p25.3.2",
+       "title": "Future generations and population ethics"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Technology",
+     "lessons": [
+      {
+       "id": "p25.4.1",
+       "title": "Ethics of artificial intelligence"
+      },
+      {
+       "id": "p25.4.2",
+       "title": "Bioethics and enhancement"
+      },
+      {
+       "id": "p25.4.3",
+       "title": "Privacy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P26",
+   "title": "Modal Logic and Formal Methods",
+   "track": "philosophy",
+   "tier": 4,
+   "requires": [
+    "P17"
+   ],
+   "parallels": [
+    "M38",
+    "M9"
+   ],
+   "source": "Depth of Sider, Logic for Philosophy; Hughes and Cresswell, A New Introduction to Modal Logic.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Propositional modal logic",
+     "lessons": [
+      {
+       "id": "p26.1.1",
+       "title": "Kripke semantics"
+      },
+      {
+       "id": "p26.1.2",
+       "title": "The systems K to S5"
+      },
+      {
+       "id": "p26.1.3",
+       "title": "Correspondence theory"
+      },
+      {
+       "id": "p26.1.4",
+       "title": "Completeness by canonical models"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Quantified modal logic",
+     "lessons": [
+      {
+       "id": "p26.2.1",
+       "title": "The Barcan formulas"
+      },
+      {
+       "id": "p26.2.2",
+       "title": "Varying domains and actualism"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Applied modal logics",
+     "lessons": [
+      {
+       "id": "p26.3.1",
+       "title": "Epistemic logic"
+      },
+      {
+       "id": "p26.3.2",
+       "title": "Deontic logic"
+      },
+      {
+       "id": "p26.3.3",
+       "title": "Temporal logic"
+      },
+      {
+       "id": "p26.3.4",
+       "title": "Conditional logic (Stalnaker and Lewis)"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Formal decision and choice",
+     "lessons": [
+      {
+       "id": "p26.4.1",
+       "title": "Expected utility foundations"
+      },
+      {
+       "id": "p26.4.2",
+       "title": "Newcomb's problem"
+      },
+      {
+       "id": "p26.4.3",
+       "title": "Game theory for philosophers"
+      },
+      {
+       "id": "p26.4.4",
+       "title": "Social choice and Arrow's theorem"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P27",
+   "title": "Graduate Metaphysics",
+   "track": "philosophy",
+   "tier": 4,
+   "requires": [
+    "P11",
+    "P26"
+   ],
+   "parallels": [],
+   "source": "Depth of Sider, Writing the Book of the World; Lewis, On the Plurality of Worlds; key papers by Fine and Schaffer.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Grounding and fundamentality",
+     "lessons": [
+      {
+       "id": "p27.1.1",
+       "title": "Grounding"
+      },
+      {
+       "id": "p27.1.2",
+       "title": "Fundamentality and structure"
+      },
+      {
+       "id": "p27.1.3",
+       "title": "Priority monism"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Modality in depth",
+     "lessons": [
+      {
+       "id": "p27.2.1",
+       "title": "Lewis's realism defended and attacked"
+      },
+      {
+       "id": "p27.2.2",
+       "title": "Ersatz worlds"
+      },
+      {
+       "id": "p27.2.3",
+       "title": "Modal epistemology"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Composition",
+     "lessons": [
+      {
+       "id": "p27.3.1",
+       "title": "The special composition question"
+      },
+      {
+       "id": "p27.3.2",
+       "title": "Mereological nihilism and universalism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Laws and powers",
+     "lessons": [
+      {
+       "id": "p27.4.1",
+       "title": "Humean supervenience"
+      },
+      {
+       "id": "p27.4.2",
+       "title": "Anti-Humean powers and dispositions"
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Metametaphysics",
+     "lessons": [
+      {
+       "id": "p27.5.1",
+       "title": "Carnap and Quine revisited"
+      },
+      {
+       "id": "p27.5.2",
+       "title": "Verbal disputes"
+      },
+      {
+       "id": "p27.5.3",
+       "title": "Deflationism about ontology"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P28",
+   "title": "Graduate Epistemology",
+   "track": "philosophy",
+   "tier": 4,
+   "requires": [
+    "P10",
+    "P26",
+    "M9"
+   ],
+   "parallels": [
+    "M27"
+   ],
+   "source": "Depth of Williamson, Knowledge and Its Limits; Titelbaum, Fundamentals of Bayesian Epistemology.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Knowledge first",
+     "lessons": [
+      {
+       "id": "p28.1.1",
+       "title": "Knowledge as the most general factive mental state"
+      },
+      {
+       "id": "p28.1.2",
+       "title": "Luminosity"
+      },
+      {
+       "id": "p28.1.3",
+       "title": "Evidence as knowledge"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Formal epistemology",
+     "lessons": [
+      {
+       "id": "p28.2.1",
+       "title": "Bayesian norms in depth"
+      },
+      {
+       "id": "p28.2.2",
+       "title": "Accuracy-first epistemology"
+      },
+      {
+       "id": "p28.2.3",
+       "title": "Imprecise credences"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Higher-order evidence",
+     "lessons": [
+      {
+       "id": "p28.3.1",
+       "title": "Peer disagreement revisited"
+      },
+      {
+       "id": "p28.3.2",
+       "title": "Higher-order defeat"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Knowledge and action",
+     "lessons": [
+      {
+       "id": "p28.4.1",
+       "title": "Pragmatic encroachment"
+      },
+      {
+       "id": "p28.4.2",
+       "title": "Epistemic consequentialism"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P29",
+   "title": "Graduate Philosophy of Language and Logic",
+   "track": "philosophy",
+   "tier": 4,
+   "requires": [
+    "P15",
+    "P26"
+   ],
+   "parallels": [],
+   "source": "Depth of Kripke, Naming and Necessity; Kaplan, Demonstratives; Heim and Kratzer, Semantics in Generative Grammar.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Formal semantics",
+     "lessons": [
+      {
+       "id": "p29.1.1",
+       "title": "The lambda calculus"
+      },
+      {
+       "id": "p29.1.2",
+       "title": "Type theory for meaning"
+      },
+      {
+       "id": "p29.1.3",
+       "title": "Generalised quantifiers"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Two-dimensionalism",
+     "lessons": [
+      {
+       "id": "p29.2.1",
+       "title": "The necessary a posteriori"
+      },
+      {
+       "id": "p29.2.2",
+       "title": "Two-dimensional semantics"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Vagueness",
+     "lessons": [
+      {
+       "id": "p29.3.1",
+       "title": "The sorites"
+      },
+      {
+       "id": "p29.3.2",
+       "title": "Supervaluationism"
+      },
+      {
+       "id": "p29.3.3",
+       "title": "Epistemicism"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Truth and paradox",
+     "lessons": [
+      {
+       "id": "p29.4.1",
+       "title": "Deflationism about truth"
+      },
+      {
+       "id": "p29.4.2",
+       "title": "Revenge paradoxes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P30",
+   "title": "Graduate Ethics and Metaethics",
+   "track": "philosophy",
+   "tier": 4,
+   "requires": [
+    "P13"
+   ],
+   "parallels": [],
+   "source": "Depth of Parfit, Reasons and Persons and On What Matters; Scanlon, What We Owe to Each Other.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Reasons and rationality",
+     "lessons": [
+      {
+       "id": "p30.1.1",
+       "title": "Reasons fundamentalism"
+      },
+      {
+       "id": "p30.1.2",
+       "title": "Rationality and its requirements"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Persons and the future",
+     "lessons": [
+      {
+       "id": "p30.2.1",
+       "title": "Parfit on personal identity"
+      },
+      {
+       "id": "p30.2.2",
+       "title": "The non-identity problem"
+      },
+      {
+       "id": "p30.2.3",
+       "title": "The repugnant conclusion"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Metaethics in depth",
+     "lessons": [
+      {
+       "id": "p30.3.1",
+       "title": "The Frege-Geach problem for expressivism"
+      },
+      {
+       "id": "p30.3.2",
+       "title": "Robust realism"
+      },
+      {
+       "id": "p30.3.3",
+       "title": "Companions-in-guilt arguments"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Moral uncertainty",
+     "lessons": [
+      {
+       "id": "p30.4.1",
+       "title": "Acting under moral uncertainty"
+      },
+      {
+       "id": "p30.4.2",
+       "title": "Moral disagreement"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P31",
+   "title": "Graduate Philosophy of Mind and Cognitive Science",
+   "track": "philosophy",
+   "tier": 4,
+   "requires": [
+    "P12"
+   ],
+   "parallels": [
+    "P20"
+   ],
+   "source": "Depth of Chalmers, The Conscious Mind; Clark, Surfing Uncertainty.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Science of consciousness",
+     "lessons": [
+      {
+       "id": "p31.1.1",
+       "title": "Global workspace theory"
+      },
+      {
+       "id": "p31.1.2",
+       "title": "Integrated information theory"
+      },
+      {
+       "id": "p31.1.3",
+       "title": "Predictive processing"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Perception",
+     "lessons": [
+      {
+       "id": "p31.2.1",
+       "title": "Representationalism"
+      },
+      {
+       "id": "p31.2.2",
+       "title": "Disjunctivism"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "The self",
+     "lessons": [
+      {
+       "id": "p31.3.1",
+       "title": "Self-models"
+      },
+      {
+       "id": "p31.3.2",
+       "title": "No-self views, East and West"
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Machine minds",
+     "lessons": [
+      {
+       "id": "p31.4.1",
+       "title": "Language models and understanding"
+      },
+      {
+       "id": "p31.4.2",
+       "title": "Moral status of artificial agents"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P32",
+   "title": "Philosophy of Physics",
+   "track": "philosophy",
+   "tier": 5,
+   "requires": [
+    "P16",
+    "M26"
+   ],
+   "parallels": [
+    "M26",
+    "M31"
+   ],
+   "source": "Depth of Maudlin, Philosophy of Physics: Space and Time and Quantum Theory; Albert, Quantum Mechanics and Experience.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Space and time",
+     "lessons": [
+      {
+       "id": "p32.1.1",
+       "title": "Newton versus Leibniz"
+      },
+      {
+       "id": "p32.1.2",
+       "title": "Special relativity"
+      },
+      {
+       "id": "p32.1.3",
+       "title": "General relativity and substantivalism"
+      },
+      {
+       "id": "p32.1.4",
+       "title": "The hole argument"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Quantum mechanics",
+     "lessons": [
+      {
+       "id": "p32.2.1",
+       "title": "The measurement problem"
+      },
+      {
+       "id": "p32.2.2",
+       "title": "Bell's theorem"
+      },
+      {
+       "id": "p32.2.3",
+       "title": "Everett's many worlds"
+      },
+      {
+       "id": "p32.2.4",
+       "title": "Bohmian mechanics"
+      },
+      {
+       "id": "p32.2.5",
+       "title": "Collapse theories"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Time and probability",
+     "lessons": [
+      {
+       "id": "p32.3.1",
+       "title": "The arrow of time"
+      },
+      {
+       "id": "p32.3.2",
+       "title": "Probability in statistical mechanics"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P33",
+   "title": "Advanced Political and Social Philosophy",
+   "track": "philosophy",
+   "tier": 5,
+   "requires": [
+    "P14"
+   ],
+   "parallels": [],
+   "source": "Depth of Rawls, Political Liberalism; Sen, The Idea of Justice; Habermas, Between Facts and Norms.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Legitimacy",
+     "lessons": [
+      {
+       "id": "p33.1.1",
+       "title": "Public reason"
+      },
+      {
+       "id": "p33.1.2",
+       "title": "Political liberalism"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Justice in practice",
+     "lessons": [
+      {
+       "id": "p33.2.1",
+       "title": "The capabilities approach"
+      },
+      {
+       "id": "p33.2.2",
+       "title": "Non-ideal theory"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Society",
+     "lessons": [
+      {
+       "id": "p33.3.1",
+       "title": "Recognition"
+      },
+      {
+       "id": "p33.3.2",
+       "title": "Habermas on discourse"
+      },
+      {
+       "id": "p33.3.3",
+       "title": "Social ontology"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P34",
+   "title": "Continental Philosophy after Heidegger",
+   "track": "philosophy",
+   "tier": 5,
+   "requires": [
+    "P19"
+   ],
+   "parallels": [],
+   "source": "Depth of Gadamer, Truth and Method; Adorno and Horkheimer, Dialectic of Enlightenment; Foucault, Discipline and Punish.",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Hermeneutics",
+     "lessons": [
+      {
+       "id": "p34.1.1",
+       "title": "Gadamer"
+      },
+      {
+       "id": "p34.1.2",
+       "title": "Ricoeur"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Critical theory",
+     "lessons": [
+      {
+       "id": "p34.2.1",
+       "title": "Adorno and Horkheimer"
+      },
+      {
+       "id": "p34.2.2",
+       "title": "Habermas"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Structuralism and after",
+     "lessons": [
+      {
+       "id": "p34.3.1",
+       "title": "Structuralism"
+      },
+      {
+       "id": "p34.3.2",
+       "title": "Foucault on power and knowledge"
+      },
+      {
+       "id": "p34.3.3",
+       "title": "Derrida and deconstruction"
+      },
+      {
+       "id": "p34.3.4",
+       "title": "Deleuze"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P35",
+   "title": "Research and Thesis",
+   "track": "philosophy",
+   "tier": 5,
+   "requires": [],
+   "parallels": [],
+   "source": "",
+   "chapters": [
+    {
+     "n": 1,
+     "title": "Finding a question",
+     "lessons": [
+      {
+       "id": "p35.1.1",
+       "title": "Reading a literature"
+      },
+      {
+       "id": "p35.1.2",
+       "title": "Mapping a debate"
+      },
+      {
+       "id": "p35.1.3",
+       "title": "Choosing a question worth a thesis"
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Writing",
+     "lessons": [
+      {
+       "id": "p35.2.1",
+       "title": "A research paper"
+      },
+      {
+       "id": "p35.2.2",
+       "title": "Parton as referee"
+      },
+      {
+       "id": "p35.2.3",
+       "title": "Revising after objections"
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Thesis",
+     "lessons": [
+      {
+       "id": "p35.3.1",
+       "title": "A 15,000-word thesis written chapter by chapter, with a final defence against Parton's hardest objections"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

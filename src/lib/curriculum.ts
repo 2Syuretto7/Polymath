@@ -1,57 +1,29 @@
-/**
- * Phase 1 seed: the opening lessons of the two bridge courses, enough for the
- * Learn button to make a real choice. Phase 2 replaces this with lesson files
- * and the full graph.
- */
-export type Track = "mathematics" | "philosophy";
+import "server-only";
+import { LESSONS } from "@/content/lessons";
+import { buildGraph, type Graph } from "./graph";
+import { isAutoChecked, type Exercise, type LessonContent } from "./types";
 
-export type LessonRef = {
-  id: string;
-  track: Track;
-  course: string;
-  chapter: string;
-  title: string;
-};
+export const LESSON_BY_ID = new Map(LESSONS.map((l) => [l.id, l]));
 
-export const TOTAL_LESSONS = 1700;
+/** Built once per server process; throws (and fails the build) if any link is broken. */
+export const GRAPH: Graph = buildGraph(new Map(LESSONS.map((l) => [l.id, l.links ?? {}])));
 
-export const OPENING_LESSONS: readonly LessonRef[] = [
-  { id: "m0.1.1", track: "mathematics", course: "M0 Foundations of School Mathematics", chapter: "Numbers", title: "Counting and the natural numbers" },
-  { id: "p0.1.1", track: "philosophy", course: "P0 Thinking and Writing Philosophically", chapter: "What philosophy is", title: "Philosophy's questions" },
-  { id: "m0.1.2", track: "mathematics", course: "M0 Foundations of School Mathematics", chapter: "Numbers", title: "Integers and signed arithmetic" },
-  { id: "p0.1.2", track: "philosophy", course: "P0 Thinking and Writing Philosophically", chapter: "What philosophy is", title: "Philosophy and science" },
-  { id: "m0.1.3", track: "mathematics", course: "M0 Foundations of School Mathematics", chapter: "Numbers", title: "Fractions and ratios" },
-  { id: "p0.1.3", track: "philosophy", course: "P0 Thinking and Writing Philosophically", chapter: "What philosophy is", title: "Philosophy in everyday life" },
-];
+export type ExerciseRef = { id: string; lessonId: string; exercise: Exercise };
 
-export type LearnStep =
-  | { kind: "continue"; lesson: LessonRef }
-  | { kind: "begin"; lesson: LessonRef }
-  | { kind: "caught-up" };
+export const exerciseId = (lessonId: string, key: string) => `${lessonId}:${key}`;
 
-export type ProgressRow = { lesson_id: string; status: string };
+export const EXERCISES = new Map<string, ExerciseRef>(
+  LESSONS.flatMap((l) => l.practice.map((e) => [exerciseId(l.id, e.key), { id: exerciseId(l.id, e.key), lessonId: l.id, exercise: e }] as const)),
+);
 
-/**
- * The single next step: finish what is open first, otherwise begin the next
- * lesson in order (the seed already alternates the two tracks).
- * Phase 2 adds due reviews, repair work and the full graph frontier.
- */
-export function chooseNextStep(progress: readonly ProgressRow[]): LearnStep {
-  const status = new Map(progress.map((p) => [p.lesson_id, p.status]));
-  const open = OPENING_LESSONS.find((l) => status.get(l.id) === "in_progress");
-  if (open) return { kind: "continue", lesson: open };
-  const next = OPENING_LESSONS.find((l) => status.get(l.id) !== "mastered");
-  if (next) return { kind: "begin", lesson: next };
-  return { kind: "caught-up" };
+for (const l of LESSONS) {
+  const keys = l.practice.map((e) => e.key);
+  if (new Set(keys).size !== keys.length) throw new Error(`Duplicate exercise key in ${l.id}`);
 }
 
-export function describeStep(step: LearnStep): string {
-  switch (step.kind) {
-    case "continue":
-      return `Continue: ${step.lesson.title}`;
-    case "begin":
-      return `Begin: ${step.lesson.title}`;
-    case "caught-up":
-      return "You're up to date. New lessons are on their way.";
-  }
-}
+/** Exercises that count towards mastery: check, apply and prove. Stretch is optional. */
+export const masteryExercises = (l: LessonContent) => l.practice.filter((e) => e.rung !== "stretch");
+
+/** Auto-checked check and apply exercises become spaced-review cards once a lesson is mastered. */
+export const reviewable = (l: LessonContent) =>
+  l.practice.filter((e) => (e.rung === "check" || e.rung === "apply") && isAutoChecked(e.answer));
