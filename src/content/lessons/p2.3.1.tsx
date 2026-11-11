@@ -94,7 +94,7 @@ export const lesson: LessonContent = {
         <p>
           Each rule is valid by the truth tables: whenever the lines it uses are true, so is the line it produces. So anything
           provable is entailed: if φ₁, &hellip;, φₙ ⊢ ψ then φ₁, &hellip;, φₙ ⊨ ψ. The converse, that every valid argument can
-          be proved, needs more rules, which the next two lessons supply.
+          be proved, needs more rules, which the rest of this chapter supplies.
         </p>
       </Remark>
 

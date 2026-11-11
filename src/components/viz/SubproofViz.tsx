@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 
-type Line = { s: string; depth: number; why: string; note: string; assume?: boolean };
-type Proof = { name: string; claim: string; lines: Line[] };
+export type FitchLine = { s: string; depth: number; why: string; note?: string; assume?: boolean; hot?: boolean };
+export type FitchProof = { name: string; claim: string; lines: FitchLine[] };
 
-const PROOFS: Proof[] = [
+const PROOFS: FitchProof[] = [
   {
     name: "Chaining conditionals", claim: "A → B, B → C ⊢ A → C",
     lines: [
@@ -42,33 +42,40 @@ const PROOFS: Proof[] = [
   },
 ];
 
+/** A Fitch-style proof: numbered lines, a bar for the premises, and one bar per open assumption. */
+export function FitchBox({ lines, current }: { lines: FitchLine[]; current?: number }) {
+  return (
+    <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "8px 12px" }}>
+      {lines.map((l, i) => (
+        <div key={i} style={{ display: "flex", alignItems: "stretch", minHeight: 28, background: i === current || l.hot ? "var(--accent-soft)" : undefined }}>
+          <span className="mono" style={{ width: 28, color: "var(--text-muted)", alignSelf: "center" }}>{i + 1}</span>
+          <span style={{ width: 10, borderLeft: "2px solid var(--text-muted)" }} />
+          {Array.from({ length: l.depth }, (_, d) => <span key={d} style={{ width: 14, borderLeft: "2px solid var(--accent)" }} />)}
+          <span className="mono" style={{ flex: 1, alignSelf: "center", paddingBottom: l.assume ? 2 : 0, borderBottom: l.assume ? "1.5px solid var(--accent)" : undefined, maxWidth: "max-content", paddingRight: 12 }}>{l.s}</span>
+          <span className="mono-meta" style={{ marginLeft: "auto", alignSelf: "center" }}>{l.why}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /** Fitch-style proofs with subproofs, revealed one line at a time. */
-export function SubproofViz() {
+export function SubproofViz({ proofs = PROOFS }: { proofs?: FitchProof[] }) {
   const [k, setK] = useState(0);
   const [n, setN] = useState(1);
-  const P = PROOFS[k];
+  const P = proofs[k];
   const pick = (i: number) => { setK(i); setN(1); };
   const cur = P.lines[n - 1];
 
   return (
     <figure className="viz">
       <div className="viz-controls" style={{ marginTop: 0, flexWrap: "wrap" }} role="group" aria-label="Proof">
-        {PROOFS.map((p, i) => (
+        {proofs.map((p, i) => (
           <button key={p.name} type="button" className={i === k ? "btn btn-primary" : "btn"} aria-pressed={i === k} onClick={() => pick(i)}>{p.name}</button>
         ))}
       </div>
       <p className="mono" style={{ margin: "12px 0 8px" }}>{P.claim}</p>
-      <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "8px 12px" }}>
-        {P.lines.slice(0, n).map((l, i) => (
-          <div key={i} style={{ display: "flex", alignItems: "stretch", minHeight: 28, background: i === n - 1 ? "var(--accent-soft)" : undefined }}>
-            <span className="mono" style={{ width: 28, color: "var(--text-muted)", alignSelf: "center" }}>{i + 1}</span>
-            <span style={{ width: 10, borderLeft: "2px solid var(--text-muted)" }} />
-            {Array.from({ length: l.depth }, (_, d) => <span key={d} style={{ width: 14, borderLeft: "2px solid var(--accent)" }} />)}
-            <span className="mono" style={{ flex: 1, alignSelf: "center", paddingBottom: l.assume ? 2 : 0, borderBottom: l.assume ? "1.5px solid var(--accent)" : undefined, maxWidth: "max-content", paddingRight: 12 }}>{l.s}</span>
-            <span className="mono-meta" style={{ marginLeft: "auto", alignSelf: "center" }}>{l.why}</span>
-          </div>
-        ))}
-      </div>
+      <FitchBox lines={P.lines.slice(0, n)} current={n - 1} />
       <div className="viz-controls">
         <button type="button" className="btn" onClick={() => setN(1)} disabled={n === 1}>Start again</button>
         <button type="button" className="btn btn-primary" onClick={() => setN(n + 1)} disabled={n === P.lines.length}>Next line</button>
