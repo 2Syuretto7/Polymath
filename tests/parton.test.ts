@@ -48,3 +48,12 @@ test("protected answers are described for the reviewing pass", () => {
   assert.match(describeAnswer({ kind: "choice", options: ["a", "b", "c"], correct: [0, 2] }), /options are: "a", "c"/);
   assert.match(describeAnswer({ kind: "written", rubric: ["One", "Two"] }), /1\. One\n2\. Two/);
 });
+
+test("written work is accepted exactly when Parton judges it complete", async () => {
+  const { isAccepted, MARK_RULES, MARK_SCHEMA } = await import("../src/lib/parton/prompts.ts");
+  assert.equal(isAccepted({ complete: true }), true);
+  assert.equal(isAccepted({ complete: false }), false);
+  assert.ok(MARK_SCHEMA.required.includes("complete"));
+  assert.match(MARK_RULES, /fair, friendly and lenient/);
+  assert.match(MARK_RULES, /Accept every complete proof or argument; reject only partial ones/);
+});
