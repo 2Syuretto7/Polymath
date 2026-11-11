@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 /** A line of a tree, and the step at which it is ticked off as decomposed. */
-type Line = { t: string; tick?: number; at?: number };
+export type TreeLine = { t: string; tick?: number; at?: number };
 /** A node is a run of lines, shown from step `at`, ending either in a split, a close (×), or an open end (○). */
-type Node = { at: number; lines: Line[]; kids?: Node[]; close?: number; open?: number };
-type Tree = { name: string; claim: string; root: Node; notes: string[]; verdict: string };
+export type TreeNode = { at: number; lines: TreeLine[]; kids?: TreeNode[]; close?: number; open?: number };
+export type Tree = { name: string; claim: string; root: TreeNode; notes: string[]; verdict: string };
 
 const TREES: Tree[] = [
   {
@@ -78,13 +78,13 @@ const TREES: Tree[] = [
   },
 ];
 
-function NodeView({ n, step }: { n: Node; step: number }) {
+function NodeView({ n, step }: { n: TreeNode; step: number }) {
   if (n.at > step) return null;
   const kidsShown = n.kids && n.kids[0].at <= step;
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: 0, flex: 1 }}>
-      {n.lines.filter((l) => (l.at ?? n.at) <= step).map((l) => (
-        <span key={l.t} className="mono" style={{ fontSize: 14, lineHeight: "24px", whiteSpace: "nowrap" }}>
+      {n.lines.filter((l) => (l.at ?? n.at) <= step).map((l, i) => (
+        <span key={i} className="mono" style={{ fontSize: 14, lineHeight: "24px", whiteSpace: "nowrap" }}>
           {l.t}{l.tick !== undefined && l.tick <= step ? <span style={{ color: "var(--accent)" }}> ✓</span> : null}
         </span>
       ))}
@@ -100,17 +100,17 @@ function NodeView({ n, step }: { n: Node; step: number }) {
 }
 
 /** Truth trees, built one step at a time. */
-export function TreeViz() {
+export function TreeViz({ trees = TREES }: { trees?: Tree[] }) {
   const [k, setK] = useState(0);
   const [step, setStep] = useState(0);
-  const T = TREES[k];
+  const T = trees[k];
   const last = T.notes.length - 1;
   const pick = (i: number) => { setK(i); setStep(0); };
 
   return (
     <figure className="viz">
       <div className="viz-controls" style={{ marginTop: 0, flexWrap: "wrap" }} role="group" aria-label="Argument">
-        {TREES.map((t, i) => (
+        {trees.map((t, i) => (
           <button key={t.name} type="button" className={i === k ? "btn btn-primary" : "btn"} aria-pressed={i === k} onClick={() => pick(i)}>{t.name}</button>
         ))}
       </div>
