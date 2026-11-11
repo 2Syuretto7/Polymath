@@ -36,12 +36,12 @@ export function paramPath(v: View, p: (t: number) => [number, number], t0: numbe
   return d;
 }
 
-/** Axes with a light grid and integer ticks. Children are drawn on top, in the same coordinates. */
-export function Axes({ v, children, label }: { v: View; children?: ReactNode; label: string }) {
+/** Axes with a light grid and integer ticks (or every xStep, yStep). Children are drawn on top, in the same coordinates. */
+export function Axes({ v, children, label, xStep, yStep }: { v: View; children?: ReactNode; label: string; xStep?: number; yStep?: number }) {
   const { X, Y } = scales(v);
   const clip = `plot-clip-${useId().replace(/:/g, "")}`;
   const xs: number[] = [], ys: number[] = [];
-  const stepX = v.xmax - v.xmin > 16 ? 2 : 1, stepY = v.ymax - v.ymin > 16 ? 2 : 1;
+  const stepX = xStep ?? (v.xmax - v.xmin > 16 ? 2 : 1), stepY = yStep ?? (v.ymax - v.ymin > 16 ? 2 : 1);
   for (let x = Math.ceil(v.xmin / stepX) * stepX; x <= v.xmax; x += stepX) xs.push(x);
   for (let y = Math.ceil(v.ymin / stepY) * stepY; y <= v.ymax; y += stepY) ys.push(y);
   return (
