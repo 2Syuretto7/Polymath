@@ -36,3 +36,38 @@ export function leadCol(row: Frac[], cols = row.length): number {
   for (let j = 0; j < cols; j++) if (!fzero(row[j])) return j;
   return -1;
 }
+
+/** Reduced row echelon form, with the pivot columns. The input is not changed. */
+export function rref(M: FMatrix): { R: FMatrix; pivots: number[] } {
+  const R = M.map((r) => r.slice());
+  const m = R.length, n = m ? R[0].length : 0;
+  const pivots: number[] = [];
+  let row = 0;
+  for (let col = 0; col < n && row < m; col++) {
+    let p = row;
+    while (p < m && fzero(R[p][col])) p++;
+    if (p === m) continue;
+    [R[row], R[p]] = [R[p], R[row]];
+    const piv = R[row][col];
+    R[row] = R[row].map((x) => fdiv(x, piv));
+    for (let i = 0; i < m; i++) {
+      if (i === row || fzero(R[i][col])) continue;
+      const k = R[i][col];
+      R[i] = R[i].map((x, j) => fsub(x, fmul(k, R[row][j])));
+    }
+    pivots.push(col);
+    row++;
+  }
+  return { R, pivots };
+}
+
+/** The special solutions of Rx = 0 for a matrix in reduced echelon form: one per free column. */
+export function nullBasis(R: FMatrix, pivots: number[], n: number): FMatrix {
+  const free = Array.from({ length: n }, (_, j) => j).filter((j) => !pivots.includes(j));
+  return free.map((f) => {
+    const x: Frac[] = Array.from({ length: n }, () => fr(0));
+    x[f] = fr(1);
+    pivots.forEach((p, i) => { x[p] = fneg(R[i][f]); });
+    return x;
+  });
+}
