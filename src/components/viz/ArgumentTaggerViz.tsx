@@ -4,7 +4,9 @@ import { useState } from "react";
 
 type Role = "premise" | "conclusion" | "neither";
 
-const PASSAGES: { title: string; sentences: { text: string; role: Role; why: string }[] }[] = [
+export type TaggerPassage = { title: string; sentences: { text: string; role: Role; why: string }[]; note?: string };
+
+const DEFAULT_PASSAGES: TaggerPassage[] = [
   {
     title: "Exams",
     sentences: [
@@ -29,7 +31,7 @@ const PASSAGES: { title: string; sentences: { text: string; role: Role; why: str
 const ROLES: Role[] = ["premise", "conclusion", "neither"];
 
 /** Tag each sentence of a short passage as a premise, the conclusion, or neither; then check. */
-export function ArgumentTaggerViz() {
+export function ArgumentTaggerViz({ passages: PASSAGES = DEFAULT_PASSAGES }: { passages?: TaggerPassage[] }) {
   const [p, setP] = useState(0);
   const [tags, setTags] = useState<(Role | null)[]>(PASSAGES[0].sentences.map(() => null));
   const [checked, setChecked] = useState(false);
@@ -70,7 +72,7 @@ export function ArgumentTaggerViz() {
       </div>
       <figcaption className="viz-caption" aria-live="polite">
         {checked
-          ? `${score} of ${passage.sentences.length} right. Every argument needs a conclusion; many sentences in a real text are neither premise nor conclusion.`
+          ? `${score} of ${passage.sentences.length} right. ${passage.note ?? "Every argument needs a conclusion; many sentences in a real text are neither premise nor conclusion."}`
           : "Tag every sentence, then check. Look for words that mark reasons (for, since, after all) and conclusions (so, therefore)."}
       </figcaption>
     </figure>
