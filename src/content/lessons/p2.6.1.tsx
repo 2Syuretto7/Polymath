@@ -53,7 +53,7 @@ export const lesson: LessonContent = {
   minutes: 85,
   links: {
     revisits: ["p2.3.2", "p2.4.2"],
-    foreshadows: ["p2.6.3", "m20.2.3"],
+    foreshadows: ["p2.6.3", "m20.2.3", "p7.4.1"],
   },
 
   puzzle: (
