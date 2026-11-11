@@ -81,6 +81,10 @@ import { lesson as m2_2_1 } from "./m2.2.1";
 import { lesson as m2_2_2 } from "./m2.2.2";
 import { lesson as m2_2_3 } from "./m2.2.3";
 import { lesson as m2_2_4 } from "./m2.2.4";
+import { lesson as m2_3_1 } from "./m2.3.1";
+import { lesson as m2_3_2 } from "./m2.3.2";
+import { lesson as m2_3_3 } from "./m2.3.3";
+import { lesson as m2_3_4 } from "./m2.3.4";
 import { lesson as p0_1_1 } from "./p0.1.1";
 import { lesson as p0_1_2 } from "./p0.1.2";
 import { lesson as p0_1_3 } from "./p0.1.3";
@@ -121,6 +125,8 @@ import { lesson as p2_1_2 } from "./p2.1.2";
 import { lesson as p2_1_3 } from "./p2.1.3";
 import { lesson as p2_2_1 } from "./p2.2.1";
 import { lesson as p2_2_2 } from "./p2.2.2";
+import { lesson as p2_2_3 } from "./p2.2.3";
+import { lesson as p2_2_4 } from "./p2.2.4";
 
 /** Every authored lesson. Add new lessons here; the graph checks their links at build time. */
 export const LESSONS: readonly LessonContent[] = [
@@ -142,6 +148,7 @@ export const LESSONS: readonly LessonContent[] = [
   m1_8_1, m1_8_2, m1_8_3, m1_8_4,
   m2_1_1, m2_1_2, m2_1_3, m2_1_4,
   m2_2_1, m2_2_2, m2_2_3, m2_2_4,
+  m2_3_1, m2_3_2, m2_3_3, m2_3_4,
   p0_1_1, p0_1_2, p0_1_3, p0_1_4,
   p0_2_1, p0_2_2, p0_2_3, p0_2_4,
   p0_3_1, p0_3_2, p0_3_3, p0_3_4,
@@ -153,5 +160,5 @@ export const LESSONS: readonly LessonContent[] = [
   p1_5_1, p1_5_2, p1_5_3,
   p1_6_1, p1_6_2, p1_6_3, p1_6_4,
   p2_1_1, p2_1_2, p2_1_3,
-  p2_2_1, p2_2_2,
+  p2_2_1, p2_2_2, p2_2_3, p2_2_4,
 ];
