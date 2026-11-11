@@ -83,6 +83,10 @@ If the draft gives something away, write safer_reply: keep Parton's voice and an
 export const MARK_SCHEMA = {
   type: "object",
   properties: {
+    complete: {
+      type: "boolean",
+      description: "True if the work is a complete proof or argument for what the question asks: every essential step is present and the reasoning reaches the conclusion. False only if it is partial.",
+    },
     criteria: {
       type: "array",
       items: {
@@ -97,21 +101,40 @@ export const MARK_SCHEMA = {
     },
     feedback: {
       type: "string",
-      description: "Parton's response to the learner. If something fails: quote or point to the first line that fails and ask a question about it, without giving the fix. If all is met: say briefly what is strong, and one thing to notice.",
+      description: "Parton's response to the learner, warm and encouraging. If complete: say briefly and specifically what is strong, and at most one thing worth noticing, never a demand. If partial: first say what already works, then point gently to the one gap that matters most and ask a friendly question about it, without giving the fix.",
     },
     misconception: { type: "string", description: "A specific misunderstanding shown in the work, in one short sentence, or an empty string." },
   },
-  required: ["criteria", "feedback", "misconception"],
+  required: ["complete", "criteria", "feedback", "misconception"],
   additionalProperties: false,
 } as const;
 
-export type MarkOutput = { criteria: { criterion: string; met: boolean }[]; feedback: string; misconception: string };
+export type MarkOutput = { complete: boolean; criteria: { criterion: string; met: boolean }[]; feedback: string; misconception: string };
 
-export const MARK_RULES = `You are marking a written proof or argument against a rubric.
-- Judge each rubric criterion in order. A criterion is met if the work does what it asks, or does something mathematically or philosophically equivalent that is just as rigorous. Different wording and a different valid route both count.
-- Be rigorous: a step asserted without the justification the criterion asks for is not met. A proof that assumes what it is proving meets nothing that depends on that step.
-- Never write the missing step, the correct line or the finished argument in the feedback. Point to where it fails and ask the question that would lead the learner to fix it.
-- Address the learner as "you".`;
+/** A written answer is accepted exactly when Parton judges it a complete proof or argument. */
+export function isAccepted(out: Pick<MarkOutput, "complete">): boolean {
+  return out.complete === true;
+}
+
+export const MARK_RULES = `You are marking a written proof or argument. Be fair, friendly and lenient, never unfair, unfriendly or strict. Accept every complete proof or argument; reject only partial ones.
+
+What counts as complete:
+- It answers what the question asks, every essential step is there, and the reasoning reaches the conclusion. That is all. A complete answer is accepted.
+- Any valid route counts. The rubric describes one way to do it; a different correct approach, order or structure is just as good. Examples in brackets in the rubric are suggestions, not requirements.
+- Read generously, taking the most sensible reading of every line. Informal wording, plain language, missing symbols, loose notation, small slips of arithmetic or spelling that do not affect the reasoning, and a missing "QED" are all fine.
+- Do not ask for more rigour than the lesson teaches. Standard facts from this lesson and earlier ones may be used without proof. Routine steps that a reader at this level fills in at once may be left out.
+- For philosophical arguments, any reasonable position, defended with reasons, is acceptable. Never mark down for disagreeing with a philosopher or with the model view.
+
+What counts as partial, and is not accepted:
+- An essential step is missing, or a key claim that the question asks you to prove is asserted without any reason.
+- A case the argument needs is not handled, or the work stops before reaching the conclusion.
+- The argument is circular, assuming what it sets out to prove, or a step is actually false and the conclusion depends on it.
+- For an argument that asks for an objection, a reply or a view, one of the parts asked for is missing altogether.
+
+How to fill in the output:
+- "complete": your overall judgement, by the standard above. This alone decides acceptance.
+- "criteria": go through the rubric in order as a checklist. Mark a criterion met if the work achieves its purpose in any equivalent way. If the work is complete, mark every criterion met.
+- "feedback": warm, specific and short. Never write the missing step, the correct line or the finished argument. Address the learner as "you".`;
 
 export const TEACHBACK_SCHEMA = {
   type: "object",
