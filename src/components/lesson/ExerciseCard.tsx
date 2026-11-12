@@ -1,5 +1,6 @@
 "use client";
 
+import { DictateButton, appendDictation } from "@/components/ui/DictateButton";
 import { useState, useTransition, type ReactNode } from "react";
 import { checkExerciseAction } from "@/app/actions";
 import { Pill } from "@/components/ui/Pill";
@@ -118,14 +119,15 @@ export function ExerciseCard({ view, context, children, index }: {
             aria-label="Your answer" />
         )}
         {view.kind === "written" && (
-          <textarea className="input textarea" value={value} onChange={(e) => setValue(e.target.value)} rows={7}
-            placeholder="Write your answer in full sentences. Show every step." aria-label="Your answer" />
+          <textarea className="input textarea" value={value} onChange={(e) => setValue(e.target.value)} rows={5}
+            placeholder="The key steps in your own words. Short is fine, or tap Speak and say it." aria-label="Your answer" />
         )}
         {!locked && (
           <div className="exercise-actions">
             <button type="submit" className="btn btn-primary" disabled={pending || !value.trim()}>
               {pending ? (view.kind === "written" ? "Parton is reading…" : "Checking…") : view.kind === "written" ? (solved ? "Submit revision" : "Submit") : "Check"}
             </button>
+            {view.kind === "written" && <DictateButton onText={(t) => setValue((v) => appendDictation(v, t))} disabled={pending} />}
             {askable && !(solved && view.kind !== "written") && (
               <button type="button" className="btn" onClick={() => askParton(view.id, label)}><span className="parton-mark" aria-hidden="true">P</span>Ask Parton</button>
             )}

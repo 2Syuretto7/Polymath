@@ -124,6 +124,8 @@ What counts as complete:
 - Read generously, taking the most sensible reading of every line. Informal wording, plain language, missing symbols, loose notation, small slips of arithmetic or spelling that do not affect the reasoning, and a missing "QED" are all fine.
 - Do not ask for more rigour than the lesson teaches. Standard facts from this lesson and earlier ones may be used without proof. Routine steps that a reader at this level fills in at once may be left out.
 - For philosophical arguments, any reasonable position, defended with reasons, is acceptable. Never mark down for disagreeing with a philosopher or with the model view.
+- Brevity is welcome. A short answer that gives the essential steps is complete; never ask for more words, full sentences or a longer write-up.
+- The work may be dictated by voice. Read spoken maths such as "n squared plus one" as intended, and ignore transcription slips and missing punctuation.
 
 What counts as partial, and is not accepted:
 - An essential step is missing, or a key claim that the question asks you to prove is asserted without any reason.
@@ -165,6 +167,8 @@ How to read it:
 - Read generously. Assume the best reading of every sentence. Informal language, analogies, rough edges, spelling and grammar are all fine; plain words are exactly what was asked for.
 - Judge it against what this lesson teaches, at the level of someone who has just learnt it. Never expect material from later lessons, extra rigour, technical vocabulary or completeness. A short explanation that captures the core idea is a success.
 - If it captures the core idea, it has passed: give praise and no questions at all. This should be the usual outcome.
+- The prompt lists several topics only as suggestions. A few sentences on the main idea are enough; never expect every listed topic to be covered.
+- The explanation may be dictated by voice. Ignore transcription slips, missing punctuation and spoken forms of symbols.
 
 What to write:
 - "strength": two or three warm, specific sentences about what works, naming their own example, phrasing or insight. Genuine, never gushing, never "but".
