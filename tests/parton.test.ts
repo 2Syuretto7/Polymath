@@ -57,3 +57,18 @@ test("written work is accepted exactly when Parton judges it complete", async ()
   assert.match(MARK_RULES, /fair, friendly and lenient/);
   assert.match(MARK_RULES, /Accept every complete proof or argument; reject only partial ones/);
 });
+
+test("dictated text joins onto what is already written", async () => {
+  const { appendDictation } = await import("../src/components/ui/DictateButton.tsx");
+  assert.equal(appendDictation("", "a prime"), "a prime");
+  assert.equal(appendDictation("Let p be", "a prime"), "Let p be a prime");
+  assert.equal(appendDictation("Let p be ", "a prime"), "Let p be a prime");
+  assert.equal(appendDictation("Done.", ""), "Done.");
+});
+
+test("marking and teach-back welcome short and dictated answers", async () => {
+  const { MARK_RULES, TEACHBACK_RULES } = await import("../src/lib/parton/prompts.ts");
+  assert.match(MARK_RULES, /Brevity is welcome/);
+  assert.match(MARK_RULES, /dictated by voice/);
+  assert.match(TEACHBACK_RULES, /A few sentences on the main idea are enough/);
+});

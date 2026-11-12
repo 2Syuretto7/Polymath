@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { teachBackAction } from "@/app/actions";
+import { DictateButton, appendDictation } from "@/components/ui/DictateButton";
 
 type Review = { strength: string; questions: string[] };
 
@@ -22,11 +23,12 @@ export function TeachBack({ lessonId, prompt, initial, initialReview, connected 
   return (
     <div className="teachback">
       <p className="teachback-prompt">{prompt}</p>
-      <textarea className="input textarea" rows={8} value={text} aria-label="Your explanation"
+      <textarea className="input textarea" rows={5} value={text} aria-label="Your explanation"
         onChange={(e) => { setText(e.target.value); setSaved(false); }}
-        placeholder="Explain it simply, as if to someone meeting the idea for the first time." />
+        placeholder="A few plain sentences on the main idea are enough. Or tap Speak and say it." />
       <div className="teachback-foot">
         <span className="hint">{words} words</span>
+        <DictateButton onText={(t) => { setText((v) => appendDictation(v, t)); setSaved(false); }} disabled={pending} />
         <button type="button" className="btn btn-primary" disabled={pending || saved || words === 0}
           onClick={() => start(async () => {
             const res = await teachBackAction(lessonId, text);

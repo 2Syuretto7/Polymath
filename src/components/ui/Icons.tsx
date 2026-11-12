@@ -16,3 +16,4 @@ export const Clock = ({ size = 16 }: P) => <svg {...base(size)}><circle cx="8" c
 export const Pen = ({ size = 16 }: P) => <svg {...base(size)}><path d="M10.5 3 13 5.5 6 12.5H3.5V10Z" /></svg>;
 export const Spark = ({ size = 16 }: P) => <svg {...base(size)}><path d="M8 2v3M8 11v3M2 8h3M11 8h3M4 4l2 2M10 10l2 2M12 4l-2 2M6 10l-2 2" /></svg>;
 export const Send = ({ size = 16 }: P) => <svg {...base(size)}><path d="M8 13V3M4 7l4-4 4 4" /></svg>;
+export const Mic = ({ size = 16 }: P) => <svg {...base(size)}><rect x="6" y="2" width="4" height="7.5" rx="2" /><path d="M3.75 7.5a4.25 4.25 0 0 0 8.5 0M8 11.75V14" /></svg>;
