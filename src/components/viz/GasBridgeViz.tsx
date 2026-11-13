@@ -35,7 +35,7 @@ export function GasBridgeViz() {
       </div>
       <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Distribution of molecular speeds" style={{ width: "100%", display: "block", marginTop: 8 }}>
         <line x1={X(0)} y1={170} x2={X(VMAX)} y2={170} style={{ stroke: "var(--border)" }} />
-        {[0, 1000, 2000, 3000].map((v) => <text key={v} x={X(v)} y={186} textAnchor="middle" style={{ fill: "var(--text-muted)", fontSize: 11 }}>{v} m/s</text>)}
+        {[0, 1000, 2000, 3000].map((v) => <text key={v} x={X(v)} y={186} textAnchor={v === 3000 ? "end" : "middle"} style={{ fill: "var(--text-muted)", fontSize: 11 }}>{v} m/s</text>)}
         <path d={d + ` L${X(VMAX)},170 L${X(0)},170 Z`} style={{ fill: "var(--accent-soft)", stroke: "var(--accent)", strokeWidth: 2 }} />
         <line x1={X(Math.min(vrms, VMAX))} y1={20} x2={X(Math.min(vrms, VMAX))} y2={170} style={{ stroke: "var(--text)", strokeDasharray: "4 3" }} />
         <text x={X(Math.min(vrms, VMAX)) + 4} y={30} style={{ fill: "var(--text)", fontSize: 11 }}>root mean square speed</text>
