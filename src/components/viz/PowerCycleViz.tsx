@@ -1,59 +1,55 @@
 "use client";
 
 import { useState } from "react";
-import { gcd, phi } from "./ntTools";
+import { FIELDS } from "./gfTools";
 
-/** The powers of a modulo n trace a cycle back to 1; its length is the order of a, which divides φ(n). */
+const gcd = (a: number, b: number): number => (b ? gcd(b, a % b) : a);
+
+/** The multiplicative group of a finite field is cyclic: follow the powers of an element round the non-zero elements. */
 export function PowerCycleViz() {
-  const [n, setN] = useState(13);
-  const [a, setA] = useState(3);
-  const A = a % n;
-  const unit = gcd(A, n) === 1;
-  const seq: number[] = [1];
-  if (unit) { let x = A; while (x !== 1 && seq.length <= n) { seq.push(x); x = (x * A) % n; } }
-  const ord = unit ? seq.length : 0;
-  const ph = phi(n);
-  const W = 380, c = W / 2, R = 150;
-  const pos = (r: number) => { const t = (2 * Math.PI * r) / n - Math.PI / 2; return [c + R * Math.cos(t), c + R * Math.sin(t)]; };
-  const path = unit ? [...seq, 1] : [];
+  const [fi, setFi] = useState(2);
+  const [g, setG] = useState(2);
+  const F = FIELDS[fi];
+  const nz = Array.from({ length: F.q - 1 }, (_, i) => i + 1);
+  const gg = Math.min(g, F.q - 1);
+  const pows: number[] = [];
+  let x = gg;
+  for (let k = 0; k < F.q; k++) { pows.push(x); if (x === 1) break; x = F.mul(x, gg); }
+  const ord = pows.length;
+  const gens = nz.filter((a) => { let y = a; for (let k = 1; k < F.q - 1; k++) { if (y === 1) return false; y = F.mul(y, a); } return true; }).length;
+  const phi = nz.filter((k) => gcd(k, F.q - 1) === 1).length;
+  const W = 300, R = 115, c = W / 2;
+  const pos = (a: number) => { const i = nz.indexOf(a); const t = (2 * Math.PI * i) / nz.length - Math.PI / 2; return [c + R * Math.cos(t), c + R * Math.sin(t)]; };
+  const inCycle = new Set(pows);
   return (
     <figure className="viz">
-      <div className="viz-sliders">
-        <label><span>modulus n: <span className="mono">{n}</span></span>
-          <input type="range" min={3} max={30} step={1} value={n} onChange={(e) => setN(Number(e.target.value))} /></label>
-        <label><span>a: <span className="mono">{A}</span></span>
-          <input type="range" min={1} max={29} step={1} value={a} onChange={(e) => setA(Number(e.target.value))} /></label>
+      <div className="segmented" role="group" aria-label="Field">
+        {FIELDS.map((f, i) => <button key={f.name} type="button" aria-pressed={fi === i} className={fi === i ? "seg is-on" : "seg"} onClick={() => { setFi(i); setG(2); }}>{f.name}</button>)}
       </div>
-      <svg viewBox={`0 0 ${W} ${W}`} role="img" aria-label={`Powers of ${A} modulo ${n}`} style={{ width: "100%", maxWidth: 400, display: "block", margin: "6px auto" }}>
-        {path.slice(0, -1).map((r, i) => {
-          const [x1, y1] = pos(r), [x2, y2] = pos(path[i + 1]);
-          const d = Math.hypot(x2 - x1, y2 - y1) || 1, ux = (x2 - x1) / d, uy = (y2 - y1) / d;
-          const ex = x2 - ux * 13, ey = y2 - uy * 13;
+      <div className="viz-controls" style={{ marginTop: 8 }}>
+        <span style={{ fontSize: 14 }}>element g:</span>
+        {nz.map((a) => <button key={a} type="button" aria-pressed={gg === a} className={gg === a ? "viz-chip is-on" : "viz-chip"} onClick={() => setG(a)}>{F.label(a)}</button>)}
+      </div>
+      <svg viewBox={`0 0 ${W} ${W}`} role="img" aria-label="The powers of g among the non-zero elements" style={{ width: "100%", maxWidth: 340, display: "block", margin: "6px auto" }}>
+        {pows.map((a, k) => { const [x1, y1] = pos(a), [x2, y2] = pos(pows[(k + 1) % ord]); return ord > 1 ? <line key={k} x1={x1} y1={y1} x2={x2} y2={y2} style={{ stroke: "var(--accent)", strokeWidth: 2 }} /> : null; })}
+        {nz.map((a) => {
+          const [x, y] = pos(a);
           return (
-            <g key={i}>
-              <line x1={x1 + ux * 13} y1={y1 + uy * 13} x2={ex} y2={ey} style={{ stroke: "var(--accent)", strokeWidth: 1.8 }} />
-              <polygon points={`${ex},${ey} ${ex - ux * 8 - uy * 4},${ey - uy * 8 + ux * 4} ${ex - ux * 8 + uy * 4},${ey - uy * 8 - ux * 4}`} style={{ fill: "var(--accent)" }} />
-            </g>
-          );
-        })}
-        {Array.from({ length: n }, (_, r) => {
-          const [x, y] = pos(r), on = seq.includes(r), u = gcd(r, n) === 1;
-          return (
-            <g key={r}>
-              <circle cx={x} cy={y} r={11} style={{ fill: on ? "var(--accent)" : "var(--bg)", stroke: u ? "var(--accent)" : "var(--border)", strokeWidth: 1.5 }} />
-              <text x={x} y={y + 4} textAnchor="middle" style={{ fill: on ? "var(--bg)" : u ? "var(--text)" : "var(--text-faint)", fontSize: 10 }}>{r}</text>
+            <g key={a}>
+              <circle cx={x} cy={y} r={14} style={{ fill: inCycle.has(a) ? "var(--accent)" : "var(--bg)", stroke: "var(--accent)", strokeWidth: 1.5 }} />
+              <text x={x} y={y + 4} textAnchor="middle" style={{ fill: inCycle.has(a) ? "var(--bg)" : "var(--text)", fontSize: F.n > 1 ? 9 : 12 }}>{F.label(a)}</text>
             </g>
           );
         })}
       </svg>
-      <p className="mono" style={{ margin: "4px 0", fontSize: 14 }}>
-        {unit ? `powers of ${A}: ${seq.join(" → ")} → 1; order of ${A} = ${ord}; φ(${n}) = ${ph}; ${ph} / ${ord} = ${ph / ord}` : `gcd(${A}, ${n}) ≠ 1, so no power of ${A} is 1 modulo ${n}`}
-      </p>
-      <p className={unit && ord === ph ? "viz-verdict viz-verdict-right" : "viz-verdict"} style={{ margin: "4px 0" }}>
-        {unit && ord === ph ? `${A} has the largest possible order, φ(${n}): it is a primitive root modulo ${n}.` : unit ? `The order ${ord} divides φ(${n}) = ${ph}.` : "Only units have an order."}
-      </p>
+      <div className="mono" style={{ display: "grid", gap: 4, fontSize: 14 }}>
+        <div>powers of {F.label(gg)}: {pows.map(F.label).join(", ")}</div>
+        <div>order of {F.label(gg)}: {ord}, which divides {F.q - 1}; {ord === F.q - 1 ? "a generator" : "not a generator"}</div>
+        <div>generators of the group: {gens} = φ({F.q - 1}) = {phi}</div>
+      </div>
       <figcaption className="viz-caption">
-        Outlined residues are the units modulo {n}. Starting at 1 and multiplying by a again and again, the path must return to 1, and the number of steps is the order of a. By Lagrange&rsquo;s theorem it always divides φ(n).
+        Filled circles are the powers of g. Some element always reaches every non-zero element, so the multiplicative group
+        of a finite field is cyclic, with φ(q − 1) generators. In 𝔽ₚ these are the primitive roots mod p.
       </figcaption>
     </figure>
   );
