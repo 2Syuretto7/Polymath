@@ -81,7 +81,7 @@ export const lesson: LessonContent = {
         </p>
       </Example>
 
-      <Remark title="Russell&rsquo;s reply and later work">
+      <Remark title="Russell’s reply and later work">
         <p>
           Russell answered that Strawson was describing ordinary usage, not logic, and that a gap gives up bivalence for little
           gain. Strawson himself later noticed that &ldquo;The exhibition was visited by the King of France&rdquo; sounds simply

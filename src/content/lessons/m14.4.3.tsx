@@ -89,7 +89,7 @@ export const lesson: LessonContent = {
         </p>
       </Example>
 
-      <Remark title="the general quintic and Arnold&rsquo;s view">
+      <Remark title="the general quintic and Arnold’s view">
         <p>
           Some quintics, like <M>{"x^5 - 2"}</M>, are solvable. The theorem says no single formula works for all of them.
           Vladimir Arnold gave a topological picture, shown above: moving coefficients round loops permutes the roots, and any
