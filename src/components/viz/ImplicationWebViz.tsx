@@ -7,8 +7,8 @@ const NODES: Node[] = [
   { key: "lub", label: "least upper bounds", x: 260, y: 40, failQ: "{q ∈ Q : q² < 2} is bounded above in Q but has no least upper bound in Q." },
   { key: "mct", label: "monotone convergence", x: 430, y: 130, failQ: "1, 1.4, 1.41, 1.414, … increases and is bounded, but has no limit in Q." },
   { key: "nip", label: "nested intervals", x: 380, y: 260, failQ: "[1, 2] ⊇ [1.4, 1.5] ⊇ [1.41, 1.42] ⊇ … in Q have no common point." },
-  { key: "bw", label: "Bolzano–Weierstrass", x: 140, y: 260, failQ: "The decimal approximations to √2 form a bounded sequence in Q with no subsequence converging in Q." },
-  { key: "cauchy", label: "Cauchy sequences converge", x: 90, y: 130, failQ: "The decimal approximations to √2 form a Cauchy sequence in Q with no limit in Q." },
+  { key: "bw", label: "Bolzano–Weierstrass", x: 140, y: 260, failQ: "the decimal approximations to √2 form a bounded sequence in Q with no subsequence converging in Q." },
+  { key: "cauchy", label: "Cauchy sequences converge", x: 90, y: 130, failQ: "the decimal approximations to √2 form a Cauchy sequence in Q with no limit in Q." },
 ];
 
 const EDGES: { from: string; to: string; proof: string }[] = [
@@ -39,8 +39,9 @@ export function ImplicationWebViz() {
         </defs>
         {EDGES.map((ed, i) => {
           const a = by(ed.from), b = by(ed.to);
-          const dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy);
-          const sx = a.x + (dx / d) * 60, sy = a.y + (dy / d) * 26, tx = b.x - (dx / d) * 64, ty = b.y - (dy / d) * 28;
+          const dx = b.x - a.x, dy = b.y - a.y;
+          const fa = Math.min(84 / Math.abs(dx || 1e-9), 22 / Math.abs(dy || 1e-9)), fb = Math.min(88 / Math.abs(dx || 1e-9), 26 / Math.abs(dy || 1e-9));
+          const sx = a.x + dx * fa, sy = a.y + dy * fa, tx = b.x - dx * fb, ty = b.y - dy * fb;
           return (
             <line key={i} x1={sx} y1={sy} x2={tx} y2={ty} markerEnd="url(#iw-arrow)" onClick={() => setE(i)}
               style={{ stroke: i === e && !q ? "var(--accent)" : "var(--text-faint)", strokeWidth: i === e && !q ? 3.5 : 2, cursor: "pointer", strokeDasharray: q ? "5 4" : "none" }} />
