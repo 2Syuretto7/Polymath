@@ -1,47 +1,51 @@
 "use client";
 
 import { useState } from "react";
-import { Arrow } from "./Plot";
 
-/** Frankfurt's case: Black would force Jones to vote for Asha, but Jones does so on his own. */
+/** A Frankfurt case: Black's device would make Jones vote for the same candidate, so Jones could not have done otherwise. Is he responsible? */
 export function FrankfurtViz() {
-  const [lean, setLean] = useState(false);
-  const box = (x: number, y: number, w: number, label: string, sub: string, hot = false) => (
-    <g>
-      <rect x={x} y={y} width={w} height={54} rx={10} className={hot ? "viz-cell is-on" : "viz-cell"} />
-      <text x={x + w / 2} y={y + 23} textAnchor="middle" className={hot ? "viz-label is-on" : "viz-label"}>{label}</text>
-      <text x={x + w / 2} y={y + 42} textAnchor="middle" className="plot-tick">{sub}</text>
-    </g>
+  const [device, setDevice] = useState(true);
+  const [incl, setIncl] = useState<"A" | "B">("A");
+  const [link, setLink] = useState<"det" | "indet">("det");
+  const intervene = device && incl === "B";
+  const vote = intervene ? "A" : incl;
+  const couldOtherwise = !device ? "yes" : intervene ? "no: the device made sure of A" : link === "det" ? "no: had he begun to lean towards B, the twitch would have warned Black, who would have stepped in" : "yes: the twitch does not settle his decision, so he could still have chosen B at the last moment";
+  const own = !intervene;
+  const frankfurt = own;
+  const pap = !device || link === "indet" ? own : false;
+  const clash = frankfurt !== pap;
+  const row = (k: string, v: string, strong?: boolean) => (
+    <tr key={k}><td style={{ fontSize: 14 }}>{k}</td><td style={{ fontSize: 14, fontWeight: strong ? 600 : 400 }}>{v}</td></tr>
   );
-
   return (
     <figure className="viz">
+      <p style={{ margin: "0 0 8px" }}>
+        Jones is deciding whether to vote for candidate A or B. Black wants him to vote for A and has secretly fitted a device. If Jones shows a twitch, the sign that he is about to choose B, the device will make him choose A.
+      </p>
       <div className="viz-controls" style={{ marginTop: 0 }}>
-        <button type="button" className={!lean ? "btn btn-primary" : "btn"} aria-pressed={!lean} onClick={() => setLean(false)}>Jones decides by himself</button>
-        <button type="button" className={lean ? "btn btn-primary" : "btn"} aria-pressed={lean} onClick={() => setLean(true)}>Jones starts to lean the other way</button>
+        <span style={{ fontSize: 13, color: "var(--text-muted)" }}>device:</span>
+        {[true, false].map((d) => <button key={String(d)} type="button" aria-pressed={device === d} className={device === d ? "viz-chip is-on" : "viz-chip"} onClick={() => setDevice(d)}>{d ? "fitted" : "absent"}</button>)}
+        <span style={{ fontSize: 13, color: "var(--text-muted)", marginLeft: 8 }}>Jones by himself would choose:</span>
+        {(["A", "B"] as const).map((c) => <button key={c} type="button" aria-pressed={incl === c} className={incl === c ? "viz-chip is-on" : "viz-chip"} onClick={() => setIncl(c)}>{c}</button>)}
       </div>
-      <svg viewBox="0 0 620 230" role="img" aria-label={lean ? "Black's device takes over and Jones votes for Asha" : "Jones decides on his own and votes for Asha; the device does nothing"}>
-        {box(20, 30, 150, "Jones deliberates", lean ? "leans towards Bilal" : "weighs his reasons", !lean)}
-        {box(235, 30, 150, "Decision", lean ? "made by the device" : "made by Jones", true)}
-        {box(450, 30, 150, "Vote for Asha", "the same either way", true)}
-        {box(235, 150, 150, "Black's device", lean ? "intervenes" : "watches, does nothing", lean)}
-        <Arrow x1={172} y1={57} x2={231} y2={57} className={lean ? "plot-arrow is-muted" : "plot-arrow"} />
-        <Arrow x1={387} y1={57} x2={446} y2={57} />
-        <Arrow x1={310} y1={148} x2={310} y2={88} className={lean ? "plot-arrow is-hot" : "plot-arrow is-muted"} />
-        {!lean && <text x={322} y={124} className="plot-tick">ready, never used</text>}
-        {lean && <text x={322} y={124} className="plot-tick" style={{ fill: "var(--danger)" }}>forces the decision</text>}
-      </svg>
-      <table className="table" style={{ marginTop: 8, marginBottom: 8 }}>
+      <div className="segmented" role="group" aria-label="Link between the twitch and the choice" style={{ marginTop: 8 }}>
+        {([["det", "twitch determines the choice"], ["indet", "twitch only makes the choice likely"]] as const).map(([k, l]) => <button key={k} type="button" aria-pressed={link === k} className={link === k ? "seg is-on" : "seg"} onClick={() => setLink(k)}>{l}</button>)}
+      </div>
+      <table className="table" style={{ marginTop: 10 }}>
         <tbody>
-          <tr><td>Could Jones have voted otherwise?</td><td className="viz-verdict viz-verdict-wrong">No</td></tr>
-          <tr><td>Did the decision come from Jones himself?</td><td className={`viz-verdict viz-verdict-${lean ? "wrong" : "info"}`}>{lean ? "No" : "Yes"}</td></tr>
-          <tr><td>Is Jones responsible for his vote?</td><td className={`viz-verdict viz-verdict-${lean ? "wrong" : "info"}`}>{lean ? "Most say no" : "Most say yes"}</td></tr>
+          {row("Jones votes for", vote, true)}
+          {row("Black intervenes", intervene ? "yes" : "no")}
+          {row("Could Jones have done otherwise?", couldOtherwise)}
+          {row("Did Jones choose on his own?", own ? "yes" : "no: the device chose for him")}
+          {row("Responsible, by Frankfurt’s test (acted on his own)", frankfurt ? "yes" : "no", true)}
+          {row("Responsible, by the principle of alternate possibilities", pap ? "yes" : "no", true)}
         </tbody>
       </table>
-      <figcaption className="viz-caption" aria-live="polite">
-        {lean
-          ? <>Here Jones is not responsible: the device made the decision. But notice that in both versions he could not have done otherwise.</>
-          : <>Jones could not have voted otherwise, since the device would have stopped him. Yet the device did nothing, and the vote came from his own reasons. If he is responsible, then being able to do otherwise is not needed for responsibility.</>}
+      <p className={clash ? "viz-verdict viz-verdict-wrong" : "viz-verdict viz-verdict-right"} style={{ margin: "6px 0" }}>
+        {clash ? "The two tests disagree: Jones chose A on his own, yet could not have done otherwise." : "The two tests agree here."}
+      </p>
+      <figcaption className="viz-caption">
+        With the device fitted and Jones choosing A by himself, Black never acts, and Jones seems responsible though he had no alternative. The Widerker–Kane dilemma presses on the twitch: if it determines the choice, the case assumes determinism and begs the question against the libertarian; if it does not, Jones could have done otherwise after all.
       </figcaption>
     </figure>
   );
