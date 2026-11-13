@@ -8,7 +8,7 @@ export const lesson: LessonContent = {
   minutes: 80,
   links: {
     revisits: ["m4.5.2", "m4.5.3", "m4.3.3"],
-    foreshadows: ["m20.5.1", "m20.5.4", "m21.3.1"],
+    foreshadows: ["m20.5.1", "m38.4.1", "m11.4.4"],
   },
 
   puzzle: (
@@ -193,8 +193,8 @@ export const lesson: LessonContent = {
 
   glimpse: (
     <p>
-      The next chapter turns to probability. The course on computation makes these ideas exact with Turing machines and
-      proves the Cook and Levin theorem.
+      The next chapter turns to probability. The logic course makes these ideas exact with Turing machines, and the number
+      theory course shows the cryptography that depends on hard problems.
     </p>
   ),
 };

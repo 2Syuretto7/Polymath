@@ -6,7 +6,7 @@ export const lesson: LessonContent = {
   id: "p6.1.1",
   minutes: 80,
   links: {
-    revisits: ["p4.7.5", "p1.3.1", "p5.4.1"],
+    revisits: ["p4.7.5", "p4.1.4", "p4.1.3"],
     foreshadows: ["p6.1.3", "p8.2.2", "p32.3.1"],
   },
 
