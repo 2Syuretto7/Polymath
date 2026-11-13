@@ -5,7 +5,7 @@ import { useState } from "react";
 export type CaseVerdict = { ok: boolean; why: string };
 
 /** A grid of theories against test cases: click a cell to see whether the theory gives the right verdict, and why. */
-export function CaseMatrixViz({ theories, cases, verdicts, prompt }: { theories: string[]; cases: string[]; verdicts: CaseVerdict[][]; prompt: string }) {
+export function CaseMatrixViz({ theories, cases, verdicts, prompt, caption }: { theories: string[]; cases: string[]; verdicts: CaseVerdict[][]; prompt: string; caption?: string }) {
   const [open, setOpen] = useState<Set<string>>(new Set());
   const [sel, setSel] = useState<[number, number] | null>(null);
   const click = (i: number, j: number) => { const k = `${i},${j}`; setOpen(new Set(open).add(k)); setSel([i, j]); };
@@ -42,7 +42,7 @@ export function CaseMatrixViz({ theories, cases, verdicts, prompt }: { theories:
         {v && sel ? <><strong>{theories[sel[0]]} on {cases[sel[1]]}:</strong> {v.why}</> : "Click a cell to test a theory against a case."}
       </p>
       <figcaption className="viz-caption">
-        {open.size} of {theories.length * cases.length} tests revealed. A theory survives only if it gives the right verdict in every case, and that includes counting the clear cases of knowledge as knowledge.
+        {open.size} of {theories.length * cases.length} tests revealed. {caption ?? "A theory survives only if it gives the right verdict in every case, and that includes counting the clear cases of knowledge as knowledge."}
       </figcaption>
     </figure>
   );
