@@ -2,75 +2,75 @@
 
 import { useState } from "react";
 
-const CASES: { name: string; maxim: string; universal: string; conceive: string; will: string; verdict: string }[] = [
+const MAXIMS = [
   {
-    name: "the lying promise",
+    name: "a false promise",
     maxim: "When I need money, I will borrow it and promise to repay, though I know I never will.",
-    universal: "Everyone in need makes promises they do not intend to keep.",
-    conceive: "No. Nobody would believe such promises, so promising would no longer exist, and the maxim could not even be acted on. Kant calls this a contradiction in conception.",
-    will: "The question does not arise.",
-    verdict: "Forbidden. A perfect duty: never make a lying promise.",
+    law: "Everyone in need makes promises they do not intend to keep.",
+    conceive: "No. In such a world no one would believe a promise, so promising, and with it my plan, would be impossible. The universal maxim destroys itself.",
+    will: null as string | null,
+    verdict: "Forbidden: a perfect duty, owed to others, never to make lying promises.",
   },
   {
     name: "neglecting one's talents",
-    maxim: "I will let my talents rust and live for comfort and amusement.",
-    universal: "Everyone neglects their talents.",
-    conceive: "Yes. A world like that could exist, Kant admits.",
-    will: "No. As a rational being, Kant says, you necessarily will that your capacities be developed, since they serve all sorts of possible purposes. This is a contradiction in the will.",
-    verdict: "Forbidden as a general policy. An imperfect duty: develop some of your talents, with latitude about which and when.",
+    maxim: "I will let my talents rust and spend my life in idle pleasure.",
+    law: "Everyone neglects their talents and lives for pleasure.",
+    conceive: "Yes. Such a world could exist, Kant says, as some societies have done.",
+    will: "No. As a rational being I necessarily will that my capacities be developed, since they serve all sorts of possible purposes. I cannot will a law that every rational being neglects them.",
+    verdict: "Forbidden: an imperfect duty to develop one's talents, which leaves room for choice in how and when.",
   },
   {
     name: "refusing to help",
-    maxim: "I will never help anyone in need, though I will not harm them either.",
-    universal: "Nobody ever helps anyone in need.",
-    conceive: "Yes. The human race could survive like this.",
-    will: "No. You will certainly need the love and help of others at some time, and by willing this law you would rob yourself of any hope of it.",
-    verdict: "Forbidden as a general policy. An imperfect duty: help others, though not every person on every occasion.",
+    maxim: "I will never help others in need, though I ask nothing from them either.",
+    law: "No one ever helps anyone in need.",
+    conceive: "Yes. The human race could survive like that, perhaps better than with hypocritical kindness.",
+    will: "No. I will surely need the love and help of others some day, and by such a law I would rob myself of all hope of it.",
+    verdict: "Forbidden: an imperfect duty of beneficence, to make others' ends my own to some extent.",
   },
   {
-    name: "a puzzling case",
-    maxim: "I will play tennis at 10 on Sunday mornings, because then the courts are empty.",
-    universal: "Everyone plays tennis at 10 on Sunday mornings, because the courts are empty.",
-    conceive: "Apparently not: if everyone did it, the courts would not be empty.",
-    will: "The question does not arise.",
-    verdict: "The test seems to forbid something obviously harmless. Kant's defenders reply that the maxim must be described more carefully, but the case shows that applying the formula takes judgement.",
+    name: "daily exercise",
+    maxim: "I will exercise every morning to keep healthy.",
+    law: "Everyone exercises every morning to keep healthy.",
+    conceive: "Yes. Nothing in the practice depends on others not doing it.",
+    will: "Yes. There is no conflict in willing it as a law for all.",
+    verdict: "Permitted. Most maxims pass; the test is meant to find the ones that fail.",
   },
 ];
+const STEPS = ["the maxim", "universalise it", "can it be conceived as a law?", "can it be willed as a law?", "verdict"];
 
-/** Kant's universal law test applied to his own examples, and one that causes trouble. */
+/** Test maxims with the formula of universal law: can the maxim be conceived, and willed, as a law for everyone? */
 export function MaximTestViz() {
-  const [k, setK] = useState(0);
-  const [step, setStep] = useState(0);
-  const c = CASES[k];
+  const [i, setI] = useState(0);
+  const [s, setS] = useState(0);
+  const M = MAXIMS[i];
   const rows: [string, string][] = [
-    ["Maxim", c.maxim],
-    ["As a universal law", c.universal],
-    ["Can that world be conceived?", c.conceive],
-    ["Can you will it?", c.will],
-    ["Verdict", c.verdict],
+    [STEPS[0], M.maxim],
+    [STEPS[1], M.law],
+    [STEPS[2], M.conceive],
+    [STEPS[3], M.will ?? "No need to ask: it already fails the first test."],
+    [STEPS[4], M.verdict],
   ];
-
   return (
     <figure className="viz">
+      <div className="segmented" role="group" aria-label="Maxim">
+        {MAXIMS.map((m, j) => (
+          <button key={j} type="button" className={j === i ? "seg is-on" : "seg"} aria-pressed={j === i} onClick={() => { setI(j); setS(0); }}>{m.name}</button>
+        ))}
+      </div>
+      <table className="table" style={{ marginTop: 12 }}>
+        <tbody>
+          {rows.slice(0, s + 1).map(([k, v], j) => (
+            <tr key={k}><td className="mono-meta" style={{ textTransform: "none", width: "30%" }}>{k}</td>
+              <td style={{ color: j === 4 ? "var(--accent)" : "var(--text)" }}>{v}</td></tr>
+          ))}
+        </tbody>
+      </table>
       <div className="viz-controls">
-        {CASES.map((x, i) => (
-          <button key={x.name} type="button" className={i === k ? "viz-chip is-on" : "viz-chip"} aria-pressed={i === k} onClick={() => { setK(i); setStep(0); }}>{x.name}</button>
-        ))}
+        <button type="button" className="btn" disabled={s === 0} onClick={() => setS(s - 1)}>Back</button>
+        <button type="button" className="btn btn-primary" disabled={s === 4} onClick={() => setS(s + 1)}>Next test</button>
       </div>
-      <ol style={{ margin: "12px 0 0", paddingLeft: 22, lineHeight: 1.6 }}>
-        {rows.slice(0, step + 1).map(([h, t], i) => (
-          <li key={h} style={{ marginBottom: 6 }}>
-            <span className="mono-meta" style={{ textTransform: "none" }}>{h}: </span>
-            <span style={{ fontWeight: i === 4 ? 600 : 400 }}>{t}</span>
-          </li>
-        ))}
-      </ol>
-      <div className="viz-controls" style={{ marginTop: 8 }}>
-        <button type="button" className="btn btn-primary" disabled={step >= rows.length - 1} onClick={() => setStep((s) => s + 1)}>Next step</button>
-        <button type="button" className="btn" onClick={() => setStep(0)}>Start again</button>
-      </div>
-      <figcaption className="viz-caption" aria-live="polite">
-        Act only on a maxim that you can at the same time will to become a universal law. Step through the test: first imagine everyone acting on the maxim, then ask whether that world is even possible, and whether you could consistently want it.
+      <figcaption className="viz-caption">
+        Act only according to that maxim through which you can at the same time will that it become a universal law. A contradiction in conception marks a perfect duty, allowing no exceptions; a contradiction in the will marks an imperfect duty.
       </figcaption>
     </figure>
   );
