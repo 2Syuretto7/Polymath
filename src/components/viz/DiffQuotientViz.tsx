@@ -1,57 +1,65 @@
 "use client";
 
 import { useState } from "react";
-import { fmtNum } from "./format";
 
-const FS = {
-  abs: { name: "|x|", f: (x: number) => Math.abs(x), verdict: "The right quotients are all 1 and the left all −1. The two one-sided limits differ, so |x| is not differentiable at 0, though it is continuous there." },
-  xabs: { name: "x|x|", f: (x: number) => x * Math.abs(x), verdict: "Both quotients equal |h| and tend to 0, so f′(0) = 0. Away from 0, f′(x) = 2|x|: a derivative that is continuous but not itself differentiable at 0." },
-  wig: { name: "x² sin(1/x)", f: (x: number) => (x === 0 ? 0 : x * x * Math.sin(1 / x)), verdict: "The quotient is h sin(1/h), squeezed by |h|, so f′(0) = 0. But for x ≠ 0, f′(x) = 2x sin(1/x) − cos(1/x), which has no limit at 0: the derivative exists everywhere but is not continuous." },
-};
-type K = keyof typeof FS;
-const W = 520, H = 200, X0 = 20, X1 = 500, Y0 = 100, S = 0.5;
+type C = [number, number];
+const mul = (a: C, b: C): C => [a[0] * b[0] - a[1] * b[1], a[0] * b[1] + a[1] * b[0]];
+const div = (a: C, b: C): C => { const d = b[0] * b[0] + b[1] * b[1]; return [(a[0] * b[0] + a[1] * b[1]) / d, (a[1] * b[0] - a[0] * b[1]) / d]; };
+const cexp = (a: C): C => [Math.exp(a[0]) * Math.cos(a[1]), Math.exp(a[0]) * Math.sin(a[1])];
+const FS: { name: string; f: (z: C) => C; hol: boolean }[] = [
+  { name: "z²", f: (z) => mul(z, z), hol: true },
+  { name: "eᶻ", f: cexp, hol: true },
+  { name: "z̄", f: (z) => [z[0], -z[1]], hol: false },
+  { name: "|z|²", f: (z) => [z[0] * z[0] + z[1] * z[1], 0], hol: false },
+];
+const HS = [1, 0.5, 0.2, 0.1, 0.01];
+const Z0: C = [1, 0.5];
 
-/** Difference quotients at 0 from the left and from the right, for three functions with corners and wiggles. */
+/** The complex difference quotient (f(z₀ + h) − f(z₀))/h as h approaches 0 from every direction. */
 export function DiffQuotientViz() {
-  const [k, setK] = useState<K>("abs");
-  const [p, setP] = useState(1);
-  const h = Math.pow(10, -p);
-  const F = FS[k];
-  const qr = (F.f(h) - F.f(0)) / h, ql = (F.f(-h) - F.f(0)) / -h;
-  const X = (x: number) => X0 + ((x + S) / (2 * S)) * (X1 - X0);
-  const Y = (y: number) => Y0 - y * 170;
-  const pts = Array.from({ length: 1201 }, (_, i) => -S + (2 * S * i) / 1200).map((x) => `${X(x).toFixed(1)},${Y(F.f(x)).toFixed(1)}`).join(" ");
-  const fm = (z: number) => fmtNum(Number(z.toFixed(5)));
-  const sec = (x: number, q: number) => <line x1={X(0)} y1={Y(0)} x2={X(x)} y2={Y(q * x)} style={{ stroke: "var(--accent)", strokeWidth: 2 }} />;
-  const hd = Math.min(h, S);
-
+  const [fi, setFi] = useState(0);
+  const [hi, setHi] = useState(1);
+  const [phi, setPhi] = useState(45);
+  const F = FS[fi];
+  const t = HS[hi];
+  const q = (p: number): C => { const h: C = [t * Math.cos(p), t * Math.sin(p)]; const fz = F.f(Z0); const fh = F.f([Z0[0] + h[0], Z0[1] + h[1]]); return div([fh[0] - fz[0], fh[1] - fz[1]], h); };
+  const W = 400, x0 = -1.5, x1 = 4.5, y0 = -3, y1 = 3;
+  const X = (u: number) => ((u - x0) / (x1 - x0)) * W;
+  const Y = (v: number) => W - ((v - y0) / (y1 - y0)) * W;
+  const cl = (u: number, lo: number, hi2: number) => Math.max(lo, Math.min(hi2, u));
+  const ring = Array.from({ length: 121 }, (_, k) => q((2 * Math.PI * k) / 120));
+  const d = ring.map(([a, b], k) => `${k ? "L" : "M"}${X(cl(a, x0 - 1, x1 + 1)).toFixed(1)},${Y(cl(b, y0 - 1, y1 + 1)).toFixed(1)}`).join(" ");
+  const cur = q((phi * Math.PI) / 180);
+  let spread = 0;
+  for (const p of ring) spread = Math.max(spread, Math.hypot(p[0] - ring[0][0], p[1] - ring[0][1]));
   return (
     <figure className="viz">
       <div className="segmented" role="group" aria-label="Function">
-        {(Object.keys(FS) as K[]).map((x) => (
-          <button key={x} type="button" className={x === k ? "seg is-on" : "seg"} aria-pressed={x === k} onClick={() => setK(x)}>f(x) = {FS[x].name}</button>
-        ))}
+        {FS.map((f, i) => <button key={f.name} type="button" aria-pressed={fi === i} className={fi === i ? "seg is-on" : "seg"} onClick={() => setFi(i)}>f(z) = {f.name}</button>)}
       </div>
-      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="The graph near 0 with two secant lines" style={{ width: "100%", display: "block", marginTop: 12 }}>
-        <line x1={X0} y1={Y0} x2={X1} y2={Y0} className="viz-axis" />
-        <line x1={X(0)} y1={6} x2={X(0)} y2={H - 6} className="viz-axis" />
-        <polyline points={pts} style={{ fill: "none", stroke: "var(--text-muted)", strokeWidth: 1.2 }} />
-        {sec(hd, qr)}
-        {sec(-hd, ql)}
-        <circle cx={X(hd)} cy={Y(F.f(hd))} r={4} style={{ fill: "var(--danger)" }} />
-        <circle cx={X(-hd)} cy={Y(F.f(-hd))} r={4} style={{ fill: "var(--danger)" }} />
+      <div className="viz-sliders" style={{ marginTop: 8 }}>
+        <label><span>size |h|: <span className="mono">{t}</span></span>
+          <input type="range" min={0} max={4} step={1} value={hi} onChange={(e) => setHi(Number(e.target.value))} /></label>
+        <label><span>direction of h: <span className="mono">{phi}°</span></span>
+          <input type="range" min={0} max={345} step={15} value={phi} onChange={(e) => setPhi(Number(e.target.value))} /></label>
+      </div>
+      <svg viewBox={`0 0 ${W} ${W}`} role="img" aria-label="Values of the difference quotient for every direction of h" style={{ width: "100%", maxWidth: 440, display: "block", margin: "6px auto" }}>
+        <line x1={0} y1={Y(0)} x2={W} y2={Y(0)} style={{ stroke: "var(--border)" }} />
+        <line x1={X(0)} y1={0} x2={X(0)} y2={W} style={{ stroke: "var(--border)" }} />
+        {[1, 2, 3, 4].map((k) => <text key={k} x={X(k)} y={Y(0) + 14} textAnchor="middle" style={{ fill: "var(--text-faint)", fontSize: 10 }}>{k}</text>)}
+        <path d={d} style={{ fill: "none", stroke: "var(--text-faint)", strokeWidth: 1.5 }} />
+        <circle cx={X(cl(cur[0], x0, x1))} cy={Y(cl(cur[1], y0, y1))} r={6} style={{ fill: "var(--accent)" }} />
       </svg>
-      <div className="viz-sliders">
-        <label><span>h = 10<sup>−{p}</sup> = <span className="mono">{fm(h)}</span></span>
-          <input type="range" min={0} max={5} step={1} value={p} onChange={(e) => setP(Number(e.target.value))} /></label>
+      <div className="mono" style={{ display: "grid", gap: 4, fontSize: 14 }}>
+        <div>z₀ = 1 + 0.5i; quotient for this h = {cur[0].toFixed(3)} {cur[1] < 0 ? "−" : "+"} {Math.abs(cur[1]).toFixed(3)}i</div>
+        <div>spread of the quotient over all directions: {spread.toFixed(3)}</div>
+        <div>{F.hol ? "As |h| shrinks the loop shrinks to one point: f′(z₀) exists." : "As |h| shrinks the loop does not shrink: the limit depends on the direction, so f is not complex differentiable here."}</div>
       </div>
-      <table className="table" style={{ marginTop: 8 }}>
-        <tbody>
-          <tr><td>right quotient (f(h) − f(0))/h</td><td className="mono">{fm(qr)}</td></tr>
-          <tr><td>left quotient (f(−h) − f(0))/(−h)</td><td className="mono">{fm(ql)}</td></tr>
-        </tbody>
-      </table>
-      <figcaption className="viz-caption" aria-live="polite">{F.verdict}</figcaption>
+      <figcaption className="viz-caption">
+        The grey loop shows the difference quotient for every direction of h of the chosen size; the dot is the direction set
+        by the slider. A complex derivative must be the same limit from every direction at once, which is far stronger than
+        having partial derivatives.
+      </figcaption>
     </figure>
   );
 }
