@@ -81,6 +81,15 @@ export async function checkExerciseAction(
   return attempt(exerciseId, String(input).slice(0, 20000), context, Math.max(1, Math.floor(attemptInSession)));
 }
 
+export async function recallAction(lessonId: string, fresh: boolean) {
+  await requireOwner();
+  const { LESSON_BY_ID } = await import("@/lib/curriculum");
+  if (!LESSON_BY_ID.has(String(lessonId))) return { ok: false as const, error: "Unknown lesson." };
+  const { masteredSet } = await import("@/lib/learning");
+  const { recallSet } = await import("@/lib/recall");
+  return recallSet(String(lessonId), await masteredSet(), Boolean(fresh));
+}
+
 export async function askPartonAction(lessonId: string, exerciseId: string | null, message: string) {
   await requireOwner();
   const { LESSON_BY_ID } = await import("@/lib/curriculum");

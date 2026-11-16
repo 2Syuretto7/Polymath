@@ -79,6 +79,23 @@ const SCHEMA = [
      body TEXT NOT NULL,
      at TIMESTAMPTZ NOT NULL DEFAULT now()
    )`,
+  `CREATE TABLE IF NOT EXISTS recall_questions (
+     id SERIAL PRIMARY KEY,
+     lesson_id TEXT NOT NULL,
+     source_lesson_id TEXT NOT NULL,
+     batch INTEGER NOT NULL,
+     prompt TEXT NOT NULL,
+     answer JSONB NOT NULL,
+     solution TEXT NOT NULL DEFAULT '',
+     fingerprint TEXT NOT NULL UNIQUE,
+     attempts INTEGER NOT NULL DEFAULT 0,
+     solved BOOLEAN NOT NULL DEFAULT false,
+     first_correct BOOLEAN,
+     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+     answered_at TIMESTAMPTZ
+   )`,
+  `CREATE INDEX IF NOT EXISTS recall_questions_lesson ON recall_questions (lesson_id, batch)`,
+  `CREATE INDEX IF NOT EXISTS recall_questions_source ON recall_questions (source_lesson_id, created_at)`,
   // The teach-back step was removed; clear what it stored.
   `DELETE FROM writings WHERE kind = 'teachback'`,
   `DELETE FROM parton_notes WHERE kind = 'teachback'`,

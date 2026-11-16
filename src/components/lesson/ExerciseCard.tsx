@@ -11,6 +11,8 @@ export type ExerciseView = {
   rung: "check" | "apply" | "prove" | "stretch";
   kind: "numeric" | "expression" | "choice" | "written";
   options?: string[];
+  /** Options already rendered to HTML on the server, for questions written with TeX. */
+  optionsHtml?: string[];
   multiple?: boolean;
   variables?: string[];
   solved: boolean;
@@ -44,7 +46,7 @@ export function ExerciseCard({ view, context, children, index }: {
   children: ReactNode;
   index?: number;
 }) {
-  const fresh = context !== "lesson";
+  const fresh = context === "review";
   const [value, setValue] = useState(fresh ? "" : view.kind === "choice" ? view.response ?? "" : view.response ?? "");
   const [solved, setSolved] = useState(fresh ? false : view.solved);
   const [tries, setTries] = useState(0);
@@ -106,7 +108,7 @@ export function ExerciseCard({ view, context, children, index }: {
               <label key={opt} className={`choice ${picked.includes(i) ? "is-picked" : ""}`}>
                 <input type={view.multiple ? "checkbox" : "radio"} name={view.id} checked={picked.includes(i)}
                   onChange={() => toggle(i)} disabled={locked} />
-                <span>{opt}</span>
+                {view.optionsHtml ? <span dangerouslySetInnerHTML={{ __html: view.optionsHtml[i] }} /> : <span>{opt}</span>}
               </label>
             ))}
             {view.multiple && <p className="hint">Select all that apply.</p>}
