@@ -179,9 +179,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend functionalism with the heart and tea machine analogies, how defining all mental states together avoids behaviourism’s circularity, the main varieties, and the inverted spectrum and China brain objections.",
-
   glimpse: (
     <p>
       The next lesson asks how we could tell whether a machine thinks, with the Turing test. The computational theory treats the

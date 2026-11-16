@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a sample space and an event are, Kolmogorov's three axioms, how the complement rule, monotonicity and inclusion-exclusion follow from them, and why the axioms leave the interpretation of probability open.",
-
   glimpse: (
     <p>
       The next lesson studies the case of equally likely outcomes, where probability becomes counting. Measure theory and

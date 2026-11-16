@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Frege's puzzle about identity statements, his distinction between sense and reference, why the reference of a sentence is its truth value, and how he explains substitution failures in belief reports.",
-
   glimpse: (
     <p>
       The next lesson presents Russell&rsquo;s theory of descriptions, a rival way of solving Frege&rsquo;s puzzles. Kripke

@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a function is defined as a set of pairs rather than a formula, and what 'well defined' means, using 1/2 = 2/4.",
-
   glimpse: (
     <p>
       Some functions never send two inputs to one output; some reach every possible output. Those that do both can be undone,

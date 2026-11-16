@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a rigid designator is, Kripke's modal, epistemic and semantic arguments against descriptivism, and why identities between names are necessary but can be known only a posteriori.",
-
   glimpse: (
     <p>
       The next lesson asks what does fix the reference of a name, if not a description: Kripke&rsquo;s picture of a causal

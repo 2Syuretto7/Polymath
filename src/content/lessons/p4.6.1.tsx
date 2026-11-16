@@ -212,9 +212,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Aristotle means by eudaimonia, the tests for the highest good, the function argument and its conclusion, and why happiness needs a complete life and some external goods.",
-
   glimpse: (
     <p>
       The next lesson asks what virtue of character is. Introduction to Ethics revisits Aristotle as virtue ethics, and

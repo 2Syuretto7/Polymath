@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain why 'do the same to both sides' works, and why it fails if you multiply both sides by zero. A balance, or any picture you like, will help.",
-
   glimpse: (
     <p>
       Next come inequalities, where the balance tips. Linear equations return as straight-line graphs in the chapter on

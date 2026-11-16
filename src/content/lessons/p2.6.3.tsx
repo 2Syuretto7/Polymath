@@ -256,9 +256,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to plan a proof by working backwards from the goal and forwards from the premises, why existentials should be opened early, and why no strategy can work every time.",
-
   glimpse: (
     <p>
       This lesson ends Logic I. Logic II: Metalogic and Beyond proves that the proof system is sound and complete, so that

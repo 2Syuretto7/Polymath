@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Mill's greatest happiness principle, his distinction between higher and lower pleasures, his proof of utility and Moore's objection, his reply about secondary principles, and his account of justice.",
-
   glimpse: (
     <p>
       The next lesson turns to Henry Sidgwick, who tested utilitarianism against egoism and common-sense morality with new

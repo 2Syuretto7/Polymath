@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the divine command theory says and why it is attractive, the two horns of the Euthyphro dilemma, Adams' modified theory, and why many religious thinkers prefer natural law.",
-
   glimpse: (
     <p>
       The next lesson considers a theory on which morality rests on nothing but self-interest. Medieval Philosophy studies

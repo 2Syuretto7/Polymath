@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what cultural relativism says, the cultural differences argument and why Rachels thinks it fails, the consequences of relativism for criticism and progress, and what relativism gets right.",
-
   glimpse: (
     <p>
       The next lesson considers a more personal version: that moral judgements express the feelings of the individual.

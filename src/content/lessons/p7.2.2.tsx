@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Spinoza's idea of the conatus, his account of joy, sadness and desire, the difference between passions and actions, and how he understands freedom and blessedness in a necessary world.",
-
   glimpse: (
     <p>
       Next comes Leibniz, who rejected Spinoza&rsquo;s single substance and his necessity, and later defended this world as

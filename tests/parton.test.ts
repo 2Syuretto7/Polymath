@@ -66,9 +66,8 @@ test("dictated text joins onto what is already written", async () => {
   assert.equal(appendDictation("Done.", ""), "Done.");
 });
 
-test("marking and teach-back welcome short and dictated answers", async () => {
-  const { MARK_RULES, TEACHBACK_RULES } = await import("../src/lib/parton/prompts.ts");
+test("marking welcomes short and dictated answers", async () => {
+  const { MARK_RULES } = await import("../src/lib/parton/prompts.ts");
   assert.match(MARK_RULES, /Brevity is welcome/);
   assert.match(MARK_RULES, /dictated by voice/);
-  assert.match(TEACHBACK_RULES, /A few sentences on the main idea are enough/);
 });

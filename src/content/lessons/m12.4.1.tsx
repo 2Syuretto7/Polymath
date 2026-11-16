@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the total derivative as a linear approximation, why having all directional derivatives is not enough, why continuous partials suffice, and the chain rule as composition of linear maps.",
-
   glimpse: (
     <p>
       The next lesson proves the inverse and implicit function theorems with the contraction mapping theorem. In Riemannian

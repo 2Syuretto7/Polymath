@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what cyclic subspaces and companion matrices are, why the companion matrix of p has p as both characteristic and minimal polynomial, the rational canonical form with invariant factors, and its link to modules over a PID.",
-
   glimpse: (
     <p>
       The next chapter defines the trace and determinant without choosing a basis. Module theory over principal ideal

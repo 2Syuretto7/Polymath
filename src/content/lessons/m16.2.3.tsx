@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the first fundamental form E du² + 2F du dv + G dv², how it gives lengths, angles and areas on a surface, the example of the sphere in latitude and longitude, and why the cylinder and the plane have the same intrinsic geometry.",
-
   glimpse: (
     <p>
       Next, orientation: whether a surface admits a consistent choice of unit normal, and why the Möbius band does not.

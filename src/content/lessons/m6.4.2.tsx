@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three conditions in the Heine-Borel theorem, why they are equivalent for subsets of the real line, and why the open cover form of compactness is so useful for turning local facts into global ones.",
-
   glimpse: (
     <p>
       The next lessons look at perfect and connected sets, and at the Cantor set, a compact set with surprising properties.

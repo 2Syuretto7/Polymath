@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the parametric and normal descriptions of lines and planes, how to find where a line meets a plane, and the ways three planes can fail to meet in a single point.",
-
   glimpse: (
     <p>
       The next chapter solves systems of linear equations systematically, and gives a complete account of when the

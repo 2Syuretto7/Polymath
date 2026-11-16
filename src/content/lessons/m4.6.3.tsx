@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a random variable and its expectation are, why linearity of expectation holds even without independence, and how indicators solve the hat-check problem.",
-
   glimpse: (
     <p>
       The next lesson turns expectation into a method of proof: to show that something exists, show that a random choice

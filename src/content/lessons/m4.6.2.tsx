@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what conditional probability and independence are, how Bayes's theorem works, and why a positive result on an accurate test for a rare disease may still probably be a false alarm.",
-
   glimpse: (
     <p>
       The next lesson moves from events to quantities: what number should you expect, on average, from a random process?

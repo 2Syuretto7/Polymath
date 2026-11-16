@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the Gamma function is defined by an integral, why Γ(n + 1) = n!, how the functional equation continues it to a meromorphic function with poles at 0, −1, −2, …, and why Γ(1/2) = √π.",
-
   glimpse: (
     <p>
       The next lesson meets the Riemann zeta function, whose functional equation involves Gamma. Later courses continue such

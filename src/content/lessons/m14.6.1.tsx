@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a representation is, the trivial, sign, standard and permutation representations of S₃, what irreducible means and why the standard one is irreducible, and how representations are modules over the group algebra.",
-
   glimpse: (
     <p>
       The next lesson proves Maschke&rsquo;s theorem: over ℂ every representation of a finite group splits into irreducible

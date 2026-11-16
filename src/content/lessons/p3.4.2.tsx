@@ -181,9 +181,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a positive result on a good test for a rare condition may well be a false alarm, using a population of a thousand people, and what the prosecutor's fallacy is.",
-
   glimpse: (
     <p>
       The next lesson turns base rates into a general method, Bayes&rsquo; theorem. Later in this course, legal reasoning

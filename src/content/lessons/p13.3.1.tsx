@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Moore's open question argument, what he concluded about goodness, and the two main replies: the paradox of analysis and the water and H₂O example.",
-
   glimpse: (
     <p>
       The next lessons take three paths from Moore. Non-cognitivists say moral words express attitudes, error theorists say

@@ -208,9 +208,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why multiplying both sides of an inequality by a negative number flips it, and why 'if a < b then a² < b²' can fail. Use the number line.",
-
   glimpse: (
     <p>
       Next, exponents and roots. The four order properties are the order axioms that open Calculus, and the inequalities

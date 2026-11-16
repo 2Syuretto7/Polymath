@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Taylor's versions of Sisyphus, and why Susan Wolf thinks a meaningful life needs both caring and something worth caring about.",
-
   glimpse: (
     <p>
       Every life ends. The last lesson of this course asks whether death is bad for the one who dies, and why. Camus and the

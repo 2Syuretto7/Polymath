@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a recursive algorithm works, why it needs a base case, how merge sort sorts a list, and why it takes about n log n comparisons.",
-
   glimpse: (
     <p>
       The next lesson asks a harder question: are there problems where no clever method is known, and checking an answer

@@ -208,9 +208,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Nietzsche's perspectivism, his history of how the true world became a fable, his early view of truth as metaphor, his question about the value of truth, and the self-refutation objection with a reply.",
-
   glimpse: (
     <p>
       The next lesson applies Nietzsche&rsquo;s method to morality itself in the Genealogy. Foucault later turned genealogy on

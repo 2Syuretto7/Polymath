@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Spinoza's definitions of substance, attribute and mode, his argument that there is only one substance, how mind and body relate as two attributes, and what God or Nature means.",
-
   glimpse: (
     <p>
       The next lesson asks how Spinoza, in a world where everything is necessary, can still offer an ethics and a path to

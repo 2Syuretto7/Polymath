@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain Reid's brave officer to a friend, and how the idea of a chain of memories rescues Locke's theory.",
-
   glimpse: (
     <p>
       The next lesson pushes both theories to breaking point with cases from Derek Parfit: teletransportation and a person

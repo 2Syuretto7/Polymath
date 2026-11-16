@@ -128,9 +128,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a stationary distribution is and why it is a left eigenvector with eigenvalue 1, the two-state formula and its balance of flows, uniqueness for irreducible chains, long-run frequencies and return times, and detailed balance.",
-
   glimpse: (
     <p>
       The next lesson asks when the distribution of the chain actually converges to the stationary one. Ergodic theory

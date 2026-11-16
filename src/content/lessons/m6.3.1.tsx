@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why convergent series have terms tending to 0, how the comparison and condensation tests are proved from monotone convergence, how condensation settles the p-series, and how the root test uses the limsup.",
-
   glimpse: (
     <p>
       The next lesson shows that a conditionally convergent series can be rearranged to sum to anything, while an

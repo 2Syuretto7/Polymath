@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's idea of a fact of reason, how the moral law and the principle that ought implies can reveal our freedom, the role of respect, and the primacy of practical reason.",
-
   glimpse: (
     <p>
       The next lesson completes Kant&rsquo;s practical philosophy with the highest good and the postulates of God and

@@ -145,9 +145,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the compactness theorem, how it follows from completeness, why it gives nonstandard models of arithmetic, and why finiteness cannot be expressed in first-order logic.",
-
   glimpse: (
     <p>
       Next, the Löwenheim–Skolem theorems and Skolem&rsquo;s paradox: set theory proves there are uncountable sets, yet it

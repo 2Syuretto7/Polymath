@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how separation of variables turns Laplace's equation in a square into two ordinary equations, and how the Fourier sine series of the boundary data gives the solution.",
-
   glimpse: (
     <p>
       Next, boundary value problems in general: the eigenvalue problems that separation produces, Sturm–Liouville theory, and

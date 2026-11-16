@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the angles of a triangle add to 180 degrees, using the line through one corner parallel to the opposite side.",
-
   glimpse: (
     <p>
       Next, similarity: triangles with the same shape but different sizes, which is what three equal angles really give you.

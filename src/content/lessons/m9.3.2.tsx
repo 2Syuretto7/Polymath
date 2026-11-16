@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the uniform, normal and exponential densities with their means and variances, how standardising reduces every normal to the standard one, the 68, 95 and 99.7 rule, and why the exponential is memoryless.",
-
   glimpse: (
     <p>
       The next lesson shows that a uniform random number can be turned into a sample from any distribution. Moment

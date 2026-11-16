@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a linear map makes a vector space a k[x]-module, how the structure theorem gives the rational and Jordan canonical forms, how to pass between elementary divisors and invariant factors, and why Cayley-Hamilton follows.",
-
   glimpse: (
     <p>
       Representations of groups are modules too, over group algebras, and their characters play the role of invariants. Hom

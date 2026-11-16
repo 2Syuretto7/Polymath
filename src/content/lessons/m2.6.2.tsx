@@ -220,9 +220,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what upper and lower sums are, why a function is integrable when they can be squeezed together, and why the function that is 1 on rationals and 0 elsewhere fails.",
-
   glimpse: (
     <p>
       Real Analysis I develops this theory in full, with Darboux sums and Lebesgue&rsquo;s exact criterion for which

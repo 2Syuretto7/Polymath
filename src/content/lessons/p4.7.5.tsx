@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Plotinus' three levels of reality, why he thought the One must be simple and beyond description, how everything flows from it without loss, what he said evil is, and how the soul returns.",
-
   glimpse: (
     <p>
       This completes Ancient Greek Philosophy. Medieval Philosophy opens with Augustine, who learnt from the Platonists

@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to test a polynomial over ℚ for irreducibility: the rational root test for low degree, Gauss's lemma, Eisenstein's criterion and why it works, substitution as in the cyclotomic polynomials, and reduction mod p with its limits.",
-
   glimpse: (
     <p>
       This completes the first course in abstract algebra. In the second, irreducible polynomials define field extensions,

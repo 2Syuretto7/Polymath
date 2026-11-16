@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the limit equation needs a limit to exist first, what the monotone convergence theorem says, how its proof uses the supremum, and how it shows the square-root recursion converges to 2.",
-
   glimpse: (
     <p>
       The next lesson shows that every bounded sequence, monotone or not, has a convergent subsequence: the

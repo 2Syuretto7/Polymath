@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why infinitely many nested intervals (0, 1/n), none of them empty, have nothing in common.",
-
   glimpse: (
     <p>
       The last lesson on sets builds two new kinds of set from old: the set of all subsets, and the set of all ordered pairs.

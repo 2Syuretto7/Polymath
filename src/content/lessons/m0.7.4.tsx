@@ -174,9 +174,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why it makes sense to picture i as a quarter turn, using the fact that multiplying by −1 is a half turn.",
-
   glimpse: (
     <p>
       Next, polar form, which shows that every multiplication of complex numbers is a turn combined with a stretch. Complex

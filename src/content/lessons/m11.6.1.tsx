@@ -133,9 +133,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend when ax + by = c has integer solutions, how Bézout gives one, why all solutions differ by multiples of (b/g, −a/g), the coin problem, and Aryabhata’s pulveriser.",
-
   glimpse: (
     <p>
       The next lessons solve non-linear equations: Pythagorean triples, Pell&rsquo;s equation and sums of squares. Continued

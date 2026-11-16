@@ -136,9 +136,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what quadratic residues are, why exactly half of the non-zero residues are squares, Euler’s criterion and its proof with a primitive root, when −1 is a square, and how this gives infinitely many primes 1 mod 4.",
-
   glimpse: (
     <p>
       The next lesson packages Euler&rsquo;s criterion into the Legendre symbol. Quadratic reciprocity then relates squares modulo

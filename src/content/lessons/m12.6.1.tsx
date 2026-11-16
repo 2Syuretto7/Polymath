@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a k-form is, how the wedge product measures signed area, what the exterior derivative does, why d² = 0, and how grad, curl and div appear as d.",
-
   glimpse: (
     <p>
       The next lesson integrates forms over curves, surfaces and chains. Forms on manifolds and the exterior derivative are

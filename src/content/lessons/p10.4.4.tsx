@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Moore's proof of an external world, his defence of common sense, the Moorean shift against sceptical arguments, the charge of begging the question and the dogmatist reply, and Wittgenstein's idea of hinge propositions.",
-
   glimpse: (
     <p>
       The next chapter turns to the sources of knowledge, beginning with perception. Moore&rsquo;s revolt against idealism and

@@ -153,9 +153,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend polynomial long division over a field and why it needs a field, why x − a divides f exactly when f(a) = 0, why a polynomial of degree n over a domain has at most n roots, and what goes wrong in ℤ₈.",
-
   glimpse: (
     <p>
       The next lesson gives tests for irreducibility, such as Eisenstein&rsquo;s criterion and reduction mod p. In field

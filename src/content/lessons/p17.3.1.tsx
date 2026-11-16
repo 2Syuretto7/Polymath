@@ -160,9 +160,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Gödel numbering, the two incompleteness theorems, and two things they are often wrongly said to show.",
-
   glimpse: (
     <p>
       Next, the Lucas–Penrose argument: the claim that because we can see the truth of Gödel sentences, our minds cannot be

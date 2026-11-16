@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a topology is and why only finite intersections are required, examples such as the metric, discrete, indiscrete and cofinite topologies, what a basis is and when a collection is one, and what it means for one topology to be finer.",
-
   glimpse: (
     <p>
       The next lesson builds new spaces from old: subspaces, products and quotients. Then come continuity and homeomorphisms,

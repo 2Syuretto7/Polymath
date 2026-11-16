@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Bernoulli, binomial, geometric and Poisson distributions with the story behind each, why the binomial probabilities have the form they do, the memoryless property, and why the binomial tends to the Poisson.",
-
   glimpse: (
     <p>
       The next lesson defines expectation, the average value of a random variable. The central limit theorem later explains

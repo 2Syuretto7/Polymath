@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Locke's state of nature, his labour theory of property with the proviso, the role of consent and the right of resistance, and Hume's objection to tacit consent.",
-
   glimpse: (
     <p>
       The next lesson turns to Rousseau, who blamed private property for inequality. Nozick&rsquo;s entitlement theory

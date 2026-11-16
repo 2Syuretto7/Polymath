@@ -156,9 +156,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Marx's account of exploitation through surplus value, historical materialism and the base and superstructure, his critique of rights and ideology, and how analytical Marxists restated these ideas.",
-
   glimpse: (
     <p>
       The next lesson presents feminist political philosophy, which extends the critique of hidden domination to the family.

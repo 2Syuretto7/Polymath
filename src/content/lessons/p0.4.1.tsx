@@ -204,9 +204,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a thought experiment is, using Galileo's tied stones, and say why philosophers use them so often.",
-
   glimpse: (
     <p>
       Next, counterexamples: the single case that refutes a general claim. The ring of Gyges returns in Introduction to

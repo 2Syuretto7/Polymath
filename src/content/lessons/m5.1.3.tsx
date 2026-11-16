@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a parametrised curve is, how its velocity and speed are found, how arc length is computed, and why a curve is not the same as a parametrisation of it.",
-
   glimpse: (
     <p>
       The next lesson turns from curves to functions of several variables, and asks how they change in each direction.

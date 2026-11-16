@@ -214,9 +214,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between a valid argument and a sound one, and why a valid argument can have a false conclusion.",
-
   glimpse: (
     <p>
       For now, validity is judged by imagining situations. Later in this course, truth tables will replace imagination with a

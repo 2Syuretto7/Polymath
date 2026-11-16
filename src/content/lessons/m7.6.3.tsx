@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a ring homomorphism is, why kernels are ideals, what the first isomorphism theorem says for rings, and how it proves the Chinese remainder theorem and identifies ℝ[x]/(x² + 1) with ℂ.",
-
   glimpse: (
     <p>
       The next lesson asks when a quotient ring is an integral domain or a field, which leads to prime and maximal ideals.

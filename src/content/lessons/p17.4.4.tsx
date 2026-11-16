@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a paraconsistent logic is, how LP blocks explosion with the value B, and the difference between paraconsistency and dialetheism.",
-
   glimpse: (
     <p>
       Next, the liar paradox itself: why &ldquo;this sentence is false&rdquo; threatens any language that can talk about its

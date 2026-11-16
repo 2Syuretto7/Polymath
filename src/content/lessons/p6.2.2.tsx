@@ -212,9 +212,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Avicenna's distinction between essence and existence, his argument for a necessary existent, and the flying man thought experiment.",
-
   glimpse: (
     <p>
       The next lesson meets al-Ghazali, who attacked the philosophers, Avicenna above all, and denied that fire burns

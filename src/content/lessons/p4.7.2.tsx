@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Stoic logic differs from Aristotle's, what the five indemonstrables are, the ancient debate over what 'if' means, and how Chrysippus tried to reconcile fate with responsibility.",
-
   glimpse: (
     <p>
       The next lesson shows what the Stoics built on this foundation: an ethics in which only virtue is good. Logic I

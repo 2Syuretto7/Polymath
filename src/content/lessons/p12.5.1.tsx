@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Nagel's idea of what it is like to be something, why the bat example is chosen, and why he thought the objectivity of science struggles with subjective experience.",
-
   glimpse: (
     <p>
       The next lesson sharpens Nagel&rsquo;s worry into an argument: Mary, who knows everything physical about colour, sees

@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the truth table for 'if … then', and why a conditional with a false antecedent counts as true.",
-
   glimpse: (
     <p>
       The odd behaviour of the material conditional has two famous defences and one famous rival. Grice&rsquo;s theory of

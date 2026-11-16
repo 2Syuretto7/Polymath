@@ -206,9 +206,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how an infinitely long region can have a finite area, why 1/x² gives a finite area and 1/x does not, and how comparison settles convergence without computing anything.",
-
   glimpse: (
     <p>
       Improper integrals return in the chapter on series, where the integral test compares a sum with an integral. In

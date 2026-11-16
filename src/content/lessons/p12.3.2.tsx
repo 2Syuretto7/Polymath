@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Turing’s imitation game and why he proposed it, some objections he answered, Block’s Blockhead and what it shows about the test, and whether the test is necessary, sufficient or good evidence for thinking.",
-
   glimpse: (
     <p>
       The next lesson presents Searle&rsquo;s Chinese room, which targets understanding rather than behaviour. The final chapter

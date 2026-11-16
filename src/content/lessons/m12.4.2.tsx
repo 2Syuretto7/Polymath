@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the inverse function theorem, how the contraction mapping theorem proves it, how the implicit function theorem follows, and why the inverse is only local.",
-
   glimpse: (
     <p>
       The next lesson extends these ideas to maps of constant rank. Manifolds are defined as spaces that look locally like

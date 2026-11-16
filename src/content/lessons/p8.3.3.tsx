@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the problem the schematism addresses, the difference between an image and a schema, why the schemata of the categories are determinations of time, and how this answers Berkeley on general ideas.",
-
   glimpse: (
     <p>
       The next lesson uses the schemata to prove the Analogies of Experience, including Kant&rsquo;s answer to Hume on

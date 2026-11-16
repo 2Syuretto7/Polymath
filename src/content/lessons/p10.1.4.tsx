@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the knowledge first approach, the argument from the failure of analyses, the idea of knowledge as the most general factive mental state, the thesis that evidence is knowledge, the knowledge norm of assertion, and the main objection.",
-
   glimpse: (
     <p>
       The next chapter turns to how beliefs are justified, beginning with the regress problem. Later courses develop

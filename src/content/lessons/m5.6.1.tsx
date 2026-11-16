@@ -181,9 +181,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the two kinds of line integral, what each measures, why one depends on direction and the other does not, and an example where the work depends on the path.",
-
   glimpse: (
     <p>
       The next lesson finds the fields for which the work depends only on the endpoints, and gives a test for them. Green&rsquo;s

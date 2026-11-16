@@ -194,9 +194,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what lim f(x) = L as x → a means, why the value of f at a does not matter, and give an example where the limit does not exist.",
-
   glimpse: (
     <p>
       The informal idea of a limit carries the whole course: derivatives, integrals and infinite series are all limits. The next

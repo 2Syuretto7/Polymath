@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the doctrine of double effect and its conditions, the strategic and terror bomber cases with the counterfactual test, and the problem of closeness.",
-
   glimpse: (
     <p>
       The next lesson brings both distinctions together in the trolley problem. After that, the question is how much

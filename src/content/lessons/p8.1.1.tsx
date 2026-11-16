@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Kant thought metaphysics needed a critique, what his Copernican revolution is, and how it explains a priori knowledge while limiting it to the world of experience.",
-
   glimpse: (
     <p>
       The next lesson asks the question Kant puts at the centre of the Critique: how are synthetic a priori judgements

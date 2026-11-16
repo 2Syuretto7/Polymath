@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Nozick's entitlement theory and its three principles, the difference between historical and patterned principles, the Wilt Chamberlain argument, and one objection.",
-
   glimpse: (
     <p>
       The next lesson presents luck egalitarianism, which tries to combine equality with Nozick&rsquo;s emphasis on choice.

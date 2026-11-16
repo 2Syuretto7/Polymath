@@ -212,9 +212,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the epsilon-delta definition of a limit as a game between a sceptic and a prover, and show how to win it for 2x + 1 near 1.",
-
   glimpse: (
     <p>
       This definition, with its alternating quantifiers, is the model for every precise definition in analysis. In Real Analysis

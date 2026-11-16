@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a finite field has prime power size, how to build one as 𝔽ₚ[x] modulo an irreducible polynomial, why the splitting field of x^q − x has exactly q elements, and what the Frobenius map does.",
-
   glimpse: (
     <p>
       The next lesson shows that the non-zero elements of a finite field form a cyclic group and describes all the subfields.

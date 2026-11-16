@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the feminist claim that the personal is political, Okin's argument about the family, the differences between liberal and radical feminism and care ethics, and the idea of intersectionality.",
-
   glimpse: (
     <p>
       The next lessons turn to critical race theory and to Ambedkar on caste and democracy. Human rights debates take up

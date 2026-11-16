@@ -204,9 +204,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the argument about Socrates needs predicate logic, how to symbolise “all F are G” and “some F are G”, and why the first uses → and the second ∧.",
-
   glimpse: (
     <p>
       Next come sentences with several quantifiers, where order matters. Ancient Greek Philosophy studies Aristotle&rsquo;s

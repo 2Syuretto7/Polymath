@@ -206,9 +206,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Aquinas's view of the soul as the form of the body, his argument that the intellect is not a bodily organ, why the soul can survive death, and why he says my soul is not I.",
-
   glimpse: (
     <p>
       The next lesson turns to Aquinas&rsquo;s ethics and politics: natural law. Descartes&rsquo;s rival picture of the

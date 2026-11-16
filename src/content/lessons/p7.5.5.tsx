@@ -203,9 +203,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hume's observation about is and ought, why he thought reason alone cannot motivate, his view that morality rests on sentiment, and one attempt to bridge the gap.",
-
   glimpse: (
     <p>
       The next lesson reads Hume&rsquo;s Dialogues on natural religion, where his scepticism meets the argument from design.

@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Rolle's theorem follows from the extreme value theorem, how the mean value theorem and Cauchy's version follow from Rolle, and why they prove that zero derivative means constant and give L'Hôpital's rule.",
-
   glimpse: (
     <p>
       The next lesson extends the mean value theorem to higher derivatives, giving Taylor&rsquo;s theorem with an explicit

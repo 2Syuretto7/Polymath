@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Hegel thinks self-consciousness needs recognition, how the life-and-death struggle produces lord and bondsman, why the lord's position is hollow while the bondsman gains through fear and labour, and how the passage influenced later thought.",
-
   glimpse: (
     <p>
       The next lesson turns to Hegel&rsquo;s dialectic and his logic. Marx takes up labour and alienation later in the

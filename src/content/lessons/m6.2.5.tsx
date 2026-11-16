@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the limsup and liminf are defined from the tails of a sequence, why they always exist for bounded sequences, how they decide convergence, and why the root test needs them.",
-
   glimpse: (
     <p>
       The next chapter proves the convergence tests properly, with the root test stated in terms of the limsup. The same

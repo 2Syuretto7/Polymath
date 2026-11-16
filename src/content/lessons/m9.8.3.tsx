@@ -134,9 +134,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend periodicity and aperiodicity, the convergence theorem for irreducible aperiodic chains, how periodic and reducible chains fail to converge, the role of the second eigenvalue in the speed, and the idea of a coupling proof.",
-
   glimpse: (
     <p>
       The final lesson of the course studies random walks, the simplest chains on infinite state spaces. Ergodic theory takes

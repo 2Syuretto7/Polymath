@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what cosets are, why they partition a group into equal pieces, how this proves Lagrange's theorem, and consequences such as Fermat's little theorem and the cyclicity of groups of prime order.",
-
   glimpse: (
     <p>
       The next lesson asks when left and right cosets agree, which leads to normal subgroups. Fermat&rsquo;s and Euler&rsquo;s

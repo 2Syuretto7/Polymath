@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between being exactly alike and being one and the same, using a photograph of yourself as a child.",
-
   glimpse: (
     <p>
       The next lesson examines the two leading answers to the persistence question: memory and body. Heraclitus has his own

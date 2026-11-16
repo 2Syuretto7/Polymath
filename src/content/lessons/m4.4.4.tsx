@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what congruence modulo n means, why addition and multiplication can be done on remainders, how to find the last digit of a huge power, and when and how a number has an inverse modulo n.",
-
   glimpse: (
     <p>
       The next chapter asks what an algorithm is and how fast it runs. Elementary Number Theory proves Fermat&rsquo;s and

@@ -164,9 +164,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a positive operator is, the four equivalent conditions and why they are equivalent, how to compute the positive square root, and an operator with several square roots.",
-
   glimpse: (
     <p>
       The next lesson studies isometries, the operators that preserve length. Positive operators and isometries together give

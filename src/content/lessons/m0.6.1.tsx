@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what one radian is, and why a full turn is 2π radians.",
-
   glimpse: (
     <p>
       Next, sine and cosine, defined by walking round a circle of radius 1, where an angle in radians is simply the distance

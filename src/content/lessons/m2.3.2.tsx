@@ -219,9 +219,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the intermediate value theorem, why it needs both continuity and the completeness of the real numbers, and how it solves the monk puzzle.",
-
   glimpse: (
     <p>
       The fixed-point exercise is the one-dimensional case of Brouwer&rsquo;s fixed point theorem, met in Topology, where the

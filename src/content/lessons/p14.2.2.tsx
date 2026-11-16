@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference principle, how it sits between strict equality and utilitarianism, why Rawls treated natural talents as a common asset, and Cohen's objection to incentives.",
-
   glimpse: (
     <p>
       The next lesson presents Nozick&rsquo;s entitlement theory, which rejects patterned principles like this one. Luck

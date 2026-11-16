@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the Catalan numbers count, how the first return to the axis gives the recurrence, how the reflection principle gives the formula, and some other problems they answer.",
-
   glimpse: (
     <p>
       The next chapter turns to graphs, where trees are counted again. Recursion, later in this course, analyses

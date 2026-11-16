@@ -136,9 +136,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how every permutation splits into disjoint cycles, why the order is the lcm of the cycle lengths, how cycle type determines conjugacy in Sₙ, and how cycles are built from transpositions.",
-
   glimpse: (
     <p>
       The next lesson shows that a permutation&rsquo;s parity, odd or even number of transpositions, is well defined, which

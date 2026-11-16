@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to project a vector onto a line and onto a subspace, why the error is perpendicular, why the projection is the nearest point, and the two properties every projection matrix has.",
-
   glimpse: (
     <p>
       Least squares, next, uses exactly this projection to solve equations that have no solution. Gram–Schmidt replaces A

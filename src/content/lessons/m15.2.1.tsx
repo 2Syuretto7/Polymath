@@ -174,9 +174,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what connected and path-connected mean, why intervals are connected, why continuous images and closures of connected sets are connected, and why the topologist's sine curve is connected but not path-connected.",
-
   glimpse: (
     <p>
       Next comes compactness, the other great topological property. Path-connectedness returns with the fundamental group,

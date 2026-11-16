@@ -204,9 +204,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the dot product is computed, how Cauchy–Schwarz lets us define angles in any dimension, and how the triangle inequality follows.",
-
   glimpse: (
     <p>
       Later in this course, orthogonality leads to projections and to least squares, the method behind fitting a line to

@@ -219,9 +219,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the supremum of a set is, why the rationals with square below 2 have no rational supremum, and why calculus needs the completeness axiom.",
-
   glimpse: (
     <p>
       Completeness comes in many equivalent forms: every bounded monotone sequence converges, nested closed intervals have a

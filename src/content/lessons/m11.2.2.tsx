@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Chinese remainder theorem and the formula that builds the solution, Sunzi’s problem, what happens when the moduli share a factor, and why the theorem means arithmetic modulo mn splits into arithmetic modulo m and modulo n.",
-
   glimpse: (
     <p>
       The next lesson shows how powers behave modulo n, through Fermat&rsquo;s and Euler&rsquo;s theorems. Multiplicativity of φ

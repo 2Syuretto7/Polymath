@@ -134,9 +134,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the symmetric group is, how to read and compose permutations in cycle notation, why Sₙ is non-abelian for n ≥ 3, and how Cayley's theorem shows every group is a permutation group.",
-
   glimpse: (
     <p>
       The next lesson shows that every permutation splits uniquely into disjoint cycles. Then the alternating group of even

@@ -146,9 +146,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of independence and its meaning in terms of conditional probability, why complements of independent events are independent, independence of several events with the two-coin example, and the gambler's fallacy.",
-
   glimpse: (
     <p>
       The next chapter introduces random variables and their distributions. Joint distributions extend independence to

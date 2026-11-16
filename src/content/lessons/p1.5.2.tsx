@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Darwin's idea of cumulative selection answers Paley's watch, and why fine-tuning is harder to answer the same way.",
-
   glimpse: (
     <p>
       If the world shows the hand of a good designer, why does it contain so much suffering? That is the problem of evil, the

@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the regress problem, Agrippa's trilemma and its sceptical conclusion, and how foundationalism, coherentism, infinitism and externalism each respond.",
-
   glimpse: (
     <p>
       The next lesson examines foundationalism, then coherentism and infinitism. Externalist theories such as reliabilism come

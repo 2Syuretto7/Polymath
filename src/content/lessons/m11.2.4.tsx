@@ -131,9 +131,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Wilson’s theorem, why the numbers 2 to p − 2 pair off with their inverses, why only 1 and p − 1 are their own inverses, the converse for composites, and how the theorem gives a square root of −1 when p is 1 mod 4.",
-
   glimpse: (
     <p>
       Square roots modulo p are the subject of the chapter on quadratic residues. Fermat&rsquo;s two-squares theorem, which uses

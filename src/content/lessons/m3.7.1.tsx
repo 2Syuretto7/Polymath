@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what eigenvalues and eigenvectors are, how det(A − λI) = 0 finds the eigenvalues, how to find the eigenvectors, and why the eigenvalues add up to the trace and multiply to the determinant.",
-
   glimpse: (
     <p>
       The next lesson uses eigenvectors as a basis to diagonalise a matrix and compute its powers. Symmetric matrices have

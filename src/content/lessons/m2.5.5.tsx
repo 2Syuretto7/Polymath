@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the limit of a quotient of two vanishing functions is decided by their derivatives, using the picture of two graphs that look like straight lines when you zoom in.",
-
   glimpse: (
     <p>
       Applying L&rsquo;Hôpital&rsquo;s rule again and again is a clumsy way of comparing the polynomials that best

@@ -214,9 +214,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to symbolise 'only if', 'unless' and 'neither … nor' in sentential logic, and why 'but' becomes 'and'.",
-
   glimpse: (
     <p>
       Sentential logic sees whole sentences only. Later in this course, predicate logic opens them up, with symbols for names,

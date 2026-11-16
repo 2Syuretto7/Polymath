@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the length of a curve is defined by inscribed polygons, why that leads to the integral of √(1 + f′²), and how it confirms that radians measure arc length.",
-
   glimpse: (
     <p>
       Multivariable Calculus and Vector Analysis integrates along curves in space, which is how work done by a force along

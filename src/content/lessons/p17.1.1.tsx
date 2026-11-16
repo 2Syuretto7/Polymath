@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between Γ ⊢ φ and Γ ⊨ φ, what soundness says, how it is proved by induction on derivations, and why it implies that the proof system is consistent.",
-
   glimpse: (
     <p>
       Next, completeness, the converse of soundness: every valid argument can be derived, proved by extending a consistent set

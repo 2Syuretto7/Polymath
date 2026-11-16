@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Popper's notion of corroboration, why severe tests count for more, why corroboration is not probability, and Salmon's problem of rational prediction.",
-
   glimpse: (
     <p>
       Next, Kuhn&rsquo;s history of science challenges the picture of scientists as tireless refuters, and Lakatos builds a

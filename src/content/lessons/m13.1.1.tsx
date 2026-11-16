@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the complex numbers are as points of the plane, what modulus, argument and conjugate mean, why multiplying multiplies lengths and adds angles, and what the n-th roots of unity look like.",
-
   glimpse: (
     <p>
       The next lesson asks what it means for a function of a complex variable to be differentiable. The answer is much more

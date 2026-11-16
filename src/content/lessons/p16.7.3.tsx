@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the tautology objection to survival of the fittest, fitness as a propensity, the difference between selection and drift, and the etiological account of function.",
-
   glimpse: (
     <p>
       This ends the first course in the philosophy of science. Later courses return to laws and supervenience in metaphysics,

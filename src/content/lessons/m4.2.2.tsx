@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how counting problems lead to recurrences, with the domino example, how the characteristic equation solves aₙ = paₙ₋₁ + qaₙ₋₂ in the distinct and repeated root cases, and how to handle the tower puzzle's recurrence.",
-
   glimpse: (
     <p>
       The next lesson packs a whole sequence into one function, which solves recurrences mechanically. Recursion returns

@@ -146,9 +146,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the principal curvatures and directions, Euler's formula for normal curvature, the Gaussian and mean curvature, and how the sign of K distinguishes elliptic, hyperbolic and parabolic points.",
-
   glimpse: (
     <p>
       Next, minimal surfaces, where the mean curvature vanishes everywhere: the shapes of soap films.

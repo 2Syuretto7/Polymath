@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend virtue epistemology, the difference between virtue reliabilism and responsibilism, Sosa's accurate, adroit and apt with the archer, how it diagnoses Gettier cases, and the credit view of the value of knowledge with its objections.",
-
   glimpse: (
     <p>
       The next lesson asks what intellectual virtue requires when a peer disagrees with you. Virtue ethics is developed in

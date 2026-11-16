@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Möbius transformation is, why it maps lines and circles to lines and circles, why three points determine one, and how the Cayley map carries the upper half-plane onto the disc.",
-
   glimpse: (
     <p>
       The next lesson proves the Schwarz lemma and uses it to show that the disc maps above are all the conformal bijections

@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three speculative proofs of God, Kant's objection that being is not a real predicate, why he thinks the other proofs depend on the ontological one, and what role God keeps in his philosophy.",
-
   glimpse: (
     <p>
       The next chapter turns to Kant&rsquo;s practical philosophy, where God, freedom and immortality return as postulates.

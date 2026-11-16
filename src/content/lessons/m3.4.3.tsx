@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for vectors to be linearly independent, why dependence means one vector is redundant, how elimination tests it, and why three vectors in the plane are always dependent.",
-
   glimpse: (
     <p>
       An independent list that also spans is a basis, the subject of the next lesson. Determinants test independence of n

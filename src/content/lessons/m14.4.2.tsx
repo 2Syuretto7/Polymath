@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a solvable group is, how the commutator subgroup and derived series test for it, why S₄ is solvable, and why A₅ is not.",
-
   glimpse: (
     <p>
       The next lesson links solvable groups to radicals and shows that the general quintic cannot be solved by a formula. Lie

@@ -194,9 +194,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the slope of a curve at a single point can be defined as a limit of slopes of secant lines, and work it out for x² at a point.",
-
   glimpse: (
     <p>
       Differentiable functions are continuous, but continuous functions need not be differentiable, as |x| shows at a single

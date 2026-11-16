@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Bayesian confirmation: E confirms H when it raises H's probability, why surprising predictions confirm more, the different measures of degree, and the problems of old evidence and of the priors.",
-
   glimpse: (
     <p>
       Next, the philosophy of explanation, starting from Hempel&rsquo;s deductive-nomological model. Bayesian norms are

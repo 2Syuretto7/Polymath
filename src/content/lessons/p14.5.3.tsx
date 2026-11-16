@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the central claims of critical race theory, Bell's interest convergence thesis, Mills's racial contract and Young's structural injustice, and the debate over colour-blindness.",
-
   glimpse: (
     <p>
       The next lesson turns to Ambedkar, who analysed caste as a structure of graded inequality and asked what democracy

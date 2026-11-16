@@ -153,9 +153,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Laudan's pessimistic induction from successful but false theories such as the ether and caloric, how it challenges the no-miracles argument, and the selective realist reply and its difficulties.",
-
   glimpse: (
     <p>
       Next, van Fraassen&rsquo;s constructive empiricism, which asks only that theories be true about what is observable.

@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what log base 2 of 1000 means, using doubling, and why the logarithm of a negative number is not defined.",
-
   glimpse: (
     <p>
       Next, the laws of logarithms, which turn multiplication into addition and powered the slide rules and astronomy of

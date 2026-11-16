@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why 'not (A and B)' means 'not A or not B', using the four cases for A and B.",
-
   glimpse: (
     <p>
       Next, conditionals in more depth: converses, contrapositives and how proofs use them. De Morgan&rsquo;s laws return

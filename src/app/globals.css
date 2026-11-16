@@ -608,9 +608,6 @@ label { font-size: 13px; font-weight: 500; color: var(--text); }
 .feedback-right { background: var(--success-soft); color: var(--success); }
 .feedback-wrong { background: var(--danger-soft); color: var(--danger); }
 .feedback-info { background: var(--overlay); color: var(--text-muted); }
-.teachback { border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; }
-.teachback-prompt { font-family: var(--font-serif); font-size: 17px; margin: 0 0 16px; }
-.teachback-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 12px 0 0; }
 .connections { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; margin-top: 16px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; }
 .connections > div { background: var(--bg); padding: 20px; }
 .connections h3 { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 12px; color: var(--text-faint); }
@@ -778,9 +775,6 @@ label { font-size: 13px; font-weight: 500; color: var(--text); }
 
 .parton-feedback { margin: 16px 0 0; padding: 14px 16px; border: 1px solid var(--border); border-left: 2px solid var(--accent); border-radius: var(--radius-md); background: var(--bg-subtle); font-size: 14.5px; }
 .parton-feedback-head { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; font-weight: 500; font-size: 13.5px; }
-.parton-feedback-sub { margin: 12px 0 4px; font-weight: 500; font-size: 13.5px; }
-.parton-questions { margin: 0 0 8px; padding-left: 20px; }
-.parton-questions li { margin-bottom: 6px; }
 
 @media (max-width: 720px) {
   .parton-launcher { right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); }
@@ -841,4 +835,3 @@ label { font-size: 13px; font-weight: 500; color: var(--text); }
 .dictate { display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); }
 .dictate.is-listening { color: var(--danger); }
 .dictate-label { font-size: 14px; }
-.teachback-foot .dictate { margin-left: auto; }

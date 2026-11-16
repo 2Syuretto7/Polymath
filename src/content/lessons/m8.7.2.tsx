@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the universal property of the tensor product, its construction from bases and its dimension, how it identifies with matrices and linear maps, and the difference between pure and non-pure tensors.",
-
   glimpse: (
     <p>
       The next lesson builds the exterior powers, the alternating part of repeated tensor products. Module theory relates

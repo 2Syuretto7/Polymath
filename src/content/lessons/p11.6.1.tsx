@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend McTaggart's A series and B series, his argument that time is unreal including the regress, and how A-theorists and B-theorists respond.",
-
   glimpse: (
     <p>
       The next lesson asks which times exist: only the present, or past and future too. Then we ask whether time travel is

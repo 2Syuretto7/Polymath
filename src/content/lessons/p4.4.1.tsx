@@ -237,9 +237,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three definitions of knowledge tried in the Theaetetus, the main objection to each, the puzzles about false belief, and why the dialogue ends without an answer.",
-
   glimpse: (
     <p>
       Epistemology begins with the analysis of knowledge as justified true belief, and with Gettier&rsquo;s cases, which

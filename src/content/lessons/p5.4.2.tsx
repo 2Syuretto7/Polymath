@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Gilligan's challenge to Kohlberg, the difference between the justice and care perspectives, why care ethics rejects strict impartiality, and the main questions it faces.",
-
   glimpse: (
     <p>
       The next lesson asks what moral exemplars, real admirable people, can teach us. The applied lessons return to care

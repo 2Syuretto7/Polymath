@@ -206,9 +206,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the two ways to see a matrix times a vector, why matrix multiplication uses the row-times-column rule, what order AB applies its matrices in, and why AB need not equal BA.",
-
   glimpse: (
     <p>
       The next lesson asks when a matrix can be undone, which is when it has an inverse. Linear transformations, at the end

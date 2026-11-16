@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the coordinates of a vector in a basis are, why the matrix of a map in a new basis is B⁻¹AB, how diagonalisation is a change to the eigenvector basis, and what similar matrices have in common.",
-
   glimpse: (
     <p>
       The last lesson of the course allows different bases for input and output, and finds the singular value

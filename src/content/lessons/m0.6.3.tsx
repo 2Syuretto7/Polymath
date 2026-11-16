@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why sin(α + β) is not sin α + sin β, and how the rectangle picture gives the correct formula.",
-
   glimpse: (
     <p>
       Next, inverse trigonometric functions, which turn a sine back into an angle. In the chapter on the plane, multiplying

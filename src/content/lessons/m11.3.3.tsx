@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what perfect numbers are, Euclid’s recipe from Mersenne primes and why it works, Euler’s proof that every even perfect number has this form, why the exponent must be prime, and what is still unknown about odd perfect numbers.",
-
   glimpse: (
     <p>
       The next chapter studies the order of a number modulo n, the tool behind primitive roots. Mersenne numbers return as a test

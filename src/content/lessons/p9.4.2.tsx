@@ -185,9 +185,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kierkegaard's absolute paradox, why historical evidence cannot ground faith, the difference between infinite resignation and faith, and the objections of critics such as Camus.",
-
   glimpse: (
     <p>
       The next lesson explores Kierkegaard&rsquo;s claim that truth is subjectivity. The existentialists take up anxiety and

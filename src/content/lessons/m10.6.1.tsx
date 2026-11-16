@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to find a power series solution by substituting, shifting indices and matching coefficients, work through y″ + y = 0 and Airy's equation, and say what the ordinary point theorem guarantees.",
-
   glimpse: (
     <p>
       The next lesson introduces the Laplace transform, which turns differential equations into algebra. Series return in

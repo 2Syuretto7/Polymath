@@ -179,9 +179,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why no number that leaves remainder 3 on division by 4 can be a perfect square, by splitting into cases.",
-
   glimpse: (
     <p>
       Splitting by remainders is the start of modular arithmetic, which Discrete Mathematics and Elementary Number Theory

@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for a function to be continuous at a point, and describe the different ways continuity can fail.",
-
   glimpse: (
     <p>
       The next two lessons prove the two great theorems about continuous functions on intervals. Real Analysis I takes

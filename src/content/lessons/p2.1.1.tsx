@@ -236,9 +236,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an argument is in logic, how to find its premises and conclusion, and how an argument differs from an explanation.",
-
   glimpse: (
     <p>
       Critical Reasoning and Inductive Logic takes argument-spotting much further, with long real-world texts and diagrams of

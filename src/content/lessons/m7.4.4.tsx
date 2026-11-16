@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the centre and centralisers are, how the class equation comes from the conjugation action, why groups of prime power order have non-trivial centres, and why groups of order p² are abelian.",
-
   glimpse: (
     <p>
       The next chapter proves the Sylow theorems, which find subgroups of prime power order inside any finite group, and uses

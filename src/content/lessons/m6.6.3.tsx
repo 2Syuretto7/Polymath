@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Taylor polynomial is, how Taylor's theorem with Lagrange remainder is proved by repeated use of Rolle's theorem, how it proves the exponential series converges, and why some smooth functions are not equal to their Taylor series.",
-
   glimpse: (
     <p>
       The next lesson builds a continuous function with no derivative anywhere, the opposite extreme from the smooth

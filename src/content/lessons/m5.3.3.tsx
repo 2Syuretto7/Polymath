@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to find the best value of a function subject to a constraint, why the gradients must be parallel at the best point, how to use the method, and what the multiplier means.",
-
   glimpse: (
     <p>
       The next lesson asks when a map can be inverted near a point, which leads to the inverse and implicit function

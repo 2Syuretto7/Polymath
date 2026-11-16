@@ -175,9 +175,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a prime is, why every number has a prime factor, why the sieve can stop at the square root, Euclid's proof that there are infinitely many primes, and what the fundamental theorem of arithmetic says.",
-
   glimpse: (
     <p>
       The next lesson brings the greatest common divisor and Euclid&rsquo;s algorithm, and with them the proof of unique

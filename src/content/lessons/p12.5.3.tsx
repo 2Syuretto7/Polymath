@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between the easy and hard problems of consciousness, the zombie argument step by step, and how type-A and type-B physicalists reply.",
-
   glimpse: (
     <p>
       The next lessons consider two responses: higher-order theories, which try to explain consciousness as a kind of

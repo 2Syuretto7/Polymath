@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a generating function is, why multiplying generating functions counts combined choices, how this counts ways of paying with coins, and how it solves the Fibonacci recurrence.",
-
   glimpse: (
     <p>
       The next lesson uses a generating function to find the Catalan numbers. Combinatorics develops partitions and

@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Locke's account of abstract general ideas, Berkeley's argument that they are impossible, his alternative account of how particular ideas become general, and why this mattered for his philosophy.",
-
   glimpse: (
     <p>
       The next lesson shows what Berkeley built on this: if existence apart from perception is an abstraction, perhaps

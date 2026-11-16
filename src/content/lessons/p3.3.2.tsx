@@ -240,9 +240,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the form of an argument from analogy, the features that make one strong or weak, and how a logical analogy can show that an argument's form is bad.",
-
   glimpse: (
     <p>
       Philosophy of Religion returns to the design argument in its modern form, the argument from the fine-tuning of the

@@ -206,9 +206,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend who writes school essays what makes a philosophy essay different. Use the two openings about promises, and say what B's reader knows after one paragraph that A's does not.",
-
   glimpse: (
     <p>
       Next, clarity and definitions: how to make every sentence of an essay say exactly one thing. Then objections and

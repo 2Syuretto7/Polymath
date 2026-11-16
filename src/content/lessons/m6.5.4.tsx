@@ -181,9 +181,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three kinds of discontinuity, why monotone functions have one-sided limits everywhere, why their discontinuities are countable, and how to build an increasing function that jumps at every rational.",
-
   glimpse: (
     <p>
       The next chapter defines the derivative rigorously. Monotone functions return in the theory of integration: Lebesgue&rsquo;s

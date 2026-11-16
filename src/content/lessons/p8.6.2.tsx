@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the sublime differs from the beautiful, what the mathematical and dynamical sublime are, why the observer must be safe, and why Kant says the sublime is really in the mind.",
-
   glimpse: (
     <p>
       The final lesson of the course turns to the second half of the third Critique, on purpose in living nature. The

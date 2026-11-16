@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a parametrised curve is, the difference between a curve and its trace, the velocity vector, what makes a curve regular, and why the cusp (t², t³) is smooth but not regular.",
-
   glimpse: (
     <p>
       Next, arc length, which gives every regular curve a natural parameter, the distance travelled along it, and makes the

@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Humean theory of motivation, the idea of direction of fit, Smith's teleological argument, and the moral problem formed by three plausible claims.",
-
   glimpse: (
     <p>
       The next lesson asks how luck bears on praise and blame. Graduate metaethics returns to reasons and to the requirements

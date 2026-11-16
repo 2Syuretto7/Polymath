@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the matrix exponential is defined, why x = e^(tA)x₀ solves x′ = Ax, how to compute it by diagonalising or with a nilpotent part, and why commuting matters.",
-
   glimpse: (
     <p>
       The next lesson draws every possible phase portrait of a planar linear system. The matrix exponential also governs

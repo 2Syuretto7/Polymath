@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how adding up thin rectangles gives the area under a curve, and why the answer for x² from 0 to 1 must be exactly one third.",
-
   glimpse: (
     <p>
       The next lesson asks when such sums really do settle on one number, whatever the choice of points. In Multivariable

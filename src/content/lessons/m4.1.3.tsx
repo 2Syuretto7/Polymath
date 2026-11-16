@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a combinatorial proof is, how it proves Pascal's rule, the binomial theorem and Vandermonde's identity, and why the squares of a row of Pascal's triangle add up to a central binomial coefficient.",
-
   glimpse: (
     <p>
       Generating functions, later in this course, turn identities like these into algebra, and the Catalan numbers count

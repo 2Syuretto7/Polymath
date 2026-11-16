@@ -194,9 +194,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the Cauchy product of two series is, why it adds by diagonals, what Mertens' theorem says and why absolute convergence matters, and how it proves the exponential law.",
-
   glimpse: (
     <p>
       Later in the course, power series are multiplied term by term in exactly this way, and the radius of the product is at

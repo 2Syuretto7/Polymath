@@ -164,9 +164,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Davidson's idea that a theory of meaning is a theory of truth, what T-sentences are and why compositionality matters, radical interpretation and the principle of charity, and one objection.",
-
   glimpse: (
     <p>
       The next lesson considers the rival view that meaning is use. Tarski&rsquo;s theory of truth appears in its own right in

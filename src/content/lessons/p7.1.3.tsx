@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what clear and distinct perception is, Descartes's two proofs of God, how he explains error, and the Cartesian circle with one reply.",
-
   glimpse: (
     <p>
       With God as guarantor, the next lesson returns to the body and argues that mind and body are distinct things. Leibniz

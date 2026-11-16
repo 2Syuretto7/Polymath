@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a normal extension is, why normal finite extensions are exactly splitting fields, why the number of automorphisms is at most the degree with equality for Galois extensions, and why ℚ(∛2) has no non-trivial automorphisms.",
-
   glimpse: (
     <p>
       The next lesson matches the subgroups of a Galois group with the intermediate fields. The fundamental theorem then

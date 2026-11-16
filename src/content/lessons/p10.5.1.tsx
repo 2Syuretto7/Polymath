@@ -193,9 +193,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend direct realism, the argument from illusion and hallucination, indirect realism and the veil of perception, Berkeley's idealism, and the modern responses of adverbialism, intentionalism and disjunctivism.",
-
   glimpse: (
     <p>
       The next lesson considers testimony, the source of most of what we know. Disjunctivism and the phenomenology of

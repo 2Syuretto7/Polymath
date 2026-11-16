@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an orthonormal basis is, why coordinates in it are inner products, how Gram-Schmidt builds one, and how Fourier series fit this picture, including Bessel's inequality.",
-
   glimpse: (
     <p>
       The next lesson studies orthogonal complements and orthogonal projections. The spectral theorem later finds orthonormal

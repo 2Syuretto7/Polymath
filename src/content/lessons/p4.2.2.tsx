@@ -250,9 +250,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Socrates asks Euthyphro, how each attempted definition fails, what the Euthyphro dilemma is, and why it still matters for theories that ground morality in God's will.",
-
   glimpse: (
     <p>
       Socrates&rsquo; demand for the one form that all pious things share grows into Plato&rsquo;s theory of Forms. The

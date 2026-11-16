@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Cauchy sequence is, why small steps are not enough, how the proof that Cauchy sequences converge uses Bolzano-Weierstrass, and why the criterion is another form of completeness.",
-
   glimpse: (
     <p>
       The next lesson measures how far a sequence fails to converge, using the limsup and liminf. The Cauchy criterion is the

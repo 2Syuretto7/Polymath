@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what 1-forms and 2-forms are, why the wedge product is antisymmetric and measures signed area, what the exterior derivative does, and how the generalised Stokes theorem contains the four classical theorems.",
-
   glimpse: (
     <p>
       This ends Multivariable Calculus. The courses on analysis in Rⁿ and on smooth manifolds develop forms properly, prove

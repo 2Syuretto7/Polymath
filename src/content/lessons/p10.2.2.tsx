@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend foundationalism and how it stops the regress, the difference between classical and moderate foundationalism with examples of basic beliefs, the problem of deriving enough from the foundations, and Sellars's attack on the given.",
-
   glimpse: (
     <p>
       The next lesson examines coherentism, which rejects foundations altogether. Later lessons ask how perception justifies

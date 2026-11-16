@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Quine's criterion of ontological commitment, how Russell's theory of descriptions removes Plato's beard, how paraphrase can remove apparent commitments, and one objection to the criterion.",
-
   glimpse: (
     <p>
       The next lesson asks whether we are committed to abstract objects such as numbers. Philosophy of language studies

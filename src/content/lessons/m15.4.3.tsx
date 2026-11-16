@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a covering map is, with the line over the circle and z ↦ zⁿ as examples, how the path lifting property works and why lifts are unique, and how lifting loops gives an action of the fundamental group on the fibre.",
-
   glimpse: (
     <p>
       Next, lifting through the line computes the fundamental group of the circle as the integers. Later, the whole theory of

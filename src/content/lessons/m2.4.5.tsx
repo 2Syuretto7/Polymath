@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the slope of an inverse function is the reciprocal of the original slope, using the picture of reflecting a graph in the line y = x.",
-
   glimpse: (
     <p>
       The formula for arctan, run backwards, leads to a series for π later in the course, and the same reasoning gives the

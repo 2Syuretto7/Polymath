@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the general Stokes theorem ∫_c dω = ∫_∂c ω, the idea of its proof on a cube, and how Green, Stokes, Gauss and the fundamental theorem of calculus are all special cases.",
-
   glimpse: (
     <p>
       This completes the course on metric spaces and analysis in ℝⁿ. On manifolds, the same theorem holds with partitions

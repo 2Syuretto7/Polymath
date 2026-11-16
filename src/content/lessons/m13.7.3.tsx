@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the prime number theorem says, how the logarithmic derivative of zeta encodes the primes, why the absence of zeros on Re s = 1 is the key step, and how the Riemann hypothesis would sharpen the error.",
-
   glimpse: (
     <p>
       This completes the course. Analytic number theory later proves the theorem in full, extends it to primes in arithmetic

@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a discrete logarithm is, the laws of indices and how they solve power congruences, how Diffie–Hellman key exchange works with a small example, and why the discrete logarithm is believed to be hard.",
-
   glimpse: (
     <p>
       The next lesson builds RSA, a public key system based on factoring rather than logarithms. Elliptic curve cryptography,

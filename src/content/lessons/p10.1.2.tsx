@@ -203,9 +203,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Gettier's two cases, why they count as justified true belief without knowledge, the general recipe for such cases, and the earlier examples from Russell and Dharmottara.",
-
   glimpse: (
     <p>
       The next lesson surveys attempts to repair the analysis. Reliabilist epistemology and the view that knowledge is a

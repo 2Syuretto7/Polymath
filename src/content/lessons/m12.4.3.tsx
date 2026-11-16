@@ -132,9 +132,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the rank theorem, how it follows from the inverse function theorem, what immersions and submersions look like locally, and why constant rank is needed.",
-
   glimpse: (
     <p>
       The next unit integrates over regions in ℝⁿ. In differential topology, immersions, submersions and embedded

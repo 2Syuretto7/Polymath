@@ -208,9 +208,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the hypothetico-deductive method works, why a failed prediction refutes but a successful one only confirms, and how controls, randomisation and blinding make a trial fair.",
-
   glimpse: (
     <p>
       Philosophy of Science studies the hypothetico-deductive method and its puzzles, and Karl Popper&rsquo;s view that

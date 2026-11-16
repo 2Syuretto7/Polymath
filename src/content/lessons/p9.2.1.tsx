@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Feuerbach's claim that theology is anthropology, how religion projects human powers onto God, why he thought Hegel made the same mistake, and how Marx took the critique further.",
-
   glimpse: (
     <p>
       The next lessons follow Marx, who turns Feuerbach&rsquo;s alienation into a critique of labour under capitalism and then

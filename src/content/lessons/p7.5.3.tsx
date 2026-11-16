@@ -181,9 +181,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an inductive inference is, Hume's argument that it cannot be justified by demonstration or by probable reasoning, his appeal to custom, and one modern reply.",
-
   glimpse: (
     <p>
       The next lesson applies Hume&rsquo;s empiricism to the self. The Philosophy of Science course returns to induction in

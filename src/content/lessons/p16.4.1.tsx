@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hempel's raven paradox from the Nicod criterion and the equivalence condition, Hempel's own resolution, and the Bayesian answer that the white shoe confirms only negligibly.",
-
   glimpse: (
     <p>
       Next, Goodman&rsquo;s grue problem shows that even which predicates can be projected from instances is a puzzle. Then

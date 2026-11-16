@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of a convergent sequence, why convergent sequences are bounded, how the product rule for limits is proved, and what the order limit theorem says.",
-
   glimpse: (
     <p>
       The next lessons give ways to prove that a sequence converges without knowing its limit in advance: monotone

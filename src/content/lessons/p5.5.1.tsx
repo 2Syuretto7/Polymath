@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the standard argument about abortion and the question of personhood, Thomson's violinist argument, Marquis's future-like-ours argument, Hursthouse's virtue ethical approach, and gradualist views, fairly to each side.",
-
   glimpse: (
     <p>
       The next lesson asks about the moral status of animals. The Applied Ethics course returns to abortion in more depth.

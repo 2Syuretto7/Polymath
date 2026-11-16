@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a random variable is, the probability mass function and cumulative distribution function and their properties, the example of the sum of two dice, and why the same distribution does not mean the same variable.",
-
   glimpse: (
     <p>
       The next lesson meets the most important discrete distributions: Bernoulli, binomial, geometric and Poisson. Later

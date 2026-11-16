@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why intuitionists reject excluded middle, the BHK reading of the connectives, and how a Kripke model shows that p ∨ ¬p can fail.",
-
   glimpse: (
     <p>
       Next, relevance logic: the complaint that classical logic lets anything follow from a contradiction and a necessary

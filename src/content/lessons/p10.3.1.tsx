@@ -181,9 +181,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend process reliabilism, the difference between internalism and externalism, why chicken sexers make reliabilism attractive, BonJour's Norman the clairvoyant, and the generality problem.",
-
   glimpse: (
     <p>
       The next lesson presents the main internalist rival, evidentialism. After it, the new evil demon problem asks whether

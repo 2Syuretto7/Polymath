@@ -153,9 +153,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between continuity and uniform continuity, with 1/x and √x as examples, why continuous functions on compact spaces are uniformly continuous, and what Lipschitz functions are.",
-
   glimpse: (
     <p>
       The next lesson studies Lipschitz maps with constant less than 1, contractions, which always have a unique fixed point.

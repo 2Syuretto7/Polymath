@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means to say a relation is just a set of ordered pairs, and why 'is a sibling of' is symmetric but not transitive.",
-
   glimpse: (
     <p>
       Relations that are reflexive, symmetric and transitive behave like &ldquo;is the same as, in some respect&rdquo;, and

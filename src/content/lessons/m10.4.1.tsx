@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a system x′ = Ax arises, including from a second-order equation, why eigenvectors give straight-line solutions e^(λt)v, how they combine into the general solution, and what goes wrong without enough eigenvectors.",
-
   glimpse: (
     <p>
       The next lesson defines the matrix exponential, which solves every linear system. After that we classify phase

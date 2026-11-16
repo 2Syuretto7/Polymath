@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how eigenvectors diagonalise a matrix, why A^k = XΛ^kX⁻¹ makes powers easy, how the eigenvalues decide long-run behaviour, with the Fibonacci example, and when a matrix cannot be diagonalised.",
-
   glimpse: (
     <p>
       The next lesson shows that symmetric matrices can always be diagonalised with perpendicular eigenvectors. Change of

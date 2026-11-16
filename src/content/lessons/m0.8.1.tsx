@@ -174,9 +174,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the trick for adding 1 + 2 + ... + 100, and the trick for adding a geometric sequence by multiplying it by r and subtracting.",
-
   glimpse: (
     <p>
       Next, sigma notation, a compact way to write sums like these. Infinite geometric sums are the first and most important

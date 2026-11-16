@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the coefficient of x squared in (1 + x) to the power 4 is the number of ways to choose 2 things from 4.",
-
   glimpse: (
     <p>
       This completes the Foundations of School Mathematics. Newton extended the binomial theorem to powers that are not whole

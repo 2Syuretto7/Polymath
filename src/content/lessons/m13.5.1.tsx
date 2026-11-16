@@ -128,9 +128,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the argument principle, why the residue of f′/f at a zero or pole is its order, and why the integral counts how many times f winds round 0 along the curve.",
-
   glimpse: (
     <p>
       The next lesson turns the argument principle into Rouché&rsquo;s theorem, a practical way to count zeros. The open

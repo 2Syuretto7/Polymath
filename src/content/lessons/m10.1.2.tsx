@@ -133,9 +133,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend first-order linear equations, how the integrating factor turns the left side into a derivative of a product, the structure of solutions as a particular solution plus the homogeneous solutions, and transients and steady states.",
-
   glimpse: (
     <p>
       The next lesson meets exact equations, another route to a first integral. Undetermined coefficients and variation of

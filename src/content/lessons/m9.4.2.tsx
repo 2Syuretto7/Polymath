@@ -146,9 +146,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Markov's inequality and its one-line proof, how Chebyshev follows from it, the income example and why the bound can be exact, and Jensen's inequality for convex functions with an example.",
-
   glimpse: (
     <p>
       The next chapter studies several random variables at once. Chebyshev&rsquo;s inequality returns to prove the law of large

@@ -125,9 +125,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the central limit theorem gives a poll's margin of error, why the population size hardly matters, how many people are needed for a given margin, a quality control example, and what the margin of error leaves out.",
-
   glimpse: (
     <p>
       The last chapter of the course studies Markov chains, where draws are no longer independent. Statistics builds on these

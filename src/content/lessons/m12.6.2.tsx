@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what chains are, how to integrate a form over a cube by pulling back, why exact forms integrate to zero round loops, and why the angle form on the punctured plane is closed but not exact.",
-
   glimpse: (
     <p>
       The next lesson proves the general Stokes theorem, ∫_c dω = ∫_∂c ω. In algebraic topology, chains and boundaries become

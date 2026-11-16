@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a uniform random number can be turned into a sample from any distribution through the inverse CDF, why it works, the exponential and die examples, and why F(X) is uniform.",
-
   glimpse: (
     <p>
       The next chapter studies moment generating functions and inequalities. Simulation by inverse CDFs reappears whenever the

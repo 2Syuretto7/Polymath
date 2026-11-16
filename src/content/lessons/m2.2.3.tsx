@@ -238,9 +238,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the limit of a sum is the sum of the limits, and how the squeeze theorem shows that x sin(1/x) tends to 0.",
-
   glimpse: (
     <p>
       With these laws, most limits reduce to algebra. Their first big use is the next chapter&rsquo;s theory of continuity, and

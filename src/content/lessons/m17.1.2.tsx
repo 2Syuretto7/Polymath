@@ -133,9 +133,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how second-order equations are classified as hyperbolic, parabolic or elliptic, what characteristics are, and why the wave, heat and Laplace equations are the model examples of each type.",
-
   glimpse: (
     <p>
       Next, well-posedness: what it means for a problem to have a solution that exists, is unique and depends continuously

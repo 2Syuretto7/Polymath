@@ -145,9 +145,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Cauchy integral formula and its proof by shrinking the circle, why it shows that holomorphic functions are power series and infinitely differentiable, and what Cauchy's estimates say.",
-
   glimpse: (
     <p>
       The next lessons harvest the formula: Liouville&rsquo;s theorem, the fundamental theorem of algebra and the maximum

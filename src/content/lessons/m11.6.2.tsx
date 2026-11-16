@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the recipe n² − m², 2mn, n² + m² for Pythagorean triples, why it gives every primitive triple, and how lines through (−1, 0) on the unit circle give the same answer.",
-
   glimpse: (
     <p>
       The next lessons ask which numbers are sums of two squares, and solve Pell&rsquo;s equation. Algebraic geometry studies

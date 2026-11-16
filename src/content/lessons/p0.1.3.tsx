@@ -241,9 +241,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend, without making them feel foolish, what is wrong with 'everyone's opinion is equally valid', and what is right about it.",
-
   glimpse: (
     <p>
       Next comes the oldest method for examining such claims: Socratic questioning. The everyday moves you analysed here

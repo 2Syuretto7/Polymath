@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why every whole number above 1 is a product of primes, and why ordinary induction from n − 1 would not help.",
-
   glimpse: (
     <p>
       The next lesson looks at induction from the opposite end: instead of climbing up from the bottom, look at the smallest

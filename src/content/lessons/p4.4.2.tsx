@@ -208,9 +208,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the setting of the Parmenides, the third man argument and its three premises, the other objections to the Forms, and why Parmenides still says the Forms are needed.",
-
   glimpse: (
     <p>
       Aristotle reuses the third man against Plato and looks for forms inside things instead. Metaphysics revisits the

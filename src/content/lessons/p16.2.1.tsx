@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Popper's method of conjectures and refutations, why he thought it avoids induction, empirical content and the value of bold theories, and the difference between legitimate and ad hoc rescues of a theory.",
-
   glimpse: (
     <p>
       Next, corroboration asks what positive status a surviving theory has. Kuhn and Lakatos then examine how real science

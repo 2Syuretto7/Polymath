@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an inner product is, with examples on ℝⁿ, ℂⁿ and spaces of functions, how Pythagoras gives Cauchy-Schwarz and the triangle inequality, and how the parallelogram law tells which norms come from inner products.",
-
   glimpse: (
     <p>
       The next lesson builds orthonormal bases, in which inner products are easy to compute. Minimisation problems later use

@@ -96,6 +96,9 @@ const SCHEMA = [
    )`,
   `CREATE INDEX IF NOT EXISTS recall_questions_lesson ON recall_questions (lesson_id, batch)`,
   `CREATE INDEX IF NOT EXISTS recall_questions_source ON recall_questions (source_lesson_id, created_at)`,
+  // The teach-back step was removed; clear what it stored.
+  `DELETE FROM writings WHERE kind = 'teachback'`,
+  `DELETE FROM parton_notes WHERE kind = 'teachback'`,
 ];
 
 async function createRunner(): Promise<Runner> {

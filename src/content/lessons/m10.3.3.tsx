@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the idea of letting the constants in the homogeneous solution vary, the extra condition and the formulas for u₁′ and u₂′, the tan t example, and how the answer can be read as adding up responses to each instant's push.",
-
   glimpse: (
     <p>
       The next lesson uses these tools to understand resonance. The matrix exponential later gives the same formula for

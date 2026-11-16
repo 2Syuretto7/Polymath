@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's arguments that space is an a priori intuition, what it means for space to be empirically real but transcendentally ideal, and how incongruent counterparts bear on the debate between Newton and Leibniz.",
-
   glimpse: (
     <p>
       The next lesson treats time as the form of inner sense. After that, Kant explains how geometry and arithmetic can be

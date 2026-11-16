@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a many-valued logic is, the idea of designated values, and how Kleene's K3, Łukasiewicz's Ł3 and Priest's LP differ.",
-
   glimpse: (
     <p>
       Next, intuitionistic logic: Brouwer&rsquo;s view that a statement is true only when proved, so that the law of excluded

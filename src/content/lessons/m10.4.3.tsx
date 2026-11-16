@@ -131,9 +131,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the trace and determinant determine the eigenvalues of a 2 × 2 matrix, how they classify the phase portrait into saddles, nodes, spirals and centres, and why some types are robust and others fragile.",
-
   glimpse: (
     <p>
       The next lessons use this map near the equilibria of nonlinear systems, and then turn to stability without solving at

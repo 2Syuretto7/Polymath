@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between internal and external reasons, Williams's argument for internalism with one of his examples, and why it matters for whether everyone has reason to be moral.",
-
   glimpse: (
     <p>
       The next lesson asks what motivates action: must every action spring from a desire, as Hume held? Graduate metaethics

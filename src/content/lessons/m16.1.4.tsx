@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Frenet frame T, N, B, the Frenet–Serret equations and why the matrix is skew-symmetric, and the fundamental theorem that curvature and torsion determine a curve up to rigid motion.",
-
   glimpse: (
     <p>
       Next, global theorems for curves: the total curvature of a closed plane curve, the four vertex theorem, and the

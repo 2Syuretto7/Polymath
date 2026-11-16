@@ -138,9 +138,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the heat kernel on the line, how it solves the initial value problem by convolution, and why heat in this model travels at infinite speed.",
-
   glimpse: (
     <p>
       Next, Fourier series: the idea, used already for the string and the rod, that a function on an interval can be written

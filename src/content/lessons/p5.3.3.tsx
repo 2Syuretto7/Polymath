@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hohfeld's four kinds of right, the difference between negative and positive rights, the ideas of rights as trumps and side constraints, and the will and interest theories.",
-
   glimpse: (
     <p>
       The next lesson asks whether morality itself is a kind of agreement. Political Philosophy examines Nozick&rsquo;s

@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Aristotle says the question of being is the question of substance, the four candidates for substance, why the stripping argument leads to matter and why he rejects that, and his idea of form as the cause of a thing's being.",
-
   glimpse: (
     <p>
       The next lesson sets form and matter within the four causes. Avicenna, in Medieval Philosophy, distinguishes essence

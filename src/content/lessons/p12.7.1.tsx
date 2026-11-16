@@ -156,9 +156,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the extended mind thesis, the parity principle, the story of Otto and Inga, the conditions for extension, and the objections from coupling and cognitive bloat.",
-
   glimpse: (
     <p>
       The next lesson considers enactivism, which ties the mind even more closely to the living body and its activity. Later

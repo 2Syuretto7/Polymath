@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend contemporary virtue ethics, Hursthouse's account of right action, neo-Aristotelian naturalism, and the objections from action guidance and situationism.",
-
   glimpse: (
     <p>
       The next unit asks what makes a life go well, starting with hedonism. Moral luck and the ethics of care return to

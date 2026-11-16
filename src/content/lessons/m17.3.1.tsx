@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend where the heat equation comes from, how to solve it on a rod with cold ends by a sine series, and why the solution becomes smooth at once.",
-
   glimpse: (
     <p>
       Next, the maximum principle: a solution of the heat equation is never hotter inside than on its initial line and its

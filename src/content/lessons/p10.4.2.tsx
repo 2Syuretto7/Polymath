@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the closure principle, how the sceptic uses it with modus tollens, Moore's reversal, Dretske's zebra and Nozick's sensitivity condition for denying closure, and the abominable conjunction.",
-
   glimpse: (
     <p>
       The next lesson offers contextualism, which keeps closure by letting the standards for &ldquo;know&rdquo; shift with the

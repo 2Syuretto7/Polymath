@@ -214,9 +214,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Tell the squirrel story to a friend and explain what it shows about arguments. Then give an example from your own life of a disagreement that turned out to be about a word.",
-
   glimpse: (
     <p>
       Next, objections and replies. Drawing distinctions returns as a method in its own right in the next chapter, and

@@ -160,9 +160,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Schopenhauer thought suffering is the substance of life, the pendulum of pain and boredom, the three routes to release through art, compassion and denial of the will, and why he did not count suicide as a release.",
-
   glimpse: (
     <p>
       The next chapter turns to Kierkegaard, for whom despair is the gateway to selfhood. Nietzsche&rsquo;s will to power and

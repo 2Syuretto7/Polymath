@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Singer's drowning child argument, the demandingness objection to maximising consequentialism, and two moderate responses: Murphy's fair share and Scheffler's prerogative.",
-
   glimpse: (
     <p>
       This completes Moral Philosophy. Graduate ethics takes up acting under moral uncertainty, the ethics of populations and

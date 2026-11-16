@@ -251,9 +251,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a negative times a negative must be positive. Do not just state the rule: show what would break if it were negative instead.",
-
   glimpse: (
     <p>
       Next, dividing will force a further extension, to fractions. The laws you listed here are the first draft of the

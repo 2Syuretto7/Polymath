@@ -209,9 +209,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the exponential function is defined as the inverse of the logarithm, why it is its own derivative, and how this gives a meaning to powers like 2 to the power √2.",
-
   glimpse: (
     <p>
       The uniqueness theorem is the first theorem of Ordinary Differential Equations, which extends it to linear

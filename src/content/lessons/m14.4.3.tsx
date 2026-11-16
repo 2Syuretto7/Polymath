@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what solvable by radicals means, why each radical step has an abelian Galois group, how Galois's theorem links radicals to solvable groups, and why x⁵ − 6x + 3 has no formula in radicals.",
-
   glimpse: (
     <p>
       The permutations made by loops are the monodromy of a covering space, studied in topology and on Riemann surfaces.

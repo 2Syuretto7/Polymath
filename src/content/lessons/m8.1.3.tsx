@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the null space and range of a linear map are, why a map is injective exactly when its null space is zero, the proof that dim V = dim null T + dim range T, and its consequences for systems of equations.",
-
   glimpse: (
     <p>
       The next lesson builds quotient spaces, making the link with the first isomorphism theorem exact. Invariant subspaces

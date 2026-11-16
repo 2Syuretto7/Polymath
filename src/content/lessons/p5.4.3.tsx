@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what moral exemplars are, Zagzebski's theory of building ethics from admiration, the idea of supererogation, and what we can and cannot learn from admirable people.",
-
   glimpse: (
     <p>
       The next chapter turns to applied ethics, beginning with abortion, animals and poverty. The Moral Philosophy

@@ -156,9 +156,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend scientific realism, Putnam's no-miracles argument as an inference to the best explanation, the base rate objection, and van Fraassen's Darwinian explanation of success.",
-
   glimpse: (
     <p>
       Next, the pessimistic induction from the history of science: ether, caloric and phlogiston were successful too.

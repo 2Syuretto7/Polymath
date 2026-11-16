@@ -180,9 +180,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend hard incompatibilism and basic desert responsibility, Pereboom’s four-case argument and the replies to it, why he rejects libertarianism too, and the quarantine model of how life and justice could go on without desert.",
-
   glimpse: (
     <p>
       This completes the course in metaphysics. Moral philosophy later returns to luck and responsibility, and philosophy of mind

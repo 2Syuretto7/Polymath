@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a simple group is, how composition series make simple groups the building blocks of finite groups, why A₅ is simple using its class sizes, and what the classification of finite simple groups says.",
-
   glimpse: (
     <p>
       The next chapter turns from groups to rings, structures with both addition and multiplication. Simple groups return

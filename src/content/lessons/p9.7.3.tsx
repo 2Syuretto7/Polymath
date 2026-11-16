@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Dewey's account of inquiry, his attack on the spectator theory and the quest for certainty, warranted assertibility, his philosophy of education, and his idea of democracy as a way of life.",
-
   glimpse: (
     <p>
       This completes Nineteenth-Century Philosophy. Political philosophy returns to Dewey in theories of deliberative

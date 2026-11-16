@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three properties that define the determinant, how they imply that row operations of the third kind leave it unchanged, why the determinant of a triangular matrix is the product of its diagonal, and why det A = 0 exactly when A is singular.",
-
   glimpse: (
     <p>
       The next lesson gives explicit formulas, cofactor expansions and Cramer&rsquo;s rule. After that, the determinant is

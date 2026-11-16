@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between asking whether an AI thinks and whether it is conscious, what functionalism and Searle would say, the indicator approach, and why a chatbot's reports are weak evidence.",
-
   glimpse: (
     <p>
       This completes the course on the philosophy of mind. Later courses take up computability and the mind, the ethics of

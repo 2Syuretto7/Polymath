@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the argument from contingency in five steps, and the objection you find strongest.",
-
   glimpse: (
     <p>
       The next lesson turns from the existence of the world to its order: the argument from design. Ibn Sīnā and Aquinas

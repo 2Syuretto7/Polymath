@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Sylow subgroup is, what the three Sylow theorems say, the idea behind one of the proofs, and why n_p = 1 means the Sylow subgroup is normal.",
-
   glimpse: (
     <p>
       The next lesson uses these theorems to classify groups of order pq and to show that no simple group has order 30 or 56.

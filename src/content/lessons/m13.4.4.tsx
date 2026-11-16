@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to evaluate a real integral over the whole line by closing with a semicircle, why the arc's contribution vanishes, how to handle cos x with e^{iz}, and how the substitution z = e^{iθ} handles trigonometric integrals.",
-
   glimpse: (
     <p>
       The Gamma and zeta functions at the end of the course are defined by real integrals and continued by these methods.

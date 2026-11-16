@@ -174,9 +174,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Tarski’s Convention T, the recursive definition of truth through satisfaction, and his theorem that a language cannot define its own truth.",
-
   glimpse: (
     <p>
       Next, Kripke&rsquo;s theory of truth: a single language that contains its own truth predicate, built up in stages to a

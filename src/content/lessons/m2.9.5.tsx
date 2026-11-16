@@ -209,9 +209,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the coefficients of a Taylor polynomial are found from derivatives, how the remainder tells you how good the approximation is, and why some functions are not equal to their Taylor series.",
-
   glimpse: (
     <p>
       Real Analysis I proves Taylor&rsquo;s theorem in several forms. Multivariable Calculus and Vector Analysis extends it

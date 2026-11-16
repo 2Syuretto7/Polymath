@@ -203,9 +203,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to tell from an echelon form whether a system has no solution, one, or infinitely many, and why it can never have exactly two.",
-
   glimpse: (
     <p>
       The Matrices chapter studies the square case with a pivot in every column, where A has an inverse and{" "}

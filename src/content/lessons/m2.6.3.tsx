@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the rate at which the area under a curve grows is the height of the curve, and how that turns finding areas into undoing derivatives.",
-
   glimpse: (
     <p>
       The fundamental theorem has grand generalisations. In Multivariable Calculus and Vector Analysis it becomes the

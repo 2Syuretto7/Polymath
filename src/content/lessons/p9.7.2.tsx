@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend James's argument in The Will to Believe and Clifford's opposing view, the pragmatic method and the squirrel example, his pragmatic theory of truth, and the main objection to it.",
-
   glimpse: (
     <p>
       The next lesson turns to John Dewey, who extended pragmatism to education and democracy. Philosophy of religion

@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the Riemann mapping theorem says, why the whole plane and the annulus are excluded, how uniqueness follows from the Schwarz lemma, and how explicit maps send a strip or a quadrant onto the disc.",
-
   glimpse: (
     <p>
       The last part of the course uses these tools on special functions: the Gamma function, the zeta function, and an

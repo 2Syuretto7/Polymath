@@ -180,9 +180,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the law of cosines is Pythagoras with a correction, and why the correction disappears for a right angle.",
-
   glimpse: (
     <p>
       This completes trigonometry. Next comes the plane with coordinates, where points become pairs of numbers and

@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between endurance and perdurance, the problem of temporary intrinsics and how each view answers it, stage theory, and an objection to each.",
-
   glimpse: (
     <p>
       The next lessons apply these views to puzzles about objects that seem to share their matter. The debate about which

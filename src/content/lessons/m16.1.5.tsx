@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the rotation index of a closed curve as total curvature over 2π, Hopf's theorem that simple closed curves have index ±1, the isoperimetric inequality, and the four vertex theorem.",
-
   glimpse: (
     <p>
       Next, surfaces in space: what it means for a subset of R³ to be a smooth surface, described locally by parametrised

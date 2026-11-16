@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a density is, why each single point has probability zero, how the CDF and density are related through the fundamental theorem of calculus, why a density can exceed 1, and how expectation becomes an integral.",
-
   glimpse: (
     <p>
       The next lesson meets the three most important densities: uniform, normal and exponential. Joint densities describe

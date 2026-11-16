@@ -138,9 +138,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a field extension and its degree are, why ℚ(√2) has degree 2, how the tower law multiplies degrees with a basis of products, and why the degree of an intermediate field divides the whole.",
-
   glimpse: (
     <p>
       The next lesson studies algebraic elements and their minimal polynomials, which compute degrees. Later the tower law

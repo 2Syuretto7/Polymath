@@ -153,9 +153,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an ideal is and why it is exactly what is needed to make a quotient ring, why every ideal of ℤ is principal, and an example of a quotient such as ℝ[x]/(x² + 1).",
-
   glimpse: (
     <p>
       The next lesson shows that ideals are exactly the kernels of ring homomorphisms, with isomorphism theorems just as for

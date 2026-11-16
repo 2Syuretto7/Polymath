@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Kant means by a natural purpose, using the tree and the watch, why judging nature as purposive is regulative rather than constitutive, how he resolves the antinomy of mechanism and teleology, and how the third Critique links nature to morality.",
-
   glimpse: (
     <p>
       This completes the course on Kant. The next course, on nineteenth-century philosophy, begins with Fichte and

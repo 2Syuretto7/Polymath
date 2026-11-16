@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend five forms of the completeness of the reals, why they are equivalent given the Archimedean property, how one implies the next, and how each fails in the rationals.",
-
   glimpse: (
     <p>
       The next chapter puts these forms to work on sequences: monotone convergence, the Bolzano–Weierstrass theorem and

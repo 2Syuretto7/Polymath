@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's idea of the good will and acting from duty, the difference between hypothetical and categorical imperatives, the formulas of universal law and of humanity, and how they handle the lying promise and the duty to help.",
-
   glimpse: (
     <p>
       The next lesson explains the idea of autonomy, the will giving the moral law to itself, and why morality presupposes

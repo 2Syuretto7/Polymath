@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what convergence and Cauchy sequences mean in a metric space, why convergent sequences are Cauchy, what completeness is, and examples of complete and incomplete spaces.",
-
   glimpse: (
     <p>
       The next lesson is on compactness. Complete spaces of functions, such as C(X) with the sup norm, and Banach spaces in

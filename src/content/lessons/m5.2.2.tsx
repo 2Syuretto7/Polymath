@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the derivative of a map between spaces of several dimensions is a linear map, what the definition of differentiability says, how the Jacobian matrix is built from partial derivatives, and why having partial derivatives is not enough.",
-
   glimpse: (
     <p>
       The next lesson shows the payoff: the chain rule becomes a product of Jacobian matrices. Later, the inverse

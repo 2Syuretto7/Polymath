@@ -205,9 +205,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to find the speed of the top of a sliding ladder, why you differentiate before substituting numbers, and what the infinite speed at the end tells you.",
-
   glimpse: (
     <p>
       When the relation between rates is the thing you know, and the quantities themselves are unknown, you have a

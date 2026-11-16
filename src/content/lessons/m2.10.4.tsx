@@ -220,9 +220,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a density turns probability into area, why a single exact value has probability 0, and how improper integrals and integration by parts give the total area and mean of the exponential density.",
-
   glimpse: (
     <p>
       Probability builds the whole theory of densities, including the uniform, normal and exponential families, and proves

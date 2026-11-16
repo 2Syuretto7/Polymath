@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend local compactness, how the one-point compactification adds a point at infinity, why it is compact and when it is Hausdorff, and why the compactification of the plane is a sphere.",
-
   glimpse: (
     <p>
       Next come the countability and separation axioms, which say how many open sets a space has and how well they tell

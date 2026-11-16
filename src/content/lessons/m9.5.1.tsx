@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend joint, marginal and conditional distributions for two discrete variables and for densities, why marginals are found by summing out, the dice example of the smaller and larger roll, and how independence shows up in the joint.",
-
   glimpse: (
     <p>
       The next lesson summarises how two variables move together with covariance and correlation. Conditional distributions

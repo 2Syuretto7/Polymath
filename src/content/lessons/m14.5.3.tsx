@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why submodules of free modules over a PID are free, how Smith normal form diagonalises a matrix of relations, the structure theorem in invariant factor and elementary divisor forms, and how it classifies abelian groups.",
-
   glimpse: (
     <p>
       The next lesson applies the theorem to <M>{"k[x]"}</M>-modules and recovers the rational and Jordan canonical forms. The

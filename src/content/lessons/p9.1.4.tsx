@@ -178,9 +178,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Hegel's Logic moves from being and nothing to becoming, what sublation means, why his logic is also metaphysics, and the difference between the bad and the true infinite.",
-
   glimpse: (
     <p>
       The next lesson turns to Hegel&rsquo;s Philosophy of Right, where the dialectic shapes his account of freedom, society

@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Bayes' rule and its proof, the meaning of prior, likelihood and posterior, the odds form, the medical test example and base rate neglect, and how posteriors become new priors.",
-
   glimpse: (
     <p>
       The next lesson defines independence, the case where evidence changes nothing. Bayesian statistics builds estimators

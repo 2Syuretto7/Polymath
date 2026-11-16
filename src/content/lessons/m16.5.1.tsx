@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the local and global Gauss–Bonnet theorems, why the total curvature of a sphere is 4π however it is deformed, and why a torus has total curvature 0.",
-
   glimpse: (
     <p>
       Next, applications of Gauss–Bonnet: angle sums of geodesic triangles, why geodesics on negatively curved surfaces

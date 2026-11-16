@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kierkegaard's aesthetic, ethical and religious stages, the despair that undoes the first two, the story of Abraham and the teleological suspension of the ethical, and why he wrote under pseudonyms.",
-
   glimpse: (
     <p>
       The next lesson looks more closely at faith as a leap and at the absurd, and the one after at truth as subjectivity.

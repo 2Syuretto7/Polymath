@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what completeness says, why it follows from the lemma that every consistent set is satisfiable, and how Lindenbaum’s construction and the truth lemma prove that lemma.",
-
   glimpse: (
     <p>
       Next, expressive adequacy: why every truth function can be written with ¬, ∧ and ∨, and even with a single connective.

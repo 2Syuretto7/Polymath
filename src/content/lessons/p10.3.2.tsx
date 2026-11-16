@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend evidentialism, the three attitudes it assesses, propositional and doxastic justification, how it handles Norman the clairvoyant, Clifford's shipowner and James's reply, and the problem of forgotten evidence.",
-
   glimpse: (
     <p>
       The next lesson brings both views together in the new evil demon problem. Graduate epistemology asks whether one&rsquo;s

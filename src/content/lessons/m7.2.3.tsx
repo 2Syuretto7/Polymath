@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how cosets of a normal subgroup form the quotient group, why normality is exactly what makes multiplication of cosets well defined, and examples such as ℤ/nℤ and Dₙ modulo its rotations.",
-
   glimpse: (
     <p>
       The next lesson studies homomorphisms, whose kernels are exactly the normal subgroups. The isomorphism theorems then

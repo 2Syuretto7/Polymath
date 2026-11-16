@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the Cantor set is built, why its points are those with base-3 digits 0 and 2, why it has length zero and yet is uncountable, and what other strange properties it has.",
-
   glimpse: (
     <p>
       The Cantor set returns in Lebesgue&rsquo;s criterion for integrability, as a set of measure zero, and in measure theory

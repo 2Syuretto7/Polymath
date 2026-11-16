@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend curvature as how fast the unit tangent turns, the osculating circle of radius 1/κ, the binormal and torsion as how fast the curve leaves its plane, and the values for circles, lines and helices.",
-
   glimpse: (
     <p>
       Next, the Frenet frame T, N, B and the Frenet–Serret equations, which show that curvature and torsion together

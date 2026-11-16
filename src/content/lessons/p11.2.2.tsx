@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what abstract objects are, the indispensability argument for believing in numbers, Benacerraf's epistemological challenge, and the fictionalist alternative.",
-
   glimpse: (
     <p>
       The next lesson steps back to ask whether such existence questions are deep, or a matter of choosing a language.

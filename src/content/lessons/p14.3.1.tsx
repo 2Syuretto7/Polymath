@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Berlin's distinction between negative and positive liberty, cases where they come apart, Berlin's warning about positive liberty, and MacCallum's claim that there is only one concept.",
-
   glimpse: (
     <p>
       The next lesson presents republican freedom as non-domination, a third idea suggested by the kindly ruler case.

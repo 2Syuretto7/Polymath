@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a manifold in Euclidean space is, how the implicit function theorem shows that level sets with nonvanishing gradient are manifolds, and what the tangent space is.",
-
   glimpse: (
     <p>
       The next chapter turns from derivatives to integrals over regions of the plane and of space. Manifolds return in the

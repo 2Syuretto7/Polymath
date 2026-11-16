@@ -202,9 +202,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how you know they have a mind, and why the obvious answer, 'you behave like me', is philosophically shakier than it sounds.",
-
   glimpse: (
     <p>
       If behaviour is our evidence for minds in others, then a machine that behaves exactly like a thinker might deserve the

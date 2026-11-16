@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the polar decomposition and its analogy with complex numbers, what singular values are, the singular value decomposition and its proof, and why low-rank approximation is useful.",
-
   glimpse: (
     <p>
       The next chapter returns to operators that cannot be diagonalised, starting with generalised eigenvectors. Statistics

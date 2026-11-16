@@ -137,9 +137,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a residue is, how the residue theorem follows from Cauchy's theorem and Laurent series, and how to compute residues at simple and higher-order poles.",
-
   glimpse: (
     <p>
       The next lesson uses residues to evaluate real integrals that have no elementary antiderivative. The argument principle

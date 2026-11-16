@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a character table is, why it is square, the row and column orthogonality relations, how to build the table of A₄, and what a character table can and cannot tell you about a group.",
-
   glimpse: (
     <p>
       Induced representations build characters of a group from those of its subgroups. Hom and tensor products return in

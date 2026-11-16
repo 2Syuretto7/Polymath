@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the open-set definition of continuity and its equivalent forms, what a homeomorphism is, an example of a continuous bijection that is not a homeomorphism, and the pasting lemma.",
-
   glimpse: (
     <p>
       Next come topological properties preserved by homeomorphisms: connectedness and compactness. Homotopy, later, deforms

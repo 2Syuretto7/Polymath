@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what compactness means for sequences and for open covers, why closed and bounded sets in ℝⁿ are compact, and why closed and bounded is not enough in a space of functions.",
-
   glimpse: (
     <p>
       The next lessons use compactness to prove that continuous functions attain their bounds and are uniformly continuous.

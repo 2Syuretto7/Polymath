@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Jordan block and the Jordan form are, how they are built from generalised eigenspaces and chains, how to read the eigenspace dimensions and minimal polynomial from the blocks, and why the form is fragile numerically.",
-
   glimpse: (
     <p>
       The next lesson finds a canonical form that works over any field, even without eigenvalues. Differential equations use

@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Berkeley's principle that to be is to be perceived, his master argument and its main objection, and the two roles God plays in keeping the sensible world in existence and in order.",
-
   glimpse: (
     <p>
       The next chapter turns to Hume, who accepted Berkeley&rsquo;s arguments against matter but would not follow him to God,

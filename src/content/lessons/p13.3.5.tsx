@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what constructivism says about moral truth, the difference between Kantian and Humean constructivism, and Street's Darwinian dilemma against realism.",
-
   glimpse: (
     <p>
       This completes the survey of metaethical views. The next part asks how moral reasons relate to motivation. Graduate

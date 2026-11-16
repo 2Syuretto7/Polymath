@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the fundamental theorem for line integrals, what a conservative field is and its equivalent descriptions, the cross-partials test, and why a hole in the region matters.",
-
   glimpse: (
     <p>
       The next lessons move from curves to surfaces. Green&rsquo;s theorem and Stokes&rsquo; theorem will explain the

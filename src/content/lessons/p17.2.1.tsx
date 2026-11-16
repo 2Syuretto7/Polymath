@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what soundness and completeness say for first-order logic, how Henkin’s witnesses let you build a model out of names, and why validity is semi-decidable but not decidable.",
-
   glimpse: (
     <p>
       Next, compactness, a consequence of completeness with surprising results: nonstandard models of arithmetic, and the

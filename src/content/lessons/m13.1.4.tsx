@@ -137,9 +137,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the radius of convergence of a power series, why power series are holomorphic and can be differentiated term by term, and why the series for 1/(1 + x²) stops at radius 1.",
-
   glimpse: (
     <p>
       The next part of the course integrates along curves and reaches the Cauchy integral formula, which shows every

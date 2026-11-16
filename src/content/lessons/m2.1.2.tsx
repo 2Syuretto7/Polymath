@@ -218,9 +218,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why multiplying an inequality by a negative number reverses it, starting from the idea of the positive numbers.",
-
   glimpse: (
     <p>
       The order axioms will do steady work throughout this course, above all when the derivative is used to decide where a

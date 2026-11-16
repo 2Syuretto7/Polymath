@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Salmon's distinction between causal processes and pseudo-processes, the conserved quantity theory, why a spot of light can move faster than light, and the problems of omissions and explanatory relevance.",
-
   glimpse: (
     <p>
       Next, Metaphysics asks how things persist through time. Philosophy of physics asks where the direction of causation

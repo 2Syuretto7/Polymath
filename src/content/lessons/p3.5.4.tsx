@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between relative and absolute risk, how a chart's axis can mislead, and the questions to ask before believing a news report about a study.",
-
   glimpse: (
     <p>
       Epistemology asks when we may believe what others tell us, including journalists and experts, and what we owe to

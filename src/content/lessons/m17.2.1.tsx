@@ -128,9 +128,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the wave equation comes from Newton’s law for a string, what the normal modes of a string with fixed ends are, and why plucking position changes the sound but not the pitch.",
-
   glimpse: (
     <p>
       Next, d&rsquo;Alembert&rsquo;s formula, which solves the wave equation on the whole line in one stroke and shows that

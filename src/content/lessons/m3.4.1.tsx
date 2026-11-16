@@ -217,9 +217,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a vector space and a subspace are, why every subspace contains the zero vector, why a span is always a subspace, and why a line missing the origin fails.",
-
   glimpse: (
     <p>
       The next lesson meets the two subspaces every matrix carries, its null space and column space. Linear Algebra II

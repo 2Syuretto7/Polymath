@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain the Chinese room to a friend who has never heard of it, and say what you think the strongest reply is.",
-
   glimpse: (
     <p>
       This completes the chapter on mind. Next comes free will: if your mind is part of the natural world, are your choices

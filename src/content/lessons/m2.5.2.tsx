@@ -228,9 +228,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the first and second derivatives tell you about the shape of a graph, using the cubic x³ − 3x as your example.",
-
   glimpse: (
     <p>
       Convexity is one of the most useful ideas in mathematics. In Probability it becomes Jensen&rsquo;s inequality, which

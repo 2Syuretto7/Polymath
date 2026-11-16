@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the big formula for the determinant, how cofactor expansion works along any row or column, how cofactors give the inverse, and Cramer's rule, and why none of these is used for large computations.",
-
   glimpse: (
     <p>
       The next lesson shows what the determinant measures: volume. In the Eigenvalues chapter, the big formula shows that

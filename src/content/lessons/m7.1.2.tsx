@@ -153,9 +153,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the symmetries of a figure form a group, why the regular n-gon has 2n symmetries, the relations r^n = s² = e and sr = r⁻¹s, and why the dihedral group is not abelian.",
-
   glimpse: (
     <p>
       The next lesson studies subgroups, such as the rotations inside the dihedral group. Group actions later make
