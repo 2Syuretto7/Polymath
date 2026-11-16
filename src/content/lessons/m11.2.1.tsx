@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why arithmetic modulo n is well defined, when ax ≡ b (mod n) can be solved and how many solutions it has, how to find an inverse with Euclid’s algorithm, and when the integers modulo n form a field.",
-
   glimpse: (
     <p>
       The next lesson solves several congruences at once with the Chinese remainder theorem. After that, Fermat and Euler show

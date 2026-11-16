@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Kant thinks only a good will is good without qualification, the difference between acting from duty and in accordance with it, hypothetical and categorical imperatives, and how the universal law test works on the lying promise.",
-
   glimpse: (
     <p>
       The next lesson turns to Kant&rsquo;s second formulation: treat humanity always as an end, never merely as a means.

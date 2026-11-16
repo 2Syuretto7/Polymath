@@ -145,9 +145,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a closed surface and a connected sum are, the classification theorem with its polygon words, the idea of the cut-and-paste proof, and how fundamental groups show the surfaces in the list are different.",
-
   glimpse: (
     <p>
       Next, the Euler characteristic gives a quick way to tell surfaces apart by counting. In differential geometry the

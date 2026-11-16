@@ -208,9 +208,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why logic needs an identity sign, how to say “at least two” and “exactly one” with it, and why “Hesperus is Phosphorus” is more interesting than “Hesperus is Hesperus”.",
-
   glimpse: (
     <p>
       Frege&rsquo;s puzzle opens Philosophy of Language. The rules for reasoning with identity come at the end of this course,

@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Scanlon's test of reasonable rejection, the individualist restriction with the transmitter room case, how contractualism differs from contractarianism, and the problem of numbers.",
-
   glimpse: (
     <p>
       The next lesson turns to virtue ethics, which looks at character rather than principles. Rawls&rsquo;s original position

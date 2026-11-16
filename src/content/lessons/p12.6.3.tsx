@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what naturalising content means, the disjunction problem for causal theories, Fodor's asymmetric dependence, teleosemantics, and the Swampman objection.",
-
   glimpse: (
     <p>
       The next unit asks whether the mind extends beyond the head. Later, the theory of computation asks what follows if

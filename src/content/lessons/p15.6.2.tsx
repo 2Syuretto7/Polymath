@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kripke's quus example, why past use, instructions, dispositions and inner states seem not to fix that we mean plus, the normativity of meaning, and Kripke's sceptical solution.",
-
   glimpse: (
     <p>
       Next, the private language argument draws on these ideas to ask whether a word could get its meaning from one

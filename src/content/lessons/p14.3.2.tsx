@@ -193,9 +193,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend freedom as non-domination, why the kindly master's slave is unfree, how a law can interfere without dominating, and the history and institutions republicans favour.",
-
   glimpse: (
     <p>
       The next lesson presents communitarian critiques of liberal individualism. Debates on democracy and feminist political

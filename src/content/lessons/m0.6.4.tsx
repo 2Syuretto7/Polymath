@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why sin x = 1/2 has infinitely many solutions, and how arcsin chooses just one of them.",
-
   glimpse: (
     <p>
       Next, the laws of sines and cosines, which use these functions to solve any triangle. In Calculus, the derivative of

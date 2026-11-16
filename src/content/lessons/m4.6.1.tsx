@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a sample space and an event are, why probability is counting when outcomes are equally likely, how Galileo solved the three dice puzzle, and the complement rule.",
-
   glimpse: (
     <p>
       The next lesson asks how probabilities change when we learn something, and why a positive medical test can mean

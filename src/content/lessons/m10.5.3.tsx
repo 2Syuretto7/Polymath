@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a limit cycle is, an example in polar coordinates, why linear systems cannot have one, how the van der Pol oscillator produces one, and a way to rule cycles out.",
-
   glimpse: (
     <p>
       The next lesson gives a theorem that guarantees closed orbits in the plane. Dynamical systems later studies periodic

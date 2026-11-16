@@ -218,9 +218,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why work done by a changing force is an integral, how slicing handles a problem like emptying a tank, and why a finite amount of work can lift a body away from the Earth for ever.",
-
   glimpse: (
     <p>
       Multivariable Calculus and Vector Analysis computes the work done by a force along a curved path as a line integral,

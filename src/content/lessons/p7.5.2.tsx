@@ -180,9 +180,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hume's fork between relations of ideas and matters of fact, what we do and do not observe in causation, where Hume thinks the idea of necessary connection comes from, and his two definitions of cause.",
-
   glimpse: (
     <p>
       The next lesson asks whether, having no insight into necessary connection, we have any reason to expect the future to

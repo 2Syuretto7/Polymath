@@ -131,9 +131,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the law of total expectation, the law of total variance with its within-group and between-group parts and its proof, the formulas for a random sum, and what explained variance does and does not mean.",
-
   glimpse: (
     <p>
       The final chapter of the course proves the law of large numbers and the central limit theorem. Regression in statistics

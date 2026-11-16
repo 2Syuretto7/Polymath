@@ -218,9 +218,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain the difference between a topic and a thesis to someone writing their first essay, and tell them how to find the thesis of a text they are reading.",
-
   glimpse: (
     <p>
       Next you will take a thesis and its reasons and set them out as an argument in standard form. Thesis statements

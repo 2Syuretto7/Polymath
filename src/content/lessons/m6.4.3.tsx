@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what perfect and connected sets are, why a non-empty perfect set is uncountable, why the connected subsets of the line are exactly the intervals, and how connectedness relates to the intermediate value theorem.",
-
   glimpse: (
     <p>
       The next lesson builds the Cantor set, which is perfect and so uncountable, yet totally disconnected and of length

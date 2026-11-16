@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how you can be sure that x³ + x = 1 has exactly one real solution, without ever solving it.",
-
   glimpse: (
     <p>
       The step &ldquo;an unbroken graph from below to above must cross&rdquo; is the intermediate value theorem, which

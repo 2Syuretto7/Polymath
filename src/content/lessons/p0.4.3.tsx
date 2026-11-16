@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the distinction between numerical and qualitative identity helps with the ship of Theseus, and why it does not settle the puzzle on its own.",
-
   glimpse: (
     <p>
       Next, reductio ad absurdum: refuting a claim by deriving something absurd from it. Numerical identity returns with

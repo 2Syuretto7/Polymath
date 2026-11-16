@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what monads are and why Leibniz thought there must be such simple substances, what perception and appetition are, the meaning of windowless, the mill argument, and the identity of indiscernibles.",
-
   glimpse: (
     <p>
       The next lesson explains how windowless monads agree, through a harmony set up by God, and why Leibniz thought this is

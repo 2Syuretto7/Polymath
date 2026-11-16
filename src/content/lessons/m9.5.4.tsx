@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the multivariate normal and how to build one from independent normals, why zero correlation means independence here, the conditional distribution of Y given X, and regression towards the mean.",
-
   glimpse: (
     <p>
       The next lesson studies conditional expectation in general, of which the linear regression line is a special case. The

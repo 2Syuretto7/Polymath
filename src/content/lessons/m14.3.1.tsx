@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what separability is, why a repeated root is a common root of f and f′, why fields of characteristic 0 and finite fields are perfect, and the example x^p − t over 𝔽ₚ(t).",
-
   glimpse: (
     <p>
       The next lesson defines normal extensions. Separable and normal together make an extension Galois, the setting of the

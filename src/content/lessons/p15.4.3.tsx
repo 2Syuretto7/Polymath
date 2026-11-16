@@ -197,9 +197,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Grice's cooperative principle and the four maxims, what a conversational implicature is with examples of following and flouting a maxim, and how cancellability distinguishes implicature from what is said.",
-
   glimpse: (
     <p>
       The next chapter looks at how context fixes what is said, starting with indexicals. Implicature also matters in debates

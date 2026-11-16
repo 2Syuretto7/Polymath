@@ -199,9 +199,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the extreme value theorem, and give an example showing why each of its hypotheses is needed.",
-
   glimpse: (
     <p>
       Real Analysis I reveals what makes closed, bounded intervals special: they are compact, and continuous functions on

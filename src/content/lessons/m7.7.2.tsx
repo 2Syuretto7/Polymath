@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a principal ideal domain is, why every Euclidean domain is one, how gcds and Euclid's lemma work in a PID, and examples of rings that are not PIDs.",
-
   glimpse: (
     <p>
       The next lesson proves that every PID has unique factorisation, and shows a ring where it fails. Polynomial rings then

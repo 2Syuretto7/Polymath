@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a linear map scales every volume by the absolute value of its determinant, what the sign means, how to find the volume of a lower-dimensional parallelepiped with the Gram matrix, and how this leads to the change of variables formula.",
-
   glimpse: (
     <p>
       The next lesson studies bilinear and quadratic forms. Analysis proves the change of variables formula in full, and

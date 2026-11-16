@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the causal picture of how a name refers, the difference between fixing reference and giving meaning, Evans's Madagascar case, and the qua problem.",
-
   glimpse: (
     <p>
       The next lesson extends the picture to words for natural kinds, like &ldquo;water&rdquo; and &ldquo;gold&rdquo;. Indexicals

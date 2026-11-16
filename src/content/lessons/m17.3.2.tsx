@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the weak maximum principle for the heat equation, the idea of its proof with the small term εx², and how it gives uniqueness and stability.",
-
   glimpse: (
     <p>
       Next, the heat equation on the whole line, solved by a single bell-shaped function, the fundamental solution, which

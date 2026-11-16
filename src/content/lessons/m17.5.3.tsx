@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Green’s function is, how the Poisson integral solves the Dirichlet problem in a disc, and why its kernel behaves like a weighted average.",
-
   glimpse: (
     <p>
       Next, the Fourier transform: the continuous analogue of Fourier series for functions on the whole line, which turns

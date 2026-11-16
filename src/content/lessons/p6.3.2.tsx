@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the problem of universals, Porphyry's questions, the realist, conceptualist and nominalist answers, and the debate between William of Champeaux and Abelard.",
-
   glimpse: (
     <p>
       The next lesson follows Abelard himself: his logic, his ethics of intention, and his turbulent life.

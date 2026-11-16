@@ -153,9 +153,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Stone–Weierstrass theorem, its two conditions, why polynomials and trigonometric polynomials satisfy them, and an algebra that fails to separate points.",
-
   glimpse: (
     <p>
       The next lesson uses completeness in a different way, through the Baire category theorem. Fourier analysis studies

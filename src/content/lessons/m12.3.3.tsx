@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what nowhere dense and meagre sets are, the Baire category theorem and its proof by nested balls, and why it shows most continuous functions are nowhere differentiable.",
-
   glimpse: (
     <p>
       The next unit moves to differentiation in ℝⁿ. In functional analysis, Baire&rsquo;s theorem powers the open mapping and

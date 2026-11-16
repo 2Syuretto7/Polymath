@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how conditional proof works: what it means to assume something, how the assumption is discharged, and why lines inside a closed subproof cannot be reused.",
-
   glimpse: (
     <p>
       Conditional proof is why the material conditional and the proof system fit together: in Logic II: Metalogic and Beyond

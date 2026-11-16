@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the communitarian critique of liberalism, Sandel's unencumbered self, the views of MacIntyre, Taylor and Walzer, and the replies of the later Rawls and Kymlicka.",
-
   glimpse: (
     <p>
       The next chapter turns to democracy: why it is justified, and how deliberation might improve it. Nationalism and

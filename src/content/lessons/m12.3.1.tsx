@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the sup norm on C(X), why convergence in it is uniform convergence, why C(X) is complete, and why the area distance d₁ is not complete.",
-
   glimpse: (
     <p>
       The next lesson shows that polynomials are dense in C[a, b], and much more. Then the Baire category theorem uses

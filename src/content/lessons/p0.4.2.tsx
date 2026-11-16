@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why one counterexample can refute a theory that thousands of examples support. Use the stopped clock.",
-
   glimpse: (
     <p>
       Next, drawing distinctions: the tool for disarming a counterexample, or a whole argument, by noticing that a word is

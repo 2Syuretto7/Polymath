@@ -244,9 +244,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain the principle of charity to a friend who thinks it means 'being nice to people you disagree with'. Say why it actually makes your criticism stronger.",
-
   glimpse: (
     <p>
       This completes reading philosophy. Next you will write it, starting with the shape of a philosophy essay. Charity

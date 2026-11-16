@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Lucas–Penrose argument from Gödel’s theorem, the objection that we cannot know our own consistency, and Gödel’s own disjunction.",
-
   glimpse: (
     <p>
       Next, computability and the mind: the Church–Turing thesis, what no machine can compute, and whether the mind is a

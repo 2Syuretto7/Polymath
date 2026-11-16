@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the mind-body problem is, and give the strongest point for and against one of the three positions in this lesson.",
-
   glimpse: (
     <p>
       If minds are hidden on the inside, how do you know anyone else has one? That is the next lesson. Descartes&rsquo;

@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a ring is, with several examples including a non-commutative one, why (−a)(−b) = ab follows from the axioms, and the difference between units and zero divisors in ℤₙ.",
-
   glimpse: (
     <p>
       The next lesson introduces ideals, which play the part for rings that normal subgroups play for groups, and the

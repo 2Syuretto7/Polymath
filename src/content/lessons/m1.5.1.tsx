@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why proving P(1) and 'P(k) implies P(k + 1)' proves P(n) for every n, using dominoes, and what goes wrong in the horses proof.",
-
   glimpse: (
     <p>
       Sometimes knowing P(k) alone is not enough to reach P(k + 1), and you need every earlier case at once. That is strong

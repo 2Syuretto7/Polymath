@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Peirce's account of doubt and belief, his four methods of fixing belief, the pragmatic maxim, truth as the end of inquiry, abduction and fallibilism.",
-
   glimpse: (
     <p>
       The next lesson turns to William James, who made pragmatism famous and applied it to religion. The philosophy of science

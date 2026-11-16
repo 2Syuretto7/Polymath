@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the simple random walk, the gambler's ruin probabilities and their proof by conditioning on the first step, why a small house edge matters so much, recurrence in one dimension, and Pólya's theorem about higher dimensions.",
-
   glimpse: (
     <p>
       This completes the course. Martingales, ergodic theorems and stochastic calculus all grow from the random walk and

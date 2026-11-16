@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what equicontinuity means, what the Arzelà-Ascoli theorem says, how the diagonal argument and compactness prove it, and examples showing why each hypothesis is needed.",
-
   glimpse: (
     <p>
       Real Analysis II moves all of this into metric spaces, where Arzelà-Ascoli describes the compact sets of continuous

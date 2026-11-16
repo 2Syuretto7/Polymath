@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the Hessian matrix is, what Taylor's theorem to second order says in several variables, how it is proved by restricting to a line, and why the quadratic term is a quadratic form.",
-
   glimpse: (
     <p>
       The next lesson uses the Hessian to tell whether a critical point is a maximum, a minimum or a saddle.

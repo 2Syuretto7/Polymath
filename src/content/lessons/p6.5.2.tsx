@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Ockham's razor says and what Ockham used it for, his nominalist account of universals as signs, and why people still use the razor today.",
-
   glimpse: (
     <p>
       The final lesson of the medieval course asks how the late medieval debates prepared the way for modern philosophy and

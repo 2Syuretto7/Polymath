@@ -180,9 +180,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the inverse function theorem says, why a nonzero Jacobian determinant is needed, how to compute the derivative of the inverse, and why the theorem is only local.",
-
   glimpse: (
     <p>
       The next lesson draws a twin result from this one: when an equation <M>{"F(x, y) = 0"}</M> can be solved for{" "}

@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what complete reducibility means, how averaging a projection proves Maschke's theorem, where the characteristic matters with an example of failure, and the invariant inner product proof over ℂ.",
-
   glimpse: (
     <p>
       The next lesson introduces characters, which identify the irreducible pieces of a representation. Character tables then

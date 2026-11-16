@@ -264,9 +264,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend which words signal premises and conclusions, why the same words sometimes do other jobs, and how to tell an argument from an explanation when the word is 'because'.",
-
   glimpse: (
     <p>
       The next lessons look at the other small words that shape an argument&rsquo;s strength. Later in this course, the

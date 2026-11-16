@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend contextualism about knowledge, the bank cases, the comparison with words like 'tall', how contextualism answers scepticism while keeping closure, and the main objections.",
-
   glimpse: (
     <p>
       The next lesson considers Moore&rsquo;s bolder reply: that we simply do know we have hands. Graduate epistemology asks

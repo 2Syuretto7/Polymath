@@ -254,9 +254,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between descriptive and normative claims, why a moral argument needs a normative premise, and how consistency and reflective equilibrium guide moral reasoning.",
-
   glimpse: (
     <p>
       Early Modern Philosophy reads Hume&rsquo;s own passage on is and ought. Moral Philosophy studies trolley problems in

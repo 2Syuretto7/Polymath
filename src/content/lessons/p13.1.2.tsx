@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between using someone and using them merely as a means, O'Neill's possible consent test, Korsgaard's argument for the value of humanity, and one objection to Kantian ethics.",
-
   glimpse: (
     <p>
       The next lesson studies Scanlon&rsquo;s contractualism, which grounds morality in principles no one could reasonably

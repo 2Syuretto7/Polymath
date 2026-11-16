@@ -222,9 +222,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what virtue ethics is, how Hursthouse defines right action and what v-rules are, why practical wisdom matters, and the main objections to the theory with replies.",
-
   glimpse: (
     <p>
       The next lesson meets the ethics of care, which also distrusts abstract rules, and the one after asks what we learn

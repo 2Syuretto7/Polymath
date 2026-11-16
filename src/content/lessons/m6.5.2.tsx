@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of continuity, why the continuous image of a compact set is compact, how this proves the extreme value theorem, and why each hypothesis is needed.",
-
   glimpse: (
     <p>
       The next lesson strengthens continuity to uniform continuity and shows that, on compact sets, continuity gives it for

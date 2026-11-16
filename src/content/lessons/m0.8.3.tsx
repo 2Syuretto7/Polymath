@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how induction works using a row of dominoes, and why both the base case and the inductive step are needed.",
-
   glimpse: (
     <p>
       Next, counting, where induction often supplies the proofs. Induction returns properly in Proof and Logic, with strong

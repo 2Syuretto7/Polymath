@@ -181,9 +181,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the doctrine of doing and allowing, Rachels's Smith and Jones argument against it, and the reply that a factor can matter in some cases without mattering in all.",
-
   glimpse: (
     <p>
       The next lesson considers a related distinction, between harm intended and harm merely foreseen. Trolley problems

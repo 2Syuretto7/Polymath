@@ -193,9 +193,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the a priori and a posteriori, how they differ from necessary and contingent and from analytic and synthetic, Kant's synthetic a priori, Kripke's examples of the necessary a posteriori and the contingent a priori, and Quine's challenge.",
-
   glimpse: (
     <p>
       The next chapter turns from the sources of knowledge to the knower: intellectual virtue, disagreement and injustice.

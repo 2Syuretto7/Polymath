@@ -132,9 +132,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a truth function is, why disjunctive normal form shows that ¬, ∧ and ∨ are expressively adequate, why ↑ alone is adequate, and why ∧ and ∨ alone are not.",
-
   glimpse: (
     <p>
       Next, first-order metatheory: soundness and completeness for predicate logic, where Henkin&rsquo;s method must also

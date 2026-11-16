@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Gauss map and shape operator, the second fundamental form e du² + 2f du dv + g dv², normal curvature as II(w)/I(w), and Meusnier's theorem.",
-
   glimpse: (
     <p>
       Next, the principal curvatures, the largest and smallest normal curvatures at a point, and the two numbers built from

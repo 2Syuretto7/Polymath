@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the orthogonal projection is the closest point of a subspace, how this gives the normal equations for least squares, and why projecting onto polynomials can beat a Taylor polynomial over an interval.",
-
   glimpse: (
     <p>
       The next lesson introduces the adjoint of an operator, the abstract form of the transpose that appeared in the normal

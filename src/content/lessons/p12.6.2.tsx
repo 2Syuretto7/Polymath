@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Twin Earth and arthritis thought experiments, the difference between internalism and externalism, and the worries about self-knowledge and psychological explanation.",
-
   glimpse: (
     <p>
       The next lesson asks what natural relation makes a state in the head about water at all. Kripke&rsquo;s theory of naming

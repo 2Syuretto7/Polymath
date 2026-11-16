@@ -208,9 +208,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between determinism and fatalism, using the example of choosing breakfast.",
-
   glimpse: (
     <p>
       The next lesson meets the most popular response among philosophers: that free will and determinism are compatible after

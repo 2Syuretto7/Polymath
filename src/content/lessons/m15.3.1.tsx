@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend first and second countability, why metric spaces are first countable and ℝ is second countable, why sequences detect closures in first countable spaces, and how second countability gives separability.",
-
   glimpse: (
     <p>
       Next, the separation axioms ask how well open sets tell points apart. Combined with second countability, the strongest

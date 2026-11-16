@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what algebraic and transcendental elements are, why an algebraic element has a unique minimal polynomial whose degree equals [K(α) : K], why finite extensions are algebraic, and how to find the minimal polynomial of √2 + √3.",
-
   glimpse: (
     <p>
       The next lesson builds fields containing all the roots of a polynomial. Separability and cyclotomic fields later refine

@@ -156,9 +156,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Kripke and Putnam treat natural kind terms like water and gold, why water is H₂O would be necessary but known a posteriori, Putnam's stereotypes and division of linguistic labour, and one objection.",
-
   glimpse: (
     <p>
       Later lessons examine the necessary a posteriori and how we know what is possible. The next chapter turns from reference

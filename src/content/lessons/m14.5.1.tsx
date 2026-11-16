@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a module is, with examples over a field, over ℤ and over k[x], what homomorphisms and quotients are, and why ℤ/2 has no basis.",
-
   glimpse: (
     <p>
       The next lesson studies free modules, the ones that do have bases. Later lessons classify modules over a principal ideal

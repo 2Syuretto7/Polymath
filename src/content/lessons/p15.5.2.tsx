@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how context sensitivity may extend beyond indexicals, how a gradable adjective like “tall” gets a standard from context, the tests for context sensitivity, and the difference between minimalism and radical contextualism.",
-
   glimpse: (
     <p>
       Next, Wittgenstein asks what fixes the meaning of a word at all, through the puzzle of following a rule. Gradable

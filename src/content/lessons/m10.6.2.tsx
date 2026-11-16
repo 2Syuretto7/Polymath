@@ -137,9 +137,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of the Laplace transform, why derivatives become multiplication by s, how to solve an initial value problem by transforming, using partial fractions and inverting, and what convolution and shifts add.",
-
   glimpse: (
     <p>
       The final lesson of the course takes a first look at Sturm–Liouville problems. Partial differential equations use

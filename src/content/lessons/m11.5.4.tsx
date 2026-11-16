@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the law of quadratic reciprocity and when the two symbols differ, Eisenstein’s lemma, the lattice point proof, and how reciprocity computes a Legendre symbol quickly.",
-
   glimpse: (
     <p>
       The next chapter turns to Diophantine equations. Reciprocity returns with sums of squares, and in algebraic number theory it

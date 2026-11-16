@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the higher-order thought and higher-order perception theories of consciousness, how they handle blindsight and the absent-minded driver, and the objections from animals and empty higher-order states.",
-
   glimpse: (
     <p>
       The next lesson turns to illusionism, which says phenomenal consciousness, as we conceive it, does not exist at all.

@@ -218,9 +218,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what makes an inductive generalisation strong, why sample size and representativeness both matter, and how a sample of millions could get an election badly wrong.",
-
   glimpse: (
     <p>
       Probability proves the law of large numbers, which explains why random samples settle down near the truth, and makes

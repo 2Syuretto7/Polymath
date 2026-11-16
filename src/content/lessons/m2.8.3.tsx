@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how sine and cosine can be defined by series, how their derivatives follow, and how the identity sin² + cos² = 1 and the number π come out of the definitions.",
-
   glimpse: (
     <p>
       The next chapter proves that power series converge and can be differentiated term by term, completing the

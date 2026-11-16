@@ -156,9 +156,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of a group, with examples and non-examples, why the identity and inverses are unique, and why a group table has every element once in each row.",
-
   glimpse: (
     <p>
       The next lesson meets the groups that started it all, groups of symmetries, and the first non-abelian examples. Later

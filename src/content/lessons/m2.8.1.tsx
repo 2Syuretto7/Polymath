@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the natural logarithm can be defined as an area, why that area turns products into sums, and how the number e is defined from it.",
-
   glimpse: (
     <p>
       The next lesson inverts the logarithm to define the exponential function, and with it powers with any real exponent.

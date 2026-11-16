@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what epiphenomenalism says, why causal closure makes it tempting, Huxley's steam whistle, and the objections from self-knowledge and evolution.",
-
   glimpse: (
     <p>
       The next lessons turn to consciousness directly: what it is like to be a bat, Mary&rsquo;s room, and the zombie

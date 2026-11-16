@@ -197,9 +197,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the derivative of f(g(x)) is f′(g(x)) times g′(x), using the idea of rates multiplying along a chain.",
-
   glimpse: (
     <p>
       The chain rule runs backwards as integration by substitution, and it powers the related-rates problems of the next

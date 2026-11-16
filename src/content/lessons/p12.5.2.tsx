@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Mary's room and the knowledge argument, and the ability, acquaintance and phenomenal concept replies, saying which premise each one denies.",
-
   glimpse: (
     <p>
       The next lesson considers zombies, creatures physically like us with no experience at all, and Chalmers&rsquo;s hard

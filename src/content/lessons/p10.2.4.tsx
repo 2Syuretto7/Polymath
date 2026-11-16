@@ -202,9 +202,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend infinitism, Klein's principles of avoiding circularity and arbitrariness, the finite mind objection with the reply about available reasons, and the no-source objection with the reply that justification comes in degrees.",
-
   glimpse: (
     <p>
       The next chapter turns from the structure of justification to what justification is: reliable processes, or fitting

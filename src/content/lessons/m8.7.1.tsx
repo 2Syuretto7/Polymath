@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what bilinear and quadratic forms are, how their matrices change by congruence, the polarisation identity, Sylvester's law of inertia and its proof idea, and examples from relativity and calculus.",
-
   glimpse: (
     <p>
       The next lesson builds the tensor product, the space that turns bilinear maps into linear ones. Geometry uses

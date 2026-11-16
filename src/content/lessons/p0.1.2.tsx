@@ -244,9 +244,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend who loves science why physics cannot, by itself, answer the question 'Is the desk really solid?', and why that is not a criticism of physics.",
-
   glimpse: (
     <p>
       Next you will see philosophy at work in ordinary conversation. Popper&rsquo;s criterion returns in full in

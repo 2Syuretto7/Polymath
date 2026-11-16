@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between an integral domain and a field, why a finite integral domain is a field, what prime and maximal ideals are, and how they correspond to quotients that are domains and fields.",
-
   glimpse: (
     <p>
       The next chapter asks which integral domains have division with remainder and unique factorisation, as the integers

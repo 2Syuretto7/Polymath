@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what political obligation is, the consent, fair play and natural duty accounts with one objection to each, and what philosophical anarchism concludes.",
-
   glimpse: (
     <p>
       The next part turns from obedience to justice, beginning with Rawls&rsquo;s original position. Later lessons ask what

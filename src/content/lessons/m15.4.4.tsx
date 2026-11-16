@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the degree of a loop in the circle via lifting, why it is well defined, a homomorphism, onto and one-to-one, so π₁(S¹) is ℤ, and how winding numbers prove the fundamental theorem of algebra.",
-
   glimpse: (
     <p>
       Next, the calculation proves Brouwer&rsquo;s fixed point theorem for the disc. The Seifert-van Kampen theorem then

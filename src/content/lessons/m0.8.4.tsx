@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why choosing r things from n gives n! divided by r! and (n − r)!, using the idea of counting ordered lists in two ways.",
-
   glimpse: (
     <p>
       Next, the binomial theorem, where these same numbers appear as the coefficients of <M>{"(1 + x)^n"}</M>. Counting is

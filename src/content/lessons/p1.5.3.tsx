@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between the logical and the evidential problem of evil, and the best reply you know to each.",
-
   glimpse: (
     <p>
       This completes the chapter on God. The final chapter of this course turns to value and meaning: why be moral, what makes

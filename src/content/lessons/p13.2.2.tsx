@@ -185,9 +185,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the desire satisfaction theory of wellbeing, the move to informed desires, and the problems of the stranger on the train, the grass counter and adaptive preferences.",
-
   glimpse: (
     <p>
       The next lesson considers objective list theories, which say some things are good for you whether or not you want

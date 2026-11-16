@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain reductio ad absurdum to a friend using 'all truth is relative', and say why a reductio leaves a choice about which premise to give up.",
-
   glimpse: (
     <p>
       This completes the philosopher&rsquo;s toolkit, and Year 0 of philosophy is nearly done. Proof by contradiction, the

@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Sturm–Liouville problem is, why only special λ give nonzero solutions, the example of the fixed string, why eigenfunctions are orthogonal, and the analogy with symmetric matrices.",
-
   glimpse: (
     <p>
       This completes the course in ordinary differential equations. Partial differential equations use these eigenfunctions to

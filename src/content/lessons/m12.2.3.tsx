@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the contraction mapping theorem, why the iterates form a Cauchy sequence, why the fixed point is unique, and why pressing cos repeatedly on a calculator always gives 0.739085.",
-
   glimpse: (
     <p>
       Later the theorem proves the inverse and implicit function theorems, and it explains why Newton&rsquo;s method converges

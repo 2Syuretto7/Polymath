@@ -146,9 +146,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Theorema Egregium, why it means Gaussian curvature can be measured from inside a surface, and why it shows that every flat map of the Earth must distort distances.",
-
   glimpse: (
     <p>
       Next, geodesics: the straightest curves on a surface, which are also, locally, the shortest. Their equations involve

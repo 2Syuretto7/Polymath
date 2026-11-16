@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a nilpotent operator is, why its only eigenvalue is 0, how a basis of chains gives its matrix, how the chain lengths are read from dimensions of null spaces, and an example with differentiation.",
-
   glimpse: (
     <p>
       The next lesson assembles generalised eigenspaces and chains into the Jordan form. Later lessons define the trace, and

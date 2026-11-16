@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the cross product of two vectors in space is defined, why it is perpendicular to both, why its length is the area of a parallelogram, and why it only works so neatly in three dimensions.",
-
   glimpse: (
     <p>
       The next lesson sets vectors in motion: a curve in space as a moving point, with a velocity vector at each moment.

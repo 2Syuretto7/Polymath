@@ -164,9 +164,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to build a smooth bump function, what a partition of unity subordinate to a cover is, why one exists for compact sets, and how it lets local calculations be glued together.",
-
   glimpse: (
     <p>
       The final unit of the course introduces differential forms and the general Stokes theorem, whose proof uses partitions

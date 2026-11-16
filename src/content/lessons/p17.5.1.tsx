@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the liar paradox, the three ingredients it needs, the main ways of responding, and what a revenge paradox is.",
-
   glimpse: (
     <p>
       Next, Tarski&rsquo;s theory of truth: his adequacy condition, the definition of truth for a formal language in a richer

@@ -136,9 +136,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a harmonic function is, its link with holomorphic functions, the maximum principle, and why repeated averaging on a grid approximates one.",
-
   glimpse: (
     <p>
       Next, the mean value property: the value of a harmonic function at a point is exactly its average over any circle

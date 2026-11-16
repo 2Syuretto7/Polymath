@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between finding a solution and checking one, what the classes P and NP are, what NP-complete means, and why the P versus NP question matters.",
-
   glimpse: (
     <p>
       The next chapter turns to probability. The logic course makes these ideas exact with Turing machines, and the number

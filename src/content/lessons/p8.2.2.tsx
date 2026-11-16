@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Kant thinks time is an a priori form of intuition, why it is the form of all appearances, and the objections from Lambert and Trendelenburg with Kant's replies.",
-
   glimpse: (
     <p>
       The next lesson shows how space and time make mathematics possible. The Analogies of Experience later argue that the

@@ -224,9 +224,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to someone who finds fractions confusing why you need a common denominator to add them, but not to multiply them. Use pizzas, bars or anything you can picture.",
-
   glimpse: (
     <p>
       The equality test <M>{"ad = bc"}</M> is another equivalence relation, like the pairs that built the integers, and

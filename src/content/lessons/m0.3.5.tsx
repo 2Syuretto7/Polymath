@@ -193,9 +193,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why y = (x − 3)² is shifted right, not left. Use the idea that the new function at x does what the old one did somewhere else.",
-
   glimpse: (
     <p>
       This completes functions. Next comes the chapter on exponentials and logarithms, where these transformations sketch

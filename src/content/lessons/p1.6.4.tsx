@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Epicurus's argument that death is nothing to us, and how the deprivation account replies.",
-
   glimpse: (
     <p>
       This completes the introduction to philosophy: knowledge, mind, free will, personal identity, God, morality, meaning and death,

@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what supervenience is, the difference between weak, strong and global supervenience, why supervenience allows multiple realisability and even some dualism, its role as minimal physicalism, and Kim’s point that it does not explain.",
-
   glimpse: (
     <p>
       The next lesson considers epiphenomenalism, which accepts supervenience but denies mental causation. Metaphysics later

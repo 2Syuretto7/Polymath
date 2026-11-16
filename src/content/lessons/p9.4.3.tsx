@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kierkegaard's distinction between objective and subjective reflection, his definition of truth as subjectivity, the example of Socrates, and why the view is not simple relativism.",
-
   glimpse: (
     <p>
       The next chapter turns to John Stuart Mill, an empiricist in the opposite camp. Nietzsche&rsquo;s perspectivism offers

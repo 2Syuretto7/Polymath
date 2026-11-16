@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a multiplicative function is and why it is determined by prime powers, why summing a multiplicative function over divisors gives another, the formulas for τ, σ and φ with an example, and what Dirichlet convolution is.",
-
   glimpse: (
     <p>
       The next lesson inverts sums over divisors with the Möbius function. Perfect numbers use σ, and the Riemann zeta function

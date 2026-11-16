@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what invariant subspaces, eigenvalues and eigenvectors are, why eigenvectors for distinct eigenvalues are independent, the determinant-free proof that every complex operator has an eigenvalue, and why real operators may have none.",
-
   glimpse: (
     <p>
       The next lesson shows that every complex operator has an upper-triangular matrix. Generalised eigenvectors later give

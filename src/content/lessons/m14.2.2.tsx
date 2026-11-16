@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the multiplicative group of a finite field is cyclic, how many generators it has, which subfields 𝔽_{pⁿ} contains, and how x^{pⁿ} − x factors into irreducibles.",
-
   glimpse: (
     <p>
       The next lesson uses finite fields to correct errors in transmitted data. Later, the Galois correspondence explains the

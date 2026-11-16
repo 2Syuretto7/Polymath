@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what illusionism claims, how the illusion problem replaces the hard problem, Dennett's coffee tasters, and the objection that an illusion of consciousness must be conscious.",
-
   glimpse: (
     <p>
       This completes the unit on consciousness. The next unit asks how mental states can be about things at all, and later

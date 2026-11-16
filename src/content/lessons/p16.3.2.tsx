@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Lakatos's research programmes with hard core and protective belt, the difference between progressive and degenerating programmes, the Neptune and Vulcan examples, and the problem of when to give up a programme.",
-
   glimpse: (
     <p>
       Next, Feyerabend argues that every proposed methodology would have blocked some great advance. Bayesian confirmation

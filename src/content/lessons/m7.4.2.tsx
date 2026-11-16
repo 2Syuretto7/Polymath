@@ -130,9 +130,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the orbit-stabiliser theorem and its proof by matching cosets of the stabiliser with points of the orbit, and how it counts the rotations of the Platonic solids.",
-
   glimpse: (
     <p>
       The next lesson uses actions to count orbits, which counts things up to symmetry. The class equation applies the theorem

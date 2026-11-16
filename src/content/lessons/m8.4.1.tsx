@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the adjoint of a linear map is, why it exists, how its null space and range relate to those of the map, why its matrix is the conjugate transpose in orthonormal bases, and why self-adjoint operators have real eigenvalues.",
-
   glimpse: (
     <p>
       The next lesson proves the spectral theorem: self-adjoint operators are exactly those with an orthonormal basis of

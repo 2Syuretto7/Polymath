@@ -246,9 +246,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means to put an argument in standard form, and why doing so makes it easier to disagree well. Use the Epicurus example or one of your own.",
-
   glimpse: (
     <p>
       Next, charitable interpretation: how to reconstruct an argument so that it is as strong as it can honestly be. Logic I

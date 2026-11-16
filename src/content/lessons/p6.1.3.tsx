@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the problem of divine foreknowledge and human freedom, Boethius's idea of eternity, his example of watching someone walk, and the distinction between simple and conditional necessity.",
-
   glimpse: (
     <p>
       The next chapter follows philosophy into the Islamic world, where al-Farabi, Avicenna and others carried forward

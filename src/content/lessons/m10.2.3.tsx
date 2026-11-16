@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Gronwall's inequality and its proof, how it bounds the gap between two solutions, why the bound can be sharp, and why exponential growth limits long-range prediction.",
-
   glimpse: (
     <p>
       Lyapunov functions later give sharper control of how solutions approach equilibria. Chaotic dynamics makes exponential

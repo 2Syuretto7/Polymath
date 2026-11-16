@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Reid's diagnosis of the theory of ideas, his distinction between sensation and perception, how sensations work as natural signs, and his first principles of common sense.",
-
   glimpse: (
     <p>
       The next lesson turns from perception to space, and the great debate between Newton&rsquo;s followers and Leibniz. The

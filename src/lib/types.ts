@@ -44,7 +44,6 @@ export type LessonContent = {
   intuition: ReactNode;
   theory: ReactNode;
   practice: Exercise[];
-  teachBack: string;
   glimpse: ReactNode;
 };
 

@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a minimal surface is, why H = 0 is the condition for area to be critical, the catenoid and helicoid as examples, and what happens to a soap film between two rings as they are pulled apart.",
-
   glimpse: (
     <p>
       Next, isometries: maps between surfaces that preserve the first fundamental form, such as bending a catenoid into a

@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a partial differential equation is, the transport, heat, wave and Laplace equations, and how the heat equation follows from conservation of energy and Fourier’s law.",
-
   glimpse: (
     <p>
       Next, classification: why second-order equations fall into three types, hyperbolic, parabolic and elliptic, and what

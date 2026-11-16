@@ -224,9 +224,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Descartes reaches the cogito from the deepest doubt, the difference between reading it as an inference and as a performance, what he concludes about the I, and one objection.",
-
   glimpse: (
     <p>
       The next lesson asks how Descartes moves from his own existence to God and the world, through clear and distinct

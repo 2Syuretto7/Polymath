@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kuhn's paradigms and normal science, the cycle of anomaly, crisis and revolution, incommensurability, and why critics worried that Kuhn made science irrational.",
-
   glimpse: (
     <p>
       Next, Lakatos tries to reconcile Popper&rsquo;s rationality with Kuhn&rsquo;s history, and Feyerabend argues that no

@@ -260,9 +260,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Mill's methods of agreement, difference and concomitant variation, how a hidden factor or a common cause can fool them, and why randomised experiments help.",
-
   glimpse: (
     <p>
       Probability makes concomitant variation precise as correlation, and shows exactly how little it proves on its own.

@@ -179,9 +179,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what countable means, why the rationals are countable and the reals are not, why the rationals have measure zero, and what this says about transcendental numbers.",
-
   glimpse: (
     <p>
       The Cantor set, later in the course, is uncountable yet also has measure zero. Measure theory makes the idea of length

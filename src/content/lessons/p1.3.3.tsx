@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain Frankfurt's case to a friend, and why it seems to show that 'I couldn't have done otherwise' is not always an excuse.",
-
   glimpse: (
     <p>
       This completes the chapter on free will. Next comes personal identity: what makes you, now, the same person as the child

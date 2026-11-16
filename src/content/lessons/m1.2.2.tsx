@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a thousand examples cannot prove a statement about every whole number, while one counterexample can refute it, and why the opposite holds for 'there exists'.",
-
   glimpse: (
     <p>
       To use quantifiers in proofs you must be able to deny them, and that is the next lesson: what is the opposite of

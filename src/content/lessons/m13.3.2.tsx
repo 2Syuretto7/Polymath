@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the fundamental theorem of algebra, its proof from Liouville's theorem, and the winding picture of why a polynomial of degree n has n roots.",
-
   glimpse: (
     <p>
       The argument principle and Rouché&rsquo;s theorem turn the winding picture into a precise way of counting zeros.

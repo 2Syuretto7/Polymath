@@ -239,9 +239,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Stoic goal of living in agreement with nature, the difference between the good and the preferred indifferents, Epictetus' division of what is up to us, and why the Stoics called the passions false judgements.",
-
   glimpse: (
     <p>
       The next lesson meets the sceptics, who answered both Stoics and Epicureans by suspending judgement altogether.

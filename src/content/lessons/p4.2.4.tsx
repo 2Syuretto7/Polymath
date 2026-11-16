@@ -269,9 +269,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the story of the oracle and what Socrates concluded from it, how the elenchus works and what it can and cannot prove, and how Socrates can claim to know nothing while holding firm moral convictions.",
-
   glimpse: (
     <p>
       In the <em>Meno</em>, Plato confronts a challenge to the whole Socratic project: if you do not know what you are

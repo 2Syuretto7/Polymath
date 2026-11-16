@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hadamard’s three conditions for a well-posed problem, his example of Laplace’s equation with Cauchy data, and why the backward heat equation is ill-posed.",
-
   glimpse: (
     <p>
       Next, the wave equation: how it arises from a vibrating string, and how a plucked string is built from standing waves.

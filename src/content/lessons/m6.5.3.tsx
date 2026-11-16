@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between continuity and uniform continuity, how sequences show a function is not uniformly continuous, why continuous functions on compact sets are uniformly continuous, and how Lipschitz functions fit in.",
-
   glimpse: (
     <p>
       Uniform continuity is the key to proving that continuous functions are integrable, in the chapter on the Riemann

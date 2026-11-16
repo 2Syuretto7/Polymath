@@ -164,9 +164,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the distance formula comes from Pythagoras, and why coordinates turn geometry questions into arithmetic.",
-
   glimpse: (
     <p>
       Next, lines and the conic sections, curves whose equations have degree one and two. In Linear Algebra, points become

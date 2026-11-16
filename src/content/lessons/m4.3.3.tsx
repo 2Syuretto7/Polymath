@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Königsberg problem, Euler's theorem on when a graph has an Euler circuit or trail and why it is true, and why the similar question about Hamilton cycles is so much harder.",
-
   glimpse: (
     <p>
       The next lesson studies trees, the connected graphs with no cycles at all. P and NP, later in this course, explains

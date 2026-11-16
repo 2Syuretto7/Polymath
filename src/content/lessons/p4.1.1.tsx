@@ -203,9 +203,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what question Thales, Anaximander and Anaximenes asked, what each answered, and why their way of arguing matters more than their answers.",
-
   glimpse: (
     <p>
       The atomists at the end of this chapter give a very different answer to the Milesian question. Aristotle later

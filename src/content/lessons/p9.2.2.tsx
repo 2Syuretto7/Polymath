@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Marx's idea of species-being, the four aspects of alienated labour, how they relate to Hegel and Feuerbach, and the debate over whether alienation is objective.",
-
   glimpse: (
     <p>
       The next lesson follows Marx from alienation to historical materialism, the theory that material production shapes

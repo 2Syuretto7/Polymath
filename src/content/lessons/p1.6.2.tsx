@@ -193,9 +193,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the switch and footbridge cases, and how consequentialism, Kantian ethics and virtue ethics each deal with them.",
-
   glimpse: (
     <p>
       Ethics asks how to live well with others; the next lesson asks whether life as a whole has a point. Each of the three

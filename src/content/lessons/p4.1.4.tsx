@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Achilles and the tortoise and the arrow, how the sum of a geometric series answers the first, and what worry might remain after the mathematics.",
-
   glimpse: (
     <p>
       Aristotle&rsquo;s distinction between potential and actual infinity appears later in this course. Real Analysis I

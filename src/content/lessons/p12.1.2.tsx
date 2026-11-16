@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the interaction problem for dualism, the causal closure argument for physicalism, the conservation and pairing objections, and how parallelism, occasionalism and epiphenomenalism try to avoid interaction.",
-
   glimpse: (
     <p>
       The next chapter turns to theories that identify the mind with behaviour or with the brain. Mental causation returns later,

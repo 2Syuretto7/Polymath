@@ -178,9 +178,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Kant distinguishes the beautiful from the agreeable and the good, the four moments of the judgement of taste, the free play of imagination and understanding, and the difference between free and dependent beauty.",
-
   glimpse: (
     <p>
       The next lesson turns to the sublime, where the pleasure comes from the failure of imagination before something vast

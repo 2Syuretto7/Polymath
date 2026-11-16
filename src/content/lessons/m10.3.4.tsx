@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the steady-state amplitude of a forced damped oscillator and how to derive it, where the peak lies, why undamped forcing at the natural frequency grows without bound, and what beats are.",
-
   glimpse: (
     <p>
       Systems of equations come next, with phase portraits in the plane. Nonlinear oscillators can settle onto limit cycles,

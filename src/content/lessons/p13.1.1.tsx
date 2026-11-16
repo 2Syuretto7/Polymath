@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what consequentialism claims, the demandingness objection with Singer's pond, the satisficing, scalar, rule and prioritarian refinements, and Railton's sophisticated consequentialism.",
-
   glimpse: (
     <p>
       The next lessons develop rival theories: contemporary Kantian ethics, Scanlon&rsquo;s contractualism and virtue ethics.

@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend coherentism and how it answers the regress, what coherence involves beyond consistency, Neurath's ship, the isolation objection with a coherent fairy tale, and the input problem.",
-
   glimpse: (
     <p>
       The next lesson considers infinitism, the remaining answer to the regress. Later, Quine&rsquo;s web of belief carries

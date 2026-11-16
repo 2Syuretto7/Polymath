@@ -179,9 +179,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the singular value decomposition A = UΣVᵀ says, how to find it from AᵀA, the picture of the unit circle going to an ellipse, and why keeping the largest singular values compresses data.",
-
   glimpse: (
     <p>
       This completes Linear Algebra I. Numerical Analysis computes the SVD in practice, Functional Analysis extends it to

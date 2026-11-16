@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Mill's radical empiricism, his argument that the syllogism begs the question and that inference is from particulars to particulars, his methods of experimental inquiry, and his account of arithmetic and its critics.",
-
   glimpse: (
     <p>
       The next lesson turns to Mill&rsquo;s On Liberty and the harm principle. The Philosophy of Mathematics course returns

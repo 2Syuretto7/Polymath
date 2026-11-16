@@ -138,9 +138,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend d’Alembert’s formula, how it follows from the general solution F(x + ct) + G(x − ct), and what the domains of dependence and influence say about the speed of signals.",
-
   glimpse: (
     <p>
       Next, energy methods: the energy of a vibrating string is conserved, and this simple fact proves uniqueness of

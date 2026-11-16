@@ -178,9 +178,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why every point on an arc sees a chord under the same angle, using the isosceles triangle in the proof.",
-
   glimpse: (
     <p>
       Next, area and volume, where <M>{"\\pi"}</M> is finally computed. In trigonometry, the circle of radius 1 becomes the

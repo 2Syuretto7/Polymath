@@ -194,9 +194,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for vectors and for subspaces to be orthogonal, why orthogonal non-zero vectors are independent, what an orthogonal complement is, and why the null space is the orthogonal complement of the row space.",
-
   glimpse: (
     <p>
       The next lesson finds the point of a subspace closest to a given vector by dropping a perpendicular. Linear Algebra

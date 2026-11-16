@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the trapezium, midpoint and Simpson's rules approximate an integral, and why Simpson's rule improves so much faster as the pieces shrink.",
-
   glimpse: (
     <p>
       Numerical Analysis proves the error bounds, builds rules of every order, and meets Gaussian quadrature, which chooses

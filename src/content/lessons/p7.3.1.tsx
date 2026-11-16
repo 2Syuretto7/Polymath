@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what innate ideas are, Locke's arguments against them, his account of sensation, reflection, and simple and complex ideas, and Leibniz's reply.",
-
   glimpse: (
     <p>
       The next lesson asks how far our ideas resemble the things that cause them, through Locke&rsquo;s distinction between

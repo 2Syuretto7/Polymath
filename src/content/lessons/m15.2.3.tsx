@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the product topology, the tube argument for a product of two compact spaces, the diagonal argument for countable products, and why the box topology fails.",
-
   glimpse: (
     <p>
       Next, local compactness lets us compactify spaces like ℝ by adding a point at infinity. Tychonoff&rsquo;s theorem

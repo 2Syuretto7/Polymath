@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the principle of alternate possibilities, how Frankfurt’s case of Black and Jones is meant to refute it, the flicker of freedom and Widerker–Kane replies, and Fischer’s semicompatibilism.",
-
   glimpse: (
     <p>
       The next lessons look at the incompatibilist options: libertarianism, which defends undetermined free choice, and hard

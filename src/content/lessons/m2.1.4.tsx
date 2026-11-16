@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what |x − a| < r means on the number line, and why the triangle inequality is true.",
-
   glimpse: (
     <p>
       Next comes the precise definition of a limit, written entirely in the language of this lesson: f(x) is close to L

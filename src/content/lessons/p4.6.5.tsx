@@ -178,9 +178,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Aristotle thinks the city exists by nature and humans are political animals, his six constitutions, the argument for the wisdom of the many, and why he favours a mixed constitution with a large middle class, and say what is wrong with his defence of slavery.",
-
   glimpse: (
     <p>
       Political Philosophy begins with Hobbes, who starts from the very state of nature that Aristotle denied.

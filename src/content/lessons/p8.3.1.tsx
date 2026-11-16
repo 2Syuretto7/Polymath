@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Kant's categories are, how the metaphysical deduction derives them from the forms of judgement, how this differs from Aristotle's list, and why the concept of cause matters for the reply to Hume.",
-
   glimpse: (
     <p>
       The next lesson asks the harder question: by what right do these concepts apply to the objects of experience? That is

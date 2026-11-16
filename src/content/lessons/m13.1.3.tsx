@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Cauchy–Riemann equations, why they say the derivative is a rotation and scaling, and why holomorphic maps preserve angles where the derivative is not zero.",
-
   glimpse: (
     <p>
       Next come power series, the main source of holomorphic functions. Later lessons use the Cauchy&ndash;Riemann equations

@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between ∅ and {∅}, and why {{1, 2}, 3} has two elements, not three.",
-
   glimpse: (
     <p>
       Next comes the most important relation between sets, being a subset, and what it means for two sets to be equal. Russell

@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what transcendental idealism says about appearances and things in themselves, the roles of sensibility and understanding, and how Kant can call himself an empirical realist too.",
-
   glimpse: (
     <p>
       The next chapter, the Transcendental Aesthetic, argues that space and time are forms of intuition and shows how this

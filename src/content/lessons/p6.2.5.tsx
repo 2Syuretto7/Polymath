@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the problem The Guide for the Perplexed addresses, Maimonides's negative theology with the example of the ship, and his view on whether the world was created.",
-
   glimpse: (
     <p>
       The next chapter returns to Latin Europe, with Anselm&rsquo;s ontological argument and the debate over universals.

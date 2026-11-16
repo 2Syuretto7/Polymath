@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the puzzle of the statue and the clay, the Leibniz's law argument for two objects, Gibbard's version in which only modal properties differ, and how constitution theorists, counterpart theorists, four-dimensionalists and nihilists respond.",
-
   glimpse: (
     <p>
       Next, Metaphysics turns to time itself: McTaggart&rsquo;s argument and the question of which times exist. Graduate

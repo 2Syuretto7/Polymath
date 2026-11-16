@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the Riemann integral is defined over a box in ℝⁿ, why continuous functions are integrable, what content zero means, and why a disc has a well-defined area.",
-
   glimpse: (
     <p>
       The next lesson proves the change of variables formula, which turns integrals over discs into integrals over

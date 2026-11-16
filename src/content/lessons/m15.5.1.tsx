@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend free groups and presentations, the Seifert-van Kampen theorem, why the figure eight has a non-abelian fundamental group, and how attaching a disc to the figure eight gives the torus with fundamental group ℤ².",
-
   glimpse: (
     <p>
       Next, gluing polygons gives every closed surface, and van Kampen computes their fundamental groups. In algebraic

@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kripke’s construction of a truth predicate in stages, the least fixed point and groundedness, and why the liar remains a problem in the form of revenge.",
-
   glimpse: (
     <p>
       Next, the course turns to the history of analytic philosophy, beginning with logicism: Frege&rsquo;s and Russell&rsquo;s

@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Locke's distinction between the same man, the same person and the same substance, his memory criterion of personal identity, why he called person a forensic term, and the objections of Butler and Reid.",
-
   glimpse: (
     <p>
       The next lesson turns to Locke&rsquo;s political philosophy, where persons owning themselves becomes the basis of

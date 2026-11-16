@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a planar graph is, Euler's formula and its proof, why K₅ and K₃,₃ are not planar, what the chromatic number is, and why every planar graph can be coloured with six colours.",
-
   glimpse: (
     <p>
       Combinatorics outlines the proof of the four colour theorem and proves Brooks&rsquo; theorem on colouring, and

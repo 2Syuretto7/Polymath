@@ -160,9 +160,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Urysohn lemma, how nested open sets indexed by dyadic rationals give a continuous function, why normality is needed, and how the lemma leads to bump functions and partitions of unity.",
-
   glimpse: (
     <p>
       Next, Urysohn functions give enough coordinates to embed a nice space in a cube, proving the Urysohn metrisation

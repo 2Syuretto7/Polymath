@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what al-Ghazali argued in The Incoherence of the Philosophers, his view that there is no necessary connection between cause and effect, and how it bears on miracles and compares with Hume.",
-
   glimpse: (
     <p>
       The next lesson meets Averroes, who answered al-Ghazali with The Incoherence of the Incoherence. Hume&rsquo;s version

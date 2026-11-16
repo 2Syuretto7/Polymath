@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the method of doubt is and why Descartes used it, the three waves of doubt in the First Meditation, and one objection to the method.",
-
   glimpse: (
     <p>
       The next lesson finds the one thing the demon cannot touch: that I am thinking, and so that I exist. Epistemology

@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between a partial order and a total order, using getting dressed and the divisors of 12 as examples.",
-
   glimpse: (
     <p>
       This completes the chapter on relations. The next chapter shows that a function is a special kind of relation. The order

@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an orientation is, how the flux of a vector field through a surface is defined and computed, what it means for a fluid, and Gauss's law for a point charge.",
-
   glimpse: (
     <p>
       The next chapter proves the great theorems of vector calculus. The divergence theorem turns the flux out of a closed

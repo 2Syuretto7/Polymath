@@ -269,9 +269,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what makes a fallacy of relevance, the forms of ad hominem, when appealing to an authority is reasonable, and why spotting a fallacy does not show that the conclusion is false.",
-
   glimpse: (
     <p>
       Ancient Greek Philosophy meets the sophists, teachers of persuasion whom Plato accused of caring more for winning

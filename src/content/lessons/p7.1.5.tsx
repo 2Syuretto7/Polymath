@@ -213,9 +213,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Elisabeth's objection to Descartes, his reply about the union of mind and body, the role of the pineal gland, and how later philosophers responded to the interaction problem.",
-
   glimpse: (
     <p>
       The next chapter meets Spinoza and Leibniz, who answered the problem in opposite ways: one mind-body substance, or

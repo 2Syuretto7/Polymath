@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the analysis of knowledge as justified true belief, why each of the three conditions seems necessary, what justification is and why it is fallible, and the history of the analysis from Plato to Gettier.",
-
   glimpse: (
     <p>
       The next lesson presents Gettier&rsquo;s counterexamples. Later lessons ask how justification can be structured, from

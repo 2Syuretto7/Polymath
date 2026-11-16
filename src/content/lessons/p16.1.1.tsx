@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the logical empiricists' idea of verification, why universal laws cannot be conclusively verified though they can be falsified, and how Ayer, Carnap and Hempel moved to weaker notions of confirmation.",
-
   glimpse: (
     <p>
       Next, the hypothetico-deductive method describes how hypotheses are tested by their consequences. Then come the

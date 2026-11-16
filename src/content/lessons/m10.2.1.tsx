@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how an initial value problem becomes an integral equation, how Picard iteration builds a solution step by step, what Picard–Lindelöf guarantees, and why the guarantee is only local.",
-
   glimpse: (
     <p>
       The next lesson isolates the Lipschitz condition that made the iteration work. Later lessons ask how solutions depend on

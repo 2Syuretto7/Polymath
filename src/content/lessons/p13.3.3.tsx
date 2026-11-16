@@ -205,9 +205,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what error theory says, how it differs from non-cognitivism, Mackie's arguments from relativity and queerness, and the companions in guilt reply.",
-
   glimpse: (
     <p>
       The next lesson defends moral realism against these challenges. Constructivism then offers a middle path, and graduate

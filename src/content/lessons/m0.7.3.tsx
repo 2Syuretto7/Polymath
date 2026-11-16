@@ -174,9 +174,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how adding vectors works as arrows and as pairs of numbers, and how the dot product tells you whether two arrows are perpendicular.",
-
   glimpse: (
     <p>
       Next, complex numbers, where points of the plane can be multiplied as well as added. Linear Algebra begins exactly

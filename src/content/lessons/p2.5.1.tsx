@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an interpretation of predicate logic is, how it decides whether a quantified sentence is true, and why there can be no truth table for predicate logic.",
-
   glimpse: (
     <p>
       Interpretations are the subject of model theory, which Mathematical Logic and Set Theory introduces. Logic II:

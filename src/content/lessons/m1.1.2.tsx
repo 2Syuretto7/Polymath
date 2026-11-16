@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a truth table decides whether a formula is a tautology, and why the number of rows doubles with each new letter.",
-
   glimpse: (
     <p>
       Next, logical equivalence: when two different formulas say the same thing. Logic I uses truth tables to test arguments

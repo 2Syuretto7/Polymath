@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why one might want to construct the real numbers, what a Dedekind cut is, how cuts are ordered and added, and why the least upper bound property holds for them.",
-
   glimpse: (
     <p>
       The next lesson shows that the least upper bound property can be replaced by several other properties, each

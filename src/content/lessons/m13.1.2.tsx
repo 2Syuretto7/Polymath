@@ -131,9 +131,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for a function of a complex variable to be differentiable, why z̄ fails, and why this is a much stronger demand than having partial derivatives.",
-
   glimpse: (
     <p>
       The next lesson turns the definition into the Cauchy&ndash;Riemann equations. Later the Cauchy integral formula shows

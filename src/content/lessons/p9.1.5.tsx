@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the stages of Hegel's Philosophy of Right, from abstract right and morality to ethical life, the roles of family, civil society and state, and the debate over 'the rational is actual'.",
-
   glimpse: (
     <p>
       The next chapter follows the Young Hegelians, beginning with Feuerbach&rsquo;s critique of religion. Marx turns

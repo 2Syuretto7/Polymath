@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the covariant derivative, parallel transport, and why a vector carried round a circle of latitude comes back rotated by the area of the cap.",
-
   glimpse: (
     <p>
       Next, the Gauss–Bonnet theorem, which ties the total curvature of a surface to its topology: the curvature of a

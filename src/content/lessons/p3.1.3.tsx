@@ -262,9 +262,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between ambiguity and vagueness, the main kinds of definition, and how a counterexample shows that a definition is too broad or too narrow.",
-
   glimpse: (
     <p>
       The next chapter collects the fallacies that exploit ambiguity, beginning with equivocation, the slip in the cheese

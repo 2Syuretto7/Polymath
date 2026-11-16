@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Wittgenstein means by a private language, the diary of S and the problem of a standard of correctness, the beetle in the box, and why Wittgenstein says he is not a behaviourist.",
-
   glimpse: (
     <p>
       Later lessons return to Wittgenstein&rsquo;s later philosophy as a whole, and to Ryle&rsquo;s attack on the idea of the

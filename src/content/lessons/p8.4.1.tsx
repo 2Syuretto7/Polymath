@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the Transcendental Dialectic is about, what transcendental illusion is, the four paralogisms of rational psychology, and Kant's diagnosis of their shared error.",
-
   glimpse: (
     <p>
       The next lesson turns to the world as a whole and the antinomies, where reason proves both sides of a contradiction.

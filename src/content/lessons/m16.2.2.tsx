@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the tangent plane to a surface as the set of velocities of curves in it, why it is spanned by the partial derivatives of any chart, the unit normal, and the formulas for graphs and level sets.",
-
   glimpse: (
     <p>
       Next, the first fundamental form: the dot product on each tangent plane, written in a chart, which lets us measure

@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a primitive root is, the counting proof that every prime has φ(p − 1) of them, how to test a candidate using the prime factors of p − 1, which moduli have primitive roots, and why 8 has none.",
-
   glimpse: (
     <p>
       The next lesson uses primitive roots to define discrete logarithms, the basis of key exchange. In ring theory, the same

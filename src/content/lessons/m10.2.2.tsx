@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Lipschitz condition is, how a bounded derivative gives one, why it forces uniqueness, and an example like y′ = 2√|y| where uniqueness fails.",
-
   glimpse: (
     <p>
       The next lesson strengthens uniqueness into a quantitative bound on how solutions depend on their starting point. The

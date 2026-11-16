@@ -178,9 +178,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the ε/3 argument for continuity of uniform limits, why uniform convergence lets you swap limit and integral, what extra hypothesis derivatives need, and the three counterexamples.",
-
   glimpse: (
     <p>
       The next lesson applies these theorems to power series, which can be differentiated and integrated term by term inside

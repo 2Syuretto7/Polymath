@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Nietzsche's idea of the will to power, how it differs from Schopenhauer's will and from Darwin's struggle for existence, how it explains moralities, the argument of Beyond Good and Evil section 36, and the story of the posthumous book.",
-
   glimpse: (
     <p>
       The next lesson examines eternal recurrence, Nietzsche&rsquo;s test of whether one can affirm life wholly. Then comes

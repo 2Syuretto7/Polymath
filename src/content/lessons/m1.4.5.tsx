@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a set with n elements has 2ⁿ subsets, using toppings on a pizza.",
-
   glimpse: (
     <p>
       This completes the chapter on sets. A relation, later in this course, is simply a subset of a Cartesian product, and a

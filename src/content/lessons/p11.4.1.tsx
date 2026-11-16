@@ -164,9 +164,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hume's regularity theory of causation, Mackie's INUS conditions with an example, and the objections from common causes, accidental regularities and singular causation.",
-
   glimpse: (
     <p>
       The next lesson considers Lewis&rsquo;s counterfactual theory, and the one after process theories based on physics.

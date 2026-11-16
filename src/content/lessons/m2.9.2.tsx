@@ -222,9 +222,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for an infinite series to have a sum, why terms shrinking to 0 is not enough, and how the comparison, integral and ratio tests decide convergence.",
-
   glimpse: (
     <p>
       Real Analysis I proves these tests carefully and adds sharper ones. In Elementary Number Theory, Euler&rsquo;s proof

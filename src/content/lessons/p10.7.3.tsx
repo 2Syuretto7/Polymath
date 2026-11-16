@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how credences are linked to betting prices, what a Dutch book is with a small example, the main objection to the argument, and how the accuracy argument avoids betting altogether.",
-
   glimpse: (
     <p>
       This completes the course in epistemology. Expected utility theory builds decisions from credences and values, graduate

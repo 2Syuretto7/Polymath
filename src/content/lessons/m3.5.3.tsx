@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what least squares means when Ax = b has no solution, why the best x̂ satisfies the normal equations, and how to fit a straight line to data.",
-
   glimpse: (
     <p>
       Regression, in Mathematical Statistics, puts least squares on a probabilistic footing and asks how reliable the fitted

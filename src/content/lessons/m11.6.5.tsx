@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to compute a continued fraction, how convergents are built by the recurrence, why they approximate within 1/q², and why 355/113 is so good for π.",
-
   glimpse: (
     <p>
       This completes the course on elementary number theory. Real analysis next makes limits precise in metric spaces, and

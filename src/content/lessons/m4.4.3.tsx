@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the gcd is, how Euclid's algorithm finds it and why it works, Bézout's identity and how to find x and y by working backwards, and how Euclid's lemma gives unique factorisation.",
-
   glimpse: (
     <p>
       The next lesson builds arithmetic on remainders, where Bézout&rsquo;s identity finds inverses. The algorithms chapter

@@ -145,9 +145,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Tietze extension theorem, the step of approximating f within two thirds of its bound by a Urysohn function, how the corrections add up to an extension, and why maps into a circle need not extend.",
-
   glimpse: (
     <p>
       Next, homotopy studies continuous deformations of maps, starting the move from point-set to algebraic topology. The

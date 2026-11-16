@@ -239,9 +239,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to set out a decision as acts, states and outcomes, how to use dominance and expected value, and why expected utility explains insurance and the doubling game.",
-
   glimpse: (
     <p>
       Philosophy of Religion examines Pascal&rsquo;s wager in detail, including the trouble that infinite values cause.

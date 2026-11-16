@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Takagi's function is built from zigzags, why it is continuous, why its dyadic difference quotients cannot converge, and why such functions are typical rather than rare.",
-
   glimpse: (
     <p>
       The next chapter turns to integration, starting with Darboux sums. The puzzle of when limits of functions keep their

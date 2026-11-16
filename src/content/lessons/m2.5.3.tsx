@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to find the best cut for the box, why the answer must be at a critical point or an endpoint, and why you should check the endpoints.",
-
   glimpse: (
     <p>
       When the quantity depends on several variables tied together by a constraint, Multivariable Calculus and Vector

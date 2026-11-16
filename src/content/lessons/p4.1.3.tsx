@@ -217,9 +217,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Parmenides' argument that nothing comes to be or changes, why he thought reason should overrule the senses, and the best ways to resist the argument.",
-
   glimpse: (
     <p>
       The next lesson meets Zeno, who defended Parmenides by showing that motion and plurality lead to paradox. Plato

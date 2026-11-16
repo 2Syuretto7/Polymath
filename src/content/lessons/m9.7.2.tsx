@@ -126,9 +126,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the central limit theorem and the standardisation in it, the sketch of its proof with moment generating functions, the normal approximation to the binomial, and why the normal curve appears so widely but not always.",
-
   glimpse: (
     <p>
       The next lesson puts both limit theorems to work in polls, quality control and simulation. Statistics builds confidence

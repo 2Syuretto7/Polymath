@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why measuring many triangles does not prove that their angles add to 180 degrees, and what Euclid did instead.",
-
   glimpse: (
     <p>
       Next, triangles and congruence, where the angle sum is proved from the parallel postulate. The idea of proof from

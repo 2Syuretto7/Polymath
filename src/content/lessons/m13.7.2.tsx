@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the zeta function is defined, why it equals a product over primes, how it continues to the whole plane with a single pole at 1, where its zeros lie, and what the Riemann hypothesis says.",
-
   glimpse: (
     <p>
       The final lesson of the course outlines how the zeta function proves the prime number theorem. Analytic number theory

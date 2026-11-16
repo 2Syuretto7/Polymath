@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the problem of peer disagreement, the equal weight view with the restaurant case, the steadfast view, the independence principle, and the worries that conciliationism leads to scepticism or undermines itself.",
-
   glimpse: (
     <p>
       The next lesson asks what happens when a speaker is not treated as a peer because of prejudice. Graduate epistemology

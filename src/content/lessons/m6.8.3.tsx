@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the radius of convergence and how to find it, why a power series converges uniformly on smaller intervals, why it can be differentiated term by term, and what can happen at the endpoints.",
-
   glimpse: (
     <p>
       The next lesson shows that every continuous function on a closed interval is a uniform limit of polynomials, even one

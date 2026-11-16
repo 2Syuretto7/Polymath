@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the paradoxes of material implication, the variable-sharing property of relevance logic, and why relevance logicians give up disjunctive syllogism.",
-
   glimpse: (
     <p>
       Next, paraconsistent logic: logics in which a contradiction does not entail everything, so that inconsistent theories

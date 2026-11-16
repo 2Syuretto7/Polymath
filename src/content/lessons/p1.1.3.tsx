@@ -206,9 +206,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hume's argument that induction cannot be justified by deduction or by induction, using the sun rising tomorrow as the example.",
-
   glimpse: (
     <p>
       This completes the chapter on knowledge. Next comes the mind, beginning with how the mental relates to the physical.

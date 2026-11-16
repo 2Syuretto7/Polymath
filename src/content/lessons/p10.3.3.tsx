@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the new evil demon problem, why it suggests reliability is not necessary for justification, how it pairs with Norman the clairvoyant, and the reliabilist replies of actual-world reliability and the distinction between adroit and apt belief.",
-
   glimpse: (
     <p>
       The next chapter turns to the demon&rsquo;s original job: Cartesian scepticism. Virtue epistemology develops Sosa&rsquo;s

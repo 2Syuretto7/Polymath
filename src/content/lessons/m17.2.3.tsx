@@ -124,9 +124,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the energy of a vibrating string, why it is conserved when the ends are fixed, and how conservation of energy proves that solutions are unique.",
-
   glimpse: (
     <p>
       Next, the heat equation, where energy methods and a new tool, the maximum principle, show how diffusion smooths

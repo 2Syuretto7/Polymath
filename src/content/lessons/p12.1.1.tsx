@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend substance dualism and property dualism, Descartes’s conceivability argument and the worry about moving from conceivability to possibility, the divisibility argument, and why dualism remains attractive.",
-
   glimpse: (
     <p>
       The next lesson faces dualism&rsquo;s hardest problem: how mind and body could interact. Later lessons look at identity

@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the subspace, product and quotient topologies, the universal property of quotients, and how gluing the edges of a square gives a cylinder, Möbius band, torus and Klein bottle.",
-
   glimpse: (
     <p>
       Next come continuous maps and homeomorphisms, which say when two spaces are the same. Tychonoff&rsquo;s theorem explains

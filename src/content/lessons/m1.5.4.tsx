@@ -164,9 +164,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how '0! = 1 and (n + 1)! = (n + 1) · n!' defines n! for every n without any dots, and how that connects to induction.",
-
   glimpse: (
     <p>
       This completes the chapter on induction. Next come relations: ways of linking the elements of sets, such as

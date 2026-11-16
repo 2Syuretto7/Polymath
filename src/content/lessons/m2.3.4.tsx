@@ -205,9 +205,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between continuity and uniform continuity, using 1/x on (0, 1] as an example.",
-
   glimpse: (
     <p>
       Uniform continuity first earns its keep in the definite integral, later in this course. Real Analysis I completes the

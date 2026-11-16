@@ -129,9 +129,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Legendre symbol, why it can be computed by Euler’s criterion, why it is multiplicative and periodic, how this decides whether 6 is a square modulo 13, and why everything reduces to −1, 2 and odd primes.",
-
   glimpse: (
     <p>
       The next lesson proves Gauss&rsquo;s lemma, which settles when 2 is a square. Quadratic reciprocity then handles odd

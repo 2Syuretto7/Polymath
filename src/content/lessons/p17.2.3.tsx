@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the downward and upward Löwenheim–Skolem theorems, Skolem’s paradox about countable models of set theory, and Skolem’s resolution of it.",
-
   glimpse: (
     <p>
       Next, the limits of formal systems: Gödel&rsquo;s incompleteness theorems, and the many things they are wrongly said to

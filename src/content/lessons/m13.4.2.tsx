@@ -145,9 +145,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three kinds of isolated singularity in terms of Laurent series and of how |f| behaves nearby, Riemann's removable singularity theorem, and the Casorati–Weierstrass theorem.",
-
   glimpse: (
     <p>
       The next lesson computes integrals round singularities with residues. The argument principle counts poles and zeros,

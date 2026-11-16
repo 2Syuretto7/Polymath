@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a free module and a basis are, why the rank is well defined, when two integer vectors form a basis of ℤ², and why ℤ/n and ℚ are not free.",
-
   glimpse: (
     <p>
       The next lesson classifies finitely generated modules over a principal ideal domain, using the fact that submodules of

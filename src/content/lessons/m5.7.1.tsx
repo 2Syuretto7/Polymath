@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Green's theorem says, why it is true for a rectangle and why inner edges cancel, how it gives area from the boundary, and what the integrand means.",
-
   glimpse: (
     <p>
       The next lesson lifts Green&rsquo;s theorem into space: Stokes&rsquo; theorem relates the circulation round a curve to the

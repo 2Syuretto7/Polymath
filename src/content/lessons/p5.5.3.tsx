@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Singer's drowning child and his argument about famine, the strong and moderate versions, the demandingness objection, Pogge's and O'Neill's views of poverty as a question of justice, and the debate about effective altruism.",
-
   glimpse: (
     <p>
       This completes the introduction to ethics. The Applied Ethics course returns to poverty and effective altruism, and

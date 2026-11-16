@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the determinant as a product of eigenvalues and as the scaling factor of alternating forms, why det(ST) = det S det T is then immediate, the Leibniz formula, and why the determinant detects invertibility.",
-
   glimpse: (
     <p>
       The next lesson shows that the absolute value of the determinant is the factor by which a map scales volume. Exterior

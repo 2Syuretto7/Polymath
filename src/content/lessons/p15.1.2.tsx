@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Russell's theory of descriptions, how it handles the present King of France with the two scopes of negation, the puzzle of George IV and the author of Waverley, and Russell's view of ordinary names.",
-
   glimpse: (
     <p>
       The next lesson presents Strawson&rsquo;s reply, that the sentence is neither true nor false. Kripke later attacked the

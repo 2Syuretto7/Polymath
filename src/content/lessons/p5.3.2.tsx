@@ -218,9 +218,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's humanity formula, the difference between using someone and using them merely as a means, O'Neill's consent test, the idea of dignity, and Kant's views on punishment and animals.",
-
   glimpse: (
     <p>
       The next lesson asks what rights are and where they come from. The Kant course examines autonomy, and the last

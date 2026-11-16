@@ -174,9 +174,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the type identity theory and why it is a scientific rather than a meaning claim, Smart’s simplicity argument against nomological danglers, the Leibniz’s law objections and the topic-neutral reply, and Kripke’s modal argument.",
-
   glimpse: (
     <p>
       The next lesson presents the objection that ended the identity theory&rsquo;s dominance: multiple realisability. The

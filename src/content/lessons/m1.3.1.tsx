@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to prove that the sum of two odd numbers is even, and why checking a million examples would not have been enough.",
-
   glimpse: (
     <p>
       Some statements resist a direct attack: assuming the hypothesis gives you nothing useful to compute with. The next

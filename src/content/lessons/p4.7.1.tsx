@@ -229,9 +229,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Epicurus meant by pleasure, how he sorted desires into three kinds, his argument that death is nothing to us, and one objection to his view.",
-
   glimpse: (
     <p>
       The next lessons turn to the Stoics, the Epicureans&rsquo; great rivals, who held that virtue, not pleasure, is the

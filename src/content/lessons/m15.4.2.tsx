@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend loops and their product, why homotopy classes of loops form a group, why convex sets are simply connected, and how continuous maps induce homomorphisms of fundamental groups.",
-
   glimpse: (
     <p>
       Next, covering spaces give the main tool for computing fundamental groups, and the circle turns out to have{" "}

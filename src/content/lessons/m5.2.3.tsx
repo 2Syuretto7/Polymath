@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the chain rule in several variables as a product of Jacobian matrices, how it gives the rate of change along a path, and how it converts derivatives into polar coordinates.",
-
   glimpse: (
     <p>
       The next lesson studies the gradient that appeared here: the direction of steepest ascent, perpendicular to level

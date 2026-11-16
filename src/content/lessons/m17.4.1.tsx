@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Fourier series is, how orthogonality gives the coefficient formulas, the series for the square wave, and the Gibbs phenomenon at a jump.",
-
   glimpse: (
     <p>
       Next, convergence of Fourier series: when the partial sums converge to f, pointwise, uniformly or in mean square, and

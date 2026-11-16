@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the Weierstrass approximation theorem says, how Bernstein polynomials are built from binomial probabilities, why they converge uniformly, and how this differs from Taylor approximation.",
-
   glimpse: (
     <p>
       The next lesson asks when a family of continuous functions must contain a uniformly convergent sequence. In metric

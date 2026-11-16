@@ -208,9 +208,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Anselm's ontological argument, Gaunilo's island objection and Anselm's reply, and Kant's objection that existence is not a real predicate.",
-
   glimpse: (
     <p>
       The next lesson turns to a medieval debate about whether general things such as humanity or redness exist. The

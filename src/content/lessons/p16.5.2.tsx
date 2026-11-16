@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why causal accounts of explanation arose from the problems of the DN model, Salmon's causal processes and mark transmission, Woodward's interventions and what-if questions, and how they handle the flagpole and the barometer.",
-
   glimpse: (
     <p>
       Next, the unificationist account of Friedman and Kitcher, on which to explain is to reduce the number of independent

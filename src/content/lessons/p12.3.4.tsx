@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the computational theory of mind and the language of thought, how rules that work on form can preserve truth, productivity and systematicity, and the objections from the Chinese room, connectionism and the frame problem.",
-
   glimpse: (
     <p>
       The next chapter asks how mental states can cause anything. Later, lessons on mental content ask how the symbols get their

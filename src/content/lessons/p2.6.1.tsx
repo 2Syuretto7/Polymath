@@ -254,9 +254,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the four quantifier rules of natural deduction, and why universal introduction and existential elimination need conditions on names.",
-
   glimpse: (
     <p>
       The next lessons add rules for identity and gather strategies for finding proofs. Logic II: Metalogic and Beyond

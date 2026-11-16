@@ -221,9 +221,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Locke's state of nature and law of nature, his labour theory of property and its provisos, his account of consent and tacit consent, and when he thought revolution justified.",
-
   glimpse: (
     <p>
       The next chapter turns to Berkeley, who will question the material world that Locke took for granted. The Political

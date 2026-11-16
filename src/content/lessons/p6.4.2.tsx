@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the shape of Aquinas's five ways, what each one starts from, the difference between essentially and accidentally ordered series, and the main objections.",
-
   glimpse: (
     <p>
       The next lesson turns from God to the human being: Aquinas&rsquo;s account of the soul as the form of the body.

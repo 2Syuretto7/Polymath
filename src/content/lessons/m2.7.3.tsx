@@ -219,9 +219,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how partial fractions split a rational function into simple pieces, how the cover-up rule finds the constants, and why every rational function can then be integrated.",
-
   glimpse: (
     <p>
       Partial fractions return in Ordinary Differential Equations, where they solve the logistic equation and many others

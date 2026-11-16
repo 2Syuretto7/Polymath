@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a tree is, the equivalent descriptions of trees and why a tree on n vertices has n − 1 edges, how Kruskal's algorithm finds a minimum spanning tree, and what Cayley's formula counts.",
-
   glimpse: (
     <p>
       The next lesson asks which graphs can be drawn without crossings, and how many colours their vertices need. Algorithms,

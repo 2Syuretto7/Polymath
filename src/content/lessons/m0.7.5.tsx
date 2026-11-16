@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why multiplying complex numbers multiplies their lengths and adds their angles, and why the sixth roots of 1 form a hexagon.",
-
   glimpse: (
     <p>
       This completes the plane. The last chapter of the course turns to sequences and counting, and to induction, which will

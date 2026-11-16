@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the five connectives mean, and why 'if P then Q' counts as true whenever P is false.",
-
   glimpse: (
     <p>
       Next, truth tables, which work out the truth value of any compound statement mechanically. Logic I builds the same

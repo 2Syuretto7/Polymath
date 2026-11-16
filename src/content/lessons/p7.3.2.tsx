@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Locke's distinction between ideas and qualities, which qualities are primary and which secondary, the arguments he gave, and how Berkeley turned the argument from variation against him.",
-
   glimpse: (
     <p>
       The next lesson asks what it is that has all these qualities, Locke&rsquo;s puzzling substratum. Berkeley&rsquo;s

@@ -215,9 +215,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Bayes' theorem, the odds form with its likelihood ratio, what makes evidence diagnostic, and why people who start with different priors can come to agree.",
-
   glimpse: (
     <p>
       Epistemology asks whether updating by Bayes&rsquo; theorem is the rational way to change degrees of belief.

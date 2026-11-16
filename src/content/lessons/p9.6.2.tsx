@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Nietzsche's genealogical method, the contrast between master and slave morality and the role of ressentiment, his account of guilt and bad conscience, the ascetic ideal, and the question of the genetic fallacy.",
-
   glimpse: (
     <p>
       The next lesson examines the will to power, the drive Nietzsche saw at work in the slave revolt and everywhere else.

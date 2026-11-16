@@ -217,9 +217,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend who reads quickly why philosophy has to be read slowly. Use the Descartes sentence to show how one word can change everything.",
-
   glimpse: (
     <p>
       Next you will learn to find the thesis of a text: the one claim everything else serves. Descartes&rsquo; project of

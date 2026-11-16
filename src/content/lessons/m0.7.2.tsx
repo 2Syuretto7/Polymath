@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the focus and directrix rule, and how the value of e decides whether you get an ellipse, a parabola or a hyperbola.",
-
   glimpse: (
     <p>
       Next, vectors, arrows that can be added and stretched, which give a cleaner language for lines and directions. In

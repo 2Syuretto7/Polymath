@@ -129,9 +129,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to find equilibria and the Jacobian, how the linearisation classifies an equilibrium, what the Hartman–Grobman theorem guarantees for hyperbolic equilibria, and why a centre can mislead.",
-
   glimpse: (
     <p>
       The next lesson proves stability without linearising, using Lyapunov functions. After that come limit cycles, and later

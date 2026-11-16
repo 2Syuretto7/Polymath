@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Chinese room, Searle’s argument that syntax does not give semantics, the systems, robot and brain simulator replies with his answers, and what Searle himself believes about minds and machines.",
-
   glimpse: (
     <p>
       The next lesson examines the computational theory of mind, which the room attacks. Later lessons ask what gives thoughts

@@ -209,9 +209,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Cantor's diagonal argument: why any list of infinite 0-1 sequences must miss one, and what that tells us about the real numbers.",
-
   glimpse: (
     <p>
       So some infinite sets are larger than others. But how do we compare two infinite sets when we cannot build a bijection

@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the cosmopolitan and statist views of global justice, Nagel's argument, Rawls's duty of assistance, and Pogge's argument that rich countries harm the global poor.",
-
   glimpse: (
     <p>
       The next lesson asks whether nations have moral significance, and the last lesson of the course examines human rights.

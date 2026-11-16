@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the switch and footbridge cases, two principles that try to separate them, the problem posed by the loop case, and Greene's debunking argument.",
-
   glimpse: (
     <p>
       The last lesson of this course asks how much morality can demand of us. Graduate ethics returns to choices about whole

@@ -136,9 +136,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the fundamental theorem of Galois theory: normal intermediate fields match normal subgroups, Gal(E/K) ≅ G/H, and conjugate subgroups match conjugate fields, using x³ − 2 as the example.",
-
   glimpse: (
     <p>
       The next lessons apply the theorem to cyclotomic fields and to solvable groups, leading to the insolvability of the

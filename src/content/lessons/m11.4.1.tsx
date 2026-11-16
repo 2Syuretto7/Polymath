@@ -136,9 +136,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the order of a modulo n is, why a^k ≡ 1 exactly when the order divides k, why the order divides φ(n), the formula for the order of a power, and how orders explain decimal periods and the factors of Fermat numbers.",
-
   glimpse: (
     <p>
       The next lesson asks when some a has the largest possible order, φ(n): a primitive root. Then discrete logarithms run the

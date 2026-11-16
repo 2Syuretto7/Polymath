@@ -216,9 +216,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Plato's Forms are, the argument from opposites and the argument from knowledge for believing in them, and one question the theory leaves open.",
-
   glimpse: (
     <p>
       The next lesson meets the Form of the Good through three images in the <em>Republic</em>. In the{" "}

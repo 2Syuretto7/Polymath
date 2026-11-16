@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what constructible numbers are, why they form a field closed under square roots, why every constructible number has degree a power of 2, and how this settles doubling the cube, trisecting angles and squaring the circle.",
-
   glimpse: (
     <p>
       The next chapter studies finite fields. Galois theory later explains which polygons are constructible, and why some

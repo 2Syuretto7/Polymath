@@ -211,9 +211,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Aristotle meant by a syllogism, the four kinds of categorical sentence, the three figures, why first-figure syllogisms are called perfect, and how the others are reduced to them.",
-
   glimpse: (
     <p>
       The Stoics, later in this course, built a rival logic of whole sentences. Logic I tests validity with models and

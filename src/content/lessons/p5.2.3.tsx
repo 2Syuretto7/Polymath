@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between act and rule utilitarianism, why rule utilitarianism seems to handle the counterexamples better, Hooker's version, and the objections from collapse and rule worship, with Hare's two-level view.",
-
   glimpse: (
     <p>
       The next chapter turns to Kant, for whom the test is not what would happen if everyone followed a rule, but whether

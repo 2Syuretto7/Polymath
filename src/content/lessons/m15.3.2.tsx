@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the separation axioms T₀, T₁, Hausdorff, regular and normal, why limits are unique in Hausdorff spaces, why metric and compact Hausdorff spaces are normal, and an example showing each implication cannot be reversed.",
-
   glimpse: (
     <p>
       Next, the Urysohn lemma turns the separation of closed sets in a normal space into a continuous function. It leads to

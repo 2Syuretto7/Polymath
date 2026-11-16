@@ -233,9 +233,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a derived rule is, how you show that a rule is derived, and why adding derived rules does not let you prove anything new.",
-
   glimpse: (
     <p>
       The argument that derived rules add no power is a small piece of metalogic: reasoning about proofs, not with them.

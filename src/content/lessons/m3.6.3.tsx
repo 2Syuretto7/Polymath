@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the absolute value of the determinant is an area or volume, what its sign means, how a linear map scales the volume of any region by |det A|, and why det A = 0 means the map flattens space.",
-
   glimpse: (
     <p>
       Eigenvalues, next, multiply to give the determinant. The last chapter treats every matrix as a transformation, and

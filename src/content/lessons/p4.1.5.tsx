@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the atomist theory of atoms and void, how it answers Parmenides, the argument from division, and Democritus's distinction between convention and reality.",
-
   glimpse: (
     <p>
       Epicurus revived atomism a century later as the basis of a philosophy of life, adding a famous swerve to make room

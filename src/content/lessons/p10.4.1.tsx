@@ -210,9 +210,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend sceptical hypotheses, Descartes's three waves of doubt and why the demon is needed, the underdetermination argument, the Cartesian circle, and one modern response such as the best explanation reply or Putnam's argument.",
-
   glimpse: (
     <p>
       The next lesson states the sceptic&rsquo;s argument through the closure principle. Moore will reply that he knows he has

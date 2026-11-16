@@ -131,9 +131,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Liouville's theorem and its proof from Cauchy's estimates, why sin z must be unbounded on the complex plane, and what entire functions of polynomial growth must be.",
-
   glimpse: (
     <p>
       The next lesson uses Liouville to prove the fundamental theorem of algebra in three lines. Later, Liouville-type

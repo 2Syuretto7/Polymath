@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Abelard's view that sin lies in consent, his distinction between vice, desire, consent and deed, how he reconciled it with human punishment, and the method of Sic et Non.",
-
   glimpse: (
     <p>
       The next chapter turns to Aquinas, who joined Aristotle to Christian theology. The question of moral luck, which

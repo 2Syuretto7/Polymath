@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a power series is, why it converges on an interval centred at its centre, and how term-by-term integration produces the series for ln(1 + x) and arctan x.",
-
   glimpse: (
     <p>
       The next lesson asks which functions are sums of power series, and how to find the coefficients. Complex Analysis

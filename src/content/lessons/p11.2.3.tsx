@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what meta-ontology asks, Carnap's internal and external questions, Quine's reply, and the debate between those who think disputes like the one about composition are verbal and those who think some answers carve reality at its joints.",
-
   glimpse: (
     <p>
       This chapter closes our first look at existence. Graduate metaphysics returns to Carnap and Quine, to verbal disputes,

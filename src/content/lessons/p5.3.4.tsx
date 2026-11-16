@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hobbes's state of nature and why it calls for a contract, the general contract theory of morality, Rawls's veil of ignorance and the choice between maximin and average, and the objections from consent and from those who cannot bargain.",
-
   glimpse: (
     <p>
       The next chapter turns to virtue ethics and other alternatives. Political Philosophy begins with Hobbes and returns

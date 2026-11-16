@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Berkeley's immaterialism claims, his short argument that sensible things cannot exist unperceived, how he turned Locke's arguments against matter, and why he thought his view defeated scepticism.",
-
   glimpse: (
     <p>
       The next lesson examines Berkeley&rsquo;s slogan that to be is to be perceived, his master argument, and the role of

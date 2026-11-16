@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what intentionality and content are, Brentano's thesis, propositional attitudes, and the puzzles of thinking about things that do not exist and of Lois Lane and Superman.",
-
   glimpse: (
     <p>
       The next lesson asks whether content is fixed inside the head, through Putnam&rsquo;s Twin Earth. After that come attempts

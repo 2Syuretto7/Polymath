@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of a regular surface by charts, why the condition xᵤ × xᵥ ≠ 0 matters, why graphs and regular level sets are surfaces, and why latitude and longitude fail at the poles even though the sphere does not.",
-
   glimpse: (
     <p>
       Next, the tangent plane at a point of a surface, spanned by the partial derivatives of any chart, and the unit normal.

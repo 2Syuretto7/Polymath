@@ -212,9 +212,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the death of God and the threat of nihilism, Zarathustra's contrast between the Übermensch and the last man, the ideal of giving style to one's character, and the misuse and assessment of the idea.",
-
   glimpse: (
     <p>
       The next chapter crosses the Atlantic to the American pragmatists, beginning with Peirce. Camus later asks how to live

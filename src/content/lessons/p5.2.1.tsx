@@ -179,9 +179,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the principle of utility and its three ideas, Bentham's felicific calculus, Mill's distinction between higher and lower pleasures, and Mill's proof with Moore's objection.",
-
   glimpse: (
     <p>
       The next lesson collects the strongest objections to utilitarianism, from justice, rights and promises. Moral

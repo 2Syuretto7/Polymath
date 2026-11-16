@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend which primes are sums of two squares and why, how the Brahmagupta–Fibonacci identity builds bigger sums from smaller ones, and Lagrange's four squares theorem.",
-
   glimpse: (
     <p>
       The last lesson of the course is on continued fractions. In the Gaussian integers, primes p ≡ 1 (mod 4) split as (a +

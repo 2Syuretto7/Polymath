@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the quotient space V/U is, why its operations are well defined, why its dimension is dim V − dim U, and how the first isomorphism theorem identifies V/null T with range T.",
-
   glimpse: (
     <p>
       The next lesson introduces the dual space, the space of linear functionals, which interacts neatly with quotients and

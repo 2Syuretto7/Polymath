@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three analogies of experience, Kant's contrast between the house and the ship, how the second analogy answers Hume on causation, and the main objection to it.",
-
   glimpse: (
     <p>
       The next lesson uses the first analogy against Descartes: the refutation of idealism. The Metaphysics course returns to

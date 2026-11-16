@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between irreducible and prime elements, what a unique factorisation domain is, why every PID is a UFD, and how 6 = 2 · 3 = (1 + √−5)(1 − √−5) shows that unique factorisation can fail.",
-
   glimpse: (
     <p>
       The next lesson shows that polynomial rings over a UFD are again UFDs, through Gauss&rsquo;s lemma, and then turns to

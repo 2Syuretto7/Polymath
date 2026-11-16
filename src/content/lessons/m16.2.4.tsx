@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an orientation of a surface is, why regular level sets such as spheres and tori are orientable, and why the Möbius band is not.",
-
   glimpse: (
     <p>
       Next, the second fundamental form, which measures how the unit normal turns as we move on the surface, and so how
