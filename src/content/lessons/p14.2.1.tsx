@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Rawls's original position and veil of ignorance, why the veil models fairness, the two principles of justice, and the dispute between maximin and expected utility.",
-
   glimpse: (
     <p>
       The next lesson examines the difference principle in detail. Luck egalitarians develop the idea that morally arbitrary

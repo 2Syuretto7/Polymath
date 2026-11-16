@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Pyrrhonian scepticism is, how suspension of judgement is supposed to lead to tranquillity, Agrippa's five modes and the trilemma they create, and how Sextus thinks a sceptic can still act.",
-
   glimpse: (
     <p>
       The last lesson of the course turns to Plotinus, who built the final great system of ancient philosophy. Epistemology

@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Austin's distinction between constatives and performatives, how performatives can misfire or be abused, why he gave up the distinction, and the locutionary, illocutionary and perlocutionary acts.",
-
   glimpse: (
     <p>
       The next lesson presents Searle&rsquo;s systematic theory of speech acts. Grice then explains how we mean more than we

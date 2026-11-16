@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the curl measures, what Stokes' theorem says and how its orientations are matched, why every spanning surface gives the same flux of the curl, and one consequence.",
-
   glimpse: (
     <p>
       The next lesson proves the third great theorem, relating the flux out of a closed surface to the divergence inside.

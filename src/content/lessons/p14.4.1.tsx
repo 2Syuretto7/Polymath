@@ -178,9 +178,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between instrumental and intrinsic justifications of democracy, the challenge from Plato and epistocracy, the benevolent dictator problem, and Christiano's idea of public equality.",
-
   glimpse: (
     <p>
       The next lesson presents deliberative democracy, which looks beyond voting to reasoned discussion. Epistemic democracy

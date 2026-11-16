@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Euclidean domain is, with ℤ, F[x] and ℤ[i] as examples, why rounding α/β proves ℤ[i] is Euclidean, and how the Euclidean algorithm finds gcds there.",
-
   glimpse: (
     <p>
       The next lesson shows that every Euclidean domain is a principal ideal domain, and the one after that every PID has

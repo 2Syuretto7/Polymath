@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what enactivism claims, the sensorimotor theory of perception with an example, radical enactivism, and how enactivism differs from the extended mind.",
-
   glimpse: (
     <p>
       The final lesson of the course asks whether today&rsquo;s artificial systems could have minds. Phenomenology, studied

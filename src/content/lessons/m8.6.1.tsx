@@ -146,9 +146,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the trace as a sum of eigenvalues, why it equals the diagonal sum in every basis, the identity tr(AB) = tr(BA), its place in the characteristic polynomial, and its meaning as a rate of volume expansion.",
-
   glimpse: (
     <p>
       The next lesson defines the determinant without a basis, as the product of eigenvalues and through alternating forms.

@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the integrability criterion and why it is equivalent to the definition, how uniform continuity proves continuous functions are integrable, why monotone functions are integrable, and how some discontinuities can be allowed.",
-
   glimpse: (
     <p>
       The next lesson proves the fundamental theorem of calculus, connecting these integrals with derivatives. After that,

@@ -212,9 +212,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between revising and editing, and why cutting hedges is not the same as overclaiming. Use the paragraph about future generations.",
-
   glimpse: (
     <p>
       This completes writing philosophy, and with it the skills of reading and writing that the rest of the degree assumes.

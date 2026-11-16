@@ -128,9 +128,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Newton's law of cooling, logistic growth and a mixing tank each lead to a first-order equation, how to solve each, how to use data to fix a constant as in the time-of-death problem, and the cycle of modelling and checking assumptions.",
-
   glimpse: (
     <p>
       The next chapter asks when an initial value problem has exactly one solution. Equilibria and stability, oscillations,

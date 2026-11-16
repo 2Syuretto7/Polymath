@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the orthogonal complement is, why V = U ⊕ U⊥, what orthogonal projection does and its properties, and the Riesz representation theorem with an example.",
-
   glimpse: (
     <p>
       The next lesson shows that orthogonal projection solves minimisation problems, from least squares to best polynomial

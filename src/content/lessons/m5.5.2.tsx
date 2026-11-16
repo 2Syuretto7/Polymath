@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Fubini's theorem says, why it is plausible from Riemann sums, how to set up iterated integrals over a region bounded by curves, and why changing the order can help.",
-
   glimpse: (
     <p>
       The next lesson changes the variables themselves, as substitution does in one variable, and finds the factor that

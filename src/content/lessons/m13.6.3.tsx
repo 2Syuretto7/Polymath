@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Schwarz lemma and its proof by maximum modulus, what happens in the case of equality, and how it shows that the disc automorphisms are exactly the maps e^{iθ}(z − a)/(1 − āz).",
-
   glimpse: (
     <p>
       The next lesson states the Riemann mapping theorem, whose uniqueness part rests on this lemma. Harmonic functions,

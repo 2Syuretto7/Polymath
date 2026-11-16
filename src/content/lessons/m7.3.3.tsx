@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the parity of a permutation is well defined, how inversions prove it, what the alternating group is, and how parity explains the unsolvable sliding puzzles.",
-
   glimpse: (
     <p>
       The next chapter lets groups act on sets, generalising permutation groups. Simple groups, with A₅ the smallest

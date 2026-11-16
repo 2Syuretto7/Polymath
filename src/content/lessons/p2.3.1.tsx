@@ -193,9 +193,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a proof in natural deduction is, and walk through how modus ponens and disjunctive syllogism are used in one.",
-
   glimpse: (
     <p>
       The relation between ⊢ and ⊨ is the central question of metalogic. Logic II: Metalogic and Beyond proves that, with the

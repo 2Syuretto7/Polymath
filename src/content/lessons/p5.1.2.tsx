@@ -216,9 +216,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between simple subjectivism and emotivism, why simple subjectivism struggles with disagreement and fallibility, how emotivism answers, and the objection that moral judgements need reasons.",
-
   glimpse: (
     <p>
       The next lesson asks whether morality might instead depend on the commands of God. Moral Philosophy develops

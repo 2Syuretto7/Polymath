@@ -175,9 +175,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Lewis’s definition of time travel, the grandfather paradox and Lewis’s reply about the meaning of ‘can’, the difference between changing and affecting the past, and why causal loops and presentism make time travel puzzling.",
-
   glimpse: (
     <p>
       The puzzle about what Tim can do returns in the next chapter, where the question is whether anyone can do otherwise in a

@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an antinomy is, the four antinomies of pure reason, how Kant resolves the mathematical and the dynamical ones differently, and why he took them as evidence for transcendental idealism.",
-
   glimpse: (
     <p>
       The next lesson examines reason&rsquo;s third idea, God, and Kant&rsquo;s criticism of the proofs of God&rsquo;s

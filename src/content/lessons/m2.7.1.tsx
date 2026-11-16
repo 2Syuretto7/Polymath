@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how integration by parts comes from the product rule, how to choose which factor to differentiate, and why an integral that comes back can still be found.",
-
   glimpse: (
     <p>
       Integration by parts is one of the most used tools in analysis. Later in this course it gives Taylor&rsquo;s theorem

@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of conditional probability and why it is itself a probability, the multiplication rule, the law of total probability, the Monty Hall problem, and the prosecutor's fallacy.",
-
   glimpse: (
     <p>
       The next lesson turns conditional probabilities around with Bayes&rsquo; rule. Later lessons define independence and

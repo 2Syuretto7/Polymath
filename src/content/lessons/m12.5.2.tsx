@@ -136,9 +136,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the change of variables formula, why the absolute value of the Jacobian determinant appears, and how polar coordinates show that the Gaussian integral is √π.",
-
   glimpse: (
     <p>
       The next lesson builds partitions of unity, the tool for gluing local calculations into global ones. In measure theory

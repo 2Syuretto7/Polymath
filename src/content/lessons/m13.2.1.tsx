@@ -145,9 +145,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a complex integral along a curve is defined, the ML inequality, why a primitive makes integrals path-independent, and why ∮ dz/z round a circle is 2πi.",
-
   glimpse: (
     <p>
       The next lesson proves Cauchy&rsquo;s theorem: holomorphic functions on a disc have primitives, so their integrals

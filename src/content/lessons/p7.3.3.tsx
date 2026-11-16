@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Locke's idea of substance as something we know not what, the difference between nominal and real essence, and how Berkeley, Hume and modern bundle theorists responded.",
-
   glimpse: (
     <p>
       The next lesson asks what makes a person the same over time, and Locke&rsquo;s answer sets substance aside entirely.

@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why every non-empty set of natural numbers has a least element but the positive fractions do not, and how that fact proves the division algorithm.",
-
   glimpse: (
     <p>
       The last lesson of this chapter turns induction from a method of proof into a method of definition: defining a sequence

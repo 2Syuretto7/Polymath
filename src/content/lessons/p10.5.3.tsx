@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the causal theory of memory, the view that memory preserves justification and the case for its generating justification, Loftus's false memories and reconstructive remembering, and Russell's five-minute hypothesis.",
-
   glimpse: (
     <p>
       The next lesson asks whether some knowledge needs no experience at all. Virtue epistemology and debates about personal

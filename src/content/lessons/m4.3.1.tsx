@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a graph is, the standard families such as complete and bipartite graphs, the handshake lemma and why it rules out nine people each shaking three hands, and what it means for two graphs to be isomorphic.",
-
   glimpse: (
     <p>
       The next lesson studies paths and connectedness. Combinatorics returns to graphs with matchings, Hall&rsquo;s theorem

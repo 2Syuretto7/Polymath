@@ -233,9 +233,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Aristotle's account of voluntary action, force and ignorance, what a decision is, why we are responsible for our characters, and how he explains acting against one's better judgement.",
-
   glimpse: (
     <p>
       Metaphysics asks whether free will is compatible with determinism, and Moral Philosophy asks how far luck can affect

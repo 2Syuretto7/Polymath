@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend van Fraassen's constructive empiricism, empirical adequacy, the difference between acceptance and belief, where the line between observable and unobservable falls, and the main objections.",
-
   glimpse: (
     <p>
       Next, structural realism, a middle way: believe what the equations say about the structure of the world, and be

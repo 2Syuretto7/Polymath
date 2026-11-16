@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an algorithm is, how insertion sort works and how many comparisons it needs, and how a loop invariant proves an algorithm correct.",
-
   glimpse: (
     <p>
       The next lesson measures how running time grows with the input. Computability, much later, makes the idea of an

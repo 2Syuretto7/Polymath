@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a subsequence is, what the Bolzano-Weierstrass theorem says, how the halving proof finds a convergent subsequence, and why the theorem needs boundedness and completeness.",
-
   glimpse: (
     <p>
       The next lesson asks how to tell a sequence converges without knowing its limit, and Bolzano-Weierstrass is the key

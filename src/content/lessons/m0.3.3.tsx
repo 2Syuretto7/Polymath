@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to find the biggest pen the farmer can build, without calculus. Say why the vertex form makes the answer certain rather than a good guess.",
-
   glimpse: (
     <p>
       Next, building new functions from old ones: doing one function after another, and undoing a function. Lines return

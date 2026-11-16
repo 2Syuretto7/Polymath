@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend al-Farabi's idea of the virtuous city and the ignorant cities, how he related philosophy and religion, and his picture of the Active Intellect.",
-
   glimpse: (
     <p>
       The next lesson meets Avicenna, who built on al-Farabi to draw a famous distinction between what a thing is and the

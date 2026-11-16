@@ -194,9 +194,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why [0, 1] and (0, 1) have the same number of points, and how two injections, one each way, are enough to prove that two sets have the same size.",
-
   glimpse: (
     <p>
       This completes Proof and Logic. You can now read and write proofs about sets, functions and the infinite. The ideas of

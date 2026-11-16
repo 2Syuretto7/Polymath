@@ -180,9 +180,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend both parts of the fundamental theorem of calculus, how the mean value theorem proves the first and continuity proves the second, and why each hypothesis is needed.",
-
   glimpse: (
     <p>
       The next lesson asks exactly which functions are Riemann integrable, using sets of measure zero. The fundamental theorem

@@ -213,9 +213,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Mill's harm principle, the tyranny of the majority, his arguments for freedom of discussion, his ideal of individuality, and the main questions critics have raised.",
-
   glimpse: (
     <p>
       The next lesson turns to Mill&rsquo;s Utilitarianism and his refinement of Bentham. Political philosophy later

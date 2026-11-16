@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between absolute and conditional convergence, why absolutely convergent series can be rearranged freely, and how Riemann rearranges a conditionally convergent series to reach any target.",
-
   glimpse: (
     <p>
       The next lesson multiplies two series, and absolute convergence is again the condition that makes the answer right.

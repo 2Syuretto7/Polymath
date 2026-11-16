@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Aristotle thinks virtue of character is acquired, his definition of virtue as a mean relative to us, the example of Milo, and why some actions have no mean.",
-
   glimpse: (
     <p>
       The next lesson asks when we are responsible for what we do, and how anyone can act against their own better

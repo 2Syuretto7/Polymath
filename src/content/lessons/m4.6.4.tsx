@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a random choice can prove that something exists, why some outcome is always at least the average, and how Erdős used this to show that Ramsey numbers grow exponentially.",
-
   glimpse: (
     <p>
       This completes the first pass at discrete mathematics. Ramsey theory returns in the combinatorics course, with

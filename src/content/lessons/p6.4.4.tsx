@@ -214,9 +214,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Aquinas's definition of law, his four kinds of law, the first precept of the natural law and the natural inclinations, and what he says about unjust laws.",
-
   glimpse: (
     <p>
       The next chapter follows the late medieval critics of Aquinas, Scotus and Ockham. Natural law returns in Locke and

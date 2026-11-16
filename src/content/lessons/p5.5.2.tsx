@@ -220,9 +220,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Singer's principle of equal consideration and the charge of speciesism, Regan's rights view, Kant's indirect duty view and Korsgaard's revision, the argument from species overlap, and where the views agree in practice.",
-
   glimpse: (
     <p>
       The next lesson asks what the well off owe to people in severe poverty. The Applied Ethics course studies the moral

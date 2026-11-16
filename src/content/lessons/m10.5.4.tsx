@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a trapping region is, what the Poincaré–Bendixson theorem says, how to use an annulus to prove a closed orbit exists, and why the theorem only works in the plane.",
-
   glimpse: (
     <p>
       The final chapter turns to series solutions and the Laplace transform. Dynamical systems later shows what replaces

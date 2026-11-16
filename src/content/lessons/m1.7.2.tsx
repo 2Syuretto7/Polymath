@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between injective and surjective using a cinema hall, and why a perfect seating proves there are as many people as seats.",
-
   glimpse: (
     <p>
       A bijection can be run backwards. The next lesson combines functions by doing one after another, and undoes them with

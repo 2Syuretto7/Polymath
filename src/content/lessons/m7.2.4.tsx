@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a group homomorphism is, why kernels are normal subgroups and images are subgroups, why a trivial kernel means injective, and examples such as the determinant and the exponential.",
-
   glimpse: (
     <p>
       The next lesson proves the isomorphism theorems, which say that the image of a homomorphism is the quotient by its

@@ -224,9 +224,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what assuring, guarding and discounting terms do, why a guard on a premise should survive to the conclusion, and when 'experts agree' is a fair move.",
-
   glimpse: (
     <p>
       The next chapter turns these warning signs into a catalogue of fallacies, starting with appeals that are not

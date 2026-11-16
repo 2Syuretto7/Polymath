@@ -204,9 +204,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between “everyone likes someone” and “someone is liked by everyone”, using a grid of who likes whom, and why the order of quantifiers matters.",
-
   glimpse: (
     <p>
       The next lessons add identity and definite descriptions to the language, and then give a precise account of truth in

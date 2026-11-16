@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the distinction between potentiality and actuality, how it answers Parmenides, Aristotle's objection to the Megarians, the difference between change and activity, and why actuality is prior.",
-
   glimpse: (
     <p>
       Aristotle&rsquo;s ethics, next, makes happiness an activity of the soul in accordance with virtue. Aquinas builds his

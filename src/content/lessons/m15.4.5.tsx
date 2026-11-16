@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a retraction is, why the disc does not retract onto its boundary, how a fixed-point-free map would give such a retraction, and some consequences of Brouwer's theorem.",
-
   glimpse: (
     <p>
       Next, the Seifert-van Kampen theorem computes fundamental groups of spaces glued from simpler pieces, leading to the

@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Rⁿ is, how length, distance and angle are defined there, why Cauchy–Schwarz makes angles make sense, and one surprise about high-dimensional cubes.",
-
   glimpse: (
     <p>
       The next lesson meets an operation special to three dimensions, the cross product, and then curves that move

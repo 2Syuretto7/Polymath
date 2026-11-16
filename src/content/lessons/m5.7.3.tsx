@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what divergence measures, what the divergence theorem says and why it holds for a box, how it explains the flux of a point charge, and how it gives conservation laws.",
-
   glimpse: (
     <p>
       The last lesson of the course shows that the three great theorems and the fundamental theorem of calculus are all one

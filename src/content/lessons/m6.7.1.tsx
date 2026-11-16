@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how upper and lower Darboux sums are defined, why refining a partition squeezes them together, how the Riemann integral is defined from them, and why Dirichlet's function is not integrable.",
-
   glimpse: (
     <p>
       The next lesson gives a practical test for integrability and uses uniform continuity to show every continuous function is

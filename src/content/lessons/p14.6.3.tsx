@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what human rights are, the orthodox and political views of their grounds, the debate over socio-economic rights between Cranston and Shue, and the question of universality.",
-
   glimpse: (
     <p>
       This completes the course. Applied ethics later takes up poverty, climate and future generations, where arguments from

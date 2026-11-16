@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how deliberative democracy differs from aggregation, the ideas of Habermas, Cohen and public reason, how deliberation can remove majority cycles, and Young's criticism.",
-
   glimpse: (
     <p>
       The next lesson asks whether democracy tends to get the right answers, using Condorcet&rsquo;s jury theorem. Social

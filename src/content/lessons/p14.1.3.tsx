@@ -199,9 +199,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Rousseau's social contract, the difference between the general will and the will of all, the idea of being forced to be free, and one worry about it.",
-
   glimpse: (
     <p>
       The next lesson asks whether we have a duty to obey the law. Republicans develop Rousseau&rsquo;s link between law and

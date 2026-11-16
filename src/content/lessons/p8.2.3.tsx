@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's distinction between philosophical and mathematical knowledge, how construction in intuition makes geometry and arithmetic synthetic a priori, and the challenges from non-Euclidean geometry and logic.",
-
   glimpse: (
     <p>
       The next chapter, the Transcendental Analytic, turns from intuition to concepts: the categories and Kant&rsquo;s

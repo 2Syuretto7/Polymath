@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the area of a parametrised surface is defined, why the cross product appears, how to find the area of a sphere and of a graph, and Archimedes' theorem.",
-
   glimpse: (
     <p>
       The next lesson integrates the normal component of a vector field over a surface, the flux, which measures how much

@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a full hotel with infinitely many rooms can take in a coach of infinitely many new guests, and why the fractions can be listed even though they are packed so densely.",
-
   glimpse: (
     <p>
       Is every infinite set countable? The next lesson gives Cantor&rsquo;s famous answer: no, and the real numbers are the

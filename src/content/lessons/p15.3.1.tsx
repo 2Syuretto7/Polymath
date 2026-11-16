@@ -211,9 +211,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the verification principle and the logical positivists' aims, the difference between strong and weak verification, Ayer's view of ethics and metaphysics, and why the principle collapsed.",
-
   glimpse: (
     <p>
       The next lesson presents Davidson&rsquo;s view that meaning is given by truth conditions, and then use theories in the

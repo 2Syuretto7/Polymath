@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what tropes are, how trope theory builds properties and objects from them, why tropes look good for causation and location, and the swapping and resemblance problems.",
-
   glimpse: (
     <p>
       The next chapter asks a prior question: how do we tell what a theory says exists? Philosophy of mind asks whether mental

@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what closed sets, interior, closure and boundary are, why a point is in the closure exactly when every neighbourhood meets the set, what limit points and dense sets are, and why sequences are not always enough.",
-
   glimpse: (
     <p>
       Next, continuity is defined by open sets or, equally, by closed sets. Closed subsets of compact spaces are compact, and

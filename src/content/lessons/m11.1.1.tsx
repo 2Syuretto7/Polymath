@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the fundamental theorem of arithmetic, why Euclid’s lemma is the heart of uniqueness and how Bézout proves it, the Hilbert numbers where uniqueness fails, and what the prime exponents tell you about divisors, gcd and lcm.",
-
   glimpse: (
     <p>
       The next lesson proves in several ways that the primes never run out. Multiplicative functions, later in this course, are

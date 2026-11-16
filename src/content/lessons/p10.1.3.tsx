@@ -204,9 +204,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the main responses to Gettier, no false lemmas, defeasibility, the causal theory and safety, the cases that challenge each, and Zagzebski's argument that such cases are inescapable.",
-
   glimpse: (
     <p>
       The next lesson considers the radical alternative that knowledge cannot be analysed at all. Reliabilism and the closure

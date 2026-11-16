@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the three ways a Fourier series can converge, pointwise, uniformly and in mean square, with Dirichlet's theorem, Parseval's identity and Fejér's theorem.",
-
   glimpse: (
     <p>
       Next, separation of variables: looking for solutions that are products of a function of x and a function of t or y,

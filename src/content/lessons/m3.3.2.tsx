@@ -209,9 +209,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an inverse matrix is, how Gauss–Jordan elimination finds it, how to tell from the pivots whether it exists, and why the inverse of AB is B⁻¹A⁻¹.",
-
   glimpse: (
     <p>
       The quantity ad − bc becomes the determinant, which for any square matrix detects invertibility and measures how A

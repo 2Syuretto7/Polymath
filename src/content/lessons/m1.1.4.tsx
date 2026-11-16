@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why, in the card puzzle, you must turn the 7 but not the 4, using the words converse and contrapositive.",
-
   glimpse: (
     <p>
       This completes propositional logic. Next come quantifiers, &ldquo;for all&rdquo; and &ldquo;there exists&rdquo;, which

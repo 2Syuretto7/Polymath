@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an isometry is, the equivalent conditions including S*S = I, why preserving lengths means preserving angles, what the isometries of the plane are, and the spectral description of complex isometries.",
-
   glimpse: (
     <p>
       The next lesson combines isometries with positive operators to give the polar and singular value decompositions.

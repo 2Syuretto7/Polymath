@@ -241,9 +241,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the setting of the Phaedo, the four arguments for the immortality of the soul in outline, the objections of Simmias and Cebes, and Socrates' warning against hating arguments.",
-
   glimpse: (
     <p>
       The final argument depends on the Forms, which the lesson after next examines directly. Medieval Philosophy returns

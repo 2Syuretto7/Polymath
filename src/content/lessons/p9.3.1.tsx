@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Schopenhauer's world as representation and the principle of sufficient reason, how the body leads him to will as the thing in itself, why the will is one, and how intellect serves it.",
-
   glimpse: (
     <p>
       The next lesson draws out Schopenhauer&rsquo;s pessimism and his routes to release: art, compassion and the denial of

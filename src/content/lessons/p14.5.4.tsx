@@ -180,9 +180,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Ambedkar's view of democracy as associated living, his analysis of caste as graded inequality, why he thought political democracy needs social democracy, and the role of fraternity.",
-
   glimpse: (
     <p>
       The final chapter of the course turns to global justice, nationalism and human rights. A later course on Indian

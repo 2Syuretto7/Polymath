@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between psychological and ethical egoism, why the arguments for psychological egoism fail, with Butler's reply, the arguments for ethical egoism, and the objections from the trading game and from arbitrariness.",
-
   glimpse: (
     <p>
       The next chapter turns to utilitarianism, which counts everyone&rsquo;s happiness equally. Contractarianism, later in

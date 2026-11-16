@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Marx's account of commodities and value, the difference between labour and labour-power, how surplus value arises even when all exchanges are equal, what commodity fetishism is, and the main objections.",
-
   glimpse: (
     <p>
       The next chapter turns to Schopenhauer, whose pessimism offers a very different response to Kant and Hegel. Political

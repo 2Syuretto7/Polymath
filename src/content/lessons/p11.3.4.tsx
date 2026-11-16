@@ -164,9 +164,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between essential and accidental properties, Quine's mathematical cyclist and the de re and de dicto reply, Kripke's necessary a posteriori truths, and Fine's objection to the modal account of essence.",
-
   glimpse: (
     <p>
       Next, Metaphysics turns to causation. Philosophy of language studies Kripke on naming, graduate work examines the

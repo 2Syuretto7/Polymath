@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the moment generating function, how its derivatives at 0 give the moments, why independent sums correspond to products, the uniqueness theorem, and how these show that a sum of independent Poissons is Poisson.",
-
   glimpse: (
     <p>
       The next lesson bounds tail probabilities using only a few moments. MGFs reappear in the proof of the central limit

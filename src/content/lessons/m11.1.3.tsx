@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what π(x) counts, what the prime number theorem says and why Li(x) is a good approximation, how the binomial coefficient gives Chebyshev’s upper bound, and what we know and do not know about gaps between primes.",
-
   glimpse: (
     <p>
       The next chapter turns to congruences. The proof of the prime number theorem comes later, through the Riemann zeta function

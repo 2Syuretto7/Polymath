@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a cyclic group and the order of an element are, why g has order n/gcd(n, g) in ℤₙ, which elements generate ℤₙ, and why subgroups of cyclic groups are cyclic.",
-
   glimpse: (
     <p>
       The next chapter proves Lagrange&rsquo;s theorem, which shows that every group of prime order is cyclic. The orders of

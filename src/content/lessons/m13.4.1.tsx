@@ -133,9 +133,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Laurent series is, why a function can have different Laurent series in different annuli, how the coefficients are given by integrals, and why the coefficient of 1/(z − a) is special.",
-
   glimpse: (
     <p>
       The next lesson uses Laurent series to classify isolated singularities, and the residue theorem turns the coefficient

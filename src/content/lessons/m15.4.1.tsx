@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a homotopy is, why homotopy is an equivalence relation, the straight-line homotopy in convex sets and why it fails in the punctured plane, and homotopy equivalence and contractibility.",
-
   glimpse: (
     <p>
       Next, homotopy classes of loops form a group, the fundamental group. Computing it for the circle proves that the loop

@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend non-reductive physicalism, Kim’s exclusion argument and its premises, Kim’s choice between reduction and epiphenomenalism, the generalisation objection, and the proportionality reply.",
-
   glimpse: (
     <p>
       The next lesson examines supervenience, the relation non-reductive physicalists rely on. Then epiphenomenalism, one horn of

@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what question the transcendental deduction answers, the role of the unity of apperception and of synthesis, what a transcendental argument is, and why the conclusion holds only for appearances.",
-
   glimpse: (
     <p>
       The next lesson asks how pure concepts can apply to sensible intuitions at all: the schematism. The refutation of

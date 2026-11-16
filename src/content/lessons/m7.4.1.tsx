@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a group action is, what orbits and stabilisers are, why orbits partition the set and stabilisers are subgroups, and examples such as conjugation and symmetries acting on a board.",
-
   glimpse: (
     <p>
       The next lesson proves the orbit-stabiliser theorem, linking the size of an orbit to the size of a stabiliser. Then

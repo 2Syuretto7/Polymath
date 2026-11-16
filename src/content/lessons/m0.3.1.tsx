@@ -214,9 +214,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what makes a rule a function, using one everyday example that is a function and one that is not. Say why two inputs sharing an output is fine but one input with two outputs is not.",
-
   glimpse: (
     <p>
       Next, graphs: drawing a function as a picture in the plane, and reading the two conditions of the definition off

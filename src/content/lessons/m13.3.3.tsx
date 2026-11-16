@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the maximum modulus principle, its proof from the mean value property, why the maximum over a closed region sits on the boundary, and why zeros are the only places where |f| can have an interior minimum.",
-
   glimpse: (
     <p>
       The stretch exercise is the Schwarz lemma, a later lesson. Maximum principles for harmonic functions and for the heat

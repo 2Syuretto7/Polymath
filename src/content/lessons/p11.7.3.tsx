@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what libertarianism about free will claims, the event-causal, agent-causal and non-causal accounts, the luck objection and van Inwagen’s rollback, and how libertarians try to answer it.",
-
   glimpse: (
     <p>
       The next lesson considers giving up free will altogether, and what follows for blame and punishment. Philosophy of mind

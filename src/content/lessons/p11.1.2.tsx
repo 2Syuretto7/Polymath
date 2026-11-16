@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what nominalism denies, four versions of it, the coextension problem for class nominalism with Lewis's reply, and Russell's and Goodman's problems for resemblance nominalism.",
-
   glimpse: (
     <p>
       The next lesson considers tropes, a middle way that keeps properties but makes them particular. Lewis&rsquo;s modal

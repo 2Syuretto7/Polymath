@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the solutions of y″ + by′ + cy = 0 form a two-dimensional space, how the characteristic equation produces them in the three cases, and how damping decides between bouncing and creeping back.",
-
   glimpse: (
     <p>
       The next lessons add a forcing term, first by guessing its form and then by variation of parameters, and then study

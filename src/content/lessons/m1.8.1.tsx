@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a shepherd with a pile of pebbles is really building a bijection, and why counting in a different order cannot give a different answer.",
-
   glimpse: (
     <p>
       Galileo&rsquo;s matching of numbers with squares is the doorway to infinite sets. The next lesson asks which infinite

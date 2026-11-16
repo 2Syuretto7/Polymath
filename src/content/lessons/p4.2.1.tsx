@@ -242,9 +242,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend who the sophists were, what Protagoras' measure doctrine says and the two objections Plato raises to it, and why 'sophist' came to be an insult.",
-
   glimpse: (
     <p>
       Thrasymachus, another sophist, defends the view that justice is the advantage of the stronger in book 1 of the{" "}

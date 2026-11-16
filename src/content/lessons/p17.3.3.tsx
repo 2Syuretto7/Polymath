@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Church–Turing thesis, one problem no machine can solve, and why such limits do not by themselves show that the mind is not a computer.",
-
   glimpse: (
     <p>
       Next, many-valued logics: what happens when sentences may be neither true nor false, or something in between, and

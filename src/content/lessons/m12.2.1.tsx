@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend continuity between metric spaces in ε–δ form, with sequences, and with open sets, why approaching along lines is not enough, and why continuous functions on compact sets attain their extremes.",
-
   glimpse: (
     <p>
       The next lesson asks when one δ works everywhere, which leads to uniform continuity. After that, the contraction mapping

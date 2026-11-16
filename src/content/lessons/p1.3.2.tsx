@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how someone could believe both that every action is determined and that people sometimes act freely.",
-
   glimpse: (
     <p>
       Why do we care about free will at all? Largely because of blame and praise. The next lesson asks what moral

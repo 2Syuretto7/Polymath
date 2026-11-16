@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between f⁻¹ as an inverse function and f⁻¹(T) as a preimage, using f(x) = x² and the set {9}.",
-
   glimpse: (
     <p>
       This completes the chapter on functions. The last chapter of the course uses bijections to compare the sizes of

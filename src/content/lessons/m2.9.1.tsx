@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for a sequence to converge, using the idea of a tolerance ε and a stage N, and why an increasing sequence that is bounded above must converge.",
-
   glimpse: (
     <p>
       Real Analysis I develops sequences in depth: the monotone convergence theorem, the Bolzano-Weierstrass theorem that

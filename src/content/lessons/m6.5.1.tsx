@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the epsilon-delta definition of a functional limit, why f(c) plays no part, how the sequential criterion links functional limits to sequences, and how it shows that sin(1/x) has no limit at 0.",
-
   glimpse: (
     <p>
       The next lesson defines continuity with the same machinery and proves that continuous functions on compact sets attain

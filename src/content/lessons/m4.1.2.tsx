@@ -174,9 +174,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between permutations and combinations, how the division rule gives n!/(k!(n − k)!), how to count words with repeated letters, and how stars and bars counts selections with repetition.",
-
   glimpse: (
     <p>
       The next lesson finds identities among the binomial coefficients by counting the same thing twice. Generating

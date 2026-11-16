@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Pell's equation is, why powers of the fundamental solution give all solutions, how Brahmagupta's identity composes solutions, and how D = 61 shows that the smallest solution can be huge.",
-
   glimpse: (
     <p>
       The next lessons treat sums of two squares and continued fractions, which find the fundamental solution systematically.

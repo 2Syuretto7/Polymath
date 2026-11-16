@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hempel and Oppenheim's deductive-nomological model, the symmetry of explanation and prediction, and the counterexamples of the flagpole, the barometer, the birth control pills and paresis.",
-
   glimpse: (
     <p>
       Next, causal accounts of explanation, which treat the flagpole and barometer by asking what produces what, and then the

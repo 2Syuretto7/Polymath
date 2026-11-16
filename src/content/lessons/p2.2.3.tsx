@@ -199,9 +199,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a truth table can prove that an argument is valid, and why this is possible in sentential logic but not for arguments in general.",
-
   glimpse: (
     <p>
       The double turnstile ⊨ is a notion of semantics: it is about truth. The next chapter introduces proofs, written ⊢. Logic

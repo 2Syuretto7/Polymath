@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Augustine's puzzle about time, his answer that time is a stretching of the mind into memory, attention and expectation, and his reply to the question of what God was doing before creation.",
-
   glimpse: (
     <p>
       The next lesson follows Augustine on evil and free will. Boethius, a century later, uses the idea of eternity to

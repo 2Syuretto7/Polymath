@@ -124,9 +124,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Rouché's theorem, the dog-walking picture of why it is true, and how to use it to count the zeros of a polynomial in a disc or annulus.",
-
   glimpse: (
     <p>
       The next lesson uses Rouché to prove the open mapping theorem. Hurwitz&rsquo;s theorem, its cousin, is a key step in the

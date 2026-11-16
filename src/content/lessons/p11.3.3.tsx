@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between actualism and possibilism, how ersatz worlds work as maximal consistent world-stories, how they handle merely possible people, and the costs Lewis and others raise.",
-
   glimpse: (
     <p>
       The next lesson asks which properties things have necessarily: essentialism. Modal logic studies the Barcan formulas

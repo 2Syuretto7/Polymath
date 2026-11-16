@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what stability and asymptotic stability mean, what a Lyapunov function is and how to compute V̇ without solving, the idea of the proof, and how LaSalle's principle helps when V̇ only vanishes on a set.",
-
   glimpse: (
     <p>
       The next lessons turn from equilibria to periodic orbits: limit cycles, and the Poincaré–Bendixson theorem that guarantees

@@ -127,9 +127,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Fourier transform, how it turns derivatives and convolutions into multiplication, the Gaussian as its own transform, and the uncertainty principle.",
-
   glimpse: (
     <p>
       Next, transform methods for PDEs: taking the Fourier transform of the heat and wave equations on the line to solve them

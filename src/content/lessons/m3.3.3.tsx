@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how elimination can be recorded as A = LU, where the multipliers go, why this saves work when solving for many right-hand sides, and what to do when rows must be swapped.",
-
   glimpse: (
     <p>
       The next lesson brings in permutation matrices and transposes, giving PA = LU and, for symmetric matrices, A =

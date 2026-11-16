@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what non-cognitivism says about moral language, why it is attractive, and the Frege–Geach problem with an example.",
-
   glimpse: (
     <p>
       The next lesson keeps the idea that moral claims describe the world but says they all fail: error theory. Graduate

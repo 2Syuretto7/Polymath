@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the story of the ring of Gyges, why the prisoner's dilemma suggests cheating does not pay in the long run, and why that may not fully answer Glaucon.",
-
   glimpse: (
     <p>
       Suppose we have reason to be moral. What then makes an act right or wrong? The next lesson tests three great answers

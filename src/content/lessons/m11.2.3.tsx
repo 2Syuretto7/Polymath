@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Euler’s function, why multiplying the units by a permutes them and how that proves Euler’s theorem, Fermat’s little theorem as a special case, how to find last digits of huge powers, and why Carmichael numbers spoil the Fermat test.",
-
   glimpse: (
     <p>
       The next lesson proves Wilson&rsquo;s theorem with a similar pairing idea. The order of an element, glimpsed in the table,

@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Aristotle's four causes with an example of each, why three of them often coincide in nature, his argument that nature acts for an end, and how later science treated final causes.",
-
   glimpse: (
     <p>
       Potentiality and actuality, next, give the vocabulary for how matter becomes formed. Aquinas builds one of his five

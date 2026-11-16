@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for a set to have measure zero, why countable sets and the Cantor set have measure zero, what Lebesgue's criterion says, and how it explains which familiar functions are integrable.",
-
   glimpse: (
     <p>
       The next chapter studies sequences of functions and when limits keep integrability and continuity. Measure zero grows

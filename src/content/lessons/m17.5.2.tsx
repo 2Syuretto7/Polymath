@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the mean value property of harmonic functions, its proof by the divergence theorem, and how it gives the strong maximum principle.",
-
   glimpse: (
     <p>
       Next, Green&rsquo;s functions: solving Laplace&rsquo;s and Poisson&rsquo;s equations with a kernel, such as the Poisson

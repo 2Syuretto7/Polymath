@@ -179,9 +179,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the pre-established harmony and the image of the two clocks, Leibniz's argument that this is the best possible world, what best means, and how Voltaire attacked the view.",
-
   glimpse: (
     <p>
       The next lesson examines the principle behind God&rsquo;s choice: nothing happens without a sufficient reason. Hume&rsquo;s

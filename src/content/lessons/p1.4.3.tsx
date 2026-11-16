@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the case of a person dividing into two led Parfit to say that identity is not what matters.",
-
   glimpse: (
     <p>
       This completes the chapter on personal identity. Next comes the philosophy of God: arguments for and against the

@@ -205,9 +205,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Scotus's argument that being is univocal, how it differs from Aquinas's doctrine of analogy, and his idea of haecceity as what makes an individual this individual.",
-
   glimpse: (
     <p>
       The next lesson meets William of Ockham, who rejected Scotus&rsquo;s common natures, and his razor. Leibniz&rsquo;s

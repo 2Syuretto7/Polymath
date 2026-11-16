@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Meno's paradox, how Socrates answers it with the theory of recollection and the slave boy, and the difference the Meno draws between knowledge and true belief.",
-
   glimpse: (
     <p>
       The <em>Phaedo</em> uses recollection as an argument for the immortality of the soul. Epistemology takes up the

@@ -210,9 +210,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the burden and standard of proof, why any bar for conviction trades one kind of error for another, and how judges reason from precedent and from the purpose of a rule.",
-
   glimpse: (
     <p>
       Epistemology asks whose testimony courts and others tend to believe, and the injustice done when someone is given

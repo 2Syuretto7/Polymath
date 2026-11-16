@@ -254,9 +254,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how an equivocation can make a bad argument look valid, how to diagnose one by rewriting each premise, and why composition is sometimes a fallacy and sometimes not.",
-
   glimpse: (
     <p>
       Introduction to Ethics meets John Stuart Mill&rsquo;s proof of the principle of utility, from which the argument in

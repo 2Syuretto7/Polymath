@@ -178,9 +178,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what material constitution is, the ship of Theseus, the argument from Leibniz's law that an object is not its matter, and how the constitution view, identity, four-dimensionalism and nihilism each respond.",
-
   glimpse: (
     <p>
       The next lesson studies the statue and the clay in detail. Graduate metaphysics asks when things compose a further

@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what indexicals are, Kaplan's distinction between character and content, why “I am here now” is true whenever said but not necessary, and Perry's essential indexical.",
-
   glimpse: (
     <p>
       The next lesson asks how far context sensitivity spreads beyond indexicals, to words like &ldquo;tall&rdquo; and

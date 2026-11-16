@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Aristotle means by philia, the three kinds of friendship and why only one is complete, the idea of a friend as another self, and why even a happy person needs friends.",
-
   glimpse: (
     <p>
       The next lesson moves from friends to the city, which Aristotle thinks friendship holds together. The ethics of care,

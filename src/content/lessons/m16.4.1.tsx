@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a local isometry is, why equal first fundamental forms give one, and why the plane and the cylinder are locally isometric.",
-
   glimpse: (
     <p>
       Next, Gauss&rsquo;s Theorema Egregium: the Gaussian curvature can be computed from E, F and G alone, so it is

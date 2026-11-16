@@ -214,9 +214,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Averroes thought the religious law commands philosophy, how he dealt with conflicts between philosophy and scripture, the three kinds of argument, and his reply to al-Ghazali.",
-
   glimpse: (
     <p>
       The next lesson meets Maimonides, born in the same city as Averroes, who faced the same questions as a Jewish

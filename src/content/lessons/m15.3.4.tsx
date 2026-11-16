@@ -153,9 +153,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what metrisable means, the metric on the Hilbert cube, how Urysohn functions from a countable basis embed a second countable regular space in the cube, and why manifolds are metrisable.",
-
   glimpse: (
     <p>
       Next, the Tietze extension theorem extends continuous functions from closed sets. Later, manifolds are defined so that

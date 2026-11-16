@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Sidgwick's three methods of ethics, his test of common-sense morality, the self-evident axioms he accepts, and the dualism of practical reason.",
-
   glimpse: (
     <p>
       The next chapter turns to Nietzsche, who attacked the morality that Mill and Sidgwick tried to systematise. Modern

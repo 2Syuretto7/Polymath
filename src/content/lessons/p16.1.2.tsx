@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the hypothetico-deductive method with Semmelweis as an example, the asymmetry between refutation by modus tollens and confirmation, the role of auxiliary hypotheses and the Duhem problem.",
-
   glimpse: (
     <p>
       Next comes the demarcation problem: what separates science from pseudoscience. Popper&rsquo;s falsificationism, the

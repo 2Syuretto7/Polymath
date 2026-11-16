@@ -251,9 +251,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain the Socratic method to someone who thinks it is just asking annoying questions. Use the chair or courage example, and say why ending without an answer can still be progress.",
-
   glimpse: (
     <p>
       This completes your first look at what philosophy is. Next you will learn to read philosophy slowly. Counterexamples

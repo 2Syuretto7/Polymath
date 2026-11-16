@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a partial derivative is, how to compute one by holding the other variables fixed, what Clairaut's theorem says, and why partial derivatives alone do not guarantee good behaviour.",
-
   glimpse: (
     <p>
       The next lesson defines the derivative of a function of several variables properly, as a linear map that approximates

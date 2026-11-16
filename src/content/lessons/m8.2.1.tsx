@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the fundamental theorem of algebra and how it gives a full factorisation over ℂ, why non-real roots of real polynomials come in conjugate pairs, and how real polynomials factor into linear and quadratic pieces.",
-
   glimpse: (
     <p>
       The next lesson uses these facts to show that every complex operator has an eigenvalue, through invariant subspaces.

@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why every solution of a forced linear equation is a particular solution plus a homogeneous one, how to choose the trial form for undetermined coefficients, and why the guess must be multiplied by t when the forcing solves the homogeneous equation.",
-
   glimpse: (
     <p>
       The next lesson gives a method that works for any forcing, and the one after studies what happens when forcing matches

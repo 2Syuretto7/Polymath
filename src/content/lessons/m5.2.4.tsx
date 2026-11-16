@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the gradient is, how it gives every directional derivative, why it points in the direction of steepest ascent, and why it is perpendicular to level curves.",
-
   glimpse: (
     <p>
       The next chapter uses second derivatives to tell maxima from minima and saddles, beginning with Taylor&rsquo;s theorem

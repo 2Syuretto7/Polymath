@@ -199,9 +199,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between brute luck and option luck, Dworkin's auction and insurance scheme, the question 'equality of what?', and Anderson's objections with her alternative of democratic equality.",
-
   glimpse: (
     <p>
       The next chapter turns from distribution to liberty, starting with Berlin&rsquo;s two concepts. Feminist political

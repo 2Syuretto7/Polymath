@@ -135,9 +135,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a linear code and its minimum distance are, why distance d lets you correct ⌊(d − 1)/2⌋ errors, how the Hamming code's syndrome locates an error, and why Reed-Solomon codes need larger finite fields.",
-
   glimpse: (
     <p>
       The next chapter returns to field theory with separability and normality, preparing for Galois theory. Modules over

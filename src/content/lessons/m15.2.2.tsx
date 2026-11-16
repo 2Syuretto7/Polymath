@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the open-cover definition of compactness, why [a, b] is compact, why closed subsets and continuous images of compact spaces are compact and why compact subsets of Hausdorff spaces are closed, and the extreme value theorem.",
-
   glimpse: (
     <p>
       Next, Tychonoff&rsquo;s theorem shows that any product of compact spaces is compact. Local compactness and

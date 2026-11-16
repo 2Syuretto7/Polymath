@@ -129,9 +129,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Burnside's lemma, its proof by counting fixed pairs in two ways, and how to use it to count necklaces up to rotation.",
-
   glimpse: (
     <p>
       The next lesson turns the counting on the group itself, through conjugation, to give the class equation. Combinatorics

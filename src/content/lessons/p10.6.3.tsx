@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Fricker's testimonial and hermeneutical injustice with examples, the difference between prejudiced doubt and reasonable doubt, the primary and secondary harms, and the virtue of testimonial justice with its limits.",
-
   glimpse: (
     <p>
       The next chapter turns to degrees of belief and their rules. Feminist political philosophy develops these concerns about

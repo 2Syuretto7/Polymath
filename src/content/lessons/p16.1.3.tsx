@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the demarcation problem, the difference between non-science and pseudoscience, Popper's falsifiability criterion with his examples, and Laudan's argument that demarcation is a pseudo-problem.",
-
   glimpse: (
     <p>
       Next, Popper&rsquo;s falsificationism is examined as an account of scientific method, not just a criterion. Lakatos and

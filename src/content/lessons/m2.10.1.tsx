@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how slicing a solid turns its volume into an integral, and where the one third in the volume of a cone comes from.",
-
   glimpse: (
     <p>
       Multivariable Calculus and Vector Analysis finds volumes with double and triple integrals, which do not need the

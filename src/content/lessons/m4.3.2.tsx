@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what walks, paths, cycles and components are, why every walk contains a path, how breadth-first search finds distances, and why a graph is bipartite exactly when it has no odd cycle.",
-
   glimpse: (
     <p>
       The next lesson asks for walks that use every edge, or every vertex, exactly once. Combinatorics proves

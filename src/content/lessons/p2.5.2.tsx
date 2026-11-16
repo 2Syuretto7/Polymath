@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to show that an argument in predicate logic is invalid by building a counterexample, and why showing that one is valid needs a different kind of reasoning.",
-
   glimpse: (
     <p>
       The next lesson adapts truth trees to predicate logic, as a systematic search for counterexamples. The last chapter

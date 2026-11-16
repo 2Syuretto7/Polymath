@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's two distinctions, analytic and synthetic and a priori and a posteriori, why he thought 7 + 5 = 12 is synthetic a priori, and why the possibility of such judgements became his central question.",
-
   glimpse: (
     <p>
       The next lesson gives Kant&rsquo;s answer in outline: transcendental idealism. The following chapter shows how space and

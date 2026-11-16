@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how a truth tree tests an argument for validity, what it means for a branch to close, and how to read a counterexample off an open branch.",
-
   glimpse: (
     <p>
       Trees extend to predicate logic later in this course, with rules for &ldquo;all&rdquo; and &ldquo;some&rdquo;, though there

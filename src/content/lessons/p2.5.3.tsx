@@ -276,9 +276,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how truth trees handle ∃ and ∀, why an existential needs a brand new name, and why some trees never finish.",
-
   glimpse: (
     <p>
       The next chapter turns from searching for counterexamples to building proofs, with natural deduction rules for the

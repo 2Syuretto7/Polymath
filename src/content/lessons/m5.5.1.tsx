@@ -189,9 +189,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the double integral is defined by Riemann sums, what it measures, its basic properties, and how triple integrals extend the idea.",
-
   glimpse: (
     <p>
       The next lesson proves Fubini&rsquo;s theorem, which computes a double integral by integrating one variable at a time.

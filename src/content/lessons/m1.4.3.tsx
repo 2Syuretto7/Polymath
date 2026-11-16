@@ -171,9 +171,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why |A ∪ B| = |A| + |B| − |A ∩ B|, using the music and art class.",
-
   glimpse: (
     <p>
       Next, unions and intersections of whole families of sets, even infinitely many at once. Inclusion-exclusion is a basic

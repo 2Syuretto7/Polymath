@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the cyclotomic polynomials, why Φₙ has degree φ(n) and is irreducible, why the Galois group of ℚ(ζₙ) is (ℤ/n)ˣ, and how this explains Gauss's 17-gon.",
-
   glimpse: (
     <p>
       The next lesson studies solvable groups, which describe the extensions built by adjoining roots. Algebraic number

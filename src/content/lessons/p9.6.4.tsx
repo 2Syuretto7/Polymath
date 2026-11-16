@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the thought of eternal recurrence, the demon passage, the difference between the cosmological argument and the practical test, Simmel's objection, and amor fati.",
-
   glimpse: (
     <p>
       The next lesson turns to the &Uuml;bermensch, the figure who could affirm recurrence. Camus&rsquo;s Sisyphus later asks

@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the control principle, the problem of moral luck with Nagel's kinds of luck and an example of each, and one response to the paradox.",
-
   glimpse: (
     <p>
       The next part turns to the structure of moral constraints, beginning with the difference between doing and allowing.

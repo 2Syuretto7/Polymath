@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what open and closed sets are in a metric space, why open balls are open, why only finite intersections of open sets need be open, and how a set can be neither or both.",
-
   glimpse: (
     <p>
       The next lesson studies convergence and completeness. Open sets will soon characterise continuity, and their

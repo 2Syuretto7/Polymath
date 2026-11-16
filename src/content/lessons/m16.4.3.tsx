@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a geodesic is, why great circles are the geodesics of a sphere, and why a geodesic is shortest only locally.",
-
   glimpse: (
     <p>
       Next, the covariant derivative and parallel transport: how to say that a vector field along a curve is constant,

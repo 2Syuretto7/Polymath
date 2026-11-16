@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend multiple realisability with the octopus and robot examples, Putnam’s argument against type identity, the species-specific reply and the worry about it, Fodor’s point about the special sciences, and why the argument leads to functionalism.",
-
   glimpse: (
     <p>
       The next chapter develops functionalism and asks whether a computer could have a mind. Philosophy of science later

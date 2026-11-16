@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Strawson's objection to Russell, presupposition and truth-value gaps, the distinction between a sentence and its use, and Donnellan's two uses of descriptions.",
-
   glimpse: (
     <p>
       Grice later separated what is said from what is implied, which bears on presupposition and on Donnellan&rsquo;s cases.

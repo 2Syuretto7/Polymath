@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between substantival and relational views of space, Leibniz's arguments from sufficient reason and the identity of indiscernibles, Newton's bucket, and how the debate developed after them.",
-
   glimpse: (
     <p>
       The next course turns to Kant, who answered both Newton and Leibniz by making space and time forms of our intuition.

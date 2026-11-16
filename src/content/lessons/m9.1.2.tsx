@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the naive definition of probability and when it applies, the four basic counting formulas, the birthday problem, and how choosing a sample space with equally likely outcomes avoids errors.",
-
   glimpse: (
     <p>
       The next lesson shows how probabilities change when we learn something: conditional probability. Later lessons meet

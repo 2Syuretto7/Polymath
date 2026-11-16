@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend epistemic democracy, Condorcet's jury theorem and its assumptions, the argument that diversity trumps ability, and why correlation and bias limit the case.",
-
   glimpse: (
     <p>
       The next chapter turns to critics of liberal democracy, beginning with Marx. Later, social choice theory examines how

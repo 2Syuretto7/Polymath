@@ -156,9 +156,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend objective list theories of wellbeing with examples of lists, the objections from arbitrariness, alienation and paternalism, and how hybrid theories try to combine objective and subjective views.",
-
   glimpse: (
     <p>
       The capabilities approach in political philosophy develops Nussbaum&rsquo;s list. Later lessons on care ethics and moral

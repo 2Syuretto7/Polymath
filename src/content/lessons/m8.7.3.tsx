@@ -146,9 +146,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the exterior powers are, their bases and dimensions, why a wedge detects linear independence, how the top exterior power gives the determinant, and how the wedge product in three dimensions becomes the cross product.",
-
   glimpse: (
     <p>
       This completes Linear Algebra II. Differential geometry builds differential forms from exterior powers, and analysis

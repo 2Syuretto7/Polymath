@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the transpose is, why (AB)ᵀ = BᵀAᵀ, why AᵀA is always symmetric, what a permutation matrix does, and why its inverse is its transpose.",
-
   glimpse: (
     <p>
       The matrix AᵀA is the heart of least squares in the Orthogonality chapter. Symmetric matrices have real eigenvalues

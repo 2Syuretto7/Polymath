@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's ideas of autonomy and heteronomy, the formulas of autonomy and the kingdom of ends, the distinction between price and dignity, and why a self-given law is not arbitrary.",
-
   glimpse: (
     <p>
       The next lesson follows Kant into the Critique of Practical Reason, where the moral law becomes a fact of reason that

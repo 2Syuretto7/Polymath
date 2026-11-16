@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what makes a transformation linear, why its matrix has columns T(e₁), …, T(eₙ), the matrices for rotation, projection and reflection, and why doing one map after another means multiplying their matrices.",
-
   glimpse: (
     <p>
       The next lesson describes the same map in a different basis. Linear Algebra II starts from linear maps rather than

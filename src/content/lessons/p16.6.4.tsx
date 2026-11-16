@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend structural realism, the example of Fresnel's equations surviving into Maxwell's theory, the difference between epistemic and ontic versions, and Newman's objection.",
-
   glimpse: (
     <p>
       Next, laws of nature: are they mere regularities, relations between universals, or something else?

@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the rules for 'and', 'or' and 'not' with probabilities, what independence means, and why a more detailed story can never be more probable than a part of it.",
-
   glimpse: (
     <p>
       Probability sets these rules on axioms and proves everything else from them. Epistemology asks whether degrees of

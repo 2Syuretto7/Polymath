@@ -188,9 +188,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the four fundamental subspaces of a matrix, where each lives, their dimensions in terms of the rank, why row rank equals column rank, and why the null space is perpendicular to the row space.",
-
   glimpse: (
     <p>
       The next chapter makes the perpendicularity exact with orthogonal complements and uses it for least squares. The

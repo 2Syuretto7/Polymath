@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hobbes's state of nature and why it becomes a war of all against all, the three causes of quarrel, how the social contract creates a sovereign, and one objection.",
-
   glimpse: (
     <p>
       The next lessons give Locke&rsquo;s gentler state of nature and Rousseau&rsquo;s general will. Later lessons ask

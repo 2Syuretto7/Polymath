@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a conformal map is, why a holomorphic map with non-zero derivative preserves angles, what happens to angles at a critical point, and how the exponential maps a strip to a half-plane.",
-
   glimpse: (
     <p>
       The next lesson studies the Möbius transformations, the conformal bijections of the extended plane. Later lessons use

@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain the vertical line test to a friend, using the train puzzle. Then say why a horizontal line meeting a graph twice is no problem at all.",
-
   glimpse: (
     <p>
       Next, the two families of graphs you will meet most: straight lines and parabolas. The Cartesian plane and conic

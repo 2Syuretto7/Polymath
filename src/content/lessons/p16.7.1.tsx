@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between laws and accidental generalisations, the best system account of Mill, Ramsey and Lewis, and the view that laws are necessitation relations between universals.",
-
   glimpse: (
     <p>
       Next, reduction: when can one science, with its laws, be derived from another, as thermodynamics from mechanics?

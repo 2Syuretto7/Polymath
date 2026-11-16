@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what big O notation means, why constants are ignored, how to show a polynomial is big O of its leading term, and why exponential growth is so much worse than polynomial.",
-
   glimpse: (
     <p>
       The next lesson meets recursion and merge sort, which sorts in <M>{"\\Theta(n \\log n)"}</M> time, and explains the

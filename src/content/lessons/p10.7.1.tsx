@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a credence is, what probabilism requires, an example of incoherent credences such as the conjunction fallacy, and how the lottery paradox troubles the Lockean thesis.",
-
   glimpse: (
     <p>
       The next lesson asks how credences should change when evidence arrives. Graduate epistemology returns to Bayesian norms

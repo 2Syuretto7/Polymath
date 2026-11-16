@@ -230,9 +230,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Russell's analysis of “the present King of France is bald”, and how the difference between narrow and wide scope negation saves the law of excluded middle.",
-
   glimpse: (
     <p>
       Russell&rsquo;s theory of descriptions, and Strawson&rsquo;s reply, are studied in depth in Philosophy of Language,

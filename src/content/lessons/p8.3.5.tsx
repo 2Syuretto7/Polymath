@@ -194,9 +194,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between problematic and dogmatic idealism, the steps of Kant's refutation of idealism, its reliance on the first analogy, and why it reverses the Cartesian order of knowledge.",
-
   glimpse: (
     <p>
       The next chapter, the Transcendental Dialectic, turns to reason&rsquo;s attempts to know what lies beyond experience,

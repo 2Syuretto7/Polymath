@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how RSA keys are made, how encryption and decryption work, why decryption recovers the message using Fermat and the Chinese remainder theorem, why security rests on factoring, and how signatures work.",
-
   glimpse: (
     <p>
       The next chapter turns to squares modulo p and quadratic reciprocity. Continued fractions later give an attack on RSA when d

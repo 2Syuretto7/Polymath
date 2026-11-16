@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the justified true belief analysis of knowledge and how a Gettier case such as the stopped clock refutes it.",
-
   glimpse: (
     <p>
       Next, the problem of induction, which asks whether our reasons for believing anything about the future are good reasons

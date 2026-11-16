@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Goursat's subdivision argument, how it gives primitives and Cauchy's theorem on a disc, and why the integral round a loop does not change as the loop is deformed without crossing a singularity.",
-
   glimpse: (
     <p>
       The next lesson turns Cauchy&rsquo;s theorem into the Cauchy integral formula, from which almost everything else

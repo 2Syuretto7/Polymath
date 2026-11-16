@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what it means for one integer to divide another, the basic properties of divisibility, the division algorithm and why it is true, and how the digit-sum test for 9 works.",
-
   glimpse: (
     <p>
       The next lesson studies the numbers with no divisors but 1 and themselves, the primes. Abstract Algebra asks which

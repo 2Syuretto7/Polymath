@@ -159,9 +159,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the unificationist view of explanation, Friedman's reduction of independent phenomena, Kitcher's argument patterns and stringency, and how unification compares with causal accounts.",
-
   glimpse: (
     <p>
       Next, scientific realism: does the success of our best theories show that they are approximately true, or would that

@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the rule of conditionalisation with a worked example, how Jeffrey conditionalisation handles uncertain evidence, one argument for conditionalising, and the problem of the priors.",
-
   glimpse: (
     <p>
       The next lesson examines Dutch book arguments for probabilism and conditionalisation. Philosophy of science uses this

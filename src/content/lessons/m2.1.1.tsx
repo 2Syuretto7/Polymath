@@ -218,9 +218,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a field is, and use the axioms to show why a · 0 = 0 and why you cannot divide by zero.",
-
   glimpse: (
     <p>
       Fields are one of the central structures of algebra. Abstract Algebra I meets them again, alongside rings, where inverses

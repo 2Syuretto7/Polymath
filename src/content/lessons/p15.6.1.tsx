@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Wittgenstein's pupil who writes 1004 after 1000, why examples and interpretations seem unable to fix a rule, the paradox of §201, and the idea that following a rule is a practice.",
-
   glimpse: (
     <p>
       Next, Kripke turns Wittgenstein&rsquo;s remarks into a sceptical paradox about meaning addition by &ldquo;plus&rdquo;.

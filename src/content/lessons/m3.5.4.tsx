@@ -195,9 +195,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what orthonormal vectors are and why they make coordinates, projections and least squares easy, how the Gram–Schmidt process works, and how it gives the factorisation A = QR.",
-
   glimpse: (
     <p>
       Symmetric matrices, in the Eigenvalues chapter, always have an orthonormal basis of eigenvectors. Linear Algebra II

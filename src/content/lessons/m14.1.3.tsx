@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a splitting field is, how Kronecker's construction produces one of degree at most n!, why splitting fields are unique up to isomorphism, and why x³ − 2 has a splitting field of degree 6.",
-
   glimpse: (
     <p>
       The next lesson uses degrees to settle the ancient ruler-and-compass problems. Later, splitting fields reappear as normal

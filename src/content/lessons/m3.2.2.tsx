@@ -193,9 +193,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between echelon form and reduced echelon form, how to read off all the solutions from the reduced form using pivot and free variables, and why everyone who row reduces the same matrix gets the same reduced form.",
-
   glimpse: (
     <p>
       The next lesson uses the pivots to decide, before solving anything, whether a system has no solution, one, or

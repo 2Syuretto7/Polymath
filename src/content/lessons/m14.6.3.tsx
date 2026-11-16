@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a character is, Schur's lemma, why irreducible characters are orthonormal, how inner products recover multiplicities, and what the regular representation tells us about the degrees.",
-
   glimpse: (
     <p>
       The next lesson assembles all the irreducible characters into the character table and proves its column relations.

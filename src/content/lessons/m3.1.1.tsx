@@ -197,9 +197,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a linear combination is, why asking for one is the same as solving linear equations, and why two vectors in the plane either span everything or only a line.",
-
   glimpse: (
     <p>
       Later in this course, linear independence and bases make &ldquo;how many directions&rdquo; precise, and the question

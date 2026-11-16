@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Sylow theory shows groups of order pq have a normal subgroup and are often cyclic, how counting elements rules out simple groups of order 30 and 56, and how the embedding trick handles orders like 12 and 24.",
-
   glimpse: (
     <p>
       The next lessons describe every finite abelian group and then turn to simple groups, where 60 is the first

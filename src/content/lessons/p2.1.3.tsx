@@ -227,9 +227,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the form of an argument is, why modus ponens is valid and affirming the consequent is not, and how a counterexample shows a form is invalid.",
-
   glimpse: (
     <p>
       Our forms used English words such as &ldquo;if&rdquo; and &ldquo;or&rdquo;, which can be slippery. Next we replace them

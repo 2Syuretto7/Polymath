@@ -129,9 +129,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend exact equations and why their solutions are level curves of a potential F, the test ∂M/∂y = ∂N/∂x and why it works, how to construct F by integrating, and the link with conservative vector fields and integrating factors.",
-
   glimpse: (
     <p>
       The next lesson builds models with first-order equations. Conserved quantities return in the study of nonlinear systems,

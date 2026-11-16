@@ -146,9 +146,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the fixed field of a group of automorphisms, Artin's theorem, how the Galois correspondence matches subgroups with intermediate fields and reverses inclusions, and how it finds all subfields of ℚ(√2, √3).",
-
   glimpse: (
     <p>
       The next lesson completes the fundamental theorem: normal subgroups correspond to normal intermediate extensions. Later,

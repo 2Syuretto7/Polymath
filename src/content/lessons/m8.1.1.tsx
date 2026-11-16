@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a vector space over a general field is, why the proofs about dimension work over any field, and some examples, including spaces over ℤ_p and ℂ as a space over ℝ.",
-
   glimpse: (
     <p>
       The next lesson studies linear maps between abstract vector spaces and their matrices. In field theory the dimension of

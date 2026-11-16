@@ -152,9 +152,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Searle's distinction between constitutive and regulative rules, his four conditions on promising, his five kinds of illocutionary act, and how indirect speech acts work.",
-
   glimpse: (
     <p>
       The next lesson presents Grice&rsquo;s account of how speakers mean more than they say. Searle went on to apply speech act

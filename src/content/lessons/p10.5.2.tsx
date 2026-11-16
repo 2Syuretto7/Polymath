@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend reductionism and anti-reductionism about testimony with Hume and Reid, the problem of checking testimony without relying on more testimony, why chains of testimony degrade while independent witnesses reinforce, and Lackey's idea that testimony can generate knowledge.",
-
   glimpse: (
     <p>
       The next lesson examines memory, which preserves what we learn. Later lessons ask how to respond when experts disagree,

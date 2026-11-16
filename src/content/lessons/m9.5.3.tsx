@@ -147,9 +147,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how the density changes under a monotone transformation and why the factor |dx/dy| appears, the example of the square's area, the CDF method for Z², and the Jacobian version in several variables.",
-
   glimpse: (
     <p>
       The next lesson uses linear transformations of independent normals to build the multivariate normal. Analysis later

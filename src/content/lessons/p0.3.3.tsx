@@ -217,9 +217,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a good essay raises the strongest objection to its own thesis. Use the meat and car example, and list three ways to reply.",
-
   glimpse: (
     <p>
       Next, revising: turning a draft with an argument, an objection and a reply into an essay. Counterexamples and

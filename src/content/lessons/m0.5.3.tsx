@@ -175,9 +175,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Thales could measure the pyramid with a shadow, and why doubling a photograph's size needs four times the paper.",
-
   glimpse: (
     <p>
       Next, circles, where similarity explains why every circle has the same ratio of circumference to diameter. In

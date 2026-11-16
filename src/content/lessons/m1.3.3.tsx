@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how it is possible to prove that no fraction equals √2, without checking any fractions at all.",
-
   glimpse: (
     <p>
       Contradiction will return at the climax of this course, in Cantor&rsquo;s diagonal argument that some infinities are

@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between 'everybody loves somebody' and 'somebody is loved by everybody', and why one implies the other but not the reverse.",
-
   glimpse: (
     <p>
       You now have the whole language of mathematical statements: connectives and quantifiers. The next chapter uses it to

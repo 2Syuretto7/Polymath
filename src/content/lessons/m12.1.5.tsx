@@ -154,9 +154,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what connected and path-connected mean, why intervals are the connected subsets of ℝ, how this gives the intermediate value theorem, and why the topologist's sine curve is connected but not path-connected.",
-
   glimpse: (
     <p>
       The next lessons study continuous maps between metric spaces. In topology, connectedness becomes one of the basic

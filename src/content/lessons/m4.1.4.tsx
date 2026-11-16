@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the pigeonhole principle and its general form with ⌈N/k⌉, how choosing the boxes cleverly proves the results about points in a square and divisors, and the idea of the Erdős–Szekeres theorem.",
-
   glimpse: (
     <p>
       The probabilistic method, at the end of this course, is another way to prove that something exists without finding

@@ -245,9 +245,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Glaucon's challenge and the ring of Gyges, the parts of the soul and how Plato argues for them, and his answer that justice is a kind of health of the soul.",
-
   glimpse: (
     <p>
       The <em>Republic</em> then asks what the rulers must know, which leads to the sun, the line and the cave. Aristotle

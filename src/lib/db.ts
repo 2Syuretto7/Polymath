@@ -79,6 +79,9 @@ const SCHEMA = [
      body TEXT NOT NULL,
      at TIMESTAMPTZ NOT NULL DEFAULT now()
    )`,
+  // The teach-back step was removed; clear what it stored.
+  `DELETE FROM writings WHERE kind = 'teachback'`,
+  `DELETE FROM parton_notes WHERE kind = 'teachback'`,
 ];
 
 async function createRunner(): Promise<Runner> {

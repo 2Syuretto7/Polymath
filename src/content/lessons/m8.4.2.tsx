@@ -175,9 +175,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the real and complex spectral theorems, why a self-adjoint operator has an eigenvalue and an invariant orthogonal complement, what a normal operator is, and an example of each theorem.",
-
   glimpse: (
     <p>
       The next lesson studies positive operators, the self-adjoint operators whose eigenvalues are all at least 0. Functional

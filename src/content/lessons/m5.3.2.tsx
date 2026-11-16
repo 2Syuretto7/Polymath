@@ -165,9 +165,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a critical point is, why local extrema are critical points, how the Hessian distinguishes minima, maxima and saddles, and when the test is silent.",
-
   glimpse: (
     <p>
       The next lesson finds extrema subject to a constraint, such as the best point on a circle, with Lagrange

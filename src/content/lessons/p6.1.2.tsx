@@ -221,9 +221,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Augustine's question about where evil comes from, the privation theory, the free will defence, and one serious objection to his answer.",
-
   glimpse: (
     <p>
       The next lesson turns to Boethius, writing in prison, who asks how God can foreknow our choices if they are free.

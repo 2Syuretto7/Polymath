@@ -197,9 +197,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between absolute and conditional convergence, and why rearranging a conditionally convergent series can change its sum.",
-
   glimpse: (
     <p>
       Real Analysis I proves Riemann&rsquo;s rearrangement theorem in full, and studies when two series can be multiplied

@@ -191,9 +191,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the inventor of chess should prefer doubling to adding 1000 each square, even though adding is far ahead at first. Use the words 'amount' and 'factor'.",
-
   glimpse: (
     <p>
       Next, exponential functions: what <M>{"2^x"}</M> means when <M>x</M> is not a whole number, so that growth can be

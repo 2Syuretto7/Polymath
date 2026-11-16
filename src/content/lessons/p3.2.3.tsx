@@ -234,9 +234,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how an argument can be valid and still beg the question, how to spot a false dilemma, and why a slippery slope with many steps needs very strong links.",
-
   glimpse: (
     <p>
       Later in this course, the rules of probability explain exactly why the links of a chain multiply. Applied Ethics

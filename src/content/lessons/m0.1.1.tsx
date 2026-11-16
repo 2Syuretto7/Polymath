@@ -242,9 +242,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a curious twelve-year-old why 2 + 2 = 4 is something you can prove, not just something you memorise. Use your own words and no symbols if you can.",
-
   glimpse: (
     <>
       <p>

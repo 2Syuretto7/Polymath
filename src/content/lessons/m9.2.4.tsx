@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why we square deviations to measure spread, the formula Var(X) = E(X²) − E(X)², what shifting and scaling do to variance, why independent variances add, and why an average of n measurements has standard deviation σ/√n.",
-
   glimpse: (
     <p>
       The next chapter moves to continuous random variables, where sums become integrals. Chebyshev&rsquo;s inequality turns a

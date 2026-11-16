@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a linear map between abstract vector spaces is, why a linear map is determined by its values on a basis, how its matrix is built column by column, and why matrix multiplication matches composition.",
-
   glimpse: (
     <p>
       The next lesson studies the null space and range of a linear map and proves the rank-nullity theorem. Duality later

@@ -239,9 +239,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the puzzle about how false statements are possible, why the Stranger has to correct Parmenides, the greatest kinds and the idea that 'is not' means 'is different from', and his account of a false statement.",
-
   glimpse: (
     <p>
       Aristotle&rsquo;s <em>Categories</em> sorts the ways things are said to be. Metaphysics asks, with Quine, what we

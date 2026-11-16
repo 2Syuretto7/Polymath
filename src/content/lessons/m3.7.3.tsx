@@ -183,9 +183,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a real symmetric matrix has real eigenvalues and perpendicular eigenvectors, what the spectral theorem S = QΛQᵀ says, and how it writes S as a combination of projections onto principal axes.",
-
   glimpse: (
     <p>
       The next lesson asks when all the eigenvalues of a symmetric matrix are positive. The singular value decomposition

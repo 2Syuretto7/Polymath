@@ -240,9 +240,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how proof by contradiction works in natural deduction, the difference between ¬I and indirect proof, and why contradictory premises let you prove anything.",
-
   glimpse: (
     <p>
       In Logic II: Metalogic and Beyond, intuitionistic logic drops indirect proof and studies what is left, and it turns out

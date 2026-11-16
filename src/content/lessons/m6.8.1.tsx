@@ -186,9 +186,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between pointwise and uniform convergence, how to test uniform convergence with the supremum, the Cauchy criterion and the Weierstrass M-test, and the examples xⁿ and nx e^(−nx).",
-
   glimpse: (
     <p>
       The next lesson proves that uniform limits of continuous functions are continuous, and asks when limits can be

@@ -204,9 +204,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a basis is, why coordinates in a basis are unique, why every basis of a space has the same number of vectors, and how the pivot columns and special solutions give bases for the column space and null space.",
-
   glimpse: (
     <p>
       The next lesson counts the dimensions of all four subspaces of a matrix. Change of basis, in the last chapter, asks

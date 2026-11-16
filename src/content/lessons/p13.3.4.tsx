@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what moral realism says, the difference between naturalist and non-naturalist realism, and Harman's challenge from explanation with a realist reply.",
-
   glimpse: (
     <p>
       The next lesson considers constructivism, which grounds moral truth in what rational agents would agree to. Graduate

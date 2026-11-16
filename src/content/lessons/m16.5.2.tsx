@@ -141,9 +141,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Gauss–Bonnet gives the angle sum of a geodesic triangle, why geodesics cannot meet twice when K ≤ 0, and why the wind must stop somewhere on the Earth.",
-
   glimpse: (
     <p>
       This ends the course on curves and surfaces. Riemannian geometry takes these ideas into any dimension, where curvature

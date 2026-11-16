@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the two readings of Heraclitus's river saying, what the unity of opposites might mean, and the question about identity through change that he left behind.",
-
   glimpse: (
     <p>
       Plato answers Heraclitus with the theory of Forms, unchanging objects of knowledge behind the changing world.

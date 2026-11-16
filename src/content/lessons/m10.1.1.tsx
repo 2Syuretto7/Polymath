@@ -129,9 +129,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a first-order ODE and an initial value problem are, how separating variables works and why it is justified by the chain rule, the exponential and logistic examples, and why equilibrium solutions must be checked separately.",
-
   glimpse: (
     <p>
       The next lesson solves linear equations with an integrating factor. Later lessons ask when solutions exist and are

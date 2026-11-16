@@ -194,9 +194,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the distinction between being said of and being present in a subject, the ten categories with an example of each, the difference between primary and secondary substance, and how this reverses Plato's view.",
-
   glimpse: (
     <p>
       The <em>Metaphysics</em>, two lessons on, returns to substance and asks what makes a substance what it is.

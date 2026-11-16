@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Möbius function, why its sum over divisors is 0 for n > 1, how Möbius inversion undoes a sum over divisors, how it recovers Euler’s formula for φ as inclusion and exclusion, and its use in counting irreducible polynomials.",
-
   glimpse: (
     <p>
       The next lesson studies perfect numbers through σ. In analytic number theory, μ appears as the coefficients of 1/ζ(s), and

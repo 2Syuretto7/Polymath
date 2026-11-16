@@ -162,9 +162,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the sum and product rules, why the product rule needs the number of choices at each stage to be fixed, how bijections and complements make counting easier, and how to count the passwords in the puzzle.",
-
   glimpse: (
     <p>
       The next lesson uses these rules to count arrangements and selections, with and without repetition. Probability uses

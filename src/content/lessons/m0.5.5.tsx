@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the area of a circle is π r squared, using the pizza-slice rearrangement, and why the same π appears as in the circumference.",
-
   glimpse: (
     <p>
       This completes geometry. Next comes trigonometry, which measures triangles and circles with numbers. Archimedes&rsquo;s

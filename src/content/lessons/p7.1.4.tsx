@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what Descartes's substance dualism says, his conceivability and divisibility arguments, the masked man fallacy, and the idea that mind and body form a close union.",
-
   glimpse: (
     <p>
       The next lesson presents Princess Elisabeth&rsquo;s challenge: how can an unextended mind move an extended body? The

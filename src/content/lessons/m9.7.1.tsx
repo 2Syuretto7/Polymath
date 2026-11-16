@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the weak law of large numbers and its proof from Chebyshev, the difference between the weak and strong laws, Monte Carlo estimation, and why the law does not support the gambler's fallacy.",
-
   glimpse: (
     <p>
       The next lesson asks how the average fluctuates around μ, and finds the normal curve. Markov chains have their own law

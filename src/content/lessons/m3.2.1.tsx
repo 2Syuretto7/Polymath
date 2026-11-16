@@ -204,9 +204,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Gaussian elimination turns a system into a staircase, what a pivot and a multiplier are, why the row operations keep the solutions the same, and how back substitution finishes the job.",
-
   glimpse: (
     <p>
       The next lesson finishes elimination into a standard shape, the reduced echelon form, which shows every solution at

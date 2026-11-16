@@ -184,9 +184,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why 'has the same remainder on division by 3' sorts the integers into three groups with no overlaps, and how 'one half' can be thought of as a whole class of fractions.",
-
   glimpse: (
     <p>
       An equivalence relation forgets differences; an order keeps track of which comes first. Partial and total orders come

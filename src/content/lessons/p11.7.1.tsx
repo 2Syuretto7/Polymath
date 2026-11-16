@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend van Inwagen’s consequence argument, what rule beta says, how Lewis’s local miracle reply works, the alternative of letting the past vary, and the McKay–Johnson counterexample.",
-
   glimpse: (
     <p>
       The consequence argument is about the ability to do otherwise. The next lesson asks whether responsibility needs that

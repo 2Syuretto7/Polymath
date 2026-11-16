@@ -143,9 +143,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend conditional expectation given a value and as a random variable, the stick-breaking example, the properties including taking out what is known and the tower property, and why E(Y | X) is the best predictor of Y from X.",
-
   glimpse: (
     <p>
       The next lesson splits a variance using conditioning. Measure-theoretic probability defines conditional expectation in

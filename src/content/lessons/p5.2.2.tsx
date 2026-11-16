@@ -219,9 +219,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the main objections to utilitarianism, from the experience machine, justice, rights, backward-looking reasons, demandingness and integrity, and the three ways utilitarians reply.",
-
   glimpse: (
     <p>
       The next lesson considers rule utilitarianism, the most important revision of the theory. The chapter on Kant takes

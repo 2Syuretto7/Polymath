@@ -167,9 +167,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Kant's idea of the highest good, the antinomy of practical reason, the postulates of freedom, immortality and God, and why they amount to a rational faith rather than knowledge.",
-
   glimpse: (
     <p>
       The next chapter turns to the Critique of Judgement, on beauty, the sublime and purpose in nature, where Kant tries to

@@ -219,9 +219,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a car whose average speed over a stretch was 120 km per hour must have been doing exactly 120 at some instant, and what could go wrong if the speed jumped.",
-
   glimpse: (
     <p>
       The mean value theorem is used to prove the fundamental theorem of calculus later in this course. Real Analysis I

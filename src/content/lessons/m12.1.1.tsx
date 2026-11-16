@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a metric is, with the Euclidean, taxicab, maximum and discrete examples, what open balls look like for each, and why the triangle inequality is the key axiom.",
-
   glimpse: (
     <p>
       The next lesson defines open and closed sets using balls. Later, normed spaces of functions and the curved metrics of

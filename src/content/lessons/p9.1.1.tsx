@@ -202,9 +202,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Kant's successors thought his system unfinished, how Fichte tried to derive everything from the self-positing I, how Schelling answered with a philosophy of nature and identity, and what Hegel objected to.",
-
   glimpse: (
     <p>
       The next lesson follows Hegel&rsquo;s <em>Phenomenology of Spirit</em>, which traces consciousness through its shapes

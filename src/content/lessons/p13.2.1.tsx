@@ -157,9 +157,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what hedonism about wellbeing claims, Bentham's and Mill's versions, Nozick's experience machine, and the reply from status quo bias.",
-
   glimpse: (
     <p>
       The next lessons consider two rivals: desire satisfaction theories and objective list theories. The capabilities approach

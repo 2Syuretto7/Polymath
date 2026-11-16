@@ -140,9 +140,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the complex logarithm has many values, what a branch is, why a branch exists on a simply connected set avoiding 0 but not on a loop round 0, and how powers inherit the choice.",
-
   glimpse: (
     <p>
       Möbius maps and conformal maps often need square roots and logarithms. The Gamma and zeta functions are defined with{" "}

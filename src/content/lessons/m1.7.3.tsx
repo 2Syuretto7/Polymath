@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why taking off shoes and socks happens in the reverse order to putting them on, and why only a bijection can be undone.",
-
   glimpse: (
     <p>
       The last lesson on functions asks what a function does to whole sets of inputs, and which inputs land in a given set of

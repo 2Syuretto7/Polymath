@@ -196,9 +196,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Leibniz's two great principles, his cosmological argument from sufficient reason, how he used the principle against absolute space, and the worry that it makes everything necessary.",
-
   glimpse: (
     <p>
       The next chapter turns to John Locke and the empiricist claim that all ideas come from experience. Hume will later

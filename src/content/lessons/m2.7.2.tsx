@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how to integrate powers of sine and cosine, odd powers by substitution and even powers by the half-angle identities, and why waves integrate to nothing over a full period.",
-
   glimpse: (
     <p>
       Orthogonality of sines and cosines is the starting point of Fourier series, which Partial Differential Equations

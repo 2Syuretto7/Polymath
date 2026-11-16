@@ -142,9 +142,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend covariance and its two formulas, the variance of a sum, correlation and why it lies between −1 and 1, an example of uncorrelated but dependent variables, and why correlation does not establish causation.",
-
   glimpse: (
     <p>
       The next lessons change variables in joint densities and meet the multivariate normal, where zero correlation does mean

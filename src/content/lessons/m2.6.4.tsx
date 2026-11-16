@@ -198,9 +198,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how substitution is the chain rule run backwards, and why the factor g′(x) must be present for it to work.",
-
   glimpse: (
     <p>
       The next chapter builds a toolkit on this idea, including trigonometric substitutions. In Multivariable Calculus

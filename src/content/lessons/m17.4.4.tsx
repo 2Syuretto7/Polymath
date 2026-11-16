@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Sturm–Liouville problem is, the kinds of boundary condition, and why its eigenfunctions are orthogonal and can be used to expand any function.",
-
   glimpse: (
     <p>
       Next, harmonic functions: solutions of Laplace&rsquo;s equation, the steady states of heat flow, and their remarkable

@@ -169,9 +169,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Euclid’s proof that primes never run out and why it is a construction, the variant for primes of the form 4k + 3, the Fermat numbers argument, and Euler’s proof that the sum of 1/p diverges.",
-
   glimpse: (
     <p>
       The next lesson asks how many primes there are up to x, and meets the prime number theorem. Quadratic residues later give

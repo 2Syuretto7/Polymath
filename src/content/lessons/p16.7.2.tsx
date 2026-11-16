@@ -144,9 +144,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Nagel's model of reduction with bridge laws, the example of thermodynamics and molecular motion, Fodor's multiple realisability argument, and supervenience as an alternative.",
-
   glimpse: (
     <p>
       Next, a first look at the philosophy of biology: fitness, natural selection and drift, and whether biology has laws of

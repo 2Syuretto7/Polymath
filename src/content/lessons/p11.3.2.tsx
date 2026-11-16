@@ -170,9 +170,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Lewis's modal realism, the indexical view of actuality, his argument from theoretical utility, counterpart theory, and the incredulous stare and Humphrey objections.",
-
   glimpse: (
     <p>
       The next lesson considers actualism, which keeps worlds but makes them actually existing abstract things. Graduate

@@ -219,9 +219,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the product rule, using the picture of a growing rectangle, and why the derivative of a product is not the product of the derivatives.",
-
   glimpse: (
     <p>
       Every rule here runs backwards later in the course: the product rule becomes integration by parts. And the one function

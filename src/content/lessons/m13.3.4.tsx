@@ -161,9 +161,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Morera's theorem and how it reverses Goursat's theorem, and why uniform limits of holomorphic functions are holomorphic while uniform limits of differentiable real functions need not be differentiable.",
-
   glimpse: (
     <p>
       The next part studies singularities through Laurent series. Morera and Weierstrass are what make the Gamma and zeta

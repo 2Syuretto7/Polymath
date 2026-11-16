@@ -235,9 +235,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why Socrates was tried, how he defended himself in the Apology, why he refused to escape in the Crito, and whether the two dialogues are consistent.",
-
   glimpse: (
     <p>
       Plato&rsquo;s <em>Phaedo</em> describes Socrates&rsquo; last day and his arguments that the soul survives death.

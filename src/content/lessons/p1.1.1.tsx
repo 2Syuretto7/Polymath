@@ -207,9 +207,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the dream argument as a valid argument with two premises, and describe one way of resisting it.",
-
   glimpse: (
     <p>
       Next, what knowledge is, and why true belief with good reasons may still fall short of it. Descartes&rsquo;s method of

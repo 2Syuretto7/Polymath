@@ -200,9 +200,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the analogy of the sun, the four segments of the divided line, the allegory of the cave, and Plato's idea that education turns the soul around.",
-
   glimpse: (
     <p>
       The <em>Theaetetus</em> starts the question of knowledge again from the beginning, without the Forms. Plotinus, at

@@ -163,9 +163,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the implicit function theorem says, why the condition on ∂F/∂y matters, how the derivative of the implicit function is found, and how the theorem follows from the inverse function theorem.",
-
   glimpse: (
     <p>
       The next lesson uses these theorems to define manifolds: spaces that look, near each point, like a piece of

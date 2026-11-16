@@ -145,9 +145,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Gauss’s lemma and its proof by folding residues above p/2 back into the lower half, how it shows exactly when 2 is a square modulo p, and why counting is the bridge to quadratic reciprocity.",
-
   glimpse: (
     <p>
       The next lesson proves quadratic reciprocity by counting lattice points. Sums of two squares and the splitting of primes in

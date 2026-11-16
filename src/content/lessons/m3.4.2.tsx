@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the column space and null space of a matrix are, how they answer whether Ax = b is solvable and how many solutions it has, and how to find the special solutions from the reduced echelon form.",
-
   glimpse: (
     <p>
       Two more subspaces complete the picture in the lesson on the four fundamental subspaces. When Ax = b has no

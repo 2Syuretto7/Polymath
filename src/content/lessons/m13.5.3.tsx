@@ -151,9 +151,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the identity theorem, the open mapping theorem and its proof from Rouché, and how it gives the maximum modulus principle and local invertibility where f′ is not zero.",
-
   glimpse: (
     <p>
       The next part studies conformal maps, which by this lesson are the holomorphic functions with non-vanishing

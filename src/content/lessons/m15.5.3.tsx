@@ -136,9 +136,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the Euler characteristic V − E + F, why subdividing does not change it, its values 2 − 2g and 2 − k for closed surfaces, and consequences such as the five Platonic solids and the Gauss-Bonnet theorem.",
-
   glimpse: (
     <p>
       This completes the topology course. The Euler characteristic reappears as total curvature in differential geometry, and

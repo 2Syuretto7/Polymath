@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of the derivative as a limit, why differentiable functions are continuous, how to prove the chain rule properly, and why Darboux's theorem forbids derivatives from having jumps.",
-
   glimpse: (
     <p>
       The next lesson proves the mean value theorems, which connect the derivative to the behaviour of the function on whole

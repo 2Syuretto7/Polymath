@@ -179,9 +179,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend logical behaviourism and Ryle’s idea of mental states as dispositions, the category mistake and the ghost in the machine, the circularity objection, the pretender and super-Spartan cases, and what functionalism keeps from behaviourism.",
-
   glimpse: (
     <p>
       The next lesson looks inside the head: the identity theory says mental states are brain states. Functionalism later

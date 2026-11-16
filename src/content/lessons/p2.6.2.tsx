@@ -223,9 +223,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the two rules for identity, how symmetry of identity can be proved from them, and why the identity of indiscernibles is not a rule of logic.",
-
   glimpse: (
     <p>
       The last lesson of the course gathers strategies for finding proofs. Philosophy of Language takes up Frege&rsquo;s

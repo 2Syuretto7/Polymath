@@ -148,9 +148,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the arc length integral, why it is the limit of inscribed polygons, why it does not depend on the parametrisation, and how every regular curve can be reparametrised to have unit speed.",
-
   glimpse: (
     <p>
       Next, curvature and torsion: for a unit speed curve, how fast the tangent turns, and how fast the curve twists out of

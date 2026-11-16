@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the first isomorphism theorem and why its map is well defined, how it gives |G| = |ker φ| · |φ(G)|, the second and third theorems, and how to use them to identify quotient groups.",
-
   glimpse: (
     <p>
       The next chapter studies the symmetric groups, which contain every finite group. Linear Algebra II proves the same

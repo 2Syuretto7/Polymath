@@ -216,9 +216,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend who has never studied philosophy what makes a question philosophical, using one example of your own.",
-
   glimpse: (
     <p>
       Next you will ask how philosophy and science divide the work, and where they overlap. Socrates&rsquo; &ldquo;What is

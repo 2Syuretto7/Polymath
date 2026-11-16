@@ -236,9 +236,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the main changes between Ockham and Descartes: the via moderna, the idea of God's absolute power, humanism, the Reformation and its sceptical crisis, and the new science, and whether modern philosophy was a break.",
-
   glimpse: (
     <p>
       The next course opens with Descartes, who answered the sceptical crisis by doubting everything he could, to find

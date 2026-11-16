@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a universal is, the one over many argument for realism, the difference between Platonic and Aristotelian realism and between sparse and abundant theories, and one objection such as Bradley's regress.",
-
   glimpse: (
     <p>
       The next lesson looks at nominalists, who deny universals, and the one after at tropes, which are particular properties.

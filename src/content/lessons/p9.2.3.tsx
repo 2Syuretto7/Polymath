@@ -173,9 +173,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the forces and relations of production, base and superstructure, how Marx thought history moves from one mode of production to another, what ideology is, and the main objections.",
-
   glimpse: (
     <p>
       The next lesson turns to Capital, where Marx analyses how profit arises from labour under capitalism. Political

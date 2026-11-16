@@ -177,9 +177,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the change of variables formula, why the absolute value of the Jacobian determinant appears, and how polar coordinates give the area of a disc and the integral of the bell curve.",
-
   glimpse: (
     <p>
       The next chapter integrates along curves and across surfaces in space, where the same stretching factor reappears as

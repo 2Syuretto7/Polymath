@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Lewis's counterfactual analysis of causation, how chains of dependence handle early preemption, and the problems of overdetermination, transitivity and omissions.",
-
   glimpse: (
     <p>
       The next lesson considers process theories, which look for a physical connection instead. Graduate metaphysics returns

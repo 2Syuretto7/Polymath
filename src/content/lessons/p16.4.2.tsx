@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Goodman's grue, why the evidence supports 'all emeralds are grue' as well as 'all emeralds are green', the symmetry between the two vocabularies, and Goodman's answer in terms of entrenchment.",
-
   glimpse: (
     <p>
       Next, Bayesian confirmation theory measures how evidence raises the probability of a hypothesis, and locates the grue

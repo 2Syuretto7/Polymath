@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why a matrix is upper-triangular exactly when each initial span of the basis is invariant, how quotient spaces prove every complex operator has a triangular form, and what the diagonal tells you.",
-
   glimpse: (
     <p>
       The next chapter adds inner products, length and angle. With them the triangular form leads to the spectral theorem

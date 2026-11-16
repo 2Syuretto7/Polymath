@@ -213,9 +213,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how Aquinas fitted faith and reason together, the difference between preambles and articles of faith, and his view on whether reason can prove the world had a beginning.",
-
   glimpse: (
     <p>
       The next lesson examines the most famous preambles: Aquinas&rsquo;s five ways of proving that God exists.

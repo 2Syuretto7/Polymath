@@ -158,9 +158,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the definition of expectation, linearity and why it needs no independence, the method of indicators with the binomial and the hat check, the law of the unconscious statistician, and the St Petersburg paradox.",
-
   glimpse: (
     <p>
       The next lesson measures spread with the variance. Conditional expectation and the law of large numbers build directly

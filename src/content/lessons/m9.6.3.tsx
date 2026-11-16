@@ -130,9 +130,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why the mean is the best constant predictor under squared error, why E(Y | X) is the best predictor of all, the formulas for the best linear predictor and its error (1 − ρ²)Var(Y), and how the answer changes under absolute error.",
-
   glimpse: (
     <p>
       The next chapter proves the law of large numbers and the central limit theorem. Regression in statistics estimates the

@@ -150,9 +150,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a normal subgroup is, why the conditions gNg⁻¹ = N and gN = Ng are equivalent, examples of normal and non-normal subgroups, and why subgroups of index 2 are always normal.",
-
   glimpse: (
     <p>
       The next lesson shows that the cosets of a normal subgroup form a group of their own, the quotient. The isomorphism

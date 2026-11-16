@@ -192,9 +192,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a positive definite matrix is, the tests by eigenvalues, pivots, leading determinants and AᵀA, why they agree in the 2 by 2 case by completing the square, and how this decides between a minimum and a saddle.",
-
   glimpse: (
     <p>
       The singular value decomposition, in the last chapter, is built from the positive semidefinite matrices AᵀA and AAᵀ.

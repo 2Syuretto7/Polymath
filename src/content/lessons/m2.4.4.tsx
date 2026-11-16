@@ -203,9 +203,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend how you can find the slope of a curve like x³ + y³ = 6xy without solving for y, and why the chain rule is the key step.",
-
   glimpse: (
     <p>
       Implicit differentiation is the engine of related-rates problems in the next chapter, where several quantities tied by

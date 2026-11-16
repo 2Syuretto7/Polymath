@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the inclusion–exclusion formula and why each element ends up counted once, how it counts derangements and why the proportion tends to 1/e, and how it counts onto functions.",
-
   glimpse: (
     <p>
       The next lesson counts by finding a rule that links each case to smaller ones. Number Theory develops Euler&rsquo;s

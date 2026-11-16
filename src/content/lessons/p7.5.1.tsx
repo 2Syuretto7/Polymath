@@ -181,9 +181,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hume's distinction between impressions and ideas, the copy principle and his evidence for it, how he uses it as a test for meaning, and the problem of the missing shade of blue.",
-
   glimpse: (
     <p>
       The next lesson applies the copy principle to causation and asks from what impression the idea of necessary connection

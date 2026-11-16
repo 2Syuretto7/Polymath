@@ -187,9 +187,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Hume's argument that there is no impression of the self, his bundle theory of the mind, his explanation of why we believe in a lasting self, and how Kant and Parfit responded.",
-
   glimpse: (
     <p>
       The next lesson turns to Hume&rsquo;s ethics and his famous observation about is and ought. Kant&rsquo;s paralogisms

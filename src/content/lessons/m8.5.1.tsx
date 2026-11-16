@@ -172,9 +172,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what generalised eigenvectors and generalised eigenspaces are, why null spaces of powers stop growing, the decomposition of a complex space into generalised eigenspaces, multiplicity, and the Cayley-Hamilton theorem.",
-
   glimpse: (
     <p>
       The next lesson studies nilpotent operators, which is what T − λI becomes on each generalised eigenspace. Together they

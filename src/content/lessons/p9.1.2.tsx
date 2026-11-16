@@ -168,9 +168,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the problem Hegel's Phenomenology starts from, how each shape of consciousness is tested by its own standard, the example of 'Now is night', and how consciousness passes into self-consciousness.",
-
   glimpse: (
     <p>
       The next lesson reaches the most famous passage in the book, the struggle for recognition between lord and bondsman.

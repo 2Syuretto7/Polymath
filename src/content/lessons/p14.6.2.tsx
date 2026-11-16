@@ -190,9 +190,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the difference between nations and states, civic and ethnic nationalism, the argument for liberal nationalism and its objections, and Tagore's critique.",
-
   glimpse: (
     <p>
       The last lesson of the course asks what human rights are and whether they are universal. Applied ethics later returns

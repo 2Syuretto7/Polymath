@@ -182,9 +182,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Feyerabend's argument against method, the Galileo and tower example, counterinduction and proliferation, and the main criticisms of epistemological anarchism.",
-
   glimpse: (
     <p>
       Next, the philosophy of confirmation looks at how evidence supports theories in detail, starting with the raven

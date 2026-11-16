@@ -209,9 +209,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend why undoing 'multiply by 9/5 then add 32' means subtracting 32 first. Then explain why squaring cannot be undone on all numbers, and what we do about it.",
-
   glimpse: (
     <p>
       Next, transforming graphs: shifting, stretching and reflecting are compositions with very simple functions. The

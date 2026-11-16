@@ -201,9 +201,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the design argument as Cleanthes states it, why it is an argument from analogy, Philo's main objections including the problem of evil, and how the argument fared after Hume.",
-
   glimpse: (
     <p>
       The next chapter looks at Reid&rsquo;s reply to Hume&rsquo;s scepticism and at the debate over absolute space. The

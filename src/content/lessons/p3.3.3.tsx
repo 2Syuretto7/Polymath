@@ -240,9 +240,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what an inference to the best explanation is, which virtues make one explanation better than another, and why the Neptune and Vulcan stories teach caution.",
-
   glimpse: (
     <p>
       Philosophy of Science studies the hypothetico-deductive method, which tests hypotheses through their predictions,

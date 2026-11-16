@@ -155,9 +155,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what the dual space and dual basis are, how the dual map works and why its matrix is the transpose, what annihilators are, and how duality proves that row rank equals column rank.",
-
   glimpse: (
     <p>
       The next chapter turns to eigenvalues, starting with polynomials over ℂ and ℝ. Inner products later identify a space

@@ -160,9 +160,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend when ℤ_mn splits as ℤ_m × ℤ_n, what the structure theorem for finitely generated abelian groups says, and how to count the abelian groups of a given order.",
-
   glimpse: (
     <p>
       The next lesson turns from abelian groups, which are built from cyclic pieces, to simple groups, the pieces from which

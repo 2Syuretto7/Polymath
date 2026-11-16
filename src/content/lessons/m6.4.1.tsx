@@ -176,9 +176,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what open and closed sets are, using neighbourhoods, interior points and limit points, why a set is closed exactly when its complement is open, and why many sets are neither.",
-
   glimpse: (
     <p>
       The next lesson combines closed and bounded into compactness, and proves the Heine-Borel theorem. In metric spaces the

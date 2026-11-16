@@ -133,9 +133,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend the possible worlds analysis of possibility, necessity and contingency, the duality between them, how different kinds of necessity restrict the worlds, and the question of what worlds are.",
-
   glimpse: (
     <p>
       The next lesson meets Lewis&rsquo;s bold answer that worlds are concrete universes. Modal logic develops Kripke

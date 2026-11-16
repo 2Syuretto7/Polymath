@@ -166,9 +166,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend Wittgenstein's view that meaning is use, language games and forms of life, his criticism of the picture that every word names an object, family resemblance, and one objection to use theories.",
-
   glimpse: (
     <p>
       The next chapter studies what we do with words, beginning with Austin&rsquo;s speech acts. Wittgenstein&rsquo;s remarks on

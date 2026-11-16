@@ -149,9 +149,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend presentism, the growing block, eternalism and the moving spotlight, the truthmaker objection to presentism, and why relativity is often thought to favour eternalism.",
-
   glimpse: (
     <p>
       The next lesson asks whether time travel is possible, and which views of time allow it. Philosophy of physics studies

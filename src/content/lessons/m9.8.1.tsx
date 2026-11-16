@@ -139,9 +139,6 @@ export const lesson: LessonContent = {
     },
   ],
 
-  teachBack:
-    "Explain to a friend what a Markov chain is, what the transition matrix records, why n-step probabilities are given by Pⁿ through the law of total probability, and how to forecast the weather chain.",
-
   glimpse: (
     <p>
       The next lesson finds the distributions that a chain leaves unchanged. Later lessons ask when chains forget where they
