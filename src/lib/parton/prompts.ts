@@ -3,6 +3,11 @@ import type { Answer } from "@/lib/types";
 /**
  * Parton's prompts. Pure functions and constants, so they can be tested and read in one place.
  *
+ * Parton gives more hints and fewer solutions. On every practice question it first judges whether
+ * the learner can solve it from where they are. If they can, it does not nudge them towards the
+ * solution at all. If they cannot, it nudges them towards it with a hint, climbing the ladder below,
+ * and still prefers a hint to a solution.
+ *
  * The design rests on one separation: the model that writes a hint never sees the answer.
  * It has to think the problem through like a tutor would. A second, separate pass sees the
  * answer and the draft, and only judges whether the draft gives the answer away.
@@ -35,9 +40,16 @@ export const RUNGS = [
   "Rung 5, a parallel example: work a different but analogous example completely (different numbers, objects or claim), then ask the learner to do the same for their question. The example must not share the learner's answer.",
 ] as const;
 
+/** What Parton does when it judges that the learner can solve the question without help. */
+export const NO_NUDGE =
+  "No nudge: the learner can solve this on their own. Do not point them towards the solution in any way: no method, no definition to use, no first move, no skeleton, no example. Say honestly that you think they can do it, answer only what they asked if it is not about how to solve the question, and hand the question back to them.";
+
 export const HINT_RULES = `Rules for practice questions, which override everything else:
-- Never give the answer to any practice question in this lesson: not the final value, not the chosen option, not the finished proof or argument, and not the last step that makes it obvious.
-- If the learner asks for the answer, say kindly that finding it is the point, then give a hint at the allowed rung.
+- First, judge honestly whether the learner can solve the question on their own from where they are now, using their message, their working, their recent attempts and how many hints they have had. Record it in can_solve.
+- If you judge that they can solve it, do not nudge them towards the solution at all. Follow the no-nudge level in the context, even if they ask for a hint.
+- If you judge that they cannot solve it, nudge them towards the solution with a hint at the allowed rung of the hint ladder.
+- Give more hints and fewer solutions. Always prefer a hint to a solution: a nudge is a hint, never the answer. Do not give the final value, the chosen option, the finished proof or argument, or the last step that makes it obvious.
+- If the learner asks for the answer, say kindly that finding it is the point, then follow your judgement above.
 - If the learner shows working, find the first line that goes wrong and ask about that line. Do not correct it for them.
 - If their working is right so far, say so plainly and ask what comes next.
 - Theory, intuition and definitions you may explain freely and fully, as a good teacher would, as long as the explanation does not solve a practice question.`;
@@ -45,17 +57,21 @@ export const HINT_RULES = `Rules for practice questions, which override everythi
 export const HINT_SCHEMA = {
   type: "object",
   properties: {
+    can_solve: {
+      type: "boolean",
+      description: "Your judgement: true if the learner can solve the question on their own from where they are now, so you must not nudge them; false if they cannot, so you nudge them towards the solution with a hint. For a general question that touches no practice question, true.",
+    },
     reply: { type: "string", description: "What Parton says to the learner." },
     misconception: {
       type: "string",
       description: "If the learner's message or attempts show a specific misunderstanding, name it in one short sentence for Parton's notes. Otherwise an empty string.",
     },
   },
-  required: ["reply", "misconception"],
+  required: ["can_solve", "reply", "misconception"],
   additionalProperties: false,
 } as const;
 
-export type HintOutput = { reply: string; misconception: string };
+export type HintOutput = { can_solve: boolean; reply: string; misconception: string };
 
 export const CHECK_SCHEMA = {
   type: "object",
@@ -72,7 +88,7 @@ export const CHECK_SCHEMA = {
 
 export type CheckOutput = { gives_away: boolean; safer_reply: string };
 
-export const CHECK_SYSTEM = `You review replies from Parton, a tutor that gives hints and never solutions.
+export const CHECK_SYSTEM = `You review replies from Parton, a tutor that gives more hints and fewer solutions, and always prefers a hint to a solution.
 
 You will see the protected answers to the practice questions and a draft reply. Decide whether the draft gives any of them away. A draft gives an answer away if it:
 - states or clearly implies a final value, expression or chosen option for a practice question;
@@ -82,7 +98,7 @@ You will see the protected answers to the practice questions and a draft reply. 
 
 A draft is fine if it asks questions, points to a definition or section, describes a first move without carrying it out, gives a skeleton with blanks, or works a genuinely different example. Explaining theory is fine unless it settles a practice question.
 
-If the draft gives something away, write safer_reply: keep Parton's voice and anything harmless in the draft, remove what gives the answer away, and make it a smaller hint, at most the rung named in the request. Use TeX between dollar signs. Otherwise leave safer_reply empty.`;
+If the draft gives something away, write safer_reply: keep Parton's voice and anything harmless in the draft, remove what gives the answer away, and make it a smaller hint, at most the level named in the request. Use TeX between dollar signs. Otherwise leave safer_reply empty.`;
 
 export const MARK_SCHEMA = {
   type: "object",
@@ -156,7 +172,7 @@ export function describeAnswer(a: Answer): string {
   }
 }
 
-/** The hint ladder climbs one rung each time Parton is asked about the same question. */
+/** The hint ladder climbs one rung each time Parton nudges the learner on the same question. Replies with no nudge do not count. */
 export function rungFor(hintsAlreadyGiven: number): number {
   return Math.min(RUNGS.length, Math.max(1, hintsAlreadyGiven + 1));
 }

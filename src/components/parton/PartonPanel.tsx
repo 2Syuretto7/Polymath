@@ -120,7 +120,7 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
             <Close />
           </button>
         </header>
-        <p className="parton-sub"><span className="mono-tag">Hints, never answers</span><span>{lessonTitle}</span></p>
+        <p className="parton-sub"><span className="mono-tag">More hints, fewer answers</span><span>{lessonTitle}</span></p>
 
         <div className="parton-list" ref={listRef}>
           {!connected && (
@@ -131,7 +131,7 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
           )}
           {connected && messages.length === 0 && (
             <div className="parton-empty">
-              <p>Ask anything about this lesson. For practice questions, I give hints, not answers. Show your working for better hints.</p>
+              <p>Ask anything about this lesson. For practice questions, if I think you can solve it yourself, I will leave it to you. If I think you are stuck, I will nudge you with a hint. Show your working so I can judge better.</p>
               <div className="parton-starters">
                 {STARTERS.map((t) => (
                   <button key={t} type="button" tabIndex={open ? 0 : -1}
@@ -144,10 +144,10 @@ export function PartonPanel({ lessonId, lessonTitle, initial, connected }: {
           )}
           {messages.map((m) => (
             <div key={m.id} className={`parton-msg parton-msg-${m.role}`}>
-              {(m.exerciseLabel || m.rung) && (
+              {(m.exerciseLabel || m.rung != null) && (
                 <p className="parton-msg-meta">
                   {m.role === "user" && m.exerciseLabel}
-                  {m.role === "parton" && m.rung ? `Hint ${m.rung} of 5 · ${RUNG_NAMES[m.rung]}` : null}
+                  {m.role === "parton" && m.rung != null ? (m.rung > 0 ? `Hint ${m.rung} of 5 · ${RUNG_NAMES[m.rung]}` : "No hint · Over to you") : null}
                 </p>
               )}
               <div className="parton-prose" dangerouslySetInnerHTML={{ __html: m.html }} />
