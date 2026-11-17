@@ -17,6 +17,12 @@ test("due reviews come before new lessons", () => {
   assert.deepEqual(chooseNextStep({ ...base, dueReviews: 3 }), { kind: "review", count: 3 });
 });
 
+test("after a finished review session, a lesson comes before more review", () => {
+  const step = chooseNextStep({ ...base, dueReviews: 4, reviewedSinceLesson: true });
+  assert.equal(step.kind, "begin");
+  assert.equal(chooseNextStep({ ...base, dueReviews: 4, reviewedSinceLesson: false }).kind, "review");
+});
+
 test("alternates tracks", () => {
   const step = chooseNextStep({ ...base, lastTrack: "mathematics" });
   assert.equal(step.kind === "begin" && step.lesson.id, "p");

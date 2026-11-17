@@ -244,7 +244,7 @@ async function store(setId: string, picked: (Confirmed & { card: string | null }
 const REVIEW_SET = "review";
 
 export type ReviewResult =
-  | { ok: true; questions: RecallView[]; waiting: number }
+  | { ok: true; questions: RecallView[]; waiting: number; finished?: boolean }
   | { ok: false; error: string; offline?: boolean };
 
 const latestReview = () =>
@@ -253,6 +253,25 @@ const latestReview = () =>
      WHERE lesson_id = $1 AND batch = (SELECT max(batch) FROM recall_questions WHERE lesson_id = $1) ORDER BY id`,
     [REVIEW_SET],
   );
+
+/**
+ * True when the latest review session has every question answered, and no lesson work has happened
+ * since. A lesson comes next then, rather than another review session.
+ */
+export async function reviewFinishedSinceLesson(): Promise<boolean> {
+  const rows = await query<{ finished: boolean }>(
+    `WITH latest AS (
+       SELECT attempts, answered_at FROM recall_questions
+       WHERE lesson_id = $1 AND batch = (SELECT max(batch) FROM recall_questions WHERE lesson_id = $1)
+     )
+     SELECT coalesce(
+       (SELECT count(*) > 0 AND bool_and(attempts > 0) FROM latest)
+       AND (SELECT max(answered_at) FROM latest) > coalesce((SELECT max(updated_at) FROM progress), '-infinity'::timestamptz),
+       false) AS finished`,
+    [REVIEW_SET],
+  );
+  return rows[0]?.finished ?? false;
+}
 
 /** Due cards that the given set does not already cover. */
 async function waitingBeyond(set: RecallRow[]): Promise<number> {
@@ -274,6 +293,8 @@ export async function reviewSet(fresh = false): Promise<ReviewResult> {
   if (!fresh && open.some((r) => r.attempts === 0)) {
     return { ok: true, questions: open.map(toRecallView), waiting: await waitingBeyond(open) };
   }
+  // One review session at a time: once it is finished, a lesson comes before the next one.
+  if (await reviewFinishedSinceLesson()) return { ok: true, questions: [], waiting: 0, finished: true };
 
   const covered = fresh ? open.filter((r) => r.attempts === 0 && r.review_card).map((r) => r.review_card!) : [];
   // Cards not in the set being replaced come first, so "next questions" moves on to other ideas.

@@ -8,7 +8,7 @@ import { chooseNextStep, type LearnStep } from "./scheduler";
 import type { Track } from "./types";
 import { PartonError, markWritten, partonConnected } from "./parton";
 import { renderParton } from "./parton/render";
-import { attemptRecall, isRecallId } from "./recall";
+import { attemptRecall, isRecallId, reviewFinishedSinceLesson } from "./recall";
 
 const scheduler = fsrs({ enable_fuzz: true, request_retention: 0.9 });
 const TZ = "Asia/Kolkata";
@@ -37,8 +37,9 @@ export async function dueReviewCount(): Promise<number> {
   return rows[0]?.n ?? 0;
 }
 
-export async function nextStep(): Promise<LearnStep> {
-  const [progress, due, pace, today, last] = await Promise.all([
+/** The next step. After a finished review session, or with `skipReview`, a lesson comes before more review. */
+export async function nextStep(skipReview = false): Promise<LearnStep> {
+  const [progress, due, pace, today, last, reviewed] = await Promise.all([
     loadProgress(),
     dueReviewCount(),
     getPace(),
@@ -46,6 +47,7 @@ export async function nextStep(): Promise<LearnStep> {
       `SELECT count(*)::int AS n FROM progress WHERE (started_at AT TIME ZONE '${TZ}')::date = (now() AT TIME ZONE '${TZ}')::date`,
     ),
     query<{ lesson_id: string }>("SELECT lesson_id FROM progress ORDER BY started_at DESC LIMIT 1"),
+    skipReview ? Promise.resolve(true) : reviewFinishedSinceLesson(),
   ]);
   const mastered = new Set(progress.filter((p) => p.status === "mastered").map((p) => p.lesson_id));
   // Continue the most recent open lesson whose prerequisites are all mastered. A lesson started
@@ -59,6 +61,7 @@ export async function nextStep(): Promise<LearnStep> {
   return chooseNextStep({
     openLesson: openNode,
     dueReviews: due,
+    reviewedSinceLesson: reviewed,
     frontier: frontier(GRAPH, mastered),
     lastTrack,
     newLessonsToday: today[0]?.n ?? 0,
