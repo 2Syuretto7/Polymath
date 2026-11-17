@@ -2,6 +2,7 @@ import "server-only";
 import type Anthropic from "@anthropic-ai/sdk";
 import { query } from "@/lib/db";
 import { EXERCISES, GRAPH, LESSON_BY_ID, exerciseId, type ExerciseRef } from "@/lib/curriculum";
+import { prerequisitesOf } from "@/lib/graph";
 import { PartonError, partonConnected, structured } from "./claude";
 import { toPlainText } from "./plaintext";
 import {
@@ -53,15 +54,23 @@ export function lessonBrief(lessonId: string): string {
   if (cached) return cached;
   const lesson = LESSON_BY_ID.get(lessonId)!;
   const node = GRAPH.nodes.get(lessonId)!;
-  const buildsOn = GRAPH.edges
-    .filter((e) => e.to === lessonId && e.kind !== "foreshadows")
-    .map((e) => GRAPH.nodes.get(e.from)!)
-    .map((n) => `- ${n.title} (${n.course} ${n.courseTitle})`);
+  const line = (id: string) => {
+    const n = GRAPH.nodes.get(id)!;
+    return `- ${n.title} (${n.course} ${n.courseTitle})`;
+  };
+  const buildsOn = (GRAPH.requires.get(lessonId) ?? []).map(line);
+  const known = prerequisitesOf(GRAPH, lessonId);
+  const notYet = [...new Set(GRAPH.edges.filter((e) => e.kind === "parallels" && (e.to === lessonId || e.from === lessonId)).map((e) => (e.from === lessonId ? e.to : e.from)))]
+    .filter((id) => !known.has(id))
+    .map(line);
   const practice = lesson.practice.map((e) => exerciseText(EXERCISES.get(exerciseId(lessonId, e.key))!));
   const brief = [
     `# The lesson the learner is studying`,
     `"${node.title}", in ${node.course} ${node.courseTitle}, chapter ${node.chapter} (${node.chapterTitle}). Track: ${node.track}.`,
-    buildsOn.length ? `It builds on these earlier lessons, which you may point back to:\n${buildsOn.join("\n")}` : "It is one of the first lessons; it builds on nothing earlier.",
+    buildsOn.length
+      ? `It builds on these earlier lessons, which the learner has mastered and you may point back to:\n${buildsOn.join("\n")}`
+      : "It is one of the first lessons; it builds on nothing earlier, so assume nothing beyond this lesson.",
+    ...(notYet.length ? [`Related lessons the learner may not have studied yet. Do not rely on them:\n${notYet.join("\n")}`] : []),
     `## Puzzle\n${toPlainText(lesson.puzzle)}`,
     `## Intuition\n${toPlainText(lesson.intuition)}`,
     `## Theory\n${toPlainText(lesson.theory)}`,

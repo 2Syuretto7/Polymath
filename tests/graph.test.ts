@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildGraph, frontier, isUnlocked, COURSES } from "../src/lib/graph.ts";
+import { buildGraph, frontier, isUnlocked, prerequisitesOf, COURSES } from "../src/lib/graph.ts";
 
 const authored = new Map([["m0.1.1", {}], ["m0.1.2", {}], ["p0.1.1", { parallels: ["m0.1.1"] }]]);
 const g = buildGraph(authored);
@@ -30,4 +30,22 @@ test("frontier starts with the first lesson of each track", () => {
 test("rejects links to unknown lessons and cycles", () => {
   assert.throws(() => buildGraph(new Map([["m0.1.1", { revisits: ["nope"] }]])), /unknown lesson/);
   assert.throws(() => buildGraph(new Map([["m0.1.1", { requires: ["m0.1.3"] }]])), /cycle/);
+});
+
+test("a lesson that revisits or applies another waits until that one is mastered", () => {
+  const m1Last = COURSES.find((c) => c.code === "M1")!.chapters.at(-1)!.lessons.at(-1)!.id;
+  const linked = buildGraph(new Map<string, object>([["m3.1.1", { revisits: ["m1.1.2"] }], ["m3.1.2", { applies: ["m1.1.3"] }]]));
+  assert.ok(linked.requires.get("m3.1.1")!.includes("m1.1.2"));
+  assert.equal(isUnlocked(linked, "m3.1.1", prerequisitesOf(linked, "m1.1.1")), false);
+  assert.ok(prerequisitesOf(linked, "m3.1.2").has("m1.1.3"));
+  assert.ok(!prerequisitesOf(linked, "m3.1.2").has(m1Last));
+});
+
+test("parallels and foreshadows never gate", () => {
+  const linked = buildGraph(new Map<string, object>([["m3.1.1", { parallels: ["m1.1.2"], foreshadows: ["m3.2.1"] }]]));
+  assert.ok(!(linked.requires.get("m3.1.1") ?? []).includes("m1.1.2"));
+});
+
+test("rejects a lesson that builds on a course which comes after its own", () => {
+  assert.throws(() => buildGraph(new Map([["m1.1.1", { revisits: ["m6.1.1"] }]])), /comes after M1; use foreshadows/);
 });

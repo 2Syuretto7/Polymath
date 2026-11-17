@@ -7,8 +7,8 @@ export const lesson: LessonContent = {
   id: "m11.2.2",
   minutes: 90,
   links: {
-    revisits: ["m11.2.1", "m7.6.3", "m4.4.3"],
-    foreshadows: ["m11.2.3", "m11.3.1", "m11.4.4"],
+    revisits: ["m11.2.1", "m4.4.3"],
+    foreshadows: ["m11.2.3", "m11.3.1", "m11.4.4", "m7.6.3"],
   },
 
   puzzle: (
@@ -76,11 +76,11 @@ export const lesson: LessonContent = {
         </p>
       </Proof>
 
-      <Remark title="a structural view">
+      <Remark title="looking ahead">
         <p>
-          The theorem says the map <M>{"x \\mapsto (x \\bmod m, x \\bmod n)"}</M> is a ring isomorphism{" "}
-          <M>{"\\mathbb{Z}/mn \\cong \\mathbb{Z}/m \\times \\mathbb{Z}/n"}</M> when <M>{"\\gcd(m, n) = 1"}</M>. Units match
-          units, so <M>{"\\varphi(mn) = \\varphi(m)\\varphi(n)"}</M>. In practice it lets one compute modulo a large{" "}
+          The theorem says the map <M>{"x \\mapsto (x \\bmod m, x \\bmod n)"}</M> matches residues modulo <M>{"mn"}</M>{" "}
+          one for one with pairs of residues modulo <M>{"m"}</M> and <M>{"n"}</M> when <M>{"\\gcd(m, n) = 1"}</M>, and it
+          respects addition and multiplication. Abstract algebra will call this a ring isomorphism. Units match units, so <M>{"\\varphi(mn) = \\varphi(m)\\varphi(n)"}</M>. In practice it lets one compute modulo a large{" "}
           <M>{"M"}</M> by working modulo its small factors and recombining, which speeds up RSA decryption.
         </p>
       </Remark>

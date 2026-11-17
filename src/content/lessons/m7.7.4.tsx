@@ -7,8 +7,8 @@ export const lesson: LessonContent = {
   id: "m7.7.4",
   minutes: 85,
   links: {
-    revisits: ["m7.7.1", "m0.2.5", "m8.2.1"],
-    foreshadows: ["m7.7.5", "m14.1.2", "m30.1.1"],
+    revisits: ["m7.7.1", "m0.2.5"],
+    foreshadows: ["m7.7.5", "m14.1.2", "m30.1.1", "m8.2.1"],
   },
 
   puzzle: (
