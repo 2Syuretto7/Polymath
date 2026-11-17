@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { toPlainText } from "../src/lib/parton/plaintext.ts";
 import { renderParton } from "../src/lib/parton/render.ts";
-import { describeAnswer, rungFor, RUNGS } from "../src/lib/parton/prompts.ts";
+import { describeAnswer, rungFor, RUNGS, HINT_RULES, HINT_SCHEMA, NO_NUDGE, CHECK_SYSTEM, VOICE } from "../src/lib/parton/prompts.ts";
 import { lesson as counting } from "../src/content/lessons/m0.1.1.tsx";
 import { lesson as questions } from "../src/content/lessons/p0.1.1.tsx";
 
@@ -41,6 +41,20 @@ test("bad TeX falls back to code instead of throwing", () => {
 test("the hint ladder climbs one rung per hint and stops at five", () => {
   assert.equal(RUNGS.length, 5);
   assert.deepEqual([0, 1, 2, 3, 4, 5, 9].map(rungFor), [1, 2, 3, 4, 5, 5, 5]);
+});
+
+test("Parton judges whether the learner can solve it: no nudge if so, a hint towards the solution if not", () => {
+  assert.ok(HINT_SCHEMA.required.includes("can_solve"));
+  assert.match(HINT_RULES, /If you judge that they can solve it, do not nudge them towards the solution at all/);
+  assert.match(HINT_RULES, /If you judge that they cannot solve it, nudge them towards the solution with a hint/);
+  assert.match(NO_NUDGE, /Do not point them towards the solution in any way/);
+});
+
+test("Parton gives more hints and fewer solutions, and only what has been taught", () => {
+  assert.match(HINT_RULES, /Give more hints and fewer solutions\. Always prefer a hint to a solution/);
+  assert.match(CHECK_SYSTEM, /more hints and fewer solutions/);
+  assert.doesNotMatch(HINT_RULES + CHECK_SYSTEM, /never solutions/);
+  assert.match(VOICE, /Never use, assume or lean on an idea the learner has not been taught yet/);
 });
 
 test("protected answers are described for the reviewing pass", () => {

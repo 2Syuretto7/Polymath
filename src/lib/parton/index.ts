@@ -13,6 +13,7 @@ import {
   MARK_RULES,
   isAccepted,
   MARK_SCHEMA,
+  NO_NUDGE,
   RUNGS,
   VOICE,
   describeAnswer,
@@ -28,6 +29,8 @@ export { PartonError, partonConnected };
 const HISTORY_TURNS = 16;
 const FALLBACK_HINT =
   "Let's slow down. Which definition or rule in the theory section does this question lean on? Write it out in your own words first, then try the question again.";
+const FALLBACK_NO_NUDGE =
+  "I think you can do this one yourself. Take another careful run at it, and show me your working if you get stuck.";
 
 // ---------------------------------------------------------------------------------------------
 // What Parton knows about a lesson. Built once per lesson per server process; never includes answers.
@@ -109,7 +112,7 @@ async function note(lessonId: string, exercise: string | null, kind: "misconcept
 // ---------------------------------------------------------------------------------------------
 // The give-away check. A separate pass that sees the answers and judges only the draft.
 
-async function guard(draft: string, answers: string, maxRung: number): Promise<string> {
+async function guard(draft: string, answers: string, level: string, fallback = FALLBACK_HINT): Promise<string> {
   let reply = draft;
   for (let pass = 0; pass < 2; pass++) {
     const verdict = await structured<CheckOutput>({
@@ -119,14 +122,14 @@ async function guard(draft: string, answers: string, maxRung: number): Promise<s
       maxTokens: 6000,
       messages: [{
         role: "user",
-        content: `Protected answers:\n${answers}\n\nIf you rewrite, go no further than: ${RUNGS[maxRung - 1]}\n\nDraft reply:\n<<<\n${reply}\n>>>`,
+        content: `Protected answers:\n${answers}\n\nIf you rewrite, go no further than: ${level}\n\nDraft reply:\n<<<\n${reply}\n>>>`,
       }],
     });
     if (!verdict.gives_away) return reply;
     if (!verdict.safer_reply.trim()) break;
     reply = verdict.safer_reply;
   }
-  return FALLBACK_HINT;
+  return fallback;
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -164,7 +167,7 @@ export async function askParton(lessonId: string, exercise: string | null, messa
     [lessonId],
   );
   const previousHints = ref
-    ? (await query<{ n: number }>("SELECT count(*)::int AS n FROM parton_messages WHERE exercise_id = $1 AND role = 'parton'", [ref.id]))[0].n
+    ? (await query<{ n: number }>("SELECT count(*)::int AS n FROM parton_messages WHERE exercise_id = $1 AND role = 'parton' AND rung > 0", [ref.id]))[0].n
     : 0;
   const rung = ref ? rungFor(previousHints) : 2;
 
@@ -182,9 +185,11 @@ export async function askParton(lessonId: string, exercise: string | null, messa
       const misses = attempts.filter((a) => !a.correct).length;
       if (misses >= 3) context.push("They have missed it several times. Look for the misunderstanding behind the wrong answers, and name it in your notes.");
     }
-    context.push(`This is hint number ${previousHints + 1} on this question. Allowed level: ${RUNGS[rung - 1]} Go no further than this level.`);
+    context.push(`They have had ${previousHints} hint${previousHints === 1 ? "" : "s"} on this question so far.`);
+    context.push(`If you judge that they can solve it, the level is: ${NO_NUDGE}`);
+    context.push(`If you judge that they cannot, this would be hint number ${previousHints + 1}. Allowed level: ${RUNGS[rung - 1]} Go no further than this level.`);
   } else {
-    context.push("The learner is asking a general question, not tied to one practice question. If it does touch a practice question, give at most a rung 2 hint.");
+    context.push("The learner is asking a general question, not tied to one practice question. If it does touch a practice question, judge whether they can solve it: if they can, do not nudge them; if they cannot, give at most a rung 2 hint.");
   }
   const notes = await notesFor(lessonId);
   if (notes.length) context.push(`Your earlier notes on this learner's misunderstandings (revisit them if relevant):\n${notes.map((n) => `- ${n}`).join("\n")}`);
@@ -204,14 +209,15 @@ export async function askParton(lessonId: string, exercise: string | null, messa
       maxTokens: 12000,
       messages,
     });
-    const reply = await guard(draft.reply, protectedAnswers(lessonId), rung);
+    const nudge = !draft.can_solve;
+    const reply = await guard(draft.reply, protectedAnswers(lessonId), nudge ? RUNGS[rung - 1] : NO_NUDGE, nudge ? FALLBACK_HINT : FALLBACK_NO_NUDGE);
     const q = await query<MessageRow>(
       "INSERT INTO parton_messages (lesson_id, exercise_id, role, body) VALUES ($1, $2, 'user', $3) RETURNING id, role, body, rung, exercise_id",
       [lessonId, ref?.id ?? null, message],
     );
     const r = await query<MessageRow>(
       "INSERT INTO parton_messages (lesson_id, exercise_id, role, body, rung) VALUES ($1, $2, 'parton', $3, $4) RETURNING id, role, body, rung, exercise_id",
-      [lessonId, ref?.id ?? null, reply, ref ? rung : null],
+      [lessonId, ref?.id ?? null, reply, ref ? (nudge ? rung : 0) : null],
     );
     await note(lessonId, ref?.id ?? null, "misconception", draft.misconception);
     return { ok: true, question: toMessage(q[0]), reply: toMessage(r[0]) };
@@ -240,7 +246,7 @@ export async function markWritten(ref: ExerciseRef, response: string): Promise<M
     }],
   });
   const accepted = isAccepted(out);
-  const feedback = accepted ? out.feedback : await guard(out.feedback, describeAnswer(answer), 3);
+  const feedback = accepted ? out.feedback : await guard(out.feedback, describeAnswer(answer), RUNGS[2]);
   await note(ref.lessonId, ref.id, "misconception", out.misconception);
   return { accepted, feedback };
 }

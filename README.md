@@ -4,7 +4,7 @@ A private, single-learner university for mathematics and philosophy, live at
 [polymath.arnavraja.in](https://polymath.arnavraja.in).
 
 One Learn button, a graph of lessons from school arithmetic to graduate seminars,
-and Parton, a Feynman-style tutor that gives hints and never solutions.
+and Parton, a Feynman-style tutor that gives more hints and fewer solutions.
 
 ## Stack
 
@@ -46,8 +46,9 @@ npm run typecheck
 
 Parton is the tutor on every lesson page (`src/lib/parton/`). It needs `ANTHROPIC_API_KEY` in Vercel; without it, the panel says so and written work is provisionally accepted on submission.
 
-- **Hints, never answers.** The model that writes a hint never sees the answers. A second, separate pass sees the answers and the draft and rewrites any reply that gives one away (twice at most, then a safe fallback hint).
-- **A five-rung ladder** per question: a question back, a pointer, a nudge, a skeleton with blanks, a parallel worked example. Each ask on the same question climbs one rung.
+- **More hints, fewer solutions.** On a practice question Parton first judges whether the learner can solve it from where they are. If it thinks they can, it does not nudge them towards the solution at all. If it thinks they cannot, it nudges them towards it with a hint, always preferring a hint to a solution. Explanations use only what the learner has been taught.
+- **The answer stays hidden.** The model that writes a hint never sees the answers. A second, separate pass sees the answers and the draft and rewrites any reply that gives one away (twice at most, then a safe fallback hint).
+- **A five-rung ladder** per question: a question back, a pointer, a nudge, a skeleton with blanks, a parallel worked example. Each nudge on the same question climbs one rung; replies that leave the question to the learner do not.
 - **Marking.** Written proofs and arguments are marked against their rubric; the work counts towards mastery only when every criterion is met. Feedback points to the failing line and asks a question about it.
 - **Memory and repair.** Conversations, hints and noted misconceptions are stored per lesson and fed back to Parton in later lessons that build on them. Questions missed three or more times come back in review after twelve hours instead of a day.
 - **Fresh recall.** The recall questions at the top of a lesson are written new by Parton each time (`src/lib/recall.ts`) and never repeat: Parton is shown every earlier question so it avoids them, the database refuses a duplicate, and a second, independent pass must reach the same answer before a question is used. A set stays until every question in it has been tried, and recall aims at earlier struggles.
