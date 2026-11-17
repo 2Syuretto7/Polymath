@@ -46,12 +46,11 @@ export function ExerciseCard({ view, context, children, index }: {
   children: ReactNode;
   index?: number;
 }) {
-  const fresh = context === "review";
-  const [value, setValue] = useState(fresh ? "" : view.kind === "choice" ? view.response ?? "" : view.response ?? "");
-  const [solved, setSolved] = useState(fresh ? false : view.solved);
+  const [value, setValue] = useState(view.response ?? "");
+  const [solved, setSolved] = useState(view.solved);
   const [tries, setTries] = useState(0);
-  const [status, setStatus] = useState<Status>(fresh ? null : initialStatus(view));
-  const [feedback, setFeedback] = useState<string | null>(fresh ? null : view.feedbackHtml);
+  const [status, setStatus] = useState<Status>(initialStatus(view));
+  const [feedback, setFeedback] = useState<string | null>(view.feedbackHtml);
   const label = `Practice question ${index}`;
   const askable = context === "lesson" && index !== undefined;
   const [pending, start] = useTransition();

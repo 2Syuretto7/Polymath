@@ -40,7 +40,7 @@ npm run typecheck
 - Each written lesson is a file in `src/content/lessons/<id>.tsx`, listed in `src/content/lessons/index.ts`. A lesson provides its puzzle, intuition, theory, practice ladder, forward glimpse and any extra links (`parallels`, `foreshadows`, `revisits`, `applies`, `requires`).
 - `src/lib/graph.ts` builds the lesson graph. Each lesson requires the one before it; a course's first lesson requires the last lesson of every course it depends on; and a lesson that `requires`, `revisits` or `applies` another lesson opens only after that lesson is mastered, so Learn never offers an idea before the lesson that teaches it. Links to later material use `foreshadows`, and `parallels` never gates. The build fails if a link points nowhere, if a lesson builds on a course that comes after its own, or if prerequisites form a cycle. `tests/prerequisites.test.ts` presses Learn through the whole curriculum and checks that every lesson comes after everything it builds on.
 - Answers never reach the browser: exercises are checked on the server (`src/lib/check.ts`).
-- Mastered lessons become spaced-review cards scheduled with FSRS (`src/lib/learning.ts`).
+- Mastered lessons become spaced-review cards scheduled with FSRS (`src/lib/learning.ts`). The cards decide which ideas are due; the questions themselves are written new by Parton for every review session, three to five at a time, and never repeat an earlier practice, recall or review question (`src/lib/recall.ts`). The first answer to each decides when its idea returns.
 
 ## Parton
 
