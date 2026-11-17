@@ -1,5 +1,9 @@
 import type { LessonNode } from "./graph";
 import type { Track } from "./types";
+import { REVIEW_MAX, REVIEW_MIN } from "./parton/recallPrompts";
+
+/** How many questions a review session shows when this many ideas are due: three to five. */
+export const reviewSessionSize = (due: number) => Math.max(REVIEW_MIN, Math.min(REVIEW_MAX, due));
 
 export type LearnInputs = {
   /** A lesson started but not yet mastered, most recent first. */
@@ -44,7 +48,7 @@ export function describeStep(step: LearnStep): string {
     case "continue":
       return `Continue: ${step.lesson.title}`;
     case "review":
-      return step.count === 1 ? "One question to review" : `${Math.min(step.count, 12)} questions to review`;
+      return `${reviewSessionSize(step.count)} questions to review`;
     case "begin":
       return `Begin: ${step.lesson.title}`;
     case "rest":

@@ -13,7 +13,6 @@ import { attemptRecall, isRecallId } from "./recall";
 const scheduler = fsrs({ enable_fuzz: true, request_retention: 0.9 });
 const TZ = "Asia/Kolkata";
 export const MASTERY_THRESHOLD = 0.8;
-export const REVIEW_SESSION_SIZE = 12;
 
 type ProgressRow = { lesson_id: string; status: string; mastery: number };
 
@@ -110,7 +109,12 @@ export type AttemptResult = CheckResult & { lessonMastered?: boolean; verdict?: 
  * until then they are provisionally accepted on submission.
  */
 export async function attempt(id: string, input: string, context: Context, attemptInSession: number): Promise<AttemptResult> {
-  if (isRecallId(id)) return context === "recall" ? attemptRecall(id, input) : { correct: false, message: "Unknown exercise." };
+  if (isRecallId(id)) {
+    if (context === "lesson") return { correct: false, message: "Unknown exercise." };
+    const { result, reviewCard } = await attemptRecall(id, input, context);
+    if (reviewCard) await rateCard(reviewCard, result.correct ? Rating.Good : Rating.Again);
+    return result;
+  }
   const ref = EXERCISES.get(id);
   if (!ref) return { correct: false, message: "Unknown exercise." };
   const written = ref.exercise.answer.kind === "written";
@@ -232,23 +236,6 @@ async function struggledWith(lessonId: string, misses = 3): Promise<Set<string>>
     [`${lessonId}:%`, misses],
   );
   return new Set(rows.map((r) => r.exercise_id));
-}
-
-/** Due review questions, mixed across lessons so related ideas interleave. */
-export async function dueReviews(limit = REVIEW_SESSION_SIZE) {
-  const rows = await query<{ exercise_id: string }>(
-    "SELECT exercise_id FROM review_cards WHERE due <= now() ORDER BY due LIMIT $1",
-    [limit],
-  );
-  const refs = rows.map((r) => EXERCISES.get(r.exercise_id)).filter((r) => r !== undefined);
-  // Interleave: alternate lessons rather than grouping one lesson's questions together.
-  return refs.sort((a, b) => hash(a.id) - hash(b.id));
-}
-
-function hash(s: string) {
-  let h = 2166136261;
-  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
-  return h >>> 0;
 }
 
 export async function overallStats() {

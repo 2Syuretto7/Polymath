@@ -3,7 +3,7 @@ import { requireOwner } from "@/lib/auth";
 import { GRAPH } from "@/lib/curriculum";
 import { COURSES } from "@/lib/graph";
 import { nextStep, overallStats } from "@/lib/learning";
-import type { LearnStep } from "@/lib/scheduler";
+import { reviewSessionSize, type LearnStep } from "@/lib/scheduler";
 import { learnAction } from "./actions";
 import { TopBar } from "@/components/TopBar";
 import { RevealText } from "@/components/ui/RevealText";
@@ -82,9 +82,8 @@ function NextPanel({ step }: { step: LearnStep }) {
     meta = `${step.lesson.courseTitle} · Chapter ${step.lesson.chapter}, ${step.lesson.chapterTitle}`;
     code = `${step.lesson.course} / ${step.lesson.id}`;
   } else if (step.kind === "review") {
-    const n = Math.min(step.count, 12);
-    title = n === 1 ? "One question to review" : `${n} questions to review`;
-    meta = "Earlier ideas, mixed together, just before you would forget them.";
+    title = `${reviewSessionSize(step.count)} questions to review`;
+    meta = "New questions on earlier ideas, mixed together, just before you would forget them.";
     code = "review / spaced";
   } else if (step.reason === "pace") {
     title = "That's today's new learning done";

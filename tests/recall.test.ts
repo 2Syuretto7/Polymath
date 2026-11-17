@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { fingerprint, solverText, toAnswer, type DraftQuestion } from "../src/lib/parton/recallPrompts.ts";
+import { REVIEW_MAX, REVIEW_MIN, fingerprint, interleave, reviewPlan, solverText, toAnswer, type DraftQuestion } from "../src/lib/parton/recallPrompts.ts";
+import { reviewSessionSize } from "../src/lib/scheduler.ts";
 import { checkAnswer } from "../src/lib/check.ts";
 
 const base: DraftQuestion = {
@@ -45,4 +46,32 @@ test("the solver sees numbered options but never the answer", () => {
 test("fingerprints catch cosmetic rewordings of the same question", () => {
   assert.equal(fingerprint("What is $\\frac{1}{2} + 3$?"), fingerprint("what is  \\frac{1}{2}+3 ?"));
   assert.notEqual(fingerprint("What is $3 + 4$?"), fingerprint("What is $3 + 5$?"));
+});
+
+const sum = (m: Map<string, number>) => [...m.values()].reduce((a, b) => a + b, 0);
+
+test("a review session always has three to five questions", () => {
+  assert.equal(REVIEW_MIN, 3);
+  assert.equal(REVIEW_MAX, 5);
+  for (let due = 1; due <= 20; due++) {
+    const n = reviewSessionSize(due);
+    assert.ok(n >= 3 && n <= 5, `${due} due gives ${n}`);
+  }
+  assert.equal(sum(reviewPlan(["a"])), 3);
+  assert.equal(sum(reviewPlan(["a", "b"])), 3);
+  assert.equal(sum(reviewPlan(["a", "a", "b", "c"])), 4);
+  assert.equal(sum(reviewPlan(["a", "b", "c", "d", "e", "f", "g"])), 5);
+});
+
+test("the review plan asks one question per due card, topping up across lessons", () => {
+  assert.deepEqual(reviewPlan(["a", "a", "b", "c"]), new Map([["a", 2], ["b", 1], ["c", 1]]));
+  assert.deepEqual(reviewPlan(["a", "b"]), new Map([["a", 2], ["b", 1]]));
+  assert.deepEqual(reviewPlan(["a", "b"], 2), new Map([["a", 1], ["b", 1]]));
+  assert.equal(reviewPlan([]).size, 0);
+});
+
+test("review questions alternate between lessons", () => {
+  const item = (id: string, n: number) => ({ q: { source_lesson_id: id }, n });
+  const order = interleave([item("a", 1), item("a", 2), item("a", 3), item("b", 1), item("c", 1)]);
+  assert.deepEqual(order.map((o) => `${o.q.source_lesson_id}${o.n}`), ["a1", "b1", "c1", "a2", "a3"]);
 });

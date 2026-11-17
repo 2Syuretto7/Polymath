@@ -90,6 +90,12 @@ export async function recallAction(lessonId: string, fresh: boolean) {
   return recallSet(String(lessonId), await masteredSet(), Boolean(fresh));
 }
 
+export async function reviewAction(fresh: boolean) {
+  await requireOwner();
+  const { reviewSet } = await import("@/lib/recall");
+  return reviewSet(Boolean(fresh));
+}
+
 export async function askPartonAction(lessonId: string, exerciseId: string | null, message: string) {
   await requireOwner();
   const { LESSON_BY_ID } = await import("@/lib/curriculum");

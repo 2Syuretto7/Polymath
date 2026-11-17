@@ -10,13 +10,51 @@ export const RECALL_SET_SIZE = 3;
 /** Parton drafts a few spare questions, because any whose answer a second pass cannot confirm is dropped. */
 export const RECALL_DRAFTS = 5;
 
+/** Every review session shows at least this many questions, and at most REVIEW_MAX. */
+export const REVIEW_MIN = 3;
+export const REVIEW_MAX = 5;
+
+/**
+ * How many review questions to ask on each lesson. Given the lesson of each due card, one per card,
+ * topped up across the lessons to REVIEW_MIN and capped at REVIEW_MAX. Given a total, that many,
+ * spread evenly across the lessons.
+ */
+export function reviewPlan(cardLessons: string[], total?: number): Map<string, number> {
+  const lessons = [...new Set(cardLessons)];
+  const plan = new Map<string, number>();
+  if (lessons.length === 0) return plan;
+  let count = 0;
+  if (total === undefined) {
+    total = Math.max(REVIEW_MIN, Math.min(REVIEW_MAX, cardLessons.length));
+    for (const id of cardLessons.slice(0, total)) {
+      plan.set(id, (plan.get(id) ?? 0) + 1);
+      count++;
+    }
+  }
+  for (let i = 0; count < total; i++, count++) {
+    const id = lessons[i % lessons.length];
+    plan.set(id, (plan.get(id) ?? 0) + 1);
+  }
+  return plan;
+}
+
+/** Alternates lessons, so one lesson's questions are not grouped together. */
+export function interleave<T extends { q: { source_lesson_id: string } }>(items: T[]): T[] {
+  const groups = new Map<string, T[]>();
+  for (const item of items) groups.set(item.q.source_lesson_id, [...(groups.get(item.q.source_lesson_id) ?? []), item]);
+  const out: T[] = [];
+  while (out.length < items.length) for (const g of groups.values()) if (g.length) out.push(g.shift()!);
+  return out;
+}
+
 export const RECALL_RULES = `You write recall questions for Polymath, a private university for one learner studying mathematics and philosophy.
 
-Before the learner starts a new lesson, a few short questions bring back the ideas from earlier lessons that the new one rests on. Your job is to write brand-new ones.
+Before the learner starts a new lesson, a few short questions bring back the ideas from earlier lessons that the new one rests on; in spaced review, a few short questions bring back ideas just before the learner would forget them. Your job is to write brand-new ones.
 
 Rules:
 - Every question must be new. Never reuse, reword or lightly vary a practice question from the earlier lessons or any question in the list of questions already asked. Change the situation, the numbers, the objects or the angle, so that remembering an old answer does not help; understanding does.
-- Each question tests one central idea from the earlier lesson it names, at the level that lesson teaches. Nothing from later lessons.
+- Each question tests one central idea from the earlier lesson it names, at the level that lesson teaches.
+- Use only what the learner has been taught: ideas in the lesson the question names, and in what that lesson says it builds on. Never use, assume or lean on an idea from a later lesson, even a familiar one such as sets, matrices or limits, in the question, its options or the expected answer.
 - Short: answerable in a minute or two, without a calculator unless the numbers are friendly.
 - Each question must have exactly one correct answer that a machine can check:
   - "numeric": a single number. Put it in numeric_value. Use exact values where you can; if the answer is irrational, ask for it to a stated number of decimal places and set tolerance to match (for example 0.005 for two places). Otherwise tolerance 0.
