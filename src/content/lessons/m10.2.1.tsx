@@ -7,8 +7,8 @@ export const lesson: LessonContent = {
   id: "m10.2.1",
   minutes: 90,
   links: {
-    revisits: ["m10.1.1", "m12.2.3", "m6.8.1"],
-    foreshadows: ["m10.2.2", "m10.2.3", "m19.6.1"],
+    revisits: ["m10.1.1", "m6.8.1"],
+    foreshadows: ["m10.2.2", "m10.2.3", "m19.6.1", "m12.2.3"],
   },
 
   puzzle: (
@@ -85,10 +85,11 @@ export const lesson: LessonContent = {
         </p>
       </Proof>
 
-      <Remark title="a contraction in disguise">
+      <Remark title="looking ahead">
         <p>
-          With a suitably weighted sup norm, the Picard map is a contraction on the complete space of continuous functions
-          staying in <M>{"R"}</M>, and the contraction mapping theorem gives existence and uniqueness at once. The theorem is
+          The Lipschitz bound is what draws successive iterates together. Later, in metric spaces, this idea
+          becomes a single general result, the contraction mapping theorem, which gives existence and uniqueness at once.
+          You do not need it here. Picard–Lindelöf is
           local: for <M>{"y' = y^2"}</M>, <M>{"y(0) = 1"}</M>, the solution <M>{"1/(1 - t)"}</M> does not survive past{" "}
           <M>{"t = 1"}</M>.
         </p>

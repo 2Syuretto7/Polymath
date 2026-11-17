@@ -15,7 +15,10 @@ export type Course = {
   chapters: OutlineChapter[];
 };
 
-/** How one lesson relates to another. Only "requires" gates progress. */
+/**
+ * How one lesson relates to another. "requires", "revisits" and "applies" point back to material the
+ * lesson uses, so they gate progress; "foreshadows" points ahead and "parallels" is a side link.
+ */
 export type LinkKind = "requires" | "parallels" | "foreshadows" | "revisits" | "applies";
 
 /** The four rungs of the practice ladder. */

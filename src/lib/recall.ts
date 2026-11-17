@@ -2,6 +2,7 @@ import "server-only";
 import { query } from "./db";
 import { EXERCISES, GRAPH, LESSON_BY_ID } from "./curriculum";
 import { checkAnswer, type CheckResult } from "./check";
+import { BUILDS_ON } from "./graph";
 import type { Answer } from "./types";
 import type { ExerciseView } from "@/components/lesson/ExerciseCard";
 import { PartonError, partonConnected, structured } from "./parton/claude";
@@ -43,7 +44,7 @@ export function recallSources(lessonId: string, mastered: Set<string>): string[]
   return [
     ...new Set(
       GRAPH.edges
-        .filter((e) => e.to === lessonId && (e.kind === "requires" || e.kind === "revisits" || e.kind === "applies"))
+        .filter((e) => e.to === lessonId && BUILDS_ON.has(e.kind))
         .map((e) => e.from)
         .filter((id) => mastered.has(id) && LESSON_BY_ID.has(id)),
     ),

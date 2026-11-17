@@ -22,11 +22,17 @@ export const COURSE_BY_CODE = new Map(COURSES.map((c) => [c.code, c]));
 export type Graph = {
   nodes: Map<string, LessonNode>;
   order: string[];
-  /** Lessons each lesson requires (vertical, past to future). */
+  /**
+   * Lessons each lesson builds on and so must come after: the lesson before it, the end of every
+   * course its course requires, and every lesson it declares it requires, revisits or applies.
+   */
   requires: Map<string, string[]>;
   /** All links, both implicit and authored. */
   edges: Edge[];
 };
+
+/** Link kinds that mean "this lesson uses that earlier lesson's material", so they gate progress. */
+export const BUILDS_ON: ReadonlySet<LinkKind> = new Set<LinkKind>(["requires", "revisits", "applies"]);
 
 /**
  * Builds the lesson graph from the curriculum outline plus the links that
@@ -34,6 +40,8 @@ export type Graph = {
  * - each lesson requires the one before it in its chapter;
  * - a chapter's first lesson requires the previous chapter's last lesson;
  * - a course's first lesson requires the last lesson of every required course.
+ * Authored "requires", "revisits" and "applies" links are prerequisites too: a lesson that uses
+ * an idea never opens before the lesson that teaches it.
  */
 export function buildGraph(
   authoredLinks: ReadonlyMap<string, Partial<Record<LinkKind, string[]>>>,
@@ -70,7 +78,7 @@ export function buildGraph(
 
   const add = (from: string, to: string, kind: LinkKind) => {
     edges.push({ from, to, kind });
-    if (kind === "requires") {
+    if (BUILDS_ON.has(kind)) {
       const list = requires.get(to) ?? [];
       if (!list.includes(from)) list.push(from);
       requires.set(to, list);
@@ -89,12 +97,16 @@ export function buildGraph(
   }
 
   const errors: string[] = [];
+  const later = laterCourses();
+  const courseOf = (lessonId: string) => nodes.get(lessonId)!.course;
   for (const [id, links] of authoredLinks) {
     if (!nodes.has(id)) errors.push(`Authored lesson ${id} is not in the curriculum outline.`);
     for (const [kind, targets] of Object.entries(links) as [LinkKind, string[]][]) {
       for (const target of targets ?? []) {
         if (!nodes.has(target)) errors.push(`${id} links (${kind}) to unknown lesson ${target}.`);
         else if (target === id) errors.push(`${id} links to itself.`);
+        else if (BUILDS_ON.has(kind) && later.get(courseOf(id))!.has(courseOf(target)))
+          errors.push(`${id} ${kind} ${target}, but ${courseOf(target)} comes after ${courseOf(id)}; use foreshadows.`);
         // Links are stored as "from earlier idea to this lesson" for requires/revisits/applies,
         // and "from this lesson to a later one" for foreshadows; parallels are symmetric.
         else if (kind === "foreshadows") add(id, target, kind);
@@ -108,6 +120,38 @@ export function buildGraph(
   if (errors.length) throw new Error(`Lesson graph is invalid:\n${errors.join("\n")}`);
 
   return { nodes, order, requires, edges };
+}
+
+/** For each course, the courses that (directly or not) require it, so always come after it. */
+function laterCourses(): Map<string, Set<string>> {
+  const earlier = new Map<string, Set<string>>();
+  const collect = (code: string): Set<string> => {
+    const known = earlier.get(code);
+    if (known) return known;
+    const set = new Set<string>();
+    earlier.set(code, set);
+    for (const r of COURSE_BY_CODE.get(code)?.requires ?? []) {
+      set.add(r);
+      for (const e of collect(r)) set.add(e);
+    }
+    return set;
+  };
+  const later = new Map(COURSES.map((c) => [c.code, new Set<string>()]));
+  for (const c of COURSES) for (const e of collect(c.code)) later.get(e)?.add(c.code);
+  return later;
+}
+
+/** Every lesson a lesson builds on, directly or through others. */
+export function prerequisitesOf(graph: Graph, id: string): Set<string> {
+  const seen = new Set<string>();
+  const stack = [...(graph.requires.get(id) ?? [])];
+  while (stack.length) {
+    const next = stack.pop()!;
+    if (seen.has(next)) continue;
+    seen.add(next);
+    stack.push(...(graph.requires.get(next) ?? []));
+  }
+  return seen;
 }
 
 function findCycle(order: string[], requires: Map<string, string[]>): string[] | null {
@@ -133,7 +177,7 @@ function findCycle(order: string[], requires: Map<string, string[]>): string[] |
   return null;
 }
 
-/** A lesson is unlocked when every lesson it requires is mastered. */
+/** A lesson is unlocked when every lesson it builds on is mastered. */
 export function isUnlocked(graph: Graph, id: string, mastered: ReadonlySet<string>): boolean {
   return (graph.requires.get(id) ?? []).every((r) => mastered.has(r));
 }

@@ -45,7 +45,8 @@ export const lesson: LessonContent = {
   id: "p10.1.1",
   minutes: 75,
   links: {
-    revisits: ["p1.1.2", "p4.4.1", "p9.7.1"],
+    revisits: ["p1.1.2", "p4.4.1"],
+    parallels: ["p9.7.1"],
     foreshadows: ["p10.1.2", "p10.2.1", "p10.3.1"],
   },
 
