@@ -8,11 +8,11 @@ import { chooseNextStep, type LearnStep } from "./scheduler";
 import type { Track } from "./types";
 import { PartonError, markWritten, partonConnected } from "./parton";
 import { renderParton } from "./parton/render";
+import { masteryFromSolved, type MasteryReport } from "./mastery";
 import { attemptRecall, isRecallId, reviewFinishedSinceLesson } from "./recall";
 
 const scheduler = fsrs({ enable_fuzz: true, request_retention: 0.9 });
 const TZ = "Asia/Kolkata";
-export const MASTERY_THRESHOLD = 0.8;
 
 type ProgressRow = { lesson_id: string; status: string; mastery: number };
 
@@ -185,24 +185,18 @@ async function rateCard(id: string, rating: Rating.Again | Rating.Good) {
   await query("UPDATE review_cards SET card = $2, due = $3 WHERE exercise_id = $1", [id, JSON.stringify(next), next.due.toISOString()]);
 }
 
-export type MasteryReport = { score: number; writtenDone: boolean; mastered: boolean };
+export type { MasteryReport } from "./mastery";
 
 export async function masteryReport(lessonId: string): Promise<MasteryReport> {
   const lesson = LESSON_BY_ID.get(lessonId)!;
-  const required = masteryExercises(lesson);
   const states = await exerciseStates([lessonId]);
-  const auto = required.filter((e) => e.answer.kind !== "written");
-  const written = required.filter((e) => e.answer.kind === "written");
-  const solved = auto.filter((e) => states.get(exerciseId(lessonId, e.key))?.solved).length;
-  const score = auto.length ? solved / auto.length : 1;
-  const writtenDone = written.every((e) => states.get(exerciseId(lessonId, e.key))?.solved);
-  return { score, writtenDone, mastered: score >= MASTERY_THRESHOLD && writtenDone };
+  return masteryFromSolved(masteryExercises(lesson), (key) => Boolean(states.get(exerciseId(lessonId, key))?.solved));
 }
 
 /**
- * A lesson is mastered when at least 80% of its check, apply and prove exercises are solved,
- * and every written proof or argument has been accepted by Parton (or provisionally accepted while
- * Parton is not connected).
+ * A lesson is mastered only once its complete set of check, apply and prove exercises is done:
+ * every auto-checked question solved and every written proof or argument accepted by Parton (or
+ * provisionally accepted while Parton is not connected). A partial set never masters a lesson.
  */
 export async function evaluateMastery(lessonId: string): Promise<boolean> {
   const report = await masteryReport(lessonId);

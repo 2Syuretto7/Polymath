@@ -128,8 +128,8 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
           <section id="practice" className="lesson-section">
             <h2><StepChip id="practice" sections={sections} />Practice</h2>
             <p className="section-lede">
-              Mastery needs at least 80 percent of the check, apply and prove questions, and every written proof or argument accepted by Parton.
-              Stretch questions are optional. So far: {Math.round(report.score * 100)} percent solved
+              Mastery needs every check, apply and prove question solved, with every written proof or argument accepted by Parton.
+              Stretch questions are optional. So far: {report.solved} of {report.total} done
               {required.some((e) => e.answer.kind === "written") && <>, written work {report.writtenDone ? "accepted" : "not yet accepted"}</>}.
             </p>
             {lesson.practice.map((e, i) => {
