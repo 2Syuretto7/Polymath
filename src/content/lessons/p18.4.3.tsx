@@ -170,7 +170,8 @@ export const lesson: LessonContent = {
 
   glimpse: (
     <p>
-      Next, the later Wittgenstein: his rejection of the Tractatus, meaning as use, language games and family resemblance.
+      Next, Carnap on linguistic frameworks: the distinction between questions asked within a framework and questions
+      about whether to adopt one.
     </p>
   ),
 };
