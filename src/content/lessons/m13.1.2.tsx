@@ -1,6 +1,6 @@
 import { M, MD } from "@/components/Math";
 import { Definition, Example, Remark, Theorem } from "@/components/lesson/Blocks";
-import { DiffQuotientViz } from "@/components/viz/DiffQuotientViz";
+import { ComplexQuotientViz } from "@/components/viz/ComplexQuotientViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -24,7 +24,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Shrink h and turn it round. For which functions does the difference quotient settle on one value?</p>
-      <DiffQuotientViz />
+      <ComplexQuotientViz />
     </>
   ),
 

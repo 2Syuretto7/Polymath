@@ -1,5 +1,5 @@
 import { Definition, Example, Remark } from "@/components/lesson/Blocks";
-import { SubstitutionViz } from "@/components/viz/SubstitutionViz";
+import { FregeSubstViz } from "@/components/viz/FregeSubstViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -24,7 +24,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Substitute co-referring names into different sentences and watch what changes.</p>
-      <SubstitutionViz />
+      <FregeSubstViz />
     </>
   ),
 

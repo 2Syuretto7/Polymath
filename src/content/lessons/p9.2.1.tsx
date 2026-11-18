@@ -1,5 +1,5 @@
 import { Definition, Example, Remark } from "@/components/lesson/Blocks";
-import { ProjectionViz } from "@/components/viz/ProjectionViz";
+import { FeuerbachViz } from "@/components/viz/FeuerbachViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -26,7 +26,7 @@ export const lesson: LessonContent = {
       <p>
         Choose human qualities to attribute to God, and see what is left on the human side. Then take them back.
       </p>
-      <ProjectionViz />
+      <FeuerbachViz />
     </>
   ),
 

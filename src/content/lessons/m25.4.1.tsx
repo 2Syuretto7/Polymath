@@ -1,6 +1,6 @@
 import { Definition, Example, Remark, Theorem } from "@/components/lesson/Blocks";
 import { M } from "@/components/Math";
-import { DegreeViz } from "@/components/viz/DegreeViz";
+import { CircleDegreeViz } from "@/components/viz/CircleDegreeViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -27,7 +27,7 @@ export const lesson: LessonContent = {
         A map of the circle to itself has a degree: how many times it wraps round. Wiggle the map and move the target point.
         The number of preimages changes, but the count with signs does not.
       </p>
-      <DegreeViz />
+      <CircleDegreeViz />
     </>
   ),
 

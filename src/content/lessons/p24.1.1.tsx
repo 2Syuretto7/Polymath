@@ -1,5 +1,5 @@
 import { Definition, Example, Remark } from "@/components/lesson/Blocks";
-import { LadderViz } from "@/components/viz/LadderViz";
+import { LoveLadderViz } from "@/components/viz/LoveLadderViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -22,7 +22,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Climb Diotima&rsquo;s ladder from the love of one beautiful body to the vision of Beauty itself.</p>
-      <LadderViz />
+      <LoveLadderViz />
     </>
   ),
 

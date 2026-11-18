@@ -1,6 +1,6 @@
 import { M, MD } from "@/components/Math";
 import { Definition, Example, Proof, Remark, Theorem } from "@/components/lesson/Blocks";
-import { HatCheckViz } from "@/components/viz/HatCheckViz";
+import { HatLinearityViz } from "@/components/viz/HatLinearityViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -24,7 +24,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Return the hats many times, for small and large numbers of guests, and watch the average.</p>
-      <HatCheckViz />
+      <HatLinearityViz />
     </>
   ),
 

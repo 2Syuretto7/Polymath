@@ -2,51 +2,58 @@
 
 import { useState } from "react";
 
-/** Lifting the map z ↦ zᵈ of the circle through the n-sheeted cover z ↦ zⁿ: possible exactly when n divides d. */
+const PATHS = [
+  { label: "twice round", f: (t: number) => 2 * t },
+  { label: "there and back", f: (t: number) => 0.7 * Math.sin(Math.PI * t) },
+  { label: "once backwards", f: (t: number) => -t },
+  { label: "wander", f: (t: number) => 1.6 * t - 0.5 * Math.sin(4 * Math.PI * t) },
+];
+
+/** The covering map from the line to the circle, s ↦ (cos 2πs, sin 2πs), and the unique lift of a path starting at 0. */
 export function CircleLiftViz() {
-  const [d, setD] = useState(2);
-  const [n, setN] = useState(3);
-  const end = ((d % n) + n) % n;
-  const ok = end === 0;
-  const R = 70, cx = 140, cy = 105;
-  const sheet = (j: number) => [cx + R * Math.cos(-Math.PI / 2 + (2 * Math.PI * j) / n), cy + R * Math.sin(-Math.PI / 2 + (2 * Math.PI * j) / n)];
-  const steps = Math.abs(d) * 40;
-  const pts = Array.from({ length: steps + 1 }, (_, i) => {
-    const t = (d / n) * (i / Math.max(steps, 1));
-    return [cx + R * Math.cos(-Math.PI / 2 + 2 * Math.PI * t), cy + R * Math.sin(-Math.PI / 2 + 2 * Math.PI * t)];
-  });
+  const [pi, setPi] = useState(0);
+  const [t, setT] = useState(0.6);
+  const P = PATHS[pi];
+  const W = 520, H = 280, cx = 130, cy = 120, R = 80;
+  const N = 200;
+  const ts = Array.from({ length: Math.round(N * t) + 1 }, (_, i) => i / N);
+  const s = P.f(t);
+  const circ = (u: number): [number, number] => [cx + R * Math.cos(2 * Math.PI * u), cy - R * Math.sin(2 * Math.PI * u)];
+  const lo = -2, hi = 3, LX = (v: number) => 260 + ((v - lo) / (hi - lo)) * 240, LY = 240;
+  const [px, py] = circ(s);
   return (
     <figure className="viz">
-      <div className="viz-controls">
-        <label>degree of f, d = {d} <input type="range" min={-4} max={4} value={d} onChange={(e) => setD(Number(e.target.value))} aria-label="d" /></label>
+      <div className="segmented" role="group" aria-label="Path">
+        {PATHS.map((p, i) => <button key={p.label} type="button" aria-pressed={pi === i} className={pi === i ? "seg is-on" : "seg"} onClick={() => setPi(i)}>{p.label}</button>)}
       </div>
-      <div className="segmented" role="group" aria-label="cover">
-        {[1, 2, 3, 4].map((m) => <button key={m} type="button" aria-pressed={n === m} className={n === m ? "seg is-on" : "seg"} onClick={() => setN(m)}>{m}-sheeted cover</button>)}
+      <div className="viz-sliders" style={{ marginTop: 6 }}>
+        <label><span>time: <span className="mono">{t.toFixed(2)}</span></span>
+          <input type="range" min={0} max={1} step={0.01} value={t} onChange={(e) => setT(Number(e.target.value))} /></label>
       </div>
-      <svg viewBox="0 0 520 210" role="img" aria-label="The lift of a loop in an n-sheeted cover of the circle" style={{ width: "100%", display: "block", marginTop: 8 }}>
-        <circle cx={cx} cy={cy} r={R} style={{ fill: "none", stroke: "var(--border-strong)", strokeWidth: 2 }} />
-        <text x={300} y={36} style={{ fill: "var(--text-muted)", fontSize: 11 }}>the cover: circle, map z ↦ z{["", "", "²", "³", "⁴"][n]}</text>
-        {d !== 0 && <polyline points={pts.map((p) => p.join(",")).join(" ")} style={{ fill: "none", stroke: ok ? "var(--accent)" : "var(--danger)", strokeWidth: 4, opacity: 0.8 }} />}
-        {Array.from({ length: n }, (_, j) => {
-          const [x, y] = sheet(j);
-          return (
-            <g key={j}>
-              <circle cx={x} cy={y} r={7} style={{ fill: j === 0 ? "var(--text)" : j === end ? (ok ? "var(--accent)" : "var(--danger)") : "var(--bg)", stroke: "var(--text)", strokeWidth: 1.5 }} />
-              <text x={cx + (R + 20) * Math.cos(-Math.PI / 2 + (2 * Math.PI * j) / n)} y={cy + (R + 20) * Math.sin(-Math.PI / 2 + (2 * Math.PI * j) / n) + 4} textAnchor="middle" style={{ fill: "var(--text-muted)", fontSize: 11 }}>sheet {j}</text>
-            </g>
-          );
-        })}
-        <text x={300} y={60} style={{ fill: "var(--text)", fontSize: 12 }}>f goes round the base circle {Math.abs(d)} time{Math.abs(d) === 1 ? "" : "s"}{d < 0 ? ", backwards" : ""}.</text>
-        <text x={300} y={82} style={{ fill: "var(--text)", fontSize: 12 }}>Its lift from sheet 0 ends on sheet {end}.</text>
-        <text x={300} y={110} style={{ fill: ok ? "var(--accent)" : "var(--danger)", fontSize: 13, fontWeight: 700 }}>{ok ? "A closed loop: f lifts." : "Not closed: f does not lift."}</text>
-        <text x={300} y={138} style={{ fill: "var(--text-muted)", fontSize: 11 }}>image of π₁ under f: {d === 0 ? "0" : `${Math.abs(d) === 1 ? "" : Math.abs(d)}ℤ`}; under p: {n === 1 ? "ℤ" : `${n}ℤ`}</text>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="A path on the circle and its lift to the real line" style={{ width: "100%", display: "block", marginTop: 8 }}>
+        <circle cx={cx} cy={cy} r={R} style={{ fill: "none", stroke: "var(--border)", strokeWidth: 2 }} />
+        <path d={ts.map((u, i) => { const r = R + 6 * P.f(u); const a = 2 * Math.PI * P.f(u); return `${i ? "L" : "M"}${(cx + r * Math.cos(a)).toFixed(1)},${(cy - r * Math.sin(a)).toFixed(1)}`; }).join(" ")} style={{ fill: "none", stroke: "var(--accent)", strokeWidth: 2 }} />
+        <circle cx={px} cy={py} r={6} style={{ fill: "var(--accent)" }} />
+        <circle cx={cx + R} cy={cy} r={4} style={{ fill: "var(--text)" }} />
+        <text x={cx} y={cy + R + 26} textAnchor="middle" style={{ fill: "var(--text-muted)", fontSize: 12 }}>the path on the circle</text>
+        <line x1={LX(lo)} y1={LY} x2={LX(hi)} y2={LY} style={{ stroke: "var(--border)", strokeWidth: 2 }} />
+        {[-2, -1, 0, 1, 2, 3].map((k) => (
+          <g key={k}>
+            <line x1={LX(k)} y1={LY - 5} x2={LX(k)} y2={LY + 5} style={{ stroke: "var(--text-muted)" }} />
+            <text x={LX(k)} y={LY + 20} textAnchor="middle" style={{ fill: "var(--text-muted)", fontSize: 11 }}>{k}</text>
+          </g>
+        ))}
+        <path d={ts.map((u, i) => `${i ? "L" : "M"}${LX(P.f(u)).toFixed(1)},${(LY - 20 - 150 * u).toFixed(1)}`).join(" ")} style={{ fill: "none", stroke: "var(--accent)", strokeWidth: 2 }} />
+        <circle cx={LX(s)} cy={LY - 20 - 150 * t} r={6} style={{ fill: "var(--accent)" }} />
+        <text x={380} y={22} textAnchor="middle" style={{ fill: "var(--text-muted)", fontSize: 12 }}>the lift to ℝ, time running upwards</text>
       </svg>
-      <p className="mono" style={{ fontSize: 13, fontWeight: 700 }}>
-        Lifting criterion: f lifts exactly when the image of π₁ under f lies in its image under p, that is, when {n} divides {d}. {ok ? "It does." : "It does not."}
+      <p className="mono" style={{ margin: "6px 0 4px", fontSize: 14 }}>
+        lift at this time: {s.toFixed(3)}{t === 1 ? (Math.abs(s - Math.round(s)) < 1e-6 ? `; the loop's lift ends at the integer ${Math.round(s)}, its number of turns` : "; this path is not a loop, so its lift need not end at an integer") : ""}
       </p>
       <figcaption className="viz-caption">
-        Lift the path traced by f, starting at sheet 0. Going once round the base moves you one sheet along, so after d turns
-        you are on sheet d mod n. The lifted path closes up, giving a lift of f, exactly when that is sheet 0.
+        Each point of the circle has one preimage in every interval [k, k + 1) of the line, and a small arc round it has a
+        preimage made of disjoint copies of the arc. That is what makes the map a covering, and it lets any path starting at the base
+        point be lifted, in exactly one way, to a path on the line starting at 0.
       </figcaption>
     </figure>
   );

@@ -1,6 +1,6 @@
 import { Definition, Example, Remark, Theorem } from "@/components/lesson/Blocks";
 import { M, MD } from "@/components/Math";
-import { PreimageViz } from "@/components/viz/PreimageViz";
+import { BandPreimageViz } from "@/components/viz/BandPreimageViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -25,7 +25,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Pick a range of values and see the set of points where the function lands in it.</p>
-      <PreimageViz />
+      <BandPreimageViz />
     </>
   ),
 

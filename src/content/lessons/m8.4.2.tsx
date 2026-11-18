@@ -1,6 +1,6 @@
 import { M, MD } from "@/components/Math";
 import { Definition, Example, Proof, Remark, Theorem } from "@/components/lesson/Blocks";
-import { SpectralViz } from "@/components/viz/SpectralViz";
+import { CircleImageViz } from "@/components/viz/CircleImageViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -26,7 +26,7 @@ export const lesson: LessonContent = {
       <p>
         Adjust a symmetric matrix and watch the image of the unit circle. Then switch to any matrix and see what is lost.
       </p>
-      <SpectralViz />
+      <CircleImageViz />
     </>
   ),
 

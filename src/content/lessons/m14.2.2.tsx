@@ -1,6 +1,6 @@
 import { M } from "@/components/Math";
 import { Example, Proof, Remark, Theorem } from "@/components/lesson/Blocks";
-import { PowerCycleViz } from "@/components/viz/PowerCycleViz";
+import { FieldCycleViz } from "@/components/viz/FieldCycleViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -23,7 +23,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Pick a field and an element, and follow its powers round the non-zero elements.</p>
-      <PowerCycleViz />
+      <FieldCycleViz />
     </>
   ),
 
