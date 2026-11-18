@@ -1,5 +1,5 @@
 import { Definition, Example, Remark } from "@/components/lesson/Blocks";
-import { FrankfurtViz } from "@/components/viz/FrankfurtViz";
+import { FrankfurtDeviceViz } from "@/components/viz/FrankfurtDeviceViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -26,7 +26,7 @@ export const lesson: LessonContent = {
         Set up Black&rsquo;s device and Jones&rsquo;s inclination, and compare two tests of responsibility. Then change how
         the warning twitch is linked to Jones&rsquo;s choice.
       </p>
-      <FrankfurtViz />
+      <FrankfurtDeviceViz />
     </>
   ),
 

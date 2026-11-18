@@ -1,6 +1,6 @@
 import { Definition, Example, Remark, Theorem } from "@/components/lesson/Blocks";
 import { M } from "@/components/Math";
-import { CircleLiftViz } from "@/components/viz/CircleLiftViz";
+import { PowerLiftViz } from "@/components/viz/PowerLiftViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -24,7 +24,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Lift the loop traced by z ↦ zᵈ through the n-sheeted cover z ↦ zⁿ, and see when it closes up.</p>
-      <CircleLiftViz />
+      <PowerLiftViz />
     </>
   ),
 

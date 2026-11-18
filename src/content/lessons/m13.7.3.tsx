@@ -1,6 +1,6 @@
 import { M, MD } from "@/components/Math";
 import { Definition, Example, Proof, Remark, Theorem } from "@/components/lesson/Blocks";
-import { PrimeCountViz } from "@/components/viz/PrimeCountViz";
+import { PNTCountViz } from "@/components/viz/PNTCountViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -24,7 +24,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Compare the number of primes up to x with two approximations, for x up to a million.</p>
-      <PrimeCountViz />
+      <PNTCountViz />
     </>
   ),
 

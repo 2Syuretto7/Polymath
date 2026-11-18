@@ -1,6 +1,6 @@
 import { M, MD } from "@/components/Math";
 import { Definition, Example, Proof, Remark, Theorem } from "@/components/lesson/Blocks";
-import { LeastSquaresViz } from "@/components/viz/LeastSquaresViz";
+import { ProjFitViz } from "@/components/viz/ProjFitViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -27,7 +27,7 @@ export const lesson: LessonContent = {
         Choose the degree of the fitted polynomial, and move the dashed line of your own. Try to beat the best line&rsquo;s
         squared error.
       </p>
-      <LeastSquaresViz />
+      <ProjFitViz />
     </>
   ),
 

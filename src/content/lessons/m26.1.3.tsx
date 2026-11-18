@@ -1,6 +1,6 @@
 import { Definition, Example, Remark, Theorem } from "@/components/lesson/Blocks";
 import { M } from "@/components/Math";
-import { PartitionViz } from "@/components/viz/PartitionViz";
+import { UnityPartitionViz } from "@/components/viz/UnityPartitionViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -26,7 +26,7 @@ export const lesson: LessonContent = {
       <p>
         Cover an interval by overlapping open sets and build one smooth bump inside each. Then divide each bump by their sum.
       </p>
-      <PartitionViz />
+      <UnityPartitionViz />
     </>
   ),
 

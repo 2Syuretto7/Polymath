@@ -1,5 +1,5 @@
 import { Definition, Example, Remark } from "@/components/lesson/Blocks";
-import { MaximTestViz } from "@/components/viz/MaximTestViz";
+import { UniversalLawViz } from "@/components/viz/UniversalLawViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -26,7 +26,7 @@ export const lesson: LessonContent = {
       <p>
         Put four maxims through Kant&rsquo;s test, one stage at a time.
       </p>
-      <MaximTestViz />
+      <UniversalLawViz />
     </>
   ),
 

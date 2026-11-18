@@ -1,6 +1,6 @@
 import { M, MD } from "@/components/Math";
 import { Definition, Example, Proof, Remark, Theorem } from "@/components/lesson/Blocks";
-import { DeltaMapViz } from "@/components/viz/DeltaMapViz";
+import { MetricDeltaViz } from "@/components/viz/MetricDeltaViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -26,7 +26,7 @@ export const lesson: LessonContent = {
       <p>
         For each point x, the curve shows the largest δ that keeps f within ε. Look at whether the curve dips down to 0.
       </p>
-      <DeltaMapViz />
+      <MetricDeltaViz />
     </>
   ),
 

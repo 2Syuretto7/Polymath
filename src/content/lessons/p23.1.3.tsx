@@ -1,5 +1,5 @@
 import { Definition, Example, Remark } from "@/components/lesson/Blocks";
-import { EternityViz } from "@/components/viz/EternityViz";
+import { TimelessGodViz } from "@/components/viz/TimelessGodViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -23,7 +23,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Compare a God who moves along with time to a God present to all of it at once.</p>
-      <EternityViz />
+      <TimelessGodViz />
     </>
   ),
 

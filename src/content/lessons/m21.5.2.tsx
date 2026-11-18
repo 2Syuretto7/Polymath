@@ -1,6 +1,6 @@
 import { Definition, Example, Remark, Theorem } from "@/components/lesson/Blocks";
 import { M, MD } from "@/components/Math";
-import { NecklaceViz } from "@/components/viz/NecklaceViz";
+import { PolyaNecklaceViz } from "@/components/viz/PolyaNecklaceViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -24,7 +24,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Count necklaces of six beads, allowing rotations only or flips too, with two or three colours.</p>
-      <NecklaceViz />
+      <PolyaNecklaceViz />
     </>
   ),
 

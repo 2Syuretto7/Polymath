@@ -1,5 +1,5 @@
 import { Definition, Example, Remark } from "@/components/lesson/Blocks";
-import { VeilViz } from "@/components/viz/VeilViz";
+import { VeilRulesViz } from "@/components/viz/VeilRulesViz";
 import type { LessonContent } from "@/lib/types";
 
 export const lesson: LessonContent = {
@@ -23,7 +23,7 @@ export const lesson: LessonContent = {
   intuition: (
     <>
       <p>Choose a society from behind the veil, under different decision rules. Then lift the veil and see where you land.</p>
-      <VeilViz />
+      <VeilRulesViz />
     </>
   ),
 
