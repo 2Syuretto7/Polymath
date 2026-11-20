@@ -1454,6 +1454,13 @@ import { lesson as p34_1_2 } from "./p34.1.2";
 import { lesson as p34_2_1 } from "./p34.2.1";
 import { lesson as p34_2_2 } from "./p34.2.2";
 import { lesson as p34_3_1 } from "./p34.3.1";
+import { lesson as p34_3_2 } from "./p34.3.2";
+import { lesson as p34_3_3 } from "./p34.3.3";
+import { lesson as p34_3_4 } from "./p34.3.4";
+import { lesson as p35_1_1 } from "./p35.1.1";
+import { lesson as p35_1_2 } from "./p35.1.2";
+import { lesson as p35_1_3 } from "./p35.1.3";
+import { lesson as p35_2_1 } from "./p35.2.1";
 
 /** Every authored lesson. Add new lessons here; the graph checks their links at build time. */
 export const LESSONS: readonly LessonContent[] = [
@@ -2651,4 +2658,11 @@ export const LESSONS: readonly LessonContent[] = [
   p34_2_1,
   p34_2_2,
   p34_3_1,
+  p34_3_2,
+  p34_3_3,
+  p34_3_4,
+  p35_1_1,
+  p35_1_2,
+  p35_1_3,
+  p35_2_1,
 ];
