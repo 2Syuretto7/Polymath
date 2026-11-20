@@ -23,7 +23,7 @@ export default async function Settings() {
         <section className="section">
           <div>
             <h2>Daily pace</h2>
-            <p className="desc">The most new lessons the Learn button will start in one day. Reviews are never limited.</p>
+            <p className="desc">The most new lessons the Learn button will start in one day.</p>
           </div>
           <div>
             <form action={setPaceAction} className="pace">

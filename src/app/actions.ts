@@ -50,20 +50,10 @@ export async function changePassphraseAction(_: FormState, form: FormData): Prom
 }
 
 export async function learnAction() {
-  await goToNextStep(false);
-}
-
-/** From the end of a review session: straight to a lesson, never another review session. */
-export async function lessonAfterReviewAction() {
-  await goToNextStep(true);
-}
-
-async function goToNextStep(skipReview: boolean) {
   await requireOwner();
   const { nextStep, startLesson } = await import("@/lib/learning");
-  const step = await nextStep(skipReview);
+  const step = await nextStep();
   if (step.kind === "continue") redirect(`/learn/${step.lesson.id}`);
-  if (step.kind === "review") redirect("/review");
   if (step.kind === "begin") {
     await startLesson(step.lesson.id);
     redirect(`/learn/${step.lesson.id}`);
@@ -82,12 +72,11 @@ export type CheckResponse = {
 export async function checkExerciseAction(
   exerciseId: string,
   input: string,
-  context: "lesson" | "recall" | "review",
-  attemptInSession: number,
+  context: "lesson" | "recall",
 ): Promise<CheckResponse> {
   await requireOwner();
   const { attempt } = await import("@/lib/learning");
-  return attempt(exerciseId, String(input).slice(0, 20000), context, Math.max(1, Math.floor(attemptInSession)));
+  return attempt(exerciseId, String(input).slice(0, 20000), context);
 }
 
 export async function recallAction(lessonId: string, fresh: boolean) {
@@ -97,12 +86,6 @@ export async function recallAction(lessonId: string, fresh: boolean) {
   const { masteredSet } = await import("@/lib/learning");
   const { recallSet } = await import("@/lib/recall");
   return recallSet(String(lessonId), await masteredSet(), Boolean(fresh));
-}
-
-export async function reviewAction(fresh: boolean) {
-  await requireOwner();
-  const { reviewSet } = await import("@/lib/recall");
-  return reviewSet(Boolean(fresh));
 }
 
 export async function askPartonAction(lessonId: string, exerciseId: string | null, message: string) {

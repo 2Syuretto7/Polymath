@@ -3,7 +3,7 @@ import { requireOwner } from "@/lib/auth";
 import { GRAPH } from "@/lib/curriculum";
 import { COURSES } from "@/lib/graph";
 import { nextStep, overallStats } from "@/lib/learning";
-import { reviewSessionSize, type LearnStep } from "@/lib/scheduler";
+import type { LearnStep } from "@/lib/scheduler";
 import { learnAction } from "./actions";
 import { TopBar } from "@/components/TopBar";
 import { RevealText } from "@/components/ui/RevealText";
@@ -71,7 +71,6 @@ function NextPanel({ step }: { step: LearnStep }) {
   const head =
     step.kind === "begin" ? <Pill tone="accent" icon="dot">New lesson</Pill> :
     step.kind === "continue" ? <Pill tone="success" icon="dot">In progress</Pill> :
-    step.kind === "review" ? <Pill tone="accent" icon="clock">Review due</Pill> :
     <Pill tone="muted">Resting</Pill>;
 
   let title: string;
@@ -81,13 +80,9 @@ function NextPanel({ step }: { step: LearnStep }) {
     title = step.lesson.title;
     meta = `${step.lesson.courseTitle} · Chapter ${step.lesson.chapter}, ${step.lesson.chapterTitle}`;
     code = `${step.lesson.course} / ${step.lesson.id}`;
-  } else if (step.kind === "review") {
-    title = `${reviewSessionSize(step.count)} questions to review`;
-    meta = "New questions on earlier ideas, mixed together, just before you would forget them.";
-    code = "review / spaced";
   } else if (step.reason === "pace") {
     title = "That's today's new learning done";
-    meta = "Come back tomorrow. Reviews are never limited, and the map is always open.";
+    meta = "Come back tomorrow. The map is always open.";
     code = "pace / reached";
   } else {
     title = "You're ahead of the writing";

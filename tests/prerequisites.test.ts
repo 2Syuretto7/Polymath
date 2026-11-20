@@ -14,7 +14,7 @@ function walkLearnButton(): string[] {
   const taken: string[] = [];
   let lastTrack: Track | null = null;
   for (;;) {
-    const step = chooseNextStep({ openLesson: null, dueReviews: 0, frontier: frontier(graph, mastered), lastTrack, newLessonsToday: 0, pace: 1 });
+    const step = chooseNextStep({ openLesson: null, frontier: frontier(graph, mastered), lastTrack, newLessonsToday: 0, pace: 1 });
     if (step.kind !== "begin") return taken;
     taken.push(step.lesson.id);
     mastered.add(step.lesson.id);

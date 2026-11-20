@@ -13,13 +13,9 @@ import {
   RECALL_RULES,
   RECALL_SCHEMA,
   RECALL_SET_SIZE,
-  REVIEW_MAX,
-  REVIEW_MIN,
   SOLVE_SCHEMA,
   SOLVE_SYSTEM,
   fingerprint,
-  interleave,
-  reviewPlan,
   solverText,
   toAnswer,
   type DraftQuestion,
@@ -41,11 +37,9 @@ type RecallRow = {
   answer: Answer;
   attempts: number;
   solved: boolean;
-  /** For a review question, the spaced-review card it stands for. */
-  review_card: string | null;
 };
 
-const COLUMNS = "id, lesson_id, source_lesson_id, prompt, answer, attempts, solved, review_card";
+const COLUMNS = "id, lesson_id, source_lesson_id, prompt, answer, attempts, solved";
 
 /** The mastered lessons that this one requires, revisits or applies: what recall draws on. */
 export function recallSources(lessonId: string, mastered: Set<string>): string[] {
@@ -131,7 +125,7 @@ async function generate(lessonId: string, allSources: string[]): Promise<RecallR
   const target = GRAPH.nodes.get(lessonId)!;
   const confirmed = await writeQuestions(
     `The learner is about to start "${target.title}" (${target.course} ${target.courseTitle}). Write ${RECALL_DRAFTS} new recall questions on the earlier lessons below, spread across them.`,
-    sources.map((id) => ({ id })),
+    sources,
     struggles,
   );
 
@@ -143,19 +137,17 @@ async function generate(lessonId: string, allSources: string[]): Promise<RecallR
       if (mine[round] && picked.length < RECALL_SET_SIZE) picked.push(mine[round]);
     }
   }
-  return store(lessonId, picked.map((c) => ({ ...c, card: null })));
+  return store(lessonId, picked);
 }
 
 type Confirmed = { q: DraftQuestion; answer: Answer };
-type SourcePlan = { id: string; want?: number; ideas?: string[] };
 
 /**
  * Parton drafts brand-new questions on the given lessons, never repeating a practice question or
- * any recall or review question asked before. A second, independent pass answers them without
+ * any recall question asked before. A second, independent pass answers them without
  * seeing the answers; only questions whose answer it confirms are returned.
  */
-async function writeQuestions(intro: string, plan: SourcePlan[], struggles: Map<string, string[]>): Promise<Confirmed[]> {
-  const sources = plan.map((p) => p.id);
+async function writeQuestions(intro: string, sources: string[], struggles: Map<string, string[]>): Promise<Confirmed[]> {
   const asked = await query<{ source_lesson_id: string; prompt: string }>(
     `SELECT source_lesson_id, prompt FROM (
        SELECT source_lesson_id, prompt, created_at,
@@ -166,7 +158,7 @@ async function writeQuestions(intro: string, plan: SourcePlan[], struggles: Map<
   );
 
   const parts = [intro];
-  for (const { id, want, ideas } of plan) {
+  for (const id of sources) {
     const lesson = LESSON_BY_ID.get(id)!;
     const node = GRAPH.nodes.get(id)!;
     const practice = lesson.practice.map((e) => `- ${toPlainText(e.prompt)}`).join("\n");
@@ -174,11 +166,7 @@ async function writeQuestions(intro: string, plan: SourcePlan[], struggles: Map<
     parts.push(
       [
         `# Earlier lesson ${id}: "${node.title}" (${node.course} ${node.courseTitle}, track ${node.track})`,
-        want ? `Write ${want} question${want > 1 ? "s" : ""} on this lesson.` : "",
         `## What it teaches\n${toPlainText(lesson.theory)}`,
-        ideas?.length
-          ? `## Ideas due for review\nTest these ideas, each with a new question. They are shown as the practice questions where the learner met them; never reuse or reword these.\n${ideas.map((i) => `- ${i}`).join("\n")}`
-          : "",
         `## Its practice questions, which the learner has already done (do not reuse)\n${practice}`,
         before ? `## Questions already asked on this lesson (never repeat or reword)\n${before}` : "",
         struggles.get(id)?.length ? `## The learner's earlier struggles here\n${struggles.get(id)!.map((s) => `- ${s}`).join("\n")}` : "",
@@ -223,152 +211,19 @@ async function writeQuestions(intro: string, plan: SourcePlan[], struggles: Map<
 }
 
 /** Saves a set as the next batch for `setId`; the database refuses any question seen before. */
-async function store(setId: string, picked: (Confirmed & { card: string | null })[]): Promise<RecallRow[]> {
+async function store(setId: string, picked: Confirmed[]): Promise<RecallRow[]> {
   const batch = (await query<{ b: number }>("SELECT coalesce(max(batch), 0)::int + 1 AS b FROM recall_questions WHERE lesson_id = $1", [setId]))[0].b;
   const rows: RecallRow[] = [];
   for (const c of picked) {
     const inserted = await query<RecallRow>(
-      `INSERT INTO recall_questions (lesson_id, source_lesson_id, batch, prompt, answer, solution, fingerprint, review_card)
-       VALUES ($1, $2, $3, $4, $5, $6, $7, $8) ON CONFLICT (fingerprint) DO NOTHING
+      `INSERT INTO recall_questions (lesson_id, source_lesson_id, batch, prompt, answer, solution, fingerprint)
+       VALUES ($1, $2, $3, $4, $5, $6, $7) ON CONFLICT (fingerprint) DO NOTHING
        RETURNING ${COLUMNS}`,
-      [setId, c.q.source_lesson_id, batch, c.q.prompt.trim(), JSON.stringify(c.answer), c.q.solution, fingerprint(c.q.prompt), c.card],
+      [setId, c.q.source_lesson_id, batch, c.q.prompt.trim(), JSON.stringify(c.answer), c.q.solution, fingerprint(c.q.prompt)],
     );
     if (inserted[0]) rows.push(inserted[0]);
   }
   return rows;
-}
-
-/* ---------- Review ---------- */
-
-/** Review questions live beside recall questions, under this set id, so neither ever repeats the other. */
-const REVIEW_SET = "review";
-
-export type ReviewResult =
-  | { ok: true; questions: RecallView[]; waiting: number; finished?: boolean }
-  | { ok: false; error: string; offline?: boolean };
-
-const latestReview = () =>
-  query<RecallRow>(
-    `SELECT ${COLUMNS} FROM recall_questions
-     WHERE lesson_id = $1 AND batch = (SELECT max(batch) FROM recall_questions WHERE lesson_id = $1) ORDER BY id`,
-    [REVIEW_SET],
-  );
-
-/**
- * True when the latest review session has every question answered, and no lesson work has happened
- * since. A lesson comes next then, rather than another review session.
- */
-export async function reviewFinishedSinceLesson(): Promise<boolean> {
-  const rows = await query<{ finished: boolean }>(
-    `WITH latest AS (
-       SELECT attempts, answered_at FROM recall_questions
-       WHERE lesson_id = $1 AND batch = (SELECT max(batch) FROM recall_questions WHERE lesson_id = $1)
-     )
-     SELECT coalesce(
-       (SELECT count(*) > 0 AND bool_and(attempts > 0) FROM latest)
-       AND (SELECT max(answered_at) FROM latest) > coalesce((SELECT max(updated_at) FROM progress), '-infinity'::timestamptz),
-       false) AS finished`,
-    [REVIEW_SET],
-  );
-  return rows[0]?.finished ?? false;
-}
-
-/** Due cards that the given set does not already cover. */
-async function waitingBeyond(set: RecallRow[]): Promise<number> {
-  const covered = set.map((r) => r.review_card).filter((c): c is string => Boolean(c));
-  const rows = await query<{ n: number }>(
-    "SELECT count(*)::int AS n FROM review_cards WHERE due <= now() AND NOT (exercise_id = ANY($1))",
-    [covered],
-  );
-  return rows[0]?.n ?? 0;
-}
-
-/**
- * A spaced-review session: between REVIEW_MIN and REVIEW_MAX questions, each written new by Parton
- * on an idea that is due, and never a question the learner has seen before. A set stays until
- * every question in it has been tried; `fresh` asks for the next set at any time.
- */
-export async function reviewSet(fresh = false): Promise<ReviewResult> {
-  const open = await latestReview();
-  if (!fresh && open.some((r) => r.attempts === 0)) {
-    return { ok: true, questions: open.map(toRecallView), waiting: await waitingBeyond(open) };
-  }
-  // One review session at a time: once it is finished, a lesson comes before the next one.
-  if (await reviewFinishedSinceLesson()) return { ok: true, questions: [], waiting: 0, finished: true };
-
-  const covered = fresh ? open.filter((r) => r.attempts === 0 && r.review_card).map((r) => r.review_card!) : [];
-  // Cards not in the set being replaced come first, so "next questions" moves on to other ideas.
-  const due = await query<CardRow>(
-    `SELECT exercise_id, lesson_id FROM review_cards WHERE due <= now()
-     ORDER BY (exercise_id = ANY($1)), due LIMIT ${REVIEW_MAX}`,
-    [covered],
-  );
-  if (due.length === 0) return { ok: true, questions: [], waiting: 0 };
-
-  if (!partonConnected()) {
-    return { ok: false, offline: true, error: "Parton writes new review questions each time, so review needs Parton to be connected." };
-  }
-
-  let job = inFlight.get(REVIEW_SET);
-  if (!job) {
-    job = generateReview(due).finally(() => inFlight.delete(REVIEW_SET));
-    inFlight.set(REVIEW_SET, job);
-  }
-  try {
-    const rows = await job;
-    if (rows.length < REVIEW_MIN) return { ok: false, error: "Parton couldn't write enough new review questions this time. Please try again." };
-    return { ok: true, questions: rows.map(toRecallView), waiting: await waitingBeyond(rows) };
-  } catch (error) {
-    if (error instanceof PartonError) return { ok: false, error: error.message };
-    throw error;
-  }
-}
-
-type CardRow = { exercise_id: string; lesson_id: string };
-
-async function generateReview(due: CardRow[]): Promise<RecallRow[]> {
-  // With fewer than REVIEW_MIN cards due, the ideas due soonest after them fill the session.
-  const cards = [...due];
-  if (cards.length < REVIEW_MIN) {
-    const soon = await query<CardRow>(
-      `SELECT exercise_id, lesson_id FROM review_cards WHERE due > now() ORDER BY due LIMIT ${REVIEW_MIN - cards.length}`,
-    );
-    cards.push(...soon);
-  }
-  const usable = cards.filter((c) => LESSON_BY_ID.has(c.lesson_id) && GRAPH.nodes.has(c.lesson_id) && EXERCISES.has(c.exercise_id));
-  if (usable.length === 0) return [];
-  const want = reviewPlan(usable.map((c) => c.lesson_id));
-  const lessons = [...want.keys()];
-  const struggles = await strugglesIn(lessons);
-
-  const picked: (Confirmed & { card: string | null })[] = [];
-  const target = Math.max(REVIEW_MIN, Math.min(REVIEW_MAX, usable.length));
-  // Two rounds at most: the second only tops the set up if the first left it short of the minimum.
-  for (let round = 0; round < 2 && picked.length < REVIEW_MIN; round++) {
-    const missing = round === 0 ? want : reviewPlan(lessons, REVIEW_MIN - picked.length);
-    const plan: SourcePlan[] = [...missing].map(([id, n]) => ({
-      id,
-      want: n + 1,
-      ideas: usable.filter((c) => c.lesson_id === id).map((c) => toPlainText(EXERCISES.get(c.exercise_id)!.exercise.prompt)),
-    }));
-    const total = plan.reduce((sum, p) => sum + (p.want ?? 0), 0);
-    const confirmed = await writeQuestions(
-      `The learner is reviewing earlier lessons on a spaced schedule, just before they would forget them. Write ${total} new review questions on the lessons below, as many on each as it asks for, on the ideas listed as due.`,
-      plan,
-      struggles,
-    );
-    const taken = new Set(picked.map((p) => fingerprint(p.q.prompt)));
-    const fresh = confirmed.filter((c) => !taken.has(fingerprint(c.q.prompt)));
-    // One question for each due card first, then spares on the same lessons up to the target.
-    for (const card of usable) {
-      if (picked.some((p) => p.card === card.exercise_id)) continue;
-      const i = fresh.findIndex((c) => c.q.source_lesson_id === card.lesson_id);
-      if (i >= 0 && picked.length < target) picked.push({ ...fresh.splice(i, 1)[0], card: card.exercise_id });
-    }
-    while (picked.length < target && fresh.length > 0) picked.push({ ...fresh.shift()!, card: null });
-  }
-  if (picked.length < REVIEW_MIN) return [];
-  return store(REVIEW_SET, interleave(picked));
 }
 
 /** Per source lesson: misconceptions Parton noted, and recall or practice questions missed. */
@@ -398,25 +253,21 @@ async function strugglesIn(sources: string[]): Promise<Map<string, string[]>> {
 }
 
 /** Checks an answer to a recall question and records it. */
-export async function attemptRecall(
-  id: string,
-  input: string,
-  context: "recall" | "review",
-): Promise<{ result: CheckResult; reviewCard?: string }> {
+export async function attemptRecall(id: string, input: string): Promise<CheckResult> {
   const n = Number(id.slice(RECALL_PREFIX.length));
-  if (!Number.isInteger(n)) return { result: { correct: false, message: "Unknown question." } };
+  if (!Number.isInteger(n)) return { correct: false, message: "Unknown question." };
   const row = (await query<RecallRow>(`SELECT ${COLUMNS} FROM recall_questions WHERE id = $1`, [n]))[0];
-  if (!row || (row.lesson_id === REVIEW_SET) !== (context === "review")) return { result: { correct: false, message: "Unknown question." } };
+  // Questions from the removed review sessions are stored under the set id "review"; they are no longer answerable.
+  if (!row || row.lesson_id === "review") return { correct: false, message: "Unknown question." };
   const result = checkAnswer(row.answer, input);
-  if (result.message && !result.correct) return { result };
+  if (result.message && !result.correct) return result;
   await query(
     `UPDATE recall_questions SET attempts = attempts + 1, solved = solved OR $2,
        first_correct = CASE WHEN attempts = 0 THEN $2 ELSE first_correct END, answered_at = now()
      WHERE id = $1`,
     [n, result.correct],
   );
-  await query("INSERT INTO attempt_log (exercise_id, response, correct, context) VALUES ($1, $2, $3, $4)", [id, input.slice(0, 4000), result.correct, context]);
-  // The first answer to a review question decides when its idea comes back.
-  return { result, reviewCard: row.attempts === 0 && row.review_card ? row.review_card : undefined };
+  await query("INSERT INTO attempt_log (exercise_id, response, correct, context) VALUES ($1, $2, $3, $4)", [id, input.slice(0, 4000), result.correct, "recall"]);
+  return result;
 }
 

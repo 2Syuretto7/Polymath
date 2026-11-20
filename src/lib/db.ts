@@ -31,13 +31,6 @@ const SCHEMA = [
      response TEXT,
      updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
    )`,
-  `CREATE TABLE IF NOT EXISTS review_cards (
-     exercise_id TEXT PRIMARY KEY,
-     lesson_id TEXT NOT NULL,
-     card JSONB NOT NULL,
-     due TIMESTAMPTZ NOT NULL
-   )`,
-  `CREATE INDEX IF NOT EXISTS review_cards_due ON review_cards (due)`,
   `CREATE TABLE IF NOT EXISTS writings (
      id SERIAL PRIMARY KEY,
      lesson_id TEXT NOT NULL,
@@ -95,7 +88,6 @@ const SCHEMA = [
      answered_at TIMESTAMPTZ
    )`,
   `CREATE INDEX IF NOT EXISTS recall_questions_lesson ON recall_questions (lesson_id, batch)`,
-  `ALTER TABLE recall_questions ADD COLUMN IF NOT EXISTS review_card TEXT`,
   `CREATE INDEX IF NOT EXISTS recall_questions_source ON recall_questions (source_lesson_id, created_at)`,
   // The teach-back step was removed; clear what it stored.
   `DELETE FROM writings WHERE kind = 'teachback'`,
