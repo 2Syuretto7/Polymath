@@ -19,7 +19,7 @@ export function MasteryBanner({ initiallyMastered }: { initiallyMastered: boolea
     <div className={justNow ? "mastered is-floating" : "mastered"} role="status">
       <div>
         <p className="mastered-title"><Pill tone="success" icon="check">Mastered</Pill>This lesson is yours</p>
-        <p className="mastered-text">Its questions will return for review just before you would forget them.</p>
+        <p className="mastered-text">Its ideas will come back as recall questions in the lessons that build on it.</p>
       </div>
       <form action={learnAction}>
         <button type="submit" className="btn btn-primary">Learn next <span className="chev"><ChevronRight /></span></button>

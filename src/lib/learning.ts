@@ -1,7 +1,6 @@
 import "server-only";
-import { createEmptyCard, fsrs, Rating, type Card } from "ts-fsrs";
 import { query } from "./db";
-import { EXERCISES, GRAPH, LESSON_BY_ID, exerciseId, masteryExercises, reviewable } from "./curriculum";
+import { EXERCISES, GRAPH, LESSON_BY_ID, exerciseId, masteryExercises } from "./curriculum";
 import { checkAnswer, type CheckResult } from "./check";
 import { frontier, isUnlocked } from "./graph";
 import { chooseNextStep, type LearnStep } from "./scheduler";
@@ -9,9 +8,8 @@ import type { Track } from "./types";
 import { PartonError, markWritten, partonConnected } from "./parton";
 import { renderParton } from "./parton/render";
 import { masteryFromSolved, type MasteryReport } from "./mastery";
-import { attemptRecall, isRecallId, reviewFinishedSinceLesson } from "./recall";
+import { attemptRecall, isRecallId } from "./recall";
 
-const scheduler = fsrs({ enable_fuzz: true, request_retention: 0.9 });
 const TZ = "Asia/Kolkata";
 
 type ProgressRow = { lesson_id: string; status: string; mastery: number };
@@ -32,22 +30,15 @@ export async function setPace(pace: number) {
   );
 }
 
-export async function dueReviewCount(): Promise<number> {
-  const rows = await query<{ n: number }>("SELECT count(*)::int AS n FROM review_cards WHERE due <= now()");
-  return rows[0]?.n ?? 0;
-}
-
-/** The next step. After a finished review session, or with `skipReview`, a lesson comes before more review. */
-export async function nextStep(skipReview = false): Promise<LearnStep> {
-  const [progress, due, pace, today, last, reviewed] = await Promise.all([
+/** The next step. */
+export async function nextStep(): Promise<LearnStep> {
+  const [progress, pace, today, last] = await Promise.all([
     loadProgress(),
-    dueReviewCount(),
     getPace(),
     query<{ n: number }>(
       `SELECT count(*)::int AS n FROM progress WHERE (started_at AT TIME ZONE '${TZ}')::date = (now() AT TIME ZONE '${TZ}')::date`,
     ),
     query<{ lesson_id: string }>("SELECT lesson_id FROM progress ORDER BY started_at DESC LIMIT 1"),
-    skipReview ? Promise.resolve(true) : reviewFinishedSinceLesson(),
   ]);
   const mastered = new Set(progress.filter((p) => p.status === "mastered").map((p) => p.lesson_id));
   // Continue the most recent open lesson whose prerequisites are all mastered. A lesson started
@@ -60,8 +51,6 @@ export async function nextStep(skipReview = false): Promise<LearnStep> {
   const lastTrack: Track | null = last[0] ? GRAPH.nodes.get(last[0].lesson_id)?.track ?? null : null;
   return chooseNextStep({
     openLesson: openNode,
-    dueReviews: due,
-    reviewedSinceLesson: reviewed,
     frontier: frontier(GRAPH, mastered),
     lastTrack,
     newLessonsToday: today[0]?.n ?? 0,
@@ -101,22 +90,19 @@ export async function exerciseStates(lessonIds: string[]): Promise<Map<string, E
   return new Map(rows.map((r) => [r.exercise_id, r]));
 }
 
-export type Context = "lesson" | "recall" | "review";
+export type Context = "lesson" | "recall";
 
 export type AttemptResult = CheckResult & { lessonMastered?: boolean; verdict?: Verdict; feedbackHtml?: string };
 
 /**
- * Checks an answer, records it, and updates mastery and the review schedule.
- * In recall and review, the first attempt of the session decides the review rating.
+ * Checks an answer, records it, and updates mastery.
  * Written proofs and arguments are marked by Parton against the rubric when Parton is connected;
  * until then they are provisionally accepted on submission.
  */
-export async function attempt(id: string, input: string, context: Context, attemptInSession: number): Promise<AttemptResult> {
+export async function attempt(id: string, input: string, context: Context): Promise<AttemptResult> {
   if (isRecallId(id)) {
     if (context === "lesson") return { correct: false, message: "Unknown exercise." };
-    const { result, reviewCard } = await attemptRecall(id, input, context);
-    if (reviewCard) await rateCard(reviewCard, result.correct ? Rating.Good : Rating.Again);
-    return result;
+    return attemptRecall(id, input);
   }
   const ref = EXERCISES.get(id);
   if (!ref) return { correct: false, message: "Unknown exercise." };
@@ -162,10 +148,6 @@ export async function attempt(id: string, input: string, context: Context, attem
     await query("INSERT INTO writings (lesson_id, kind, exercise_id, body) VALUES ($1, 'answer', $2, $3)", [ref.lessonId, id, input]);
   }
 
-  if (context !== "lesson" && attemptInSession === 1) {
-    await rateCard(id, correct ? Rating.Good : Rating.Again);
-  }
-
   const lessonMastered = context === "lesson" ? await evaluateMastery(ref.lessonId) : undefined;
   return {
     correct,
@@ -174,15 +156,6 @@ export async function attempt(id: string, input: string, context: Context, attem
     verdict: verdict ?? undefined,
     feedbackHtml: feedback ? renderParton(feedback) : undefined,
   };
-}
-
-async function rateCard(id: string, rating: Rating.Again | Rating.Good) {
-  const rows = await query<{ card: Card }>("SELECT card FROM review_cards WHERE exercise_id = $1", [id]);
-  if (!rows[0]) return;
-  const stored = rows[0].card;
-  const card: Card = { ...stored, due: new Date(stored.due), last_review: stored.last_review ? new Date(stored.last_review) : undefined };
-  const next = scheduler.next(card, new Date(), rating).card;
-  await query("UPDATE review_cards SET card = $2, due = $3 WHERE exercise_id = $1", [id, JSON.stringify(next), next.due.toISOString()]);
 }
 
 export type { MasteryReport } from "./mastery";
@@ -202,37 +175,8 @@ export async function evaluateMastery(lessonId: string): Promise<boolean> {
   const report = await masteryReport(lessonId);
   await query("UPDATE progress SET mastery = $2, updated_at = now() WHERE lesson_id = $1", [lessonId, report.score]);
   if (!report.mastered) return false;
-  const changed = await query(
-    "UPDATE progress SET status = 'mastered' WHERE lesson_id = $1 AND status <> 'mastered' RETURNING lesson_id",
-    [lessonId],
-  );
-  if (changed.length > 0) {
-    const now = new Date();
-    const struggled = await struggledWith(lessonId);
-    for (const e of reviewable(LESSON_BY_ID.get(lessonId)!)) {
-      // Practice counts as the first successful review; the first spaced review comes a day later.
-      // Repair: a question missed three or more times comes back sooner, after twelve hours.
-      const id = exerciseId(lessonId, e.key);
-      const hard = struggled.has(id);
-      const card = scheduler.next(createEmptyCard(now), now, hard ? Rating.Hard : Rating.Good).card;
-      card.due = new Date(now.getTime() + (hard ? 12 : 24) * 60 * 60 * 1000);
-      await query(
-        "INSERT INTO review_cards (exercise_id, lesson_id, card, due) VALUES ($1, $2, $3, $4) ON CONFLICT DO NOTHING",
-        [id, lessonId, JSON.stringify(card), card.due.toISOString()],
-      );
-    }
-  }
+  await query("UPDATE progress SET status = 'mastered' WHERE lesson_id = $1 AND status <> 'mastered'", [lessonId]);
   return true;
-}
-
-/** Exercises in these lessons that the learner has missed at least `misses` times. */
-async function struggledWith(lessonId: string, misses = 3): Promise<Set<string>> {
-  const rows = await query<{ exercise_id: string }>(
-    `SELECT exercise_id FROM attempt_log WHERE exercise_id LIKE $1 AND NOT correct
-     GROUP BY exercise_id HAVING count(*) >= $2`,
-    [`${lessonId}:%`, misses],
-  );
-  return new Set(rows.map((r) => r.exercise_id));
 }
 
 export async function overallStats() {

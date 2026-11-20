@@ -42,7 +42,7 @@ export function askParton(exerciseId: string, label: string) {
 
 export function ExerciseCard({ view, context, children, index }: {
   view: ExerciseView;
-  context: "lesson" | "recall" | "review";
+  context: "lesson" | "recall";
   children: ReactNode;
   index?: number;
 }) {
@@ -59,7 +59,7 @@ export function ExerciseCard({ view, context, children, index }: {
   const submit = () =>
     start(async () => {
       const attempt = tries + 1;
-      const res = await checkExerciseAction(view.id, value, context, attempt);
+      const res = await checkExerciseAction(view.id, value, context);
       if (res.message && !res.correct) { setStatus({ tone: "info", text: res.message }); return; }
       setTries(attempt);
       if (res.verdict) {

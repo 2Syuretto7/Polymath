@@ -7,20 +7,10 @@ const node = (id: string, track: "mathematics" | "philosophy"): LessonNode => ({
   id, title: id, course: "X", courseTitle: "X", chapter: 1, chapterTitle: "c", index: 0, track, tier: 0, authored: true,
 });
 const m = node("m", "mathematics"), p = node("p", "philosophy");
-const base = { openLesson: null, dueReviews: 0, frontier: [m, p], lastTrack: null, newLessonsToday: 0, pace: 2 };
+const base = { openLesson: null, frontier: [m, p], lastTrack: null, newLessonsToday: 0, pace: 2 };
 
-test("an open lesson comes first, even with reviews due", () => {
-  assert.equal(chooseNextStep({ ...base, openLesson: m, dueReviews: 5 }).kind, "continue");
-});
-
-test("due reviews come before new lessons", () => {
-  assert.deepEqual(chooseNextStep({ ...base, dueReviews: 3 }), { kind: "review", count: 3 });
-});
-
-test("after a finished review session, a lesson comes before more review", () => {
-  const step = chooseNextStep({ ...base, dueReviews: 4, reviewedSinceLesson: true });
-  assert.equal(step.kind, "begin");
-  assert.equal(chooseNextStep({ ...base, dueReviews: 4, reviewedSinceLesson: false }).kind, "review");
+test("an open lesson comes first", () => {
+  assert.equal(chooseNextStep({ ...base, openLesson: m }).kind, "continue");
 });
 
 test("alternates tracks", () => {
