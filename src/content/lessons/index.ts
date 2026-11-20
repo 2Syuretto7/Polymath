@@ -1461,6 +1461,9 @@ import { lesson as p35_1_1 } from "./p35.1.1";
 import { lesson as p35_1_2 } from "./p35.1.2";
 import { lesson as p35_1_3 } from "./p35.1.3";
 import { lesson as p35_2_1 } from "./p35.2.1";
+import { lesson as p35_2_2 } from "./p35.2.2";
+import { lesson as p35_2_3 } from "./p35.2.3";
+import { lesson as p35_3_1 } from "./p35.3.1";
 
 /** Every authored lesson. Add new lessons here; the graph checks their links at build time. */
 export const LESSONS: readonly LessonContent[] = [
@@ -2665,4 +2668,7 @@ export const LESSONS: readonly LessonContent[] = [
   p35_1_2,
   p35_1_3,
   p35_2_1,
+  p35_2_2,
+  p35_2_3,
+  p35_3_1,
 ];
