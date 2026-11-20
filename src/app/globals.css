@@ -835,3 +835,12 @@ label { font-size: 13px; font-weight: 500; color: var(--text); }
 .dictate { display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); }
 .dictate.is-listening { color: var(--danger); }
 .dictate-label { font-size: 14px; }
+
+/* Update bar: shown only when a new version waits on unsaved typing. */
+.update-bar {
+  position: fixed; left: 50%; bottom: max(16px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 50;
+  display: flex; align-items: center; gap: 12px; max-width: calc(100% - 32px);
+  padding: 8px 8px 8px 16px; background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius-md);
+  box-shadow: var(--shadow); font-size: 14px; color: var(--text-muted);
+}
+.update-bar-btn { color: var(--link); }
